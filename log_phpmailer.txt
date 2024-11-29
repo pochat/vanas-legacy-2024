@@ -1,0 +1,11 @@
+
+SMTP Error: Could not authenticate.
+SMTP Error: Could not authenticate.to:mike@vanas.ca 
+SMTP Error: Could not authenticate.to:mike@vanas.ca 
+SMTP Error: Could not authenticate.to:mike@vanas.ca 
+SMTP Error: Could not authenticate.to:mike@vanas.ca 
+SMTP Error: Could not authenticate.to:terrylonz@hotmail.com 
+SMTP Error: Could not authenticate.to:terrylonz@hotmail.com 
+SMTP Error: Could not authenticate.to:mike@vanas.ca 
+Invalid address:  (to): to: 
+Subject:.Receipt of payment  
