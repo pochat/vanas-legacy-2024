@@ -1,0 +1,707 @@
+@font-face {
+	font-family: "Charcoal";
+	src: url(fonts/charcoal.ttf) format("truetype");
+}
+
+.site_background {
+	background: #E8E4E4;
+}
+
+.blank_cells {
+  background: #f2f2f2;
+  vertical-align: top;
+}
+
+.tinymce_space {
+  background: #ffffff;
+  color: #000000;
+	font-family: Tahoma;
+	font-size: 10px;
+	font-weight: normal;
+  text-align: left;
+  vertical-align: top;
+	padding-top: 0px;
+	padding-left: 0px;
+}
+
+.header {
+	background: #003263;
+	color: #000000;
+	font-family: "Times New Roman";
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+  vertical-align: middle;
+  padding-left: 20px;
+}
+
+.header_border {
+  border-right: thin solid #B7BEC1;
+  border-bottom: thin solid #B7BEC1;
+}
+
+.left_colum {
+  background: #FFFFFF;
+  border-right: thin solid #B7BEC1;
+  vertical-align: top;
+}
+
+.right_colum {
+  background: #FFFFFF;
+  border-left: thin solid #B7BEC1;
+  border-right: thin solid #B7BEC1;
+  vertical-align: top;
+}
+
+.notifications {
+  background: #003263;
+  text-align: center;
+  vertical-align: bottom;
+  padding-bottom: 5;
+}
+
+.header_menu {
+  background: #003263;
+  text-align: center;
+  vertical-align: middle;
+}
+
+a.header_links {
+	color: #FFFFFF;
+	font-family: Tahoma;
+	font-size: 12px;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+a:hover.header_links {
+	color: #3399cc;
+}
+
+a:visited.header_links {
+	text-decoration: none;
+}
+
+.left_menu:before {
+  background: url(../images/LeftMenuCornerTR.jpg) no-repeat top right;
+  display: block;
+  content: url(../images/LeftMenuCornerTL.jpg)
+}
+
+.left_menu:after {
+  background: url(../images/LeftMenuCornerBR.jpg) no-repeat top right;
+  display: block;
+  content: url(../images/LeftMenuCornerBL.jpg)
+}
+
+.left_menu {
+	background: #FFFFFF;
+	border-top: 1px solid #f0f0f0;
+	color: #000000;
+	font-family: "Helvetica";
+	font-size: 20px;
+	text-align: left;
+  vertical-align: top;
+	padding-top: 0px;
+	padding-left: 0px;
+}
+
+.left_menu_icon {
+	background: #FFFFFF;
+	width: 24px;
+	height: 24px;
+	text-align: center;
+  vertical-align: middle;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+
+ul.links_left_menu {
+	list-style-type: none;
+}
+
+a.links_left_menu {
+	color: #333333;
+	font-family: Tahoma;
+	font-size: 13px;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+a:hover.links_left_menu {
+	color: #3399cc;
+}
+
+a:visited.links_left_menu {
+	text-decoration: none;
+  list-style-type: none;
+}
+
+.section_title {
+	background: #f2f2f2;
+	color: #000000;
+	font-family: "Times New Roman";
+	font-size: 30px;
+	font-weight: bold;
+	text-align: left;
+  vertical-align: middle;
+	padding-top: 0px;
+	padding-left: 10px;
+}
+
+.student_status {
+  background: #f2f2f2;
+	color: #000000;
+	font-family: "Tahoma";
+	font-size: 10px;
+	font-weight: bold;
+	text-align: right;
+  vertical-align: middle;
+	padding-top: 0px;
+	padding-right: 5px;
+}
+
+.current_week {
+  background: #7D8183;
+	padding: 0px 2px;
+	color: #FFFFFF;
+  font-family: "Tahoma";
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.week_tabs{
+  padding: 0 0 5 0;
+  margin-left: 0;
+  border-bottom: thin solid #B7BEC1;
+  color: #000000;
+  font-family: "Tahoma";
+	font-size: 10px;
+	font-weight: bold;
+  list-style-type: none;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.week_tabs li{
+  color: #7D8183;
+  padding: 0px 2px;
+	margin-right: 1px;
+  display: inline;
+  margin-right: 1px;
+}
+
+.week_tabs li a{
+  text-decoration: none;
+  padding: 0px 2px;
+	margin-right: 1px;
+  border-bottom: none;
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.week_tabs li a:visited{
+  color: black;
+}
+
+.week_tabs li a:hover{
+  background-color: #7D8183;
+  color: #FFFFFF;
+}
+
+.week_tabs li a:active{
+  background-color: #7D8183;
+  color: black;
+}
+
+.current_assignment {
+  background: #7D8183;
+	padding: 0px 10px;
+	color: #FFFFFF;
+  font-family: "Tahoma";
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.assignment_tabs{
+  padding: 5 0 10 0;
+  color: #000000;
+  font-family: "Tahoma";
+	font-size: 10px;
+	font-weight: bold;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.assignment_tabs li{
+  display: inline;
+  color: #7D8183;
+}
+
+.assignment_tabs li a{
+  text-decoration: none;
+  padding: 0px 5px;
+  margin-right: 1px;
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.assignment_tabs li a:visited{
+  color: black;
+}
+
+.assignment_tabs li a:hover{
+  background-color: #7D8183;
+  color: #FFFFFF;
+}
+
+.assignment_tabs li a:active{
+  background-color: #7D8183;
+  color: black;
+}
+
+.video_sketch {
+  color: #000000;
+	font-family: "Times New Roman";
+	font-size: 25px;
+	font-weight: bold;
+  vertical-align: middle;
+}
+
+.desktop_video {
+  position: absolute; 
+  top: 151; 
+  left: 192; 
+  z-index:0;
+}
+
+.color_palette {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  z-index:2;
+}
+
+.recording {
+  position: absolute; 
+  top: 151; 
+  left: 192; 
+  z-index:3;
+}
+
+.new_comment_corner_TL {
+  background-image: url(../images/CommentCornerTL.jpg);
+}
+
+.new_comment_corner_TR {
+  background-image: url(../images/CommentCornerTR.jpg);
+}
+
+.new_comment_corner_BL {
+  background-image: url(../images/CommentCornerBL.jpg);
+}
+
+.new_comment_corner_BR {
+  background-image: url(../images/CommentCornerBR.jpg);
+}
+
+.new_comment_blank_cells {
+  background: #D0CDCD;
+  vertical-align: bottom;
+}
+
+.new_comment_title {
+	background: #D0CDCD;
+	color: #000000;
+	font-family: "Times New Roman";
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+	padding-top: 0px;
+	padding-left: 0px;
+}
+
+.new_comment_content {
+  background: #D0CDCD;
+}
+
+.comment_text {
+  color: #000000;
+	font-family: "Tahoma";
+	font-size: 12px;
+	font-weight: normal;
+	text-align: left;
+  vertical-align: top;
+}
+
+.division_line {
+  border-top: thin solid #B7BEC1;
+}
+
+.chat_entries {
+  color: #000000;
+	font-family: "Tahoma";
+	font-size: 11px;
+	font-weight: normal;
+	text-align: left;
+  vertical-align: top;
+}
+
+.lecture_title {
+	background: #D0CDCD;
+	color: #000000;
+	font-family: "Times New Roman";
+	font-size: 25px;
+	font-weight: bold;
+	text-align: left;
+	padding-top: 0px;
+	padding-left: 0px;
+}
+
+.right_column_labels {
+	background: #FFFFFF;
+	color: #000000;
+	font-family: "Tahoma";
+	font-size: 12px;
+	font-weight: normal;
+	text-align: center;
+  vertical-align: middle;
+	padding-top: 0px;
+	padding-left: 0px;
+}
+
+.right_column_error {
+	background: #FFFFFF;
+	color: Red;
+	font-family: "Tahoma";
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+  vertical-align: middle;
+	padding-top: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.right_column_reminders1{
+  border-top: thin solid #B7BEC1;
+  border-bottom: thin solid #B7BEC1;
+  border-left: thin solid #B7BEC1;
+}
+
+.right_column_reminders2{
+  border-top: thin solid #B7BEC1;
+  border-bottom: thin solid #B7BEC1;
+  border-right: thin solid #B7BEC1;
+  padding-left: 5px;
+  font-family: "Tahoma";
+	font-size: 10px;
+}
+.right_column_upload{
+  border-top: thin solid #B7BEC1;
+  border-bottom: thin solid #B7BEC1;
+  border-left: thin solid #B7BEC1;
+  border-right: thin solid #B7BEC1;
+  font-family: "Tahoma";
+	font-size: 10px;
+}
+
+.assignments_course {
+  background: #D0CDCD;
+	color: #000000;
+	font-family: "Tahoma";
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+  vertical-align: middle;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.assignments_term {
+  background: #D9E7ED;
+	color: #000000;
+	font-family: "Tahoma";
+	font-size: 12px;
+	font-weight: normal;
+	text-align: center;
+  vertical-align: middle;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.assignments_lesson {
+  background: #f2f2f2;
+	color: #000000;
+	font-family: "Tahoma";
+	font-size: 11px;
+	font-weight: normal;
+	text-align: left;
+  vertical-align: top;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.footer {
+	background: #FFFFFF;
+	text-align: center;
+  border: thin solid #B7BEC1;
+}
+
+a.footer_menu {
+	padding-right: 10px;
+	padding-left: 10px;
+	color: #000000;
+	font-family: Helvetica;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover.footer_menu {
+	color: #990000;
+}
+
+a:visited.footer_menu {
+	text-decoration: none;
+}
+
+#buttons {
+	border-width: 2px;
+	padding: 5px 0px 5px 0px;
+	font-family: Tahoma;
+  font-size: 10px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.grades_table {
+  color: #000000;
+	font-family: "Tahoma";
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+  vertical-align: middle;
+  border-bottom: thin solid #B7BEC1;
+}
+
+.row_highlight_1 {
+	background: #F6F6F6;
+}
+
+.row_highlight_2 {
+	background: #EFEFEF;
+}
+
+/* Community */
+.comm_filtros {
+  background: #D0CDCD;
+	color: #000000;
+	font-family: "Tahoma";
+	font-size: 12px;
+	text-align: center;
+  vertical-align: middle;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.comm_filtros a {
+	font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+}
+
+.comm_filtros a:hover {
+	color: #3399cc;
+}
+
+.comm_teachers {
+	color: Black;
+  background: LightGreen;
+  text-align: center;
+  padding: 0px 2px;
+}
+
+.comm_my_teacher {
+	color: White;
+  background: Green;
+  text-align: center;
+  padding: 0px 2px;
+}
+
+.comm_students {
+	color: White;
+  background: Blue;
+  text-align: center;
+  padding: 0px 2px;
+}
+
+.comm_classmates {
+	color: Black;
+  background: Orange;
+  text-align: center;
+  padding: 0px 2px;
+}
+
+.comm_me {
+	color: Black;
+  background: Yellow;
+  text-align: center;
+  padding: 0px 2px;
+}
+
+.text_unread {
+	color: Red;
+  text-decoration: none;
+}
+
+/* Clases para Forum */
+.forum_not {
+	color: #000000;
+	font-family: "Tahoma";
+	font-size: 12px;
+	vertical-align: middle;
+	padding-top: 5px;
+	padding-bottom: 5px;
+  background: #FFFFFF;
+	border-top: thin solid #B7BEC1;
+  border-bottom: thin solid #B7BEC1;
+}
+
+.forum_not a {
+	color: #000000;
+  text-decoration: none;
+}
+
+.forum_not a:hover {
+	color: #3399cc;
+}
+
+.forum_add_post {
+  color: #000000;
+	font-family: "Tahoma";
+	font-size: 12px;
+	text-align: left;
+  vertical-align: middle;
+	padding: 5px;
+}
+.forum_add_post a {
+	font-weight: bold;
+  color: #000000;
+  text-decoration: underline;
+}
+.forum_add_post a:hover {
+	color: #3399cc;
+}
+
+.forum_add_comment {
+  color: #000000;
+	font-family: "Tahoma";
+	font-size: 12px;
+	text-align: left;
+  vertical-align: middle;
+	padding: 5px;
+}
+.forum_add_comment a {
+	font-weight: none;
+  color: #0066cc;
+  text-decoration: none;
+}
+.forum_add_comment a:hover {
+	color: #3399cc;
+}
+
+.forum_x_comments {
+  color: #000000;
+	font-family: "Tahoma";
+	font-size: 12px;
+	text-align: left;
+  vertical-align: middle;
+	padding: 5px;
+  background: #DDDDDD;
+	border-top: thin solid #B7BEC1;
+  border-bottom: thin solid #B7BEC1;
+}
+.forum_x_comments a {
+	color: #000000;
+  text-decoration: none;
+}
+.forum_x_comments a:hover {
+	color: #3399cc;
+}
+
+/* CLASES PARA WHITEBOARD */
+#status {
+  left: 752px;
+  top: 151px;
+  color: white;
+  font-family: helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  border-spacing: 0px;
+  padding: 0px;
+  width: 80px;
+  height: 15px;
+  position: absolute;
+  visibility: hidden;
+  text-align: center;
+  z-index:2;
+}
+
+#whiteboard {
+  left: 191px;
+  top: 150px;
+  border-spacing: 0px;
+  padding: 0px;
+  width: 640px;
+  height: 340px;
+  position: absolute;
+  z-index:2;
+}
+
+#whiteboard_cover {
+  left: 191px;
+  top: 150px;
+  border-spacing: 0px;
+  border-bottom: thin solid #FFFFFF;
+  padding: 0px;
+  width: 640px;
+  height: 360px;
+  position: absolute;
+  z-index:3;
+}
+
+.simple {
+  background-color: white;
+  width: 2px;
+  height: 2px;
+  font-size: 1px;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  z-index: 1
+}
+
+input {
+  margin-left: 0px;
+  border: #999 1px solid
+}
+
+#colorpicker {
+  text-align: center;
+}
+
+/* Clases para formas de captura */
+.css_default { COLOR: #000000; FONT-FAMILY: Tahoma; FONT-SIZE: 10px; }
+.css_prompt { BACKGROUND-COLOR: #f2f2f2; COLOR: #000000; FONT-FAMILY: Tahoma; FONT-SIZE: 10px; FONT-WEIGHT: Bold; }
+.css_caja { BACKGROUND-COLOR: #D9E7ED; COLOR: #000000; FONT-FAMILY: Tahoma; FONT-SIZE: 12px; FONT-WEIGHT: Bold; }
+.css_input { COLOR: #000000; FONT-FAMILY: Tahoma; FONT-SIZE: 10px; padding-left: 0px;}
+.css_input_error { COLOR: #3B3836; FONT-FAMILY: Tahoma; FONT-SIZE: 10px; BORDER-STYLE: Solid; BORDER-COLOR: Red; }
+.css_etq_texto { COLOR: #000000; FONT-FAMILY: Tahoma; FONT-SIZE: 10px; }
+.css_msg_error { COLOR: Red; FONT-FAMILY: Tahoma; FONT-SIZE: 12px; FONT-WEIGHT: Bold; TEXT-ALIGN: Left; VERTICAL-ALIGN: Middle; }

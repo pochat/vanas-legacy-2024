@@ -1,0 +1,6 @@
+
+====================================Inicia proceso November 30, 2023, 3:59 pm=================================================
+====================================Nombre: Sophia Brodaczynski fl_usuario=11573 November 30, 2023, 3:59 pm=================================================
+====================================currency: USD secret_key=sk_test_mlq5SP2NBF52AqtcU7jNXm1k November 30, 2023, 3:59 pm=================================================
+====================================create customer: cus_P6VGv3Rf2zJfiB  November 30, 2023, 3:59 pm=================================================
+====================================error: Your card was declined. This transaction requires authentication.  November 30, 2023, 3:59 pm=================================================

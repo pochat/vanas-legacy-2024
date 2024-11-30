@@ -1,0 +1,60 @@
+	canvas {
+		border: 1px none #AAAAAA;
+	}
+	#canvas {
+		position: absolute;
+		left: 192px;
+		top: 218px;
+    z-index:500;
+    display:none; // El pizarron empieza apagado
+	}
+	#canvasInterface {
+		position: absolute;
+		left: 192px;
+		top: 218px;
+    z-index:500;
+    display:none;
+	}
+	#chooserWidgets {
+		display: block;
+		position: absolute;
+		left: 925px;
+    top: 600px;
+		width: 30px;		
+	}
+	#chooserWidgets canvas {
+		margin-bottom: 10px;
+	}
+	#controls {
+		position: absolute;
+    top: 545px;
+    left: 942px;
+		width: 150px;
+    height:22px;
+	}
+	.ctr_btn {
+		overflow: hidden;
+		width: 22px;
+		height: 22px;
+		cursor: pointer;
+		background:#FFFFFF;
+    float:left;
+    border:1px solid #AAAAAA;
+	}
+	.ctr_btn img {
+		width: 22px;
+		height: 22px;
+		cursor: pointer; 
+	}  
+	#cpainterInfo {
+		position: absolute;
+		left: 500px;
+		top: 320px;
+	}
+	#errorArea {
+		position: absolute;
+		width: 200px;
+		left: 800px;
+	}
+  #paint {
+  }

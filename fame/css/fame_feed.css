@@ -1,0 +1,364 @@
+
+
+/**css del scroll*/
+
+::-webkit-scrollbar {
+  width: 11px;
+  } 
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 7px;
+}  
+::-webkit-scrollbar-thumb {
+  background: #bfbfbf; 
+  border-radius: 7px;
+  z-index:99;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bfbfbf; 
+} 
+
+
+/****/
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    direction: ltr;
+}
+
+.fondoPosts{
+    background: #f5f5f5;
+}
+.iconosMoodal{
+    font-size: 18px;
+    padding: 0px 12px;
+    color:#696c6f;
+    border-left: 1px solid #d4c4c4;
+    height: 50px;
+}
+.margin-top15{
+    margin-top: 15px;
+}
+/**/
+
+
+#main{
+padding-top: 49px !important;
+}
+
+#left-panel{
+    padding-top: 49px!important;
+    position: fixed!important;
+}
+#vanas-header{
+    position: fixed;
+    width: 100%;
+    z-index: 1090;
+}
+#ribbon{
+    position: fixed!important;
+    z-index: 99;
+     width: 100%;
+ }
+ 
+#contenedorLateralDerecho{
+    display: inline-grid;
+    position: fixed;
+
+}
+ #iniciaRedSocial{
+     padding-top: 20px;
+     background: #f5f5f5;
+ }
+ /**/
+textarea{
+    border: 1px solid #ccc0!important;
+    font-size: 15px!important;
+    overflow:hidden;
+    padding: 0px 12px!important;
+}
+/*tamano de imagen que carge usuario*/
+#previewR{
+    width: 230px;
+}
+
+.status .who .name {
+    font-size: 15px!important;
+}
+.tamano_avatar{
+    width: 50px !important;
+    height: 50px !important;
+}
+.titulo_feed{
+    font-weight: 700;
+}
+.borde_inferior{
+    border-bottom: 0px solid rgba(0,0,0,.07)!important;
+}
+.padi_texto_comentario{
+    padding: 0px 20px 20px 20px !important;
+    font-size: 14px;
+}
+.imagen_post{
+    padding: 0px!important;
+}
+.ds_comentario_txt{
+    width: 50%;
+}
+.acomodo_avatar_tex{
+    padding: 15px 0 15px 11px!important;
+}
+.dimension_campo{
+    padding: 13.5px 12px!important;
+}
+.padding_0{
+    padding: 0px;
+}
+.padding_b14{
+    padding-bottom: 15px!important;
+}
+.mikels{
+	
+	padding-left: 13px;
+	padding-right: 13px;
+	
+}
+.mikelp{
+	padding:13px;
+	
+}
+
+.margin-10{
+    margin-right: 10px;
+}
+.large__share{
+    width: 113px!important; /*93px*/
+}
+.borde-inferior{
+    margin-bottom: 0px!important;
+}
+.height_check{
+    width: 16px!important;
+    height: 15px!important;
+}
+.height_user{
+    color: rgba(0,0,0,.6);
+    padding: 0px 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.status .comments {
+    padding: 0 14px !important;
+}
+.status .who {
+    padding: 14px !important;
+}
+.smart-form .radio, .smart-form .checkbox {
+    line-height: 21px !important;
+}
+.margin-left-60{
+    margin-left: 60px;
+}
+.float-left1{
+    float: left;
+}
+
+/*menu fijo*/
+.left-panelFixed{
+    position: fixed!important;
+}
+.ribbonFixed {
+    position: fixed!important;
+    width: 100%!important;
+    z-index: 1000!important;
+}
+.header0{
+    height: 0px!important;
+}
+div.sticky {
+    position: -webkit-sticky;
+    position: fixed;
+}
+/*modal*/
+.ModalHeaderFeed{
+    background: #0071BD;
+    color: #fff;
+    padding: 7px 15px!important;
+}
+.close{
+    color: #fff!important;
+    opacity: 1!important;
+    font-size: 27px!important;
+}
+
+.contenidoPost{
+	
+	 max-width: 650px;
+   
+	
+}
+
+.contenidoModal{
+    max-width: 1204px;
+    overflow-y: initial !important
+}
+.contenidoModalBody{
+   /* height: 250px;*/
+    overflow-y: auto;
+}
+iframe{
+    border: 0px!important;
+}
+.margin-top-5 {
+    margin-top: 15px!important;
+}
+
+
+
+.textoLinkPost{
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 768px) {
+	
+	.textoLinkPost{
+    font-size: 10px !important;
+    cursor: pointer;
+	}
+	.iconosMoodal {
+    font-size: 8px !important;
+	}
+	#contenedorLateralDerecho{
+		display:none !important;		
+	}
+	
+}
+@media only screen and (max-width: 330px) {
+	
+	.textoLinkPost{
+    font-size: 6px !important;
+	}
+}
+
+
+.popover.bottom>.arrow {
+    left: 89%!important;
+    margin-left: -11px;
+    border-top-width: 0;
+    border-bottom-color: #999;
+    border-bottom-color: rgba(0,0,0,0.25);
+    top: -11px;
+}
+.post_width{
+   /* max-width: 700px; */
+}
+.mike_opt{
+	padding:3px !important;
+	color:#4c4b4b !important;
+	text-decoration: none !important;
+}
+
+.mike_opt:hover{
+	text-decoration: none !important;
+	color:#000 !important;
+}
+
+.contenidoSenInvitation{
+	
+	 max-width: 768px;
+   
+	
+}
+
+.mikelike{
+	
+	color:#c31f4b !important;
+	
+	
+}
+
+
+/**inicia css para modal al abrir post.**/
+/**para el modal al arbir un post **/
+.modal_post{
+	padding-left: 0px !important;
+    padding-top: 10px !important;
+	padding-bottom:10px !important;
+	
+	
+	
+}
+.mik_mod_pt{
+	
+	width:100% !important;
+	
+}
+.mike_modal_post{
+	background: #00000096!important;
+	
+}
+.mikeinput{
+	
+	border-radius:10px !important;
+	
+}
+
+/*****finaliza css para modal post ******/
+
+
+/*****/
+.marcado_correcto{
+	background: #006ab112 !important;
+}
+
+/****/
+
+/**para que la barra lateral derecha se quede fija con el scroll**/
+.stickymike {
+   position: -webkit-sticky;
+   position: fixed;
+   top:170px;
+   padding-right: 14px;
+  
+}
+.btnInvitamike {
+   position: -webkit-sticky;
+   position: fixed;
+   top:100px;
+   padding-right: 14px;
+   z-index:1;
+   width: 27%;
+  
+}
+.headerm {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+.sborde{
+	border-top:0px !important;
+}
+.replyfeed{
+	margin-left:10px;
+	cursor:pointer;
+}
+.post_help_feed{
+	max-height: 574px;
+	overflow-y: auto;
+	
+}
+.title_post_ayuda{
+	font-weight: normal;
+	cursor:pointer;
+}
+
+
+
+
+

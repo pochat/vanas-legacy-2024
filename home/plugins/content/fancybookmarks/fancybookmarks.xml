@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension 
+	version="2.5" 
+	type="plugin" 
+	group="content" 
+	method="upgrade">
+    <name>Fancy Bookmarks with Google +1</name>
+    <author>Qubesys Technologies Pvt.Ltd</author>
+    <creationDate>29 May 2012</creationDate>
+    <copyright>Copyright (C) 2011-2012 Qubesys Technologies Pvt.Ltd. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>info@qubesys.com</authorEmail>
+    <authorUrl>www.qubesys.com</authorUrl>
+    <version>8.1</version>
+   <description><![CDATA[<div id="qs-module-description"><table class="qs-module-description-title qs-module-tip-s" width="100%" title="Show/Hide Module Details"><tr><td><a href="http://www.joomclub.org" target="_blank"><img src="http://www.qubesys.org/templates/jf_social/images/jf/logo/logo_3.png" width="310" height="110" alt="Joomclub.org" /></a><br/>Fancy Bookmarks with Google +1<span class="info"></span></td></tr></table><div class="qstoggledetails"><table><tr><td class="ident" width="100px">Name:</td><td> Fancy Bookmarks with Google +1 Joomla Plugin</td></tr><tr><td class="ident" width="100px">Version:</td><td class="version">8.1</td></tr><tr><td class="ident"width="100px">Release Date:</td><td>29.05.12</td></tr><tr><td class="ident" width="100px">Description:</td><td>Thank You For Installing Our Extensaion!</td></tr><tr><td class="ident note" width="100px">NOTE!:</td><td>This module works only on Joomla 2.5 and 3.0. PLEASE dont forget to read documentation.</td></tr><tr><td class="ident" width="100px">Website:</td><td><a href="http://www.joomclub.org/" target="_blank">http://www.jooomclub.org</a></td></tr><tr><td class="ident" width="100px">Support:</td><td><a href="http://www.qubesys.in" target="_blank">http://www.qubesys.in</a> - Support you can get only on our Helpdesk.</td></tr></table><div style="clear:both">]]></description>
+    <files>
+        <filename plugin="fancybookmarks">fancybookmarks.php</filename>
+		<folder  plugin="fancybookmarks">fancybookmarks/admin</folder>
+        <folder plugin="fancybookmarks">fancybookmarks/images</folder>
+    </files>
+   
+
+    <config>
+		<fields name="params">
+			<fieldset name="basic">
+     
+	   <field name="heading_txt" type="text" size="80" default="" label="Introtext" description="Enter Heading Text"/>
+	   <field name="enable_ssl" type="list" default="" label="Enable SSL:" description="Enable SSL:">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+       </field>
+	   <field name="position" type="list" default="top" label="Position Of Buttons" description="How do you want to display the buttons on the full articles?">
+      <option value="0">Top</option>
+      <option value="1">Bottom</option>
+       </field>
+	   
+	  <field name="style" type="list"  label="Select The Style For Article Pages" description="How do you want to Style the buttons on the full articles pages?">
+      <option value="style1">Style1</option>
+      <option value="style2">Style2</option>
+	  <option value="style3">Style3</option>
+	  <option value="style4">Style4</option>
+
+      </field>
+	 
+	 
+     
+       <field name="article" type="radio" default="1" label="Display fancy Bookmarks on article pages" description="fancy Bookmarks should appear on all single articles">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+       </field>
+	   <field name="show_frontpage" type="radio" default="1" label="Display fancy Bookmarks on Front Page" description="Display fancy Bookmarks on Front Page">
+                  <option value="1"> Yes</option>
+                  <option value="0"> No</option>
+       </field>
+	   
+	   
+      
+      
+       <field name="include_cat" type="text" default="" size="50" label="Include Categories" description="Comma separated list of categories where the menu should appear. Leave it blank for all categories"/>
+	   <field name="filter_cat" type="text" default="" label="Exclude Categories" description="Exclude Category" size="50" />
+	   
+	   <field name="publisher_id" type="text" size="80" default="801f21e9-1614-4c38-9b56-f921501efc2a" label="Publisher ID" description="Enter Publisher Id"/>
+	   <field name="rss_url" type="text" size="80" default="" label="Enter Rss Url" description="Enter Rss Url"/>
+	   <field name="rss" type="list" default="" label="Rss Button" description="Display Rss Button">
+        <option value="1">Show</option>
+        <option value="0">Hide</option>
+       </field>
+	   <field name="twitter" type="list" default="" label="Twitter Button" description="Display Twitter Button">
+        <option value="1">Show</option>
+        <option value="0">Hide</option>
+       </field>
+	   <field name="email" type="list" default="" label="Email Button" description="Display Email Button">
+        <option value="1">Show</option>
+        <option value="0">Hide</option>
+       </field>
+	   <field name="facebook" type="list" default="" label="Facebook Button" description="Display Facebook Button">
+        <option value="1">Show</option>
+        <option value="0">Hide</option>
+       </field>
+	   
+	   <field name="share" type="list" default="" label="Share This Button" description="Display Share This Button">
+        <option value="1">Show</option>
+        <option value="0">Hide</option>
+       </field>
+	   <field name="yahoo" type="list" default="" label="Yahoo Button" description="Display Yahoo Button">
+        <option value="1">Show</option>
+        <option value="0">Hide</option>
+       </field>
+	   <field name="tumblr" type="list" default="" label="Tumblr Button" description="Display Tumblr Button">
+        <option value="1">Show</option>
+        <option value="0">Hide</option>
+       </field>
+	    <field name="technorati" type="list" default="" label="Technorati Button" description="Display Technorati Button">
+        <option value="1">Show</option>
+        <option value="0">Hide</option>
+       </field>
+	   <field name="stumble" type="list" default="" label="StumbleUpon Button" description="Display StumbleUpon Button">
+        <option value="1">Show</option>
+        <option value="0">Hide</option>
+       </field>
+	   <field name="linkedin" type="list" default="" label="LinkedIn Button" description="Display LinkedIn Button">
+        <option value="1">Show</option>
+        <option value="0">Hide</option>
+       </field>
+	   <field name="delicious" type="list" default="" label="Delicious Button" description="Display Delicious Button">
+        <option value="1">Show</option>
+        <option value="0">Hide</option>
+       </field>
+	   <field name="reddit" type="list" default="" label="Reddit Button" description="Display Reddit Button">
+        <option value="1">Show</option>
+        <option value="0">Hide</option>
+       </field>
+	 
+	   <field name="google" type="list" default="" label="Google +1 Button" description="Display Google +1 Button">
+        <option value="1">Show</option>
+        <option value="0">Hide</option>
+       </field>
+	   
+       <field name="facebook_like" type="list" default="" label="Facebook Like Button" description="Display Facebook Like Button">
+        <option value="1">Show</option>
+        <option value="0">Hide</option>
+       </field>
+	  <field name="pintrest" type="list" default="" label="Pinterest Button" description="Display Pinterest Button">
+        <option value="1">Show</option>
+        <option value="0">Hide</option>
+       </field>
+	   
+	   <field name="twitter_username" type="text" size="80" default="qubesys" label="Twitter Username" description="Enter Twitter Username"/>
+       
+		</fieldset>
+		<fieldset addfieldpath="/plugins/content/fancybookmarks/fancybookmarks/admin/formfield" name="about" label="ABOUT US">
+		  <field type="asset" path="plugins/content/fancybookmarks/fancybookmarks//admin/" />
+		  <field type="about" path="plugins/content/fancybookmarks/fancybookmarks//admin/images" />
+		 
+	</fieldset>
+		</fields>
+	</config>
+</extension>

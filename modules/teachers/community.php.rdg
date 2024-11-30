@@ -1,0 +1,217 @@
+<?php
+  
+  # Libreria de funciones
+  require("../common/lib/cam_general.inc.php");
+  
+  # Verifica que exista una sesion valida en el cookie y la resetea
+  $fl_maestro = ValidaSesion( );
+  
+  # Verifica que el usuario tenga permiso de usar esta funcion
+  if(!ValidaPermisoCampus(FUNC_MAESTROS)) {
+    MuestraPaginaError(ERR_SIN_PERMISO);
+    exit;
+  }
+  
+  # Presenta tabla de avatares
+  $titulo = "Community";
+  PresentaHeader($titulo);
+  echo "
+              <tr>
+                <td colspan='2' height='10' class='blank_cells'></td>
+              </tr>
+              <tr>
+                <td colspan='2' height='568' class='blank_cells'>
+                  <table border='0' cellpadding='0' cellspacing='0' width='100%'>
+                    <tr>
+                      <td height='15'></td>
+                    </tr>
+                    <tr>
+                      <td colspan='3' valign='top' align='center' height='80' class='division_line'>
+                        <table border='0' cellpadding='0' cellspacing='0'>
+                          <tr>
+                            <td colspan='11' height='5'></td>
+                          </tr>
+                          <tr>
+                            <td width='30'></td>
+                            <td width='80' height='80' valign='bottom' align='center'>
+                              <a href='profile.php'><img src='../common/images/Avatar1.jpg' border='none'/></a>
+                            </td> 
+                            <td width='30'></td>
+                            <td width='80' height='80' valign='bottom' align='center'>
+                              <a href='profile.php'><img src='../common/images/Avatar2.jpg' border='none'/></a>
+                            </td> 
+                            <td width='30'></td>
+                            <td width='80' height='80' valign='bottom' align='center'>
+                              <a href='profile.php'><img src='../common/images/Avatar3.jpg' border='none'/></a>
+                            </td> 
+                            <td width='30'></td>
+                            <td width='80' height='80' valign='bottom' align='center'>
+                              <a href='profile.php'><img src='../common/images/Avatar1.jpg' border='none'/></a>
+                            </td> 
+                            <td width='30'></td>
+                            <td width='80' height='80' valign='bottom' align='center'>
+                              <a href='profile.php'><img src='../common/images/Avatar2.jpg' border='none'/></a>
+                            </td> 
+                            <td width='30'></td>
+                          </tr>
+                          <tr>
+                            <td width='30'></td>
+                            <td width='80' valign='top' align='center'>
+                              <a href='profile.php'>Fulano</a></td> 
+                            <td width='30'></td>
+                            <td width='80' valign='top' align='center'>
+                              <a href='profile.php'>Sutano</a></td>
+                              <td width='30'></td>
+                            <td width='80' valign='top' align='center'>
+                              <a href='profile.php'>Mengano</a></td>
+                              <td width='30'></td>
+                            <td width='80' valign='top' align='center'>
+                              <a href='profile.php'>Perengano</a></td>
+                              <td width='30'></td>
+                            <td width='80' valign='top' align='center'>
+                              <a href='profile.php'>Ricardo</a></td>
+                            <td width='30'></td>
+                          </tr>
+                          <tr>
+                            <td colspan='11' height='20'></td>
+                          </tr>
+                          <tr>
+                            <td width='30'></td>
+                            <td width='80' height='80' valign='bottom' align='center'>
+                              <a href='profile.php'><img src='../common/images/Avatar1.jpg' border='none'/></a>
+                            </td> 
+                            <td width='30'></td>
+                            <td width='80' height='80' valign='bottom' align='center'>
+                              <a href='profile.php'><img src='../common/images/Avatar2.jpg' border='none'/></a>
+                            </td> 
+                            <td width='30'></td>
+                            <td width='80' height='80' valign='bottom' align='center'>
+                              <a href='profile.php'><img src='../common/images/Avatar3.jpg' border='none'/></a>
+                            </td> 
+                            <td width='30'></td>
+                            <td width='80' height='80' valign='bottom' align='center'>
+                              <a href='profile.php'><img src='../common/images/Avatar1.jpg' border='none'/></a>
+                            </td> 
+                            <td width='30'></td>
+                            <td width='80' height='80' valign='bottom' align='center'>
+                              <a href='profile.php'><img src='../common/images/Avatar2.jpg' border='none'/></a>
+                            </td> 
+                            <td width='30'></td>
+                          </tr>
+                          <tr>
+                            <td width='30'></td>
+                            <td width='80' valign='top' align='center'>
+                              <a href='profile.php'>Fulano</a></td> 
+                            <td width='30'></td>
+                            <td width='80' valign='top' align='center'>
+                              <a href='profile.php'>Sutano</a></td>
+                              <td width='30'></td>
+                            <td width='80' valign='top' align='center'>
+                              <a href='profile.php'>Mengano</a></td>
+                              <td width='30'></td>
+                            <td width='80' valign='top' align='center'>
+                              <a href='profile.php'>Perengano</a></td>
+                              <td width='30'></td>
+                            <td width='80' valign='top' align='center'>
+                              <a href='profile.php'>Ricardo</a></td>
+                            <td width='30'></td>
+                          </tr>
+                          <tr>
+                            <td colspan='11' height='20'></td>
+                          </tr>
+                          <tr>
+                            <td width='30'></td>
+                            <td width='80' height='80' valign='bottom' align='center'>
+                              <a href='profile.php'><img src='../common/images/Avatar1.jpg' border='none'/></a>
+                            </td> 
+                            <td width='30'></td>
+                            <td width='80' height='80' valign='bottom' align='center'>
+                              <a href='profile.php'><img src='../common/images/Avatar2.jpg' border='none'/></a>
+                            </td> 
+                            <td width='30'></td>
+                            <td width='80' height='80' valign='bottom' align='center'>
+                              <a href='profile.php'><img src='../common/images/Avatar3.jpg' border='none'/></a>
+                            </td> 
+                            <td width='30'></td>
+                            <td width='80' height='80' valign='bottom' align='center'>
+                              <a href='profile.php'><img src='../common/images/Avatar1.jpg' border='none'/></a>
+                            </td> 
+                            <td width='30'></td>
+                            <td width='80' height='80' valign='bottom' align='center'>
+                              <a href='profile.php'><img src='../common/images/Avatar2.jpg' border='none'/></a>
+                            </td> 
+                            <td width='30'></td>
+                          </tr>
+                          <tr>
+                            <td width='30'></td>
+                            <td width='80' valign='top' align='center'>
+                              <a href='profile.php'>Fulano</a></td> 
+                            <td width='30'></td>
+                            <td width='80' valign='top' align='center'>
+                              <a href='profile.php'>Sutano</a></td>
+                              <td width='30'></td>
+                            <td width='80' valign='top' align='center'>
+                              <a href='profile.php'>Mengano</a></td>
+                              <td width='30'></td>
+                            <td width='80' valign='top' align='center'>
+                              <a href='profile.php'>Perengano</a></td>
+                              <td width='30'></td>
+                            <td width='80' valign='top' align='center'>
+                              <a href='profile.php'>Ricardo</a></td>
+                            <td width='30'></td>
+                          </tr>
+                          <tr>
+                            <td colspan='11' height='20'></td>
+                          </tr>
+                          <tr>
+                            <td width='30'></td>
+                            <td width='80' height='80' valign='bottom' align='center'>
+                              <a href='profile.php'><img src='../common/images/Avatar1.jpg' border='none'/></a>
+                            </td> 
+                            <td width='30'></td>
+                            <td width='80' height='80' valign='bottom' align='center'>
+                              <a href='profile.php'><img src='../common/images/Avatar2.jpg' border='none'/></a>
+                            </td> 
+                            <td width='30'></td>
+                            <td width='80' height='80' valign='bottom' align='center'>
+                              <a href='profile.php'><img src='../common/images/Avatar3.jpg' border='none'/></a>
+                            </td> 
+                            <td width='30'></td>
+                            <td width='80' height='80' valign='bottom' align='center'>
+                              <a href='profile.php'><img src='../common/images/Avatar1.jpg' border='none'/></a>
+                            </td> 
+                            <td width='30'></td>
+                            <td width='80' height='80' valign='bottom' align='center'>
+                              <a href='profile.php'><img src='../common/images/Avatar2.jpg' border='none'/></a>
+                            </td> 
+                            <td width='30'></td>
+                          </tr>
+                          <tr>
+                            <td width='30'></td>
+                            <td width='80' valign='top' align='center'>
+                              <a href='profile.php'>Fulano</a></td> 
+                            <td width='30'></td>
+                            <td width='80' valign='top' align='center'>
+                              <a href='profile.php'>Sutano</a></td>
+                              <td width='30'></td>
+                            <td width='80' valign='top' align='center'>
+                              <a href='profile.php'>Mengano</a></td>
+                              <td width='30'></td>
+                            <td width='80' valign='top' align='center'>
+                              <a href='profile.php'>Perengano</a></td>
+                              <td width='30'></td>
+                            <td width='80' valign='top' align='center'>
+                              <a href='profile.php'>Ricardo</a></td>
+                            <td width='30'></td>
+                          </tr>
+                          <tr>
+                            <td colspan='11' height='20'></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    ";
+  
+  PresentaFooter( );
+  
+?>

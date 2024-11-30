@@ -1,0 +1,23 @@
+# Cron Schedule for Edutisse Email Notifications
+
+# --- Live Sessions ---
+
+0 3 * * * php /mnt/data/home/vanas/cronjob/all_live_session.php
+
+# --- Student Reminders ---
+
+0 3 * * * php /mnt/data/home/vanas/cronjob/st_assignment_reminder.php
+
+0 3 * * * php /mnt/data/home/vanas/cronjob/st_new_week.php
+
+# --- Teacher Reminders ---
+ 
+0 3 * * * php /mnt/data/home/vanas/cronjob/te_missing_grades.php
+
+# --- Tuition Payment Emails ---
+
+0 3 * * * php /mnt/data/home/vanas/cronjob/st_tuition_payment_upcoming.php
+
+0 3 * * * php /mnt/data/home/vanas/cronjob/st_tuition_payment_due.php
+
+0 3 * * * php /mnt/data/home/vanas/cronjob/st_tuition_payment_overdue.php

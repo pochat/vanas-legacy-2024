@@ -1,0 +1,45 @@
+/* General */
+
+.pagetitle.icon-48-faqbook {
+		background-image: url("../images/faqbook_icon_48x48.png");
+}
+
+.pagetitle.icon-48-article-add {
+		background-image: url("../images/dashboard/icon-48-article-add.png");
+}
+
+.pagetitle.icon-48-config {
+		background-image: url("../images/dashboard/icon-48-config.png");
+}
+
+.pagetitle.icon-48-info {
+		background-image: url("../images/dashboard/icon-48-info.png");
+}
+
+div#diFooter {
+    text-align:center;
+    margin-top:20px;
+}
+
+table.adminlist td {
+}
+
+table.adminlist td p {
+    margin:0;
+}
+
+div.faqbook-info {
+    padding:10px;
+    background:#fff;
+    border:1px solid #ccc;
+}
+
+#sbox-window p.tab-description {
+    padding:5px !important;
+		background:#cce6ff !important;
+		color:#0069cc !important;
+}
+
+label#jform_parent_description-lbl {
+    width:30em;
+}

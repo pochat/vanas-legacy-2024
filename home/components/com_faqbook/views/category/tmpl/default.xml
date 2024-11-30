@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_FAQBOOK_VIEW_CATEGORY_TITLE">
+		<message>COM_FAQBOOK_VIEW_CATEGORY_TITLE_DESC</message>
+	</layout>
+	<name>COM_FAQBOOK_CATEGORY_LIST_LAYOUT</name>
+		<description>COM_FAQBOOK_CATEGORY_LIST_LAYOUT_DESC</description>
+		<fields name="request">
+		<fieldset name="request" addfieldpath="/administrator/components/com_faqbook/models/fields">
+
+			<field name="id" type="category"
+				description="JGLOBAL_CHOOSE_CATEGORY_DESC"
+				extension="com_faqbook"
+				label="JGLOBAL_CHOOSE_CATEGORY_LABEL"
+				required="true"
+			/>
+			</fieldset>
+	</fields>
+	
+</metadata>

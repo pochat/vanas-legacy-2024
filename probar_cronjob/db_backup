@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Bash Shell PRODUCTION DB backup
+# Date: 04-14-2020
+# Author: Ulises
+
+test -f /efs/prod_mysql_backup/vanas_ant2.sql && mv /efs/prod_mysql_backup/vanas_ant2.sql /efs/prod_mysql_backup/vanas_ant3.sql
+
+test -f /efs/prod_mysql_backup/vanas_ant1.sql && mv /efs/prod_mysql_backup/vanas_ant1.sql /efs/prod_mysql_backup/vanas_ant2.sql
+
+mv /efs/prod_mysql_backup/vanas.sql /efs/prod_mysql_backup/vanas_ant1.sql
+
+mysqldump --user=root --lock-tables --databases vanas_prod > /efs/prod_mysql_backup/vanas.sql
+

@@ -1,0 +1,141 @@
+
+.status .who img {
+    float: left;
+    height: 50px;
+    margin-right: 10px;
+    width: 50px;
+}
+.clearfix, .inner-spacer:after, .jarviswidget, .jarviswidget-editbox, .jarviswidget>div {
+    zoom: 1;
+}
+img.online {
+    border-left-color: #0071BD!important;
+}
+img.away, img.busy, img.offline, img.online {
+    border-left: 3px solid #fff;
+}
+.status .who .name {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+}
+.status .who .name b {
+    color: #57889c;
+}
+.status .who .from {
+    font-size: 12px;
+    opacity: .7;
+}
+.status .who .from {
+    font-size: 12px;
+    opacity: .7;
+}
+.status .who {
+    border-bottom: 1px solid rgba(0,0,0,.07);
+    padding: 20px;
+}
+.status .image {
+    padding: 20px;
+}
+.status .links {
+    border-top: 1px solid rgba(0,0,0,.07);
+    margin: 0;
+    padding: 15px 20px;
+    background: #fafafa;
+}
+.status .links li {
+    display: inline;
+    padding-right: 20px;
+}
+.btn, a:link, button {
+    -webkit-tap-highlight-color: rgba(169,3,41,.5);
+}
+.status .links .fa {
+    color: inherit;
+    font-size: 15px;
+    margin-right: 2px;
+}
+.btn, a:link, button {
+    -webkit-tap-highlight-color: rgba(169,3,41,.5);
+}
+.status .comments {
+    border-top: 1px solid rgba(0,0,0,.07);
+    font-size: 13px;
+    padding: 0 20px;
+}
+.status .comments li {
+    border-bottom: 1px solid rgba(0,0,0,.07);
+    display: block;
+    padding: 15px 0 15px 40px;
+    position: relative;
+}
+.status .comments {
+    border-top: 1px solid rgba(0,0,0,.07);
+    font-size: 13px;
+    padding: 0 20px;
+}
+.status .comments img {
+    height: 30px;
+    left: 0;
+    position: absolute;
+    width: 30px;
+}
+img.online {
+    border-left-color: #40ac2b!important;
+}
+img.away, img.busy, img.offline, img.online {
+    border-left: 3px solid #fff;
+}
+.status .comments .name {
+    display: block;
+    font-weight: 600;
+    opacity: .8;
+}
+.status.panel-body {
+    padding: 0;
+}
+.status .comments {
+    border-top: 1px solid rgba(0,0,0,.07);
+    font-size: 13px;
+    padding: 0 20px;
+}
+.status .comments li:last-child {
+    border-bottom: none;
+    padding-bottom: 5px;
+}
+.status .comments li {
+    border-bottom: 1px solid rgba(0,0,0,.07);
+    display: block;
+    padding: 15px 0 15px 40px;
+    position: relative;
+}
+.status .comments img {
+    height: 30px;
+    left: 0;
+    position: absolute;
+    width: 30px;
+}
+img.online {
+    border-left-color: #0071BD!important;
+}
+img.away, img.busy, img.offline, img.online {
+    border-left: 3px solid #fff;
+}
+
+textarea{
+    resize: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

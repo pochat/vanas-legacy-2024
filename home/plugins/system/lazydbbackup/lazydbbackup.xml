@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="system"  method="upgrade">
+  <name>plg_system_lazydbbackup</name>
+  <author>Robert Gastaud - Marc Studer</author>	
+<!--<originalname>LazyBackup</originalname>
+	<originalauthor: Stefan Granholm</originalauthor>
+  	<originalcreationDate>August 7th, 2010</originalcreationDate>-->
+	<creationDate>January 19th, 2012</creationDate>
+  <copyright>GNU General Public License version 2 or later</copyright>
+  <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL 3</license>
+  <authorEmail>rg-consultant@robertg-conseil.fr</authorEmail>
+  <authorUrl>www.joomxtensions.com</authorUrl>
+  <version>2.5.0a</version>
+  <description>PLG_LAZYDBBKP_XML_DESCRIPTION</description>
+	<files>
+		<folder>language</folder>
+		<folder>lazydbbackup</folder>
+		<filename plugin="lazydbbackup">lazydbbackup.php</filename>
+		<filename>index.html</filename>
+	</files> 
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_lazydbbackup.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_lazydbbackup.sys.ini</language>
+		<language tag="fr-FR">language/fr-FR/fr-FR.plg_system_lazydbbackup.ini</language>
+		<language tag="fr-FR">language/fr-FR/fr-FR.plg_system_lazydbbackup.sys.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.plg_system_lazydbbackup.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.plg_system_lazydbbackup.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="site_only" type="radio" 
+					default="1" 
+					label="PLG_LAZYDBBKP_SITE_ONLY" 
+					description="PLG_LAZYDBBKP_SITE_ONLY_DESC"
+				>
+					<option 
+						value="0">PLG_LAZYDBBKP_NO</option>
+					<option 
+						value="1">PLG_LAZYDBBKP_YES</option>
+				</field>
+				<field	name="compress" type="radio" 
+					default="1" 
+					label="PLG_LAZYDBBKP_COMPRESS"
+					description="PLG_LAZYDBBKP_COMPRESS_DESC"
+				>
+					<option 
+						value="0">PLG_LAZYDBBKP_NO</option>
+					<option 
+						value="1">PLG_LAZYDBBKP_YES</option>
+				</field>
+		
+				<field name="drop_tables" type="radio" 
+					default="1" 
+					label="PLG_LAZYDBBKP_ADD_DROP_TABLE_IF_EXISTS"
+					description="PLG_LAZYDBBKP_ADD_DROP_TABLE_DESC"
+				>
+					<option 
+						value="0">PLG_LAZYDBBKP_NO</option>
+					<option 
+						value="1">PLG_LAZYDBBKP_YES</option>
+				</field>
+				
+				<field name="create_tables" type="radio" 
+					default="1" 
+					label="PLG_LAZYDBBKP_TABLE_STRUCTURE" 
+					description="PLG_LAZYDBBKP_TABLE_STRUCTURE_DESC"
+				>
+					<option 
+						value="0">PLG_LAZYDBBKP_NO</option>
+					<option 
+						value="1">PLG_LAZYDBBKP_YES</option>
+				</field>
+				<field name="struct_only" type="radio" 
+					default="0"
+					label="PLG_LAZYDBBKP_ONLY_STRUCTURE" 
+					description="PLG_LAZYDBBKP_ONLY_STRUCTURE_DESC"
+				>
+					<option 
+						value="0">PLG_LAZYDBBKP_NO</option>
+					<option 
+						value="1">PLG_LAZYDBBKP_YES</option>
+				</field>
+				
+				<field name="locks" type="radio" 
+					default="0" 
+					label="PLG_LAZYDBBKP_ADD_LOCK_TABLES"
+					description="PLG_LAZYDBBKP_ADD_LOCK_TABLES_DESC"
+				>
+					<option 
+					value="0">PLG_LAZYDBBKP_NO</option>
+					<option 
+					value="1">PLG_LAZYDBBKP_YES</option>
+				</field>
+				
+				<field name="foreign_key" type="radio" 
+					default="1" 
+					label="PLG_LAZYDBBKP_FOREIGN_KEY" 
+					description="PLG_LAZYDBBKP_FOREIGN_KEY_DESC"
+				>
+					<option 
+						value="0">PLG_LAZYDBBKP_NO</option>
+					<option 
+						value="1">PLG_LAZYDBBKP_YES</option>
+				</field>
+				<field name="comments" type="radio" 
+					default="1" 
+					label="PLG_LAZYDBBKP_INCLUDE_COMMENTS"
+					description="PLG_LAZYDBBKP_INCLUDE_COMMENTS_DESC"
+				>
+					<option 
+						value="0">PLG_LAZYDBBKP_NO</option>
+					<option 
+						value="1">PLG_LAZYDBBKP_YES</option>
+				</field>
+				
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				
+				<field name="xdays" type="text" 
+					default="1" 
+					size="5" 
+					label="PLG_LAZYDBBKP_EVERY_X_DAYS"
+					description="PLG_LAZYDBBKP_EVERY_X_DAYS_DESC"
+				/>
+				
+				<field name="backuptime" type="text" 
+					default="00:00" 
+					size="5" 
+					label="PLG_LAZYDBBKP_BACKUP_TIME"  
+					description="PLG_LAZYDBBKP_BACKUP_TIME_DESC"
+				/>
+				
+				<field name="backupfreq" type="text" 
+					default="1" 
+					size="5" 
+					label="PLG_LAZYDBBKP_BACKUP_X_TIMES_A_DAY"
+					description="PLG_LAZYDBBKP_BACKUP_X_TIMES_A_DAY_DESC"
+				/>
+				
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				
+				
+				<field name="backuppath" type="text" 
+					default="/media" 
+					size="40" 
+					label="PLG_LAZYDBBKP_BACKUP_PATH" 
+					description="PLG_LAZYDBBKP_BACKUP_PATH_DESC"
+				/>
+				
+				
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				
+				<field name="encrypt" type="radio" 
+					default="0" 
+					label="PLG_LAZYDBBKP_ENCRYPT"
+					description="PLG_LAZYDBBKP_ENCRYPT_DESC"
+				>
+					<option 
+						value="0">PLG_LAZYDBBKP_NO</option>
+					<option 
+						value="1">PLG_LAZYDBBKP_YES</option>
+				</field>
+				
+				<field name="password" type="password" 
+					default="" 
+					size="40" 
+					label="PLG_LAZYDBBKP_PASSWORD_FOR_ENCRYPTION" 
+					description="PLG_LAZYDBBKP_PASSWORD_FOR_ENCRYPTION_DESC"
+				/>
+				
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				
+				<field name="name_format" type="radio" 
+					default="0" 
+					label="PLG_LAZYDBBKP_FILE_NAME_FORMAT"
+					description="PLG_LAZYDBBKP_FILE_NAME_FORMAT_DESC" 
+				>
+					<option 
+						value="0">S.D.R</option>
+					<option 
+						value="1">D.S.R</option>
+				</field>
+				
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				
+				<field name="test" type="radio" 
+					default="0" 
+					label="PLG_LAZYDBBKP_BACKUP_ON_ADMIN_REFRESH"
+					description="PLG_LAZYDBBKP_BACKUP_ON_ADMIN_REFRESH_DESC"
+				>
+					<option 
+						value="0">PLG_LAZYDBBKP_NO</option>
+					<option 
+						value="1">PLG_LAZYDBBKP_YES</option>
+				</field>
+				
+				<field name="@spacer" type="spacer" default="-" label="" description="" />
+				
+				<field name="sendmail" type="radio" 
+					default="1" 
+					label="PLG_LAZYDBBKP_SENDMAIL"
+					description="PLG_LAZYDBBKP_SENDMAIL_DESC"
+				>
+					<option 
+						value="0">PLG_LAZYDBBKP_NO</option>
+					<option 
+						value="1">PLG_LAZYDBBKP_YES</option>
+				</field>
+
+				<field name="recipient" type="text" 
+					default="" 
+					size="40" 
+					label="PLG_LAZYDBBKP_TO_EMAIL"
+					description="PLG_LAZYDBBKP_TO_EMAIL_DESC" 
+				/>
+				
+				<field name="subject" type="text" 
+					default="Database backup" 
+					size="40" 
+					label="PLG_LAZYDBBKP_SUBJECT"
+					description="PLG_LAZYDBBKP_SUBJECT_DESC"
+				/>
+				
+				<field name="body" type="text" 
+					default="Your database is attached in this mail." 
+					size="40" 
+					label="PLG_LAZYDBBKP_BODY" 
+					description="PLG_LAZYDBBKP_BODY_DESC"
+				/>
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>

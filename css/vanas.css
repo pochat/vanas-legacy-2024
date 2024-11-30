@@ -1,0 +1,295 @@
+@font-face {
+	font-family: "Charcoal";
+	src: url(fonts/charcoal.ttf) format("truetype");
+}
+
+.site_background{
+	background: #EFF2F3;
+}
+
+.outline{
+	background: #0C2137;
+	color: #0681C7;
+}
+/*****************
+.outline_top{
+	background-image: url(../images/outline_top.jpg);
+}
+
+.outline_left{
+	background-image: url(../images/outline_left.jpg);
+}
+
+.outline_right{
+	background-image: url(../images/outline_right.jpg);
+}
+
+.outline_bottom{
+	background-image: url(../images/outline_bottom.jpg);
+  color: #0681C7;
+}
+*/
+.title{
+	background-image: url(../images/title_bar.jpg);
+	color: #FFFFFF;
+	font-family: "Times New Roman";
+	font-size: 18px;
+	font-weight: bold;
+	text-align: right;
+}
+
+.announcement_top{
+	background-image: url(../images/announcement_top_bar.jpg);
+}
+
+.announcement_bottom{
+	background-image: url(../images/announcement_bottom_bar.jpg);
+}
+
+.menu {
+	background-image: url(../images/menu_bar.jpg);
+	padding-top: 0px;
+	padding-left: 0px;
+	
+}
+
+li {
+	line-height: 130%
+}
+
+h2 {
+	padding-top: 10px;
+	padding-left: 15px;
+	color: #FFFFFF;
+	font-family: Charcoal;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+a  {
+	text-decoration: none;
+  color: #888888;
+}
+
+a:visited  {
+	text-decoration: none;
+  color: #888888;
+}
+
+a:hover {
+  color: #3399cc;
+}
+
+ul.links_menu {
+	list-style-type: none;
+}
+
+a.links_menu {
+	color: #003263;
+	font-family: Helvetica;
+	font-size: 15px;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+a:hover.links_menu {
+	color: #3399cc;
+}
+
+a:visited.links_menu {
+	text-decoration: none;
+}
+
+a.links_menu_act {
+	color: #3399cc;
+	font-family: Charcoal;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+a:hover.links_menu_act {
+	color: #3399cc;
+}
+
+a:visited.links_menu_act {
+	text-decoration: none;
+}
+
+ul.links_submenu {
+	list-style-type: none;
+}
+
+a.links_submenu {
+	color: #013264;
+	font-family: Charcoal;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+a:hover.links_submenu {
+	color: #3399cc;
+}
+
+a:visited.links_submenu {
+	text-decoration: none;
+}
+
+a.links_submenu_act {
+	color: #3399cc;
+	font-family: Charcoal;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+a:hover.links_submenu_act {
+	color: #3399cc;
+}
+
+a:visited.links_submenu_act {
+	text-decoration: none;
+}
+
+.news{
+	background-image: url(../images/home_news.jpg);
+	color: #3B3836;
+	font-family: Tahoma;
+	font-size: 14px;
+	text-align: justify;
+}
+
+a.links_news {
+	color: #045888;
+	font-family: Charcoal;
+	font-size: 13px;
+	font-weight: lighter;
+  text-decoration: none;
+}
+
+a:hover.links_news {
+	color: #990000;
+}
+
+a:visited.links_news {
+	text-decoration: none;
+}
+
+b {
+	color: #ff9933;
+	font-family: Tahoma;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;	
+}
+
+.newsletter_back {
+  background-image: url(../images/announcement_bottom_bar.jpg);
+}
+
+.newsletter {
+  color: #000000;
+	font-family: Helvetica;
+	font-size: 15px;
+}
+
+.app_form {
+	color: #3B3836;
+	font-family: Tahoma;
+	font-size: 14px;
+	list-style-image: none;
+	list-style-type: decimal;
+}
+
+.content {
+	background-image: url(../images/content.jpg);
+	color: #3B3836;
+	font-family: Tahoma;
+	font-size: 14px;
+	list-style-image: none;
+	list-style-type: decimal;
+}
+
+.content_sidebar {
+	color: #3B3836;
+	font-family: Tahoma;
+	font-size: 12px;
+}
+
+.login {
+	color: #3B3836;
+	font-family: Tahoma;
+	font-size: 13px;
+}
+
+.login_err {
+	color: RED;
+	font-family: Tahoma;
+	font-size: 13px;
+}
+
+.footer_bar {
+	background-image: url(../images/footer_bar.jpg);
+
+}
+
+a.footer_menu {
+	padding-right: 10px;
+	padding-left: 10px;
+	color: #ffffff;
+	font-family: Helvetica;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+a:hover.footer_menu {
+	color: #990000;
+}
+
+a:visited.footer_menu {
+	text-decoration: none;
+}
+
+a.bottom_links{
+	color: #0681C7;
+	padding-right: 5px;
+	padding-left: 5px;
+	font-family: Helvetica;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+a:hover.bottom_links {
+	color: #990000;
+}
+
+a:visited.bottom_links {
+	text-decoration: none;
+}
+
+.css_default { COLOR: #3B3836; FONT-FAMILY: Tahoma; FONT-SIZE: 14px;}
+.css_input { COLOR: #3B3836; FONT-FAMILY: Tahoma; FONT-SIZE: 14px;}
+.css_input_error { COLOR: #3B3836; FONT-FAMILY: Tahoma; FONT-SIZE: 14px; BORDER-STYLE: Solid; BORDER-COLOR: Red;}
+.css_etq_texto { COLOR: MidnightBlue; FONT-FAMILY: Arial, Verdana, Tahoma, Helvetica, sans-serif; FONT-SIZE: 14px;}
+.css_msg_error { COLOR: Red; FONT-FAMILY: Tahoma; FONT-SIZE: 14px;}
+
+#buttons {
+	border-width: 2px;
+	padding: 3px;
+	font-family: Tahoma;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.row_highlight_1 {
+	background: #F6F6F6;
+}
+
+.row_highlight_2 {
+	background: #EFEFEF;
+}
+
+.css_faculty {
+	color: #3B3836;
+	font-family: Tahoma;
+	font-size: 11px;
+  text-align: center;
+}
