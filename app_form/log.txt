@@ -1,0 +1,442 @@
+
+August 29, 2023, 7:59 pm1-INSERT INTO c_sesion (cl_sesion, fg_app_1,fl_pais_campus, fe_ultmod) VALUES ('fae7e55776e9bdea0f4e89da9a9b5400655ac2a26d04759a8da74fb241262cca', '1',105, CURRENT_TIMESTAMP)
+August 29, 2023, 7:59 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=53 AND fl_pais=105 
+August 29, 2023, 7:59 pm9-UPDATE k_ses_app_frm_1 SET fl_programa=53, fl_periodo=97 WHERE cl_sesion='fae7e55776e9bdea0f4e89da9a9b5400655ac2a26d04759a8da74fb241262cca' 
+August 29, 2023, 7:59 pmclass-SELECT CONCAT(
+                                CASE WHEN cl_dia='1'THEN 'Monday(s)'
+                                WHEN cl_dia='2'THEN 'Tuesday(s)'
+                                WHEN cl_dia='3'THEN 'Wednesday(s)'
+                                WHEN cl_dia='4'THEN 'Thursday(s)'
+                                WHEN cl_dia='5'THEN 'Friday(s)'
+                                WHEN cl_dia='6'THEN 'Saturday(s)'
+                                ELSE 'Sunday(s)'
+                                END,' ',no_hora,' ',ds_tiempo,'') FROM k_class_time_programa WHERE fl_class_time=373 
+August 29, 2023, 8:01 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=105,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='fae7e55776e9bdea0f4e89da9a9b5400655ac2a26d04759a8da74fb241262cca'
+August 29, 2023, 8:01 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=53 AND fl_pais=105 
+August 29, 2023, 8:01 pm9-UPDATE k_ses_app_frm_1 SET fl_programa=53, fl_periodo=97 WHERE cl_sesion='fae7e55776e9bdea0f4e89da9a9b5400655ac2a26d04759a8da74fb241262cca' ....no_contratos->0
+August 29, 2023, 8:01 pmclass-SELECT CONCAT(
+                                CASE WHEN cl_dia='1'THEN 'Monday(s)'
+                                WHEN cl_dia='2'THEN 'Tuesday(s)'
+                                WHEN cl_dia='3'THEN 'Wednesday(s)'
+                                WHEN cl_dia='4'THEN 'Thursday(s)'
+                                WHEN cl_dia='5'THEN 'Friday(s)'
+                                WHEN cl_dia='6'THEN 'Saturday(s)'
+                                ELSE 'Sunday(s)'
+                                END,' ',no_hora,' ',ds_tiempo,'') FROM k_class_time_programa WHERE fl_class_time=373 
+August 29, 2023, 8:04 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=105,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='fae7e55776e9bdea0f4e89da9a9b5400655ac2a26d04759a8da74fb241262cca'
+August 29, 2023, 8:04 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=53 AND fl_pais=105 
+August 29, 2023, 8:04 pm8-INSERT INTO k_app_contrato (cl_sesion, no_contrato, mn_app_fee, mn_tuition, mn_costs, ds_costs, mn_tot_tuition, mn_tot_program, mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, ds_p_name, ds_education_number, ds_usual_name, no_weeks,fg_payment ) VALUES('fae7e55776e9bdea0f4e89da9a9b5400655ac2a26d04759a8da74fb241262cca', 1, 120.00, 18400.00, 0.00, '', 18400, 18520, 18400.00, 18400.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, '', '',  '', 0,'O' ) 
+August 29, 2023, 8:04 pm9-UPDATE k_ses_app_frm_1 SET fl_programa=53, fl_periodo=97 WHERE cl_sesion='fae7e55776e9bdea0f4e89da9a9b5400655ac2a26d04759a8da74fb241262cca' ....no_contratos->1
+August 29, 2023, 8:04 pmclass-SELECT CONCAT(
+                                CASE WHEN cl_dia='1'THEN 'Monday(s)'
+                                WHEN cl_dia='2'THEN 'Tuesday(s)'
+                                WHEN cl_dia='3'THEN 'Wednesday(s)'
+                                WHEN cl_dia='4'THEN 'Thursday(s)'
+                                WHEN cl_dia='5'THEN 'Friday(s)'
+                                WHEN cl_dia='6'THEN 'Saturday(s)'
+                                ELSE 'Sunday(s)'
+                                END,' ',no_hora,' ',ds_tiempo,'') FROM k_class_time_programa WHERE fl_class_time=373 
+August 31, 2023, 10:57 am1-INSERT INTO c_sesion (cl_sesion, fg_app_1,fl_pais_campus, fe_ultmod) VALUES ('b42d34ad6772cc1cd1392f73f996680a7cc23f573f514dbc229e20d82bff4876', '1',105, CURRENT_TIMESTAMP)
+August 31, 2023, 10:57 am6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=53 AND fl_pais=105 
+August 31, 2023, 10:57 am8-INSERT INTO k_app_contrato (cl_sesion, no_contrato, mn_app_fee, mn_tuition, mn_costs, ds_costs, mn_tot_tuition, mn_tot_program, mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, ds_p_name, ds_education_number, ds_usual_name, no_weeks,fg_payment ) VALUES('b42d34ad6772cc1cd1392f73f996680a7cc23f573f514dbc229e20d82bff4876', 1, 120.00, 18400.00, 0.00, '', 18400, 18520, 18400.00, 18400.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, '', '',  '', 0,'O' ) 
+August 31, 2023, 10:57 am9-UPDATE k_ses_app_frm_1 SET fl_programa=53, fl_periodo=97 WHERE cl_sesion='b42d34ad6772cc1cd1392f73f996680a7cc23f573f514dbc229e20d82bff4876' ....no_contratos->1
+August 31, 2023, 10:57 amclass-SELECT CONCAT(
+                                CASE WHEN cl_dia='1'THEN 'Monday(s)'
+                                WHEN cl_dia='2'THEN 'Tuesday(s)'
+                                WHEN cl_dia='3'THEN 'Wednesday(s)'
+                                WHEN cl_dia='4'THEN 'Thursday(s)'
+                                WHEN cl_dia='5'THEN 'Friday(s)'
+                                WHEN cl_dia='6'THEN 'Saturday(s)'
+                                ELSE 'Sunday(s)'
+                                END,' ',no_hora,' ',ds_tiempo,'') FROM k_class_time_programa WHERE fl_class_time=373 
+August 31, 2023, 10:58 am1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=105,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='b42d34ad6772cc1cd1392f73f996680a7cc23f573f514dbc229e20d82bff4876'
+August 31, 2023, 10:58 am6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='b42d34ad6772cc1cd1392f73f996680a7cc23f573f514dbc229e20d82bff4876') AND fl_pais=105 
+August 31, 2023, 10:58 am7-UPDATE k_app_contrato SET  ds_p_name='previus', ds_education_number='student', ds_usual_name='usual' WHERE cl_sesion='b42d34ad6772cc1cd1392f73f996680a7cc23f573f514dbc229e20d82bff4876' 
+August 31, 2023, 12:00 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=105,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='57a51f3fe0eb2f17353721bd3dcc9a8c92fb7de1f4417015ea75a4f6ef673271'
+August 31, 2023, 12:00 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='57a51f3fe0eb2f17353721bd3dcc9a8c92fb7de1f4417015ea75a4f6ef673271') AND fl_pais=105 
+September 5, 2023, 1:56 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=105,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='57a51f3fe0eb2f17353721bd3dcc9a8c92fb7de1f4417015ea75a4f6ef673271'
+September 5, 2023, 1:56 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='57a51f3fe0eb2f17353721bd3dcc9a8c92fb7de1f4417015ea75a4f6ef673271') AND fl_pais=105 
+September 5, 2023, 2:06 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=105,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='57a51f3fe0eb2f17353721bd3dcc9a8c92fb7de1f4417015ea75a4f6ef673271'
+September 5, 2023, 2:06 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='57a51f3fe0eb2f17353721bd3dcc9a8c92fb7de1f4417015ea75a4f6ef673271') AND fl_pais=105 
+September 5, 2023, 2:08 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=105,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='57a51f3fe0eb2f17353721bd3dcc9a8c92fb7de1f4417015ea75a4f6ef673271'
+September 5, 2023, 2:08 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='57a51f3fe0eb2f17353721bd3dcc9a8c92fb7de1f4417015ea75a4f6ef673271') AND fl_pais=105 
+September 5, 2023, 2:11 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=105,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='57a51f3fe0eb2f17353721bd3dcc9a8c92fb7de1f4417015ea75a4f6ef673271'
+September 5, 2023, 2:11 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='57a51f3fe0eb2f17353721bd3dcc9a8c92fb7de1f4417015ea75a4f6ef673271') AND fl_pais=105 
+September 5, 2023, 2:13 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=105,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='57a51f3fe0eb2f17353721bd3dcc9a8c92fb7de1f4417015ea75a4f6ef673271'
+September 5, 2023, 2:13 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='57a51f3fe0eb2f17353721bd3dcc9a8c92fb7de1f4417015ea75a4f6ef673271') AND fl_pais=105 
+September 5, 2023, 2:19 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=105,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='57a51f3fe0eb2f17353721bd3dcc9a8c92fb7de1f4417015ea75a4f6ef673271'
+September 5, 2023, 2:19 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='57a51f3fe0eb2f17353721bd3dcc9a8c92fb7de1f4417015ea75a4f6ef673271') AND fl_pais=105 
+September 5, 2023, 2:21 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=105,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='57a51f3fe0eb2f17353721bd3dcc9a8c92fb7de1f4417015ea75a4f6ef673271'
+September 5, 2023, 2:21 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='57a51f3fe0eb2f17353721bd3dcc9a8c92fb7de1f4417015ea75a4f6ef673271') AND fl_pais=105 
+September 5, 2023, 2:24 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=105,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='57a51f3fe0eb2f17353721bd3dcc9a8c92fb7de1f4417015ea75a4f6ef673271'
+September 5, 2023, 2:24 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='57a51f3fe0eb2f17353721bd3dcc9a8c92fb7de1f4417015ea75a4f6ef673271') AND fl_pais=105 
+September 5, 2023, 2:25 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=105,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='57a51f3fe0eb2f17353721bd3dcc9a8c92fb7de1f4417015ea75a4f6ef673271'
+September 5, 2023, 2:25 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='57a51f3fe0eb2f17353721bd3dcc9a8c92fb7de1f4417015ea75a4f6ef673271') AND fl_pais=105 
+September 5, 2023, 2:29 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=105,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='57a51f3fe0eb2f17353721bd3dcc9a8c92fb7de1f4417015ea75a4f6ef673271'
+September 5, 2023, 2:29 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='57a51f3fe0eb2f17353721bd3dcc9a8c92fb7de1f4417015ea75a4f6ef673271') AND fl_pais=105 
+September 5, 2023, 2:31 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=105,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='57a51f3fe0eb2f17353721bd3dcc9a8c92fb7de1f4417015ea75a4f6ef673271'
+September 5, 2023, 2:31 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='57a51f3fe0eb2f17353721bd3dcc9a8c92fb7de1f4417015ea75a4f6ef673271') AND fl_pais=105 
+September 7, 2023, 3:02 pm1-INSERT INTO c_sesion (cl_sesion, fg_app_1,fl_pais_campus, fe_ultmod) VALUES ('2cb5b8fe1c3007978c0819f934bb3baebda1463d8017e72874becc0d34bdde40', '1',199, CURRENT_TIMESTAMP)
+September 7, 2023, 3:03 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=53 AND fl_pais=199 
+September 7, 2023, 3:03 pm8-INSERT INTO k_app_contrato (cl_sesion, no_contrato, mn_app_fee, mn_tuition, mn_costs, ds_costs, mn_tot_tuition, mn_tot_program, mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, ds_p_name, ds_education_number, ds_usual_name, no_weeks,fg_payment ) VALUES('2cb5b8fe1c3007978c0819f934bb3baebda1463d8017e72874becc0d34bdde40', 1, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '',  '', 0,'O' ) 
+September 7, 2023, 3:03 pm9-UPDATE k_ses_app_frm_1 SET fl_programa=53, fl_periodo=97 WHERE cl_sesion='2cb5b8fe1c3007978c0819f934bb3baebda1463d8017e72874becc0d34bdde40' ....no_contratos->1
+September 7, 2023, 3:03 pmclass-SELECT CONCAT(
+                                CASE WHEN cl_dia='1'THEN 'Monday(s)'
+                                WHEN cl_dia='2'THEN 'Tuesday(s)'
+                                WHEN cl_dia='3'THEN 'Wednesday(s)'
+                                WHEN cl_dia='4'THEN 'Thursday(s)'
+                                WHEN cl_dia='5'THEN 'Friday(s)'
+                                WHEN cl_dia='6'THEN 'Saturday(s)'
+                                ELSE 'Sunday(s)'
+                                END,' ',no_hora,' ',ds_tiempo,'') FROM k_class_time_programa WHERE fl_class_time=373 
+September 7, 2023, 3:06 pm1-INSERT INTO c_sesion (cl_sesion, fg_app_1,fl_pais_campus, fe_ultmod) VALUES ('da3dca009e0205a17931f09415d7d4114f123d1a4634a9dca9ee7f27a14c1d63', '1',199, CURRENT_TIMESTAMP)
+September 7, 2023, 3:06 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=53 AND fl_pais=199 
+September 7, 2023, 3:06 pm8-INSERT INTO k_app_contrato (cl_sesion, no_contrato, mn_app_fee, mn_tuition, mn_costs, ds_costs, mn_tot_tuition, mn_tot_program, mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, ds_p_name, ds_education_number, ds_usual_name, no_weeks,fg_payment ) VALUES('da3dca009e0205a17931f09415d7d4114f123d1a4634a9dca9ee7f27a14c1d63', 1, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '',  '', 0,'O' ) 
+September 7, 2023, 3:06 pm9-UPDATE k_ses_app_frm_1 SET fl_programa=53, fl_periodo=97 WHERE cl_sesion='da3dca009e0205a17931f09415d7d4114f123d1a4634a9dca9ee7f27a14c1d63' ....no_contratos->1
+September 7, 2023, 3:06 pmclass-SELECT CONCAT(
+                                CASE WHEN cl_dia='1'THEN 'Monday(s)'
+                                WHEN cl_dia='2'THEN 'Tuesday(s)'
+                                WHEN cl_dia='3'THEN 'Wednesday(s)'
+                                WHEN cl_dia='4'THEN 'Thursday(s)'
+                                WHEN cl_dia='5'THEN 'Friday(s)'
+                                WHEN cl_dia='6'THEN 'Saturday(s)'
+                                ELSE 'Sunday(s)'
+                                END,' ',no_hora,' ',ds_tiempo,'') FROM k_class_time_programa WHERE fl_class_time=373 
+September 7, 2023, 3:06 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=199,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='da3dca009e0205a17931f09415d7d4114f123d1a4634a9dca9ee7f27a14c1d63'
+September 7, 2023, 3:06 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='da3dca009e0205a17931f09415d7d4114f123d1a4634a9dca9ee7f27a14c1d63') AND fl_pais=199 
+September 7, 2023, 3:06 pm7-UPDATE k_app_contrato SET  ds_p_name='previus', ds_education_number='student', ds_usual_name='usual' WHERE cl_sesion='da3dca009e0205a17931f09415d7d4114f123d1a4634a9dca9ee7f27a14c1d63' 
+December 19, 2023, 12:48 pm1-INSERT INTO c_sesion (cl_sesion, fg_app_1,fl_pais_campus, fe_ultmod) VALUES ('361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c', '1',38, CURRENT_TIMESTAMP)
+December 19, 2023, 12:48 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=53
+December 19, 2023, 12:48 pm8-INSERT INTO k_app_contrato (cl_sesion, no_contrato, mn_app_fee, mn_tuition, mn_costs, ds_costs, mn_tot_tuition, mn_tot_program, mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, ds_p_name, ds_education_number, ds_usual_name, no_weeks,fg_payment ) VALUES('361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c', 1, 125.00, 18500.00, 250.00, 'Fame Learning Resources', 18750, 18875, 18750.00, 18750.00, 10125.00, 20250.00, 5438.00, 21752.00, 0.00, 0.00, '', '',  '', 48,'O' ) 
+December 19, 2023, 12:48 pm9-UPDATE k_ses_app_frm_1 SET fl_programa=53, fl_periodo=105 WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c' ....no_contratos->1
+December 19, 2023, 12:48 pmclass-SELECT CONCAT(
+                                CASE WHEN cl_dia='1'THEN 'Monday(s)'
+                                WHEN cl_dia='2'THEN 'Tuesday(s)'
+                                WHEN cl_dia='3'THEN 'Wednesday(s)'
+                                WHEN cl_dia='4'THEN 'Thursday(s)'
+                                WHEN cl_dia='5'THEN 'Friday(s)'
+                                WHEN cl_dia='6'THEN 'Saturday(s)'
+                                ELSE 'Sunday(s)'
+                                END,' ',no_hora,' ',ds_tiempo,'') FROM k_class_time_programa WHERE fl_class_time=467 
+December 19, 2023, 12:48 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c'
+December 19, 2023, 12:48 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c')
+December 19, 2023, 12:48 pm7-UPDATE k_app_contrato SET  ds_p_name='previus', ds_education_number='student', ds_usual_name='usual' WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c' 
+December 19, 2023, 12:51 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c'
+December 19, 2023, 12:51 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c')
+December 19, 2023, 12:54 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c'
+December 19, 2023, 12:54 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c')
+December 19, 2023, 12:54 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c'
+December 19, 2023, 12:54 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c')
+December 19, 2023, 12:54 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c'
+December 19, 2023, 12:54 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c')
+December 19, 2023, 12:54 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c'
+December 19, 2023, 12:54 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c')
+December 19, 2023, 12:54 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c'
+December 19, 2023, 12:54 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c')
+December 19, 2023, 12:54 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c'
+December 19, 2023, 12:54 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c')
+December 19, 2023, 12:54 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c'
+December 19, 2023, 12:54 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c')
+December 19, 2023, 12:55 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c'
+December 19, 2023, 12:55 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c')
+December 19, 2023, 12:56 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c'
+December 19, 2023, 12:56 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c')
+December 19, 2023, 12:56 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c'
+December 19, 2023, 12:56 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c')
+December 19, 2023, 12:56 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c'
+December 19, 2023, 12:56 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c')
+December 19, 2023, 12:56 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c'
+December 19, 2023, 12:56 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c')
+December 19, 2023, 12:57 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c'
+December 19, 2023, 12:57 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c')
+December 19, 2023, 12:58 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c'
+December 19, 2023, 12:58 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c')
+December 19, 2023, 1:01 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c'
+December 19, 2023, 1:01 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=31
+December 19, 2023, 1:01 pm8-INSERT INTO k_app_contrato (cl_sesion, no_contrato, mn_app_fee, mn_tuition, mn_costs, ds_costs, mn_tot_tuition, mn_tot_program, mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, ds_p_name, ds_education_number, ds_usual_name, no_weeks,fg_payment ) VALUES('361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c', 1, 125.00, 1374.00, 0.00, '', 1374, 1499, 1374.00, 1374.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, '', '',  '', 12,'O' ) 
+December 19, 2023, 1:01 pm9-UPDATE k_ses_app_frm_1 SET fl_programa=31, fl_periodo=105 WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c' ....no_contratos->1
+December 19, 2023, 1:01 pmclass-SELECT CONCAT(
+                                CASE WHEN cl_dia='1'THEN 'Monday(s)'
+                                WHEN cl_dia='2'THEN 'Tuesday(s)'
+                                WHEN cl_dia='3'THEN 'Wednesday(s)'
+                                WHEN cl_dia='4'THEN 'Thursday(s)'
+                                WHEN cl_dia='5'THEN 'Friday(s)'
+                                WHEN cl_dia='6'THEN 'Saturday(s)'
+                                ELSE 'Sunday(s)'
+                                END,' ',no_hora,' ',ds_tiempo,'') FROM k_class_time_programa WHERE fl_class_time=467 
+December 19, 2023, 1:05 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c'
+December 19, 2023, 1:05 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=42
+December 19, 2023, 1:05 pm8-INSERT INTO k_app_contrato (cl_sesion, no_contrato, mn_app_fee, mn_tuition, mn_costs, ds_costs, mn_tot_tuition, mn_tot_program, mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, ds_p_name, ds_education_number, ds_usual_name, no_weeks,fg_payment ) VALUES('361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c', 1, 125.00, 18500.00, 250.00, 'Fame Learning Resources', 18750, 18875, 18750.00, 18750.00, 10125.00, 20250.00, 5438.00, 21752.00, 0.00, 0.00, '', '',  '', 48,'O' ) 
+December 19, 2023, 1:05 pm9-UPDATE k_ses_app_frm_1 SET fl_programa=42, fl_periodo=105 WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c' ....no_contratos->1
+December 19, 2023, 1:05 pmclass-SELECT CONCAT(
+                                CASE WHEN cl_dia='1'THEN 'Monday(s)'
+                                WHEN cl_dia='2'THEN 'Tuesday(s)'
+                                WHEN cl_dia='3'THEN 'Wednesday(s)'
+                                WHEN cl_dia='4'THEN 'Thursday(s)'
+                                WHEN cl_dia='5'THEN 'Friday(s)'
+                                WHEN cl_dia='6'THEN 'Saturday(s)'
+                                ELSE 'Sunday(s)'
+                                END,' ',no_hora,' ',ds_tiempo,'') FROM k_class_time_programa WHERE fl_class_time=475 
+December 19, 2023, 2:47 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c'
+December 19, 2023, 2:47 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c')
+December 19, 2023, 3:30 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c'
+December 19, 2023, 3:30 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c')
+December 19, 2023, 3:30 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=0,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c'
+December 19, 2023, 3:30 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c') AND fl_pais=0 
+December 19, 2023, 3:31 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c'
+December 19, 2023, 3:31 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c')
+December 20, 2023, 12:55 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c'
+December 20, 2023, 12:55 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c')
+December 20, 2023, 3:02 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c'
+December 20, 2023, 3:02 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c')
+December 20, 2023, 3:13 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c'
+December 20, 2023, 3:13 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='361bf197a6390f3002bde0bc25088440f990689c33e354887f948cc75f7c660c')
+December 22, 2023, 12:03 pm1-INSERT INTO c_sesion (cl_sesion, fg_app_1,fl_pais_campus, fe_ultmod) VALUES ('faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641', '1',38, CURRENT_TIMESTAMP)
+December 22, 2023, 12:03 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=65
+December 22, 2023, 12:03 pm8-INSERT INTO k_app_contrato (cl_sesion, no_contrato, mn_app_fee, mn_tuition, mn_costs, ds_costs, mn_tot_tuition, mn_tot_program, mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, ds_p_name, ds_education_number, ds_usual_name, no_weeks,fg_payment ) VALUES('faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641', 1, 125.00, 1374.00, 0.00, '', 1374, 1499, 1374.00, 1374.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, '', '',  '', 12,'O' ) 
+December 22, 2023, 12:04 pm9-UPDATE k_ses_app_frm_1 SET fl_programa=65, fl_periodo=105 WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641' ....no_contratos->1
+December 22, 2023, 12:04 pmclass-SELECT CONCAT(
+                                CASE WHEN cl_dia='1'THEN 'Monday(s)'
+                                WHEN cl_dia='2'THEN 'Tuesday(s)'
+                                WHEN cl_dia='3'THEN 'Wednesday(s)'
+                                WHEN cl_dia='4'THEN 'Thursday(s)'
+                                WHEN cl_dia='5'THEN 'Friday(s)'
+                                WHEN cl_dia='6'THEN 'Saturday(s)'
+                                ELSE 'Sunday(s)'
+                                END,' ',no_hora,' ',ds_tiempo,'') FROM k_class_time_programa WHERE fl_class_time=474 
+December 22, 2023, 12:04 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641'
+December 22, 2023, 12:04 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641')
+December 22, 2023, 12:04 pm7-UPDATE k_app_contrato SET  ds_p_name='prevuis', ds_education_number='student', ds_usual_name='usual' WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641' 
+December 22, 2023, 12:06 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641'
+December 22, 2023, 12:06 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641')
+December 22, 2023, 12:06 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641'
+December 22, 2023, 12:06 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641')
+December 22, 2023, 12:06 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641'
+December 22, 2023, 12:06 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641')
+December 22, 2023, 12:07 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641'
+December 22, 2023, 12:07 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641')
+December 22, 2023, 12:17 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641'
+December 22, 2023, 12:17 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641')
+December 22, 2023, 12:18 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641'
+December 22, 2023, 12:18 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641')
+December 22, 2023, 12:19 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641'
+December 22, 2023, 12:19 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641')
+December 22, 2023, 12:19 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641'
+December 22, 2023, 12:19 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641')
+December 22, 2023, 12:19 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641'
+December 22, 2023, 12:19 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641')
+December 22, 2023, 12:20 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641'
+December 22, 2023, 12:20 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641')
+December 22, 2023, 12:20 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641'
+December 22, 2023, 12:20 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641')
+December 22, 2023, 12:20 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641'
+December 22, 2023, 12:20 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641')
+December 22, 2023, 12:21 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641'
+December 22, 2023, 12:21 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641')
+December 22, 2023, 12:21 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641'
+December 22, 2023, 12:21 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641')
+December 22, 2023, 12:21 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641'
+December 22, 2023, 12:21 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641')
+December 22, 2023, 12:36 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641'
+December 22, 2023, 12:36 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=65
+December 22, 2023, 12:36 pm8-INSERT INTO k_app_contrato (cl_sesion, no_contrato, mn_app_fee, mn_tuition, mn_costs, ds_costs, mn_tot_tuition, mn_tot_program, mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, ds_p_name, ds_education_number, ds_usual_name, no_weeks,fg_payment ) VALUES('faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641', 1, 125.00, 1374.00, 250.00, 'Fame Learning Resources', 1624, 1749, 1624.00, 1624.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, '', '',  '', 12,'O' ) 
+December 22, 2023, 12:36 pm9-UPDATE k_ses_app_frm_1 SET fl_programa=65, fl_periodo=105 WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641' ....no_contratos->1
+December 22, 2023, 12:36 pmclass-SELECT CONCAT(
+                                CASE WHEN cl_dia='1'THEN 'Monday(s)'
+                                WHEN cl_dia='2'THEN 'Tuesday(s)'
+                                WHEN cl_dia='3'THEN 'Wednesday(s)'
+                                WHEN cl_dia='4'THEN 'Thursday(s)'
+                                WHEN cl_dia='5'THEN 'Friday(s)'
+                                WHEN cl_dia='6'THEN 'Saturday(s)'
+                                ELSE 'Sunday(s)'
+                                END,' ',no_hora,' ',ds_tiempo,'') FROM k_class_time_programa WHERE fl_class_time=474 
+December 22, 2023, 12:43 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641'
+December 22, 2023, 12:43 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641')
+December 22, 2023, 12:43 pm7-UPDATE k_app_contrato SET  ds_p_name='prevuis', ds_education_number='student', ds_usual_name='usual' WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641' 
+December 22, 2023, 12:43 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641'
+December 22, 2023, 12:43 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641')
+December 22, 2023, 12:45 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641'
+December 22, 2023, 12:45 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='faa1670ff7345310cf840d2e3e50c94b57ac806242d0170fc1c5dfbe05261641')
+January 12, 2024, 2:26 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='642e663c614c77b6085cf485a9f80b8b12087be23eedf1e8b097e56553c86c08'
+January 12, 2024, 2:26 pm6-SELECT mn_app_fee_combined, mn_tuition_combined, mn_costs_combined, ds_costs_combined,  mn_a_due_combined, mn_a_paid_combined, mn_b_due_combined, mn_b_paid_combined, mn_c_due_combined, mn_c_paid_combined, mn_d_due_combined, mn_d_paid_combined, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='642e663c614c77b6085cf485a9f80b8b12087be23eedf1e8b097e56553c86c08')
+January 24, 2024, 11:26 am1-INSERT INTO c_sesion (cl_sesion, fg_app_1,fl_pais_campus, fe_ultmod) VALUES ('fe15af773e6798afd6b86fdaf9c5816013871df71616681cd1401a0aec3b878f', '1',38, CURRENT_TIMESTAMP)
+January 24, 2024, 11:27 am6-SELECT mn_app_fee_combined, mn_tuition_combined, mn_costs_combined, ds_costs_combined,  mn_a_due_combined, mn_a_paid_combined, mn_b_due_combined, mn_b_paid_combined, mn_c_due_combined, mn_c_paid_combined, mn_d_due_combined, mn_d_paid_combined, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=42
+January 24, 2024, 11:27 am8-INSERT INTO k_app_contrato (cl_sesion, no_contrato, mn_app_fee, mn_tuition, mn_costs, ds_costs, mn_tot_tuition, mn_tot_program, mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, ds_p_name, ds_education_number, ds_usual_name, no_weeks,fg_payment ) VALUES('fe15af773e6798afd6b86fdaf9c5816013871df71616681cd1401a0aec3b878f', 1, 125.00, 24500.00, 250.00, 'Fame Learning Resources', 24750, 24875, 24750.00, 24750.00, 13365.00, 26730.00, 7177.00, 28708.00, 0.00, 0.00, '', '',  '', 48,'C' ) 
+January 24, 2024, 11:27 am9-UPDATE k_ses_app_frm_1 SET fl_programa=42, fl_periodo=101 WHERE cl_sesion='fe15af773e6798afd6b86fdaf9c5816013871df71616681cd1401a0aec3b878f' ....no_contratos->1
+January 24, 2024, 11:27 amclass-SELECT CONCAT(
+                                CASE WHEN cl_dia='1'THEN 'Monday(s)'
+                                WHEN cl_dia='2'THEN 'Tuesday(s)'
+                                WHEN cl_dia='3'THEN 'Wednesday(s)'
+                                WHEN cl_dia='4'THEN 'Thursday(s)'
+                                WHEN cl_dia='5'THEN 'Friday(s)'
+                                WHEN cl_dia='6'THEN 'Saturday(s)'
+                                ELSE 'Sunday(s)'
+                                END,' ',no_hora,' ',ds_tiempo,'') FROM k_class_time_programa WHERE fl_class_time=481 
+January 24, 2024, 11:27 am1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='fe15af773e6798afd6b86fdaf9c5816013871df71616681cd1401a0aec3b878f'
+January 24, 2024, 11:27 am6-SELECT mn_app_fee_combined, mn_tuition_combined, mn_costs_combined, ds_costs_combined,  mn_a_due_combined, mn_a_paid_combined, mn_b_due_combined, mn_b_paid_combined, mn_c_due_combined, mn_c_paid_combined, mn_d_due_combined, mn_d_paid_combined, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='fe15af773e6798afd6b86fdaf9c5816013871df71616681cd1401a0aec3b878f')
+January 24, 2024, 11:27 am7-UPDATE k_app_contrato SET  ds_p_name='prevuis', ds_education_number='STUDENET', ds_usual_name='USUAL' WHERE cl_sesion='fe15af773e6798afd6b86fdaf9c5816013871df71616681cd1401a0aec3b878f' 
+January 24, 2024, 1:31 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='e3d6ad082f788fd6bbb539a5b165203d63d8a89fb89f7726fa6fff3c709e3eec'
+January 24, 2024, 1:31 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='e3d6ad082f788fd6bbb539a5b165203d63d8a89fb89f7726fa6fff3c709e3eec')
+January 24, 2024, 1:35 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='e3d6ad082f788fd6bbb539a5b165203d63d8a89fb89f7726fa6fff3c709e3eec'
+January 24, 2024, 1:35 pm6-SELECT mn_app_fee_internacional, mn_tuition_internacional, mn_costs_internacional, ds_costs_internacional,  mn_a_due_internacional, mn_a_paid_internacional, mn_b_due_internacional, mn_b_paid_internacional, mn_c_due_internacional, mn_c_paid_internacional, mn_d_due_internacional, mn_d_paid_internacional, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='e3d6ad082f788fd6bbb539a5b165203d63d8a89fb89f7726fa6fff3c709e3eec')
+January 24, 2024, 2:28 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='e3d6ad082f788fd6bbb539a5b165203d63d8a89fb89f7726fa6fff3c709e3eec'
+January 24, 2024, 2:28 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=42
+January 24, 2024, 2:28 pm8-INSERT INTO k_app_contrato (cl_sesion, no_contrato, mn_app_fee, mn_tuition, mn_costs, ds_costs, mn_tot_tuition, mn_tot_program, mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, ds_p_name, ds_education_number, ds_usual_name, no_weeks,fg_payment ) VALUES('e3d6ad082f788fd6bbb539a5b165203d63d8a89fb89f7726fa6fff3c709e3eec', 1, 125.00, 18500.00, 250.00, 'Fame Learning Resources', 18750, 18875, 18750.00, 18750.00, 10125.00, 20250.00, 5438.00, 21752.00, 0.00, 0.00, '', '',  '', 48,'O' ) 
+January 24, 2024, 2:28 pm9-UPDATE k_ses_app_frm_1 SET fl_programa=42, fl_periodo=109 WHERE cl_sesion='e3d6ad082f788fd6bbb539a5b165203d63d8a89fb89f7726fa6fff3c709e3eec' ....no_contratos->1
+January 24, 2024, 2:28 pmclass-SELECT CONCAT(
+                                CASE WHEN cl_dia='1'THEN 'Monday(s)'
+                                WHEN cl_dia='2'THEN 'Tuesday(s)'
+                                WHEN cl_dia='3'THEN 'Wednesday(s)'
+                                WHEN cl_dia='4'THEN 'Thursday(s)'
+                                WHEN cl_dia='5'THEN 'Friday(s)'
+                                WHEN cl_dia='6'THEN 'Saturday(s)'
+                                ELSE 'Sunday(s)'
+                                END,' ',no_hora,' ',ds_tiempo,'') FROM k_class_time_programa WHERE fl_class_time=576 
+January 24, 2024, 3:36 pm1-INSERT INTO c_sesion (cl_sesion, fg_app_1,fl_pais_campus, fe_ultmod) VALUES ('0aab3bb5d7254c5c4717e05303c2c800ea5727a7f96f54c559635e97061b18c7', '1',38, CURRENT_TIMESTAMP)
+January 24, 2024, 3:36 pm6-SELECT mn_app_fee_combined, mn_tuition_combined, mn_costs_combined, ds_costs_combined,  mn_a_due_combined, mn_a_paid_combined, mn_b_due_combined, mn_b_paid_combined, mn_c_due_combined, mn_c_paid_combined, mn_d_due_combined, mn_d_paid_combined, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=42
+January 24, 2024, 3:36 pm8-INSERT INTO k_app_contrato (cl_sesion, no_contrato, mn_app_fee, mn_tuition, mn_costs, ds_costs, mn_tot_tuition, mn_tot_program, mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, ds_p_name, ds_education_number, ds_usual_name, no_weeks,fg_payment ) VALUES('0aab3bb5d7254c5c4717e05303c2c800ea5727a7f96f54c559635e97061b18c7', 1, 125.00, 24500.00, 250.00, 'Fame Learning Resources', 24750, 24875, 24750.00, 24750.00, 13365.00, 26730.00, 7177.00, 28708.00, 0.00, 0.00, '', '',  '', 48,'C' ) 
+January 24, 2024, 3:36 pm9-UPDATE k_ses_app_frm_1 SET fl_programa=42, fl_periodo=101 WHERE cl_sesion='0aab3bb5d7254c5c4717e05303c2c800ea5727a7f96f54c559635e97061b18c7' ....no_contratos->1
+January 24, 2024, 3:36 pmclass-SELECT CONCAT(
+                                CASE WHEN cl_dia='1'THEN 'Monday(s)'
+                                WHEN cl_dia='2'THEN 'Tuesday(s)'
+                                WHEN cl_dia='3'THEN 'Wednesday(s)'
+                                WHEN cl_dia='4'THEN 'Thursday(s)'
+                                WHEN cl_dia='5'THEN 'Friday(s)'
+                                WHEN cl_dia='6'THEN 'Saturday(s)'
+                                ELSE 'Sunday(s)'
+                                END,' ',no_hora,' ',ds_tiempo,'') FROM k_class_time_programa WHERE fl_class_time=481 
+January 24, 2024, 3:36 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='0aab3bb5d7254c5c4717e05303c2c800ea5727a7f96f54c559635e97061b18c7'
+January 24, 2024, 3:36 pm6-SELECT mn_app_fee_combined, mn_tuition_combined, mn_costs_combined, ds_costs_combined,  mn_a_due_combined, mn_a_paid_combined, mn_b_due_combined, mn_b_paid_combined, mn_c_due_combined, mn_c_paid_combined, mn_d_due_combined, mn_d_paid_combined, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='0aab3bb5d7254c5c4717e05303c2c800ea5727a7f96f54c559635e97061b18c7')
+January 24, 2024, 3:36 pm7-UPDATE k_app_contrato SET  ds_p_name='prevuis', ds_education_number='student', ds_usual_name='usual' WHERE cl_sesion='0aab3bb5d7254c5c4717e05303c2c800ea5727a7f96f54c559635e97061b18c7' 
+January 24, 2024, 3:53 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='0aab3bb5d7254c5c4717e05303c2c800ea5727a7f96f54c559635e97061b18c7'
+January 24, 2024, 3:53 pm6-SELECT mn_app_fee_combined, mn_tuition_combined, mn_costs_combined, ds_costs_combined,  mn_a_due_combined, mn_a_paid_combined, mn_b_due_combined, mn_b_paid_combined, mn_c_due_combined, mn_c_paid_combined, mn_d_due_combined, mn_d_paid_combined, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=42
+January 24, 2024, 3:53 pm8-INSERT INTO k_app_contrato (cl_sesion, no_contrato, mn_app_fee, mn_tuition, mn_costs, ds_costs, mn_tot_tuition, mn_tot_program, mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, ds_p_name, ds_education_number, ds_usual_name, no_weeks,fg_payment ) VALUES('0aab3bb5d7254c5c4717e05303c2c800ea5727a7f96f54c559635e97061b18c7', 1, 125.00, 24500.00, 250.00, 'Fame Learning Resources', 24750, 24875, 24750.00, 24750.00, 13365.00, 26730.00, 7177.00, 28708.00, 0.00, 0.00, '', '',  '', 48,'C' ) 
+January 24, 2024, 3:53 pm9-UPDATE k_ses_app_frm_1 SET fl_programa=42, fl_periodo=101 WHERE cl_sesion='0aab3bb5d7254c5c4717e05303c2c800ea5727a7f96f54c559635e97061b18c7' ....no_contratos->1
+January 24, 2024, 3:53 pmclass-SELECT CONCAT(
+                                CASE WHEN cl_dia='1'THEN 'Monday(s)'
+                                WHEN cl_dia='2'THEN 'Tuesday(s)'
+                                WHEN cl_dia='3'THEN 'Wednesday(s)'
+                                WHEN cl_dia='4'THEN 'Thursday(s)'
+                                WHEN cl_dia='5'THEN 'Friday(s)'
+                                WHEN cl_dia='6'THEN 'Saturday(s)'
+                                ELSE 'Sunday(s)'
+                                END,' ',no_hora,' ',ds_tiempo,'') FROM k_class_time_programa WHERE fl_class_time=481 
+February 15, 2024, 12:55 pm1-INSERT INTO c_sesion (cl_sesion, fg_app_1,fl_pais_campus, fe_ultmod) VALUES ('11ea603e611bd7d871aba060e88c16c8438d808b64ca71a9f86158af5a9e7ddb', '1',38, CURRENT_TIMESTAMP)
+February 15, 2024, 12:55 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=65
+February 15, 2024, 12:55 pm8-INSERT INTO k_app_contrato (cl_sesion, no_contrato, mn_app_fee, mn_tuition, mn_costs, ds_costs, mn_tot_tuition, mn_tot_program, mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, ds_p_name, ds_education_number, ds_usual_name, no_weeks,fg_payment ) VALUES('11ea603e611bd7d871aba060e88c16c8438d808b64ca71a9f86158af5a9e7ddb', 1, 125.00, 1374.00, 0.00, '', 1374, 1499, 1374.00, 1374.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, '', '',  '', 12,'O' ) 
+February 15, 2024, 12:55 pm9-UPDATE k_ses_app_frm_1 SET fl_programa=65, fl_periodo=106 WHERE cl_sesion='11ea603e611bd7d871aba060e88c16c8438d808b64ca71a9f86158af5a9e7ddb' ....no_contratos->1
+February 15, 2024, 12:55 pmclass-SELECT CONCAT(
+                                CASE WHEN cl_dia='1'THEN 'Monday(s)'
+                                WHEN cl_dia='2'THEN 'Tuesday(s)'
+                                WHEN cl_dia='3'THEN 'Wednesday(s)'
+                                WHEN cl_dia='4'THEN 'Thursday(s)'
+                                WHEN cl_dia='5'THEN 'Friday(s)'
+                                WHEN cl_dia='6'THEN 'Saturday(s)'
+                                ELSE 'Sunday(s)'
+                                END,' ',no_hora,' ',ds_tiempo,'') FROM k_class_time_programa WHERE fl_class_time=536 
+February 15, 2024, 1:06 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='11ea603e611bd7d871aba060e88c16c8438d808b64ca71a9f86158af5a9e7ddb'
+February 15, 2024, 1:06 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='11ea603e611bd7d871aba060e88c16c8438d808b64ca71a9f86158af5a9e7ddb')
+February 15, 2024, 1:06 pm7-UPDATE k_app_contrato SET  ds_p_name='mik', ds_education_number='stu', ds_usual_name='jim' WHERE cl_sesion='11ea603e611bd7d871aba060e88c16c8438d808b64ca71a9f86158af5a9e7ddb' 
+February 15, 2024, 1:14 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=38,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='11ea603e611bd7d871aba060e88c16c8438d808b64ca71a9f86158af5a9e7ddb'
+February 15, 2024, 1:14 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='11ea603e611bd7d871aba060e88c16c8438d808b64ca71a9f86158af5a9e7ddb')
+February 15, 2024, 1:14 pmUPDATE k_ses_app_frm_1 SET fl_immigrations_status=1, ds_alt_number="7224176140", ds_link_to_portfolio="link portfolio", fg_gender="M", ds_ruta_foto_permiso="",nb_name_institutcion="", ds_sin="123456789"  WHERE cl_sesion="11ea603e611bd7d871aba060e88c16c8438d808b64ca71a9f86158af5a9e7ddb" 
+March 1, 2024, 3:30 pm1-INSERT INTO c_sesion (cl_sesion, fg_app_1,fl_pais_campus, fe_ultmod) VALUES ('a5444402094dfb85b888471d8547cbf2d8fc68255de3a924683508ab3e306509', '1',226, CURRENT_TIMESTAMP)
+March 1, 2024, 3:30 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=65 AND fl_pais=226 
+March 1, 2024, 3:30 pm8-INSERT INTO k_app_contrato (cl_sesion, no_contrato, mn_app_fee, mn_tuition, mn_costs, ds_costs, mn_tot_tuition, mn_tot_program, mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, ds_p_name, ds_education_number, ds_usual_name, no_weeks,fg_payment ) VALUES('a5444402094dfb85b888471d8547cbf2d8fc68255de3a924683508ab3e306509', 1, 125.00, 1374.00, 0.00, '', 1374, 1499, 1374.00, 1374.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, '', '',  '', 12,'O' ) 
+March 1, 2024, 3:30 pm9-UPDATE k_ses_app_frm_1 SET fl_programa=65, fl_periodo=107 WHERE cl_sesion='a5444402094dfb85b888471d8547cbf2d8fc68255de3a924683508ab3e306509' ....no_contratos->1
+March 1, 2024, 3:30 pmclass-SELECT CONCAT(
+                                CASE WHEN cl_dia='1'THEN 'Monday(s)'
+                                WHEN cl_dia='2'THEN 'Tuesday(s)'
+                                WHEN cl_dia='3'THEN 'Wednesday(s)'
+                                WHEN cl_dia='4'THEN 'Thursday(s)'
+                                WHEN cl_dia='5'THEN 'Friday(s)'
+                                WHEN cl_dia='6'THEN 'Saturday(s)'
+                                ELSE 'Sunday(s)'
+                                END,' ',no_hora,' ',ds_tiempo,'') FROM k_class_time_programa WHERE fl_class_time=452 
+March 1, 2024, 3:30 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=226,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='a5444402094dfb85b888471d8547cbf2d8fc68255de3a924683508ab3e306509'
+March 1, 2024, 3:30 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='a5444402094dfb85b888471d8547cbf2d8fc68255de3a924683508ab3e306509') AND fl_pais=226 
+March 1, 2024, 3:30 pm7-UPDATE k_app_contrato SET  ds_p_name='prevuis', ds_education_number='12321312313', ds_usual_name='usual' WHERE cl_sesion='a5444402094dfb85b888471d8547cbf2d8fc68255de3a924683508ab3e306509' 
+March 1, 2024, 3:40 pm1-INSERT INTO c_sesion (cl_sesion, fg_app_1,fl_pais_campus, fe_ultmod) VALUES ('78941764d62b9c6b54150fa3fea4576011f71392830d5f9a0411b6a29721e856', '1',226, CURRENT_TIMESTAMP)
+March 1, 2024, 3:40 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=65 AND fl_pais=226 
+March 1, 2024, 3:40 pm8-INSERT INTO k_app_contrato (cl_sesion, no_contrato, mn_app_fee, mn_tuition, mn_costs, ds_costs, mn_tot_tuition, mn_tot_program, mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, ds_p_name, ds_education_number, ds_usual_name, no_weeks,fg_payment ) VALUES('78941764d62b9c6b54150fa3fea4576011f71392830d5f9a0411b6a29721e856', 1, 125.00, 1374.00, 0.00, '', 1374, 1499, 1374.00, 1374.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, '', '',  '', 12,'O' ) 
+March 1, 2024, 3:40 pm9-UPDATE k_ses_app_frm_1 SET fl_programa=65, fl_periodo=107 WHERE cl_sesion='78941764d62b9c6b54150fa3fea4576011f71392830d5f9a0411b6a29721e856' ....no_contratos->1
+March 1, 2024, 3:40 pmclass-SELECT CONCAT(
+                                CASE WHEN cl_dia='1'THEN 'Monday(s)'
+                                WHEN cl_dia='2'THEN 'Tuesday(s)'
+                                WHEN cl_dia='3'THEN 'Wednesday(s)'
+                                WHEN cl_dia='4'THEN 'Thursday(s)'
+                                WHEN cl_dia='5'THEN 'Friday(s)'
+                                WHEN cl_dia='6'THEN 'Saturday(s)'
+                                ELSE 'Sunday(s)'
+                                END,' ',no_hora,' ',ds_tiempo,'') FROM k_class_time_programa WHERE fl_class_time=452 
+March 1, 2024, 3:41 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=226,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='78941764d62b9c6b54150fa3fea4576011f71392830d5f9a0411b6a29721e856'
+March 1, 2024, 3:41 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='78941764d62b9c6b54150fa3fea4576011f71392830d5f9a0411b6a29721e856') AND fl_pais=226 
+March 1, 2024, 3:41 pm7-UPDATE k_app_contrato SET  ds_p_name='prevuis', ds_education_number='student', ds_usual_name='usual' WHERE cl_sesion='78941764d62b9c6b54150fa3fea4576011f71392830d5f9a0411b6a29721e856' 
+March 1, 2024, 3:46 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=226,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='78941764d62b9c6b54150fa3fea4576011f71392830d5f9a0411b6a29721e856'
+March 1, 2024, 3:46 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='78941764d62b9c6b54150fa3fea4576011f71392830d5f9a0411b6a29721e856') AND fl_pais=226 
+March 1, 2024, 3:46 pm7-UPDATE k_app_contrato SET  ds_p_name='prevuis', ds_education_number='student', ds_usual_name='usual' WHERE cl_sesion='78941764d62b9c6b54150fa3fea4576011f71392830d5f9a0411b6a29721e856' 
+March 1, 2024, 4:48 pm1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=226,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='78941764d62b9c6b54150fa3fea4576011f71392830d5f9a0411b6a29721e856'
+March 1, 2024, 4:48 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=(SELECT fl_programa FROM k_ses_app_frm_1 WHERE cl_sesion='78941764d62b9c6b54150fa3fea4576011f71392830d5f9a0411b6a29721e856') AND fl_pais=226 
+March 1, 2024, 4:48 pm7-UPDATE k_app_contrato SET  ds_p_name='prevuis', ds_education_number='student', ds_usual_name='usual' WHERE cl_sesion='78941764d62b9c6b54150fa3fea4576011f71392830d5f9a0411b6a29721e856' 
+April 26, 2024, 11:27 am1-INSERT INTO c_sesion (cl_sesion, fg_app_1,fl_pais_campus, fe_ultmod) VALUES ('c5b42de6c81a457890ec15aa90631826c1814cf50af157fb27317235ed9ba2d4', '1',226, CURRENT_TIMESTAMP)
+April 26, 2024, 11:28 am6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=53 AND fl_pais=226 
+April 26, 2024, 11:28 am8-INSERT INTO k_app_contrato (cl_sesion, no_contrato, mn_app_fee, mn_tuition, mn_costs, ds_costs, mn_tot_tuition, mn_tot_program, mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, ds_p_name, ds_education_number, ds_usual_name, no_weeks,fg_payment ) VALUES('c5b42de6c81a457890ec15aa90631826c1814cf50af157fb27317235ed9ba2d4', 1, 125.00, 18500.00, 250.00, 'Fame Learning Resources', 18750, 18875, 18750.00, 18750.00, 10125.00, 20250.00, 5438.00, 21752.00, 0.00, 0.00, '', '',  '', 48,'O' ) 
+April 26, 2024, 11:28 am9-UPDATE k_ses_app_frm_1 SET fl_programa=53, fl_periodo=105 WHERE cl_sesion='c5b42de6c81a457890ec15aa90631826c1814cf50af157fb27317235ed9ba2d4' ....no_contratos->1
+April 26, 2024, 11:28 amclass-UPDATE k_ses_app_frm_1 SET ds_add_country="226"  WHERE cl_sesion="c5b42de6c81a457890ec15aa90631826c1814cf50af157fb27317235ed9ba2d4" 
+April 26, 2024, 11:28 amclass-UPDATE k_ses_app_frm_1 SET ds_add_country="226"  WHERE cl_sesion="c5b42de6c81a457890ec15aa90631826c1814cf50af157fb27317235ed9ba2d4" 
+April 26, 2024, 11:28 amclass-SELECT CONCAT(
+                                CASE WHEN cl_dia='1'THEN 'Monday(s)'
+                                WHEN cl_dia='2'THEN 'Tuesday(s)'
+                                WHEN cl_dia='3'THEN 'Wednesday(s)'
+                                WHEN cl_dia='4'THEN 'Thursday(s)'
+                                WHEN cl_dia='5'THEN 'Friday(s)'
+                                WHEN cl_dia='6'THEN 'Saturday(s)'
+                                ELSE 'Sunday(s)'
+                                END,' ',no_hora,' ',ds_tiempo,'') FROM k_class_time_programa WHERE fl_class_time=467 
+April 26, 2024, 11:34 am1-UPDATE c_sesion SET fg_app_1='1',fl_pais_campus=226,  fe_ultmod=CURRENT_TIMESTAMP WHERE cl_sesion='c5b42de6c81a457890ec15aa90631826c1814cf50af157fb27317235ed9ba2d4'
+April 26, 2024, 11:34 am1-UPDATE k_ses_app_frm_1 SET ds_add_country=""  WHERE cl_sesion="c5b42de6c81a457890ec15aa90631826c1814cf50af157fb27317235ed9ba2d4" 
+April 26, 2024, 11:34 am1-UPDATE k_ses_app_frm_1 SET fe_birth="2024-04-26"  WHERE cl_sesion="c5b42de6c81a457890ec15aa90631826c1814cf50af157fb27317235ed9ba2d4" 
+April 26, 2024, 11:34 am6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=53 AND fl_pais=226 
+April 26, 2024, 11:34 am8-INSERT INTO k_app_contrato (cl_sesion, no_contrato, mn_app_fee, mn_tuition, mn_costs, ds_costs, mn_tot_tuition, mn_tot_program, mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, ds_p_name, ds_education_number, ds_usual_name, no_weeks,fg_payment ) VALUES('c5b42de6c81a457890ec15aa90631826c1814cf50af157fb27317235ed9ba2d4', 1, 125.00, 18500.00, 250.00, 'Fame Learning Resources', 18750, 18875, 18750.00, 18750.00, 10125.00, 20250.00, 5438.00, 21752.00, 0.00, 0.00, '', '',  '', 48,'O' ) 
+April 26, 2024, 11:34 am9-UPDATE k_ses_app_frm_1 SET fl_programa=53, fl_periodo=105 WHERE cl_sesion='c5b42de6c81a457890ec15aa90631826c1814cf50af157fb27317235ed9ba2d4' ....no_contratos->1
+April 26, 2024, 11:34 amclass-UPDATE k_ses_app_frm_1 SET ds_add_country=""  WHERE cl_sesion="c5b42de6c81a457890ec15aa90631826c1814cf50af157fb27317235ed9ba2d4" 
+April 26, 2024, 11:34 amclass-UPDATE k_ses_app_frm_1 SET ds_add_country=""  WHERE cl_sesion="c5b42de6c81a457890ec15aa90631826c1814cf50af157fb27317235ed9ba2d4" 
+April 26, 2024, 11:34 amclass-SELECT CONCAT(
+                                CASE WHEN cl_dia='1'THEN 'Monday(s)'
+                                WHEN cl_dia='2'THEN 'Tuesday(s)'
+                                WHEN cl_dia='3'THEN 'Wednesday(s)'
+                                WHEN cl_dia='4'THEN 'Thursday(s)'
+                                WHEN cl_dia='5'THEN 'Friday(s)'
+                                WHEN cl_dia='6'THEN 'Saturday(s)'
+                                ELSE 'Sunday(s)'
+                                END,' ',no_hora,' ',ds_tiempo,'') FROM k_class_time_programa WHERE fl_class_time=467 
+April 26, 2024, 12:24 pm1-INSERT INTO c_sesion (cl_sesion, fg_app_1,fl_pais_campus, fe_ultmod) VALUES ('19c72bf06e99a0a32986c0f7d3814047200758e035197875c7dced67a1bc9e49', '1',226, CURRENT_TIMESTAMP)
+April 26, 2024, 12:24 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos_pais  WHERE fl_programa=53 AND fl_pais=226 
+April 26, 2024, 12:24 pm8-INSERT INTO k_app_contrato (cl_sesion, no_contrato, mn_app_fee, mn_tuition, mn_costs, ds_costs, mn_tot_tuition, mn_tot_program, mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, ds_p_name, ds_education_number, ds_usual_name, no_weeks,fg_payment ) VALUES('19c72bf06e99a0a32986c0f7d3814047200758e035197875c7dced67a1bc9e49', 1, 125.00, 18500.00, 250.00, 'Fame Learning Resources', 18750, 18875, 18750.00, 18750.00, 10125.00, 20250.00, 5438.00, 21752.00, 0.00, 0.00, '', '',  '', 48,'O' ) 
+April 26, 2024, 12:24 pm9-UPDATE k_ses_app_frm_1 SET fl_programa=53, fl_periodo=105 WHERE cl_sesion='19c72bf06e99a0a32986c0f7d3814047200758e035197875c7dced67a1bc9e49' ....no_contratos->1
+April 26, 2024, 12:24 pmclass-UPDATE k_ses_app_frm_1 SET ds_add_country="5"  WHERE cl_sesion="19c72bf06e99a0a32986c0f7d3814047200758e035197875c7dced67a1bc9e49" 
+April 26, 2024, 12:24 pmclass-UPDATE k_ses_app_frm_1 SET ds_add_country="5"  WHERE cl_sesion="19c72bf06e99a0a32986c0f7d3814047200758e035197875c7dced67a1bc9e49" 
+April 26, 2024, 12:24 pmclass-SELECT CONCAT(
+                                CASE WHEN cl_dia='1'THEN 'Monday(s)'
+                                WHEN cl_dia='2'THEN 'Tuesday(s)'
+                                WHEN cl_dia='3'THEN 'Wednesday(s)'
+                                WHEN cl_dia='4'THEN 'Thursday(s)'
+                                WHEN cl_dia='5'THEN 'Friday(s)'
+                                WHEN cl_dia='6'THEN 'Saturday(s)'
+                                ELSE 'Sunday(s)'
+                                END,' ',no_hora,' ',ds_tiempo,'') FROM k_class_time_programa WHERE fl_class_time=467 
+April 26, 2024, 12:34 pm1-INSERT INTO c_sesion (cl_sesion, fg_app_1,fl_pais_campus, fe_ultmod) VALUES ('01f497db45f99fb2c8c4378813f18df9bfcef00a55f3070b27535b9bff4b79ac', '1',38, CURRENT_TIMESTAMP)
+April 26, 2024, 12:34 pm6-SELECT mn_app_fee, mn_tuition, mn_costs, ds_costs,  mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, cl_type, no_semanas FROM k_programa_costos WHERE fl_programa=53
+April 26, 2024, 12:34 pm8-INSERT INTO k_app_contrato (cl_sesion, no_contrato, mn_app_fee, mn_tuition, mn_costs, ds_costs, mn_tot_tuition, mn_tot_program, mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, ds_p_name, ds_education_number, ds_usual_name, no_weeks,fg_payment ) VALUES('01f497db45f99fb2c8c4378813f18df9bfcef00a55f3070b27535b9bff4b79ac', 1, 125.00, 18500.00, 250.00, 'Fame Learning Resources', 18750, 18875, 18750.00, 18750.00, 10125.00, 20250.00, 5438.00, 21752.00, 0.00, 0.00, '', '',  '', 48,'O' ) 
+April 26, 2024, 12:34 pm9-UPDATE k_ses_app_frm_1 SET fl_programa=53, fl_periodo=105 WHERE cl_sesion='01f497db45f99fb2c8c4378813f18df9bfcef00a55f3070b27535b9bff4b79ac' ....no_contratos->1
+April 26, 2024, 12:34 pmclass-UPDATE k_ses_app_frm_1 SET ds_add_country="2"  WHERE cl_sesion="01f497db45f99fb2c8c4378813f18df9bfcef00a55f3070b27535b9bff4b79ac" 
+April 26, 2024, 12:34 pmclass-UPDATE k_ses_app_frm_1 SET ds_add_country="2"  WHERE cl_sesion="01f497db45f99fb2c8c4378813f18df9bfcef00a55f3070b27535b9bff4b79ac" 
+April 26, 2024, 12:34 pmclass-SELECT CONCAT(
+                                CASE WHEN cl_dia='1'THEN 'Monday(s)'
+                                WHEN cl_dia='2'THEN 'Tuesday(s)'
+                                WHEN cl_dia='3'THEN 'Wednesday(s)'
+                                WHEN cl_dia='4'THEN 'Thursday(s)'
+                                WHEN cl_dia='5'THEN 'Friday(s)'
+                                WHEN cl_dia='6'THEN 'Saturday(s)'
+                                ELSE 'Sunday(s)'
+                                END,' ',no_hora,' ',ds_tiempo,'') FROM k_class_time_programa WHERE fl_class_time=467 
