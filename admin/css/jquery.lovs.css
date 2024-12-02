@@ -1,0 +1,40 @@
+/* Estilos para el contenido de la lista*/
+#lovLista{
+	position:absolute;
+	height: 258px;
+	overflow:auto;
+}
+/* Tamaños para el filtro de la lov*/
+#lovFiltro {
+	position:relative;
+	width: 200px;
+	
+}
+#filtro{
+	float:left;
+}
+
+/* Tamaños de fuente para el contenido de la lista*/
+#contLista{
+	font-size: 1.1em;
+}
+
+/* Tamaños para el contenido de la lista*/
+.chico{
+	width: 279px;
+}
+.mediano {
+	width: 479px;
+}
+.grande {
+	width: 679px;
+}
+.enorme {
+	width: 779px;
+}
+
+/* Estilos para los botones limpiar y buscar del filtro*/
+#lovLimpiar, #lovBuscar{
+	width: 15px;
+	cursor: pointer;
+}

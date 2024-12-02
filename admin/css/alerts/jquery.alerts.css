@@ -1,0 +1,29 @@
+.contentI {
+	background: 2px 16px no-repeat url(images/info.gif);
+	padding: .8em 1.75em;
+}
+
+.contentW {
+	background: 2px 16px no-repeat url(images/important.gif);
+	padding: .8em 1.75em;
+}
+
+.contentE {
+	background: 2px 16px no-repeat url(images/error.gif);
+	padding: .8em 1.75em;
+}
+
+#message {
+	width: 250px;
+	text-align: center;
+	font-size: 13px;
+	margin: 2px 2px 2px 2px;
+	padding: 10px 25px 0px 25px;
+}
+
+#buttons {
+	font-size: 11px;
+	text-align: center;
+	margin: 1em 0em 0em 1em;
+	padding-top: 10px;
+}

@@ -1,0 +1,130 @@
+/* Estos estilos son para la  barra de proceso en send letter y Enroll Student */
+#no_select{
+  position: fixed;
+  top:30%; 
+  left:40%;
+  z-index: 10000;
+  background:#fff;
+  border-radius: 5px;
+  display:none;
+  border: 1px solid #E0E4DA;
+  text-align:center;
+  padding:1%;
+  line-height:2.5;
+}
+#vanas_preloader {
+  position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background:#000;
+	z-index:10000;
+	opacity: .30;
+	filter:alpha(opacity=75);
+  display:none;
+}
+
+#enroll_confirmation{
+  position: fixed;
+  top:30%; 
+  left:40%;
+  z-index: 10000;
+  background:#fff;
+  border-radius: 5px;
+  display:none;
+  border: 1px solid #E0E4DA;
+  text-align:center;
+  padding:1%;
+  line-height:2.5;
+}
+
+#enroll1{
+  width:100%;
+  height:15%;
+}
+
+#enroll2{
+  display:none;
+}
+#si2 {
+  display:none;
+}
+#no2 {
+  display:none;
+}
+
+#preloader {
+  position: fixed;
+  top:30%; 
+  left:40%;
+  z-index: 10000;
+  width:30%;
+  background:#fff;
+  border-radius: 5px;
+  display:none;
+  border: 1px solid #E0E4DA;
+  line-height:1;
+}
+#loader {
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    opacity: 1;
+    top:15%;
+}  
+
+#myProgress {
+  position: relative;
+  width: 0%;
+  height: 100%;
+  top:10%;
+  left:10%;
+  background-color:#efefef;
+  border-radius: 5px;
+  opacity: 1;
+}
+
+#myBar {
+  position: absolute;
+  width:0%;
+  height: 100%;
+  background: #428bca;
+  text-align:center;
+  border-radius: 5px;
+  border:1px;
+  color:#fff;
+}
+
+#strong{
+  color:#68b2f2;  
+  text-align:center;  
+  width:100%;
+  height:100%;
+  padding-top:10%;
+  padding-bottom:5%;
+}
+
+#seleccionados{
+  margin-bottom: auto;
+}
+
+#preloaderletter {
+  position: fixed;
+  top:40%; 
+  left:30%;
+  background: #fff;
+  z-index: 10000;
+  opacity:0.5;
+  width: 35%;
+  height: 40%;
+  border-radius: 20px;
+}
+#loaderletter {
+  width: 35%;
+  height: 40%;
+  position: absolute;
+  left:50%; top:50%;
+  background: url(../images/loader.gif) no-repeat center 0;
+  margin:-50px 0 0 -50px;
+}

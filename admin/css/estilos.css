@@ -1,0 +1,35 @@
+.css_fondo { BACKGROUND-COLOR: White; COLOR: #191919;}
+.css_default { BACKGROUND-COLOR: White; COLOR: #191919; FONT-FAMILY: Arial, Verdana, Tahoma, Helvetica, sans-serif; FONT-SIZE: 12px;}
+.css_encabezado { BACKGROUND-COLOR: White; COLOR: #191919; FONT-FAMILY:  Arial, Verdana,Tahoma, Helvetica, sans-serif; FONT-SIZE: 12px;}
+.css_encabezado_b { BACKGROUND-COLOR: White; COLOR: #191919; FONT-FAMILY: Arial, Verdana, Tahoma, Helvetica, sans-serif; FONT-SIZE: 16px; FONT-WEIGHT: Bold;}
+
+.css_barra_lateral { BACKGROUND-COLOR: #003263; COLOR: #0681C7; FONT-FAMILY: Arial, Verdana, Tahoma, Helvetica, sans-serif; FONT-SIZE: 12px;}
+.css_barra_lateral li { BACKGROUND-COLOR: #003263; COLOR: #ccc; FONT-FAMILY: Arial, Verdana, Tahoma, Helvetica, sans-serif; FONT-SIZE: 12px;}
+.css_barra_lateral li a { TEXT-DECORATION: None; BACKGROUND-COLOR: #003263; COLOR: #ccc; FONT-FAMILY: Arial, Verdana, Tahoma, Helvetica, sans-serif; FONT-SIZE: 12px;}
+.css_barra_lateral li a:visited { TEXT-DECORATION: None; BACKGROUND-COLOR: #003263; COLOR: #ccc; FONT-FAMILY: Arial, Verdana, Tahoma, Helvetica, sans-serif; FONT-SIZE: 12px;}
+.css_barra_lateral li a:active { TEXT-DECORATION: None; BACKGROUND-COLOR: #003263; COLOR: #0681C7; FONT-FAMILY: Arial, Verdana, Tahoma, Helvetica, sans-serif; FONT-SIZE: 12px;}
+.css_barra_lateral li a b { TEXT-DECORATION: None; BACKGROUND-COLOR: #003263; COLOR: #0681C7; FONT-FAMILY: Arial, Verdana, Tahoma, Helvetica, sans-serif; FONT-SIZE: 12px;}
+.css_barra_lateral li a:hover { TEXT-DECORATION: None; BACKGROUND-COLOR: #003263; COLOR: #D21034; FONT-FAMILY: Arial, Verdana, Tahoma, Helvetica, sans-serif; FONT-SIZE: 12px;}
+.css_barra_lateral li a:hover b { TEXT-DECORATION: None; BACKGROUND-COLOR: #003263; COLOR: #D21034; FONT-FAMILY: Arial, Verdana, Tahoma, Helvetica, sans-serif; FONT-SIZE: 12px;}
+
+.css_nombre_enc { BACKGROUND-COLOR: #0681C7; COLOR: White; FONT-FAMILY:  Arial, Verdana,Tahoma, Helvetica, sans-serif; FONT-SIZE: 12px; FONT-WEIGHT: Bold;}
+.css_caja { BACKGROUND-COLOR: #0681C7; COLOR: White; FONT-FAMILY: Arial, Verdana, Tahoma, Helvetica, sans-serif; FONT-SIZE: 12px; FONT-WEIGHT: Bold;}
+.css_prompt { BACKGROUND-COLOR: White; COLOR: #191919; FONT-FAMILY: Arial, Verdana, Tahoma, Helvetica, sans-serif; FONT-SIZE: 12px; FONT-WEIGHT: Bold;}
+.css_input { BACKGROUND-COLOR: White; COLOR: #191919; FONT-FAMILY: Arial, Verdana, Tahoma, Helvetica, sans-serif; FONT-SIZE: 12px;}
+.css_input_error { BACKGROUND-COLOR: White; COLOR: #191919; FONT-FAMILY: Arial, Verdana, Tahoma, Helvetica, sans-serif; FONT-SIZE: 12px; BORDER-STYLE: Solid; BORDER-COLOR: Yellow;}
+.css_etq_texto { BACKGROUND-COLOR: White; COLOR: MidnightBlue; FONT-FAMILY: Arial, Verdana, Tahoma, Helvetica, sans-serif; FONT-SIZE: 12px;}
+.css_msg_error { COLOR: Red; FONT-FAMILY: Arial, Verdana, Tahoma, Helvetica, sans-serif; FONT-SIZE: 12px; FONT-WEIGHT: Bold;}
+.css_footer { BACKGROUND-COLOR: #0681C7; COLOR: #191919; FONT-FAMILY: Arial, Verdana, Tahoma, Helvetica, sans-serif; FONT-SIZE: 11px;}
+
+.css_paginas { BACKGROUND-COLOR: White; COLOR: MidnightBlue; FONT-FAMILY: Arial, Verdana, Tahoma, Helvetica, sans-serif; FONT-SIZE: 12px; FONT-WEIGHT: Bold;}
+.css_tabla_encabezado { BACKGROUND-COLOR: #0681C7; COLOR: White; FONT-FAMILY: Arial, Verdana, Tahoma, Helvetica, sans-serif; FONT-SIZE: 12px; FONT-WEIGHT: Bold;}
+.css_tabla_detalle { BACKGROUND-COLOR: White; COLOR: #191919; FONT-FAMILY: Arial, Verdana, Tahoma, Helvetica, sans-serif; FONT-SIZE: 11px;}
+.css_tabla_detalle_ico { BACKGROUND-COLOR:White; WIDTH:30; TEXT-ALIGN:Center; VERTICAL-ALIGN:Middle; COLOR: #191919; FONT-FAMILY: Arial, Verdana, Tahoma, Helvetica, sans-serif; FONT-SIZE: 11px;}
+.css_tabla_detalle_bg { BACKGROUND-COLOR: #E6E1DE; COLOR: #191919; FONT-FAMILY: Arial, Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 11px;}
+.css_tabla_detalle_ico_bg { BACKGROUND-COLOR: #E6E1DE; WIDTH:30; TEXT-ALIGN:Center; VERTICAL-ALIGN:Middle; COLOR: #191919; FONT-FAMILY: Arial, Verdana, Tahoma, Helvetica, sans-serif; FONT-SIZE: 11px;}
+
+
+A:link { TEXT-DECORATION: underline; COLOR: #191919;}
+A:visited { TEXT-DECORATION: underline; COLOR: #191919;}  
+A:active { TEXT-DECORATION: underline; COLOR: #191919;}
+A:hover { TEXT-DECORATION: underline; COLOR: DarkBlue}
