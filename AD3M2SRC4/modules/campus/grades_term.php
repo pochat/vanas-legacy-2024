@@ -1,0 +1,20 @@
+<?php
+  
+  # Libreria de funciones
+  require("../../../lib/sp_general.inc.php");
+  
+  
+  $Query0 = "SELECT fl_alumno FROM c_alumno ORDER BY fl_alumno ";
+  $rs0 = EjecutaQuery($Query0);
+  for($j=0;$row0=RecuperaRegistro($rs0);$j++){
+    $Query  = "SELECT ROUND(SUM(i.no_equivalencia)/COUNT(a.fl_semana)), a.fl_term, no_grado, c.fl_alumno ";
+    $Query .= "FROM k_semana a, k_term b, k_entrega_semanal c, c_calificacion i ";
+    $Query .= "WHERE a.fl_term=b.fl_term AND a.fl_semana=c.fl_semana AND c.fl_promedio_semana=i.fl_calificacion ";
+    $Query .= "AND a.fl_term IN(SELECT fl_term FROM k_alumno_term e WHERE e.fl_alumno=c.fl_alumno AND c.fl_alumno=$row0[0]) ";
+    $Query .= "GROUP BY a.fl_term ";
+    $rs = EjecutaQuery($Query);
+    for($i=0;$row=RecuperaRegistro($rs);$i++){
+      EjecutaQuery("UPDATE k_alumno_term SET no_promedio='".$row[0]."' WHERE fl_alumno=$row[3] AND fl_term=$row[1] ");
+    }
+  }
+?>

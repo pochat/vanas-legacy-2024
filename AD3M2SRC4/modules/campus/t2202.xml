@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<T2202SlipType>
+ <T2202Slip SlipReportTypeCode="" FilerAccountNumber="" PostSecondaryEducationalSchoolProgramName="" PostSecondaryEducationalSchoolTypeCode="" FlyingSchoolClubCourseTypeCode="" StudentName="" SocialInsuranceNumber="" StudentNumber="" StudentAddress="" SchoolSession="" TotalEligibleTuitionFeeAmount="" TotalPartTimeStudentMonthCount="" TotalFullTimeStudentMonthCount=""/>
+ <SchoolSessionType StartYearMonth="" EndYearMonth="" EligibleTuitionFeeAmount="" PartTimeStudentMonthCount="" FullTimeStudentMonthCount=""/>
+ <T2202SummaryType FilerAccountNumber="" SummaryReportTypeCode="" FilerAmendmentNote="" TaxationYear="" TotalSlipCount="" PostSecondaryEducationalInstitutionName="" PostSecondaryEducationalInstitutionMailingAddress="" ContactInformation="" TotalEligibleTuitionFeeAmount=""/>
+</T2202SlipType>

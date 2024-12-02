@@ -1,0 +1,2212 @@
+
+====================================Inicia proceso December 21, 2020, 8:31 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND ( fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-01-05 03:00:00'  fe_clase_zoom:2021-01-05  hr_sesion:03:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T03:00:00
+pass_clase_zoom: 75345i656
+licenciaAZ: 1
+====================================Inicia proceso December 22, 2020, 2:09 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND ( fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:8491
+Inicia metting zoom:
+fechaHora:'2021-01-04 14:30:00'  fe_clase_d:2021-01-04  hr_clase_d:14:30:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week 1: Writing for Animation (3 months) -Level Term 1 GROUPNE - Introduction to Course
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-01-05 14:30:00'  fe_clase_zoom:2021-01-05  hr_sesion:14:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T14:30:00
+pass_clase_zoom: 6958i656
+licenciaAZ: 1
+====================================Inicia proceso December 23, 2020, 3:18 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND ( fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:8491
+Inicia metting zoom:
+fechaHora:'2021-01-04 13:00:00'  fe_clase_d:2021-01-04  hr_clase_d:13:00:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week 1: Writing for Animation (3 months) -Level Term 1 WFA - Introduction to Course
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:8411
+Inicia metting zoom:
+fechaHora:'2021-01-05 14:30:00'  fe_clase_d:2021-01-05  hr_clase_d:14:30:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week 1: 2D Computer Animation Diploma (12 months) -Level Term 1 2da - Intro to Vanas Online Campus &amp; Warm Up Exercises
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-01-07 01:00:00'  fe_clase_zoom:2021-01-07  hr_sesion:01:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T01:00:00
+pass_clase_zoom: 9834i656
+licenciaAZ: 1
+====================================Inicia proceso December 23, 2020, 3:18 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND ( fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:8491
+Inicia metting zoom:
+fechaHora:'2021-01-04 13:00:00'  fe_clase_d:2021-01-04  hr_clase_d:13:00:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week 1: Writing for Animation (3 months) -Level Term 1 WFA - Introduction to Course
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:8411
+Inicia metting zoom:
+fechaHora:'2021-01-05 14:30:00'  fe_clase_d:2021-01-05  hr_clase_d:14:30:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week 1: 2D Computer Animation Diploma (12 months) -Level Term 1 2da - Intro to Vanas Online Campus &amp; Warm Up Exercises
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-01-07 01:00:00'  fe_clase_zoom:2021-01-07  hr_sesion:01:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T01:00:00
+pass_clase_zoom: 69412i656
+licenciaAZ: 1
+====================================Inicia proceso December 23, 2020, 3:43 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND ( fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:8491
+Inicia metting zoom:
+fechaHora:'2021-01-04 13:00:00'  fe_clase_d:2021-01-04  hr_clase_d:13:00:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week 1: Writing for Animation (3 months) -Level Term 1 WFA - Introduction to Course
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:8411
+Inicia metting zoom:
+fechaHora:'2021-01-05 14:30:00'  fe_clase_d:2021-01-05  hr_clase_d:14:30:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week 1: 2D Computer Animation Diploma (12 months) -Level Term 1 2da - Intro to Vanas Online Campus &amp; Warm Up Exercises
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-01-07 01:00:00'  fe_clase_zoom:2021-01-07  hr_sesion:01:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T01:00:00
+pass_clase_zoom: 42929i656
+licenciaAZ: 1
+====================================Inicia proceso December 23, 2020, 3:46 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND ( fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:8491
+Inicia metting zoom:
+fechaHora:'2021-01-04 13:00:00'  fe_clase_d:2021-01-04  hr_clase_d:13:00:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week 1: Writing for Animation (3 months) -Level Term 1 WFA - Introduction to Course
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:8411
+Inicia metting zoom:
+fechaHora:'2021-01-05 14:30:00'  fe_clase_d:2021-01-05  hr_clase_d:14:30:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week 1: 2D Computer Animation Diploma (12 months) -Level Term 1 2da - Intro to Vanas Online Campus &amp; Warm Up Exercises
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-01-07 01:00:00'  fe_clase_zoom:2021-01-07  hr_sesion:01:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T01:00:00
+pass_clase_zoom: 71108i656
+licenciaAZ: 1
+====================================Inicia proceso January 4, 2021, 6:12 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND ( fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:0
+Inicia metting zoom:
+fechaHora:'2021-01-07 06:00:00'  fe_clase_d:2021-01-07  hr_clase_d:06:00:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week : Concept Art Diploma (12 months) -Level Term 1 GroupConcepArt - 
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:0
+Inicia metting zoom:
+fechaHora:'2021-01-05 03:00:00'  fe_clase_d:2021-01-05  hr_clase_d:03:00:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week : 2D Computer Animation Diploma (12 months) -Level Term 1 groupnew - 
+====================================Inicia proceso January 5, 2021, 12:16 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND ( fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:0
+Inicia metting zoom:
+fechaHora:'2021-01-07 06:00:00'  fe_clase_d:2021-01-07  hr_clase_d:06:00:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week : Concept Art Diploma (12 months) -Level Term 1 GroupConcepArt - 
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:0
+Inicia metting zoom:
+fechaHora:'2021-01-05 03:00:00'  fe_clase_d:2021-01-05  hr_clase_d:03:00:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week : 2D Computer Animation Diploma (12 months) -Level Term 1 groupnew - 
+====================================Inicia proceso January 5, 2021, 12:26 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND ( fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:0
+Inicia metting zoom:
+fechaHora:'2021-01-07 06:00:00'  fe_clase_d:2021-01-07  hr_clase_d:06:00:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week : Concept Art Diploma (12 months) -Level Term 1 GroupConcepArt - 
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:0
+Inicia metting zoom:
+fechaHora:'2021-01-05 03:00:00'  fe_clase_d:2021-01-05  hr_clase_d:03:00:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week : 2D Computer Animation Diploma (12 months) -Level Term 1 groupnew - 
+====================================Inicia proceso January 5, 2021, 12:29 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=2 AND ( fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:0
+Inicia metting zoom:
+fechaHora:'2021-01-14 06:00:00'  fe_clase_d:2021-01-14  hr_clase_d:06:00:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week : Concept Art Diploma (12 months) -Level Term 1 GroupConcepArt - 
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:0
+Inicia metting zoom:
+fechaHora:'2021-01-12 03:00:00'  fe_clase_d:2021-01-12  hr_clase_d:03:00:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week : 2D Computer Animation Diploma (12 months) -Level Term 1 groupnew - 
+====================================Inicia proceso January 5, 2021, 12:30 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND ( fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:0
+Inicia metting zoom:
+fechaHora:'2021-01-07 06:00:00'  fe_clase_d:2021-01-07  hr_clase_d:06:00:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week : Concept Art Diploma (12 months) -Level Term 1 GroupConcepArt - 
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:0
+Inicia metting zoom:
+fechaHora:'2021-01-05 03:00:00'  fe_clase_d:2021-01-05  hr_clase_d:03:00:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week : 2D Computer Animation Diploma (12 months) -Level Term 1 groupnew - 
+====================================Inicia proceso January 5, 2021, 1:43 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND ( fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:0
+Inicia metting zoom:
+fechaHora:'2021-01-07 06:00:00'  fe_clase_d:2021-01-07  hr_clase_d:06:00:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week : Concept Art Diploma (12 months) -Level Term 1 GroupConcepArt - 
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:0
+Inicia metting zoom:
+fechaHora:'2021-01-05 03:00:00'  fe_clase_d:2021-01-05  hr_clase_d:03:00:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week : 2D Computer Animation Diploma (12 months) -Level Term 1 groupnew - 
+====================================Inicia proceso January 5, 2021, 1:44 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND ( fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:0
+Inicia metting zoom:
+fechaHora:'2021-01-07 06:00:00'  fe_clase_d:2021-01-07  hr_clase_d:06:00:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week : Concept Art Diploma (12 months) -Level Term 1 GroupConcepArt - 
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:0
+Inicia metting zoom:
+fechaHora:'2021-01-05 03:00:00'  fe_clase_d:2021-01-05  hr_clase_d:03:00:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week : 2D Computer Animation Diploma (12 months) -Level Term 1 groupnew - 
+====================================Inicia proceso January 5, 2021, 3:00 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND ( fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:0
+Inicia metting zoom:
+fechaHora:'2021-01-07 06:00:00'  fe_clase_d:2021-01-07  hr_clase_d:06:00:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week : Concept Art Diploma (12 months) -Level Term 1 GroupConcepArt - 
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:0
+Inicia metting zoom:
+fechaHora:'2021-01-05 03:00:00'  fe_clase_d:2021-01-05  hr_clase_d:03:00:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week : 2D Computer Animation Diploma (12 months) -Level Term 1 groupnew - 
+====================================Inicia proceso January 5, 2021, 3:01 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND ( fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:0
+Inicia metting zoom:
+fechaHora:'2021-01-07 06:00:00'  fe_clase_d:2021-01-07  hr_clase_d:06:00:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week : Concept Art Diploma (12 months) -Level Term 1 GroupConcepArt - 
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:0
+Inicia metting zoom:
+fechaHora:'2021-01-05 03:00:00'  fe_clase_d:2021-01-05  hr_clase_d:03:00:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week : 2D Computer Animation Diploma (12 months) -Level Term 1 groupnew - 
+====================================Inicia proceso January 6, 2021, 8:53 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND ( fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:8491
+Inicia metting zoom:
+fechaHora:'2021-01-04 01:30:00'  fe_clase_d:2021-01-04  hr_clase_d:01:30:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week 1: Writing for Animation (3 months) -Level Term 1 GROUP1 - Introduction to Course
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-01-07 15:30:00'  fe_clase_zoom:2021-01-07  hr_sesion:15:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T15:30:00
+pass_clase_zoom: 15181i656
+licenciaAZ: 1
+====================================Inicia proceso January 6, 2021, 8:59 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND ( fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:8491
+Inicia metting zoom:
+fechaHora:'2021-01-04 01:30:00'  fe_clase_d:2021-01-04  hr_clase_d:01:30:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week 1: Writing for Animation (3 months) -Level Term 1 GROUP1 - Introduction to Course
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-01-07 15:30:00'  fe_clase_zoom:2021-01-07  hr_sesion:15:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T15:30:00
+pass_clase_zoom: 80524i656
+licenciaAZ: 1
+====================================Inicia proceso January 6, 2021, 8:59 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND ( fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:2
+Fl grupo es:0
+Fl semana es:8491
+Inicia metting zoom:
+fechaHora:'2021-01-04 01:30:00'  fe_clase_d:2021-01-04  hr_clase_d:01:30:00
+Si hubo licencias disponibles:
+Se crea la clase:0
+Se crea live sesion es :0
+Procede a generar la zoom url
+Ds titulo de la clase:Week 1: Writing for Animation (3 months) -Level Term 1 GROUP1 - Introduction to Course
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-01-07 15:30:00'  fe_clase_zoom:2021-01-07  hr_sesion:15:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T15:30:00
+pass_clase_zoom: 80827i656
+licenciaAZ: 1
+====================================Inicia proceso January 12, 2021, 4:13 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:969
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-01-15 14:00:00'  fe_clase_zoom:2021-01-15  hr_sesion:14:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T14:00:00
+pass_clase_zoom: 6689i656
+licenciaAZ: 1
+====================================Inicia proceso January 12, 2021, 4:14 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana= AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+====================================Inicia proceso January 12, 2021, 4:15 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana= AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+====================================Inicia proceso January 12, 2021, 4:15 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana= AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+====================================Inicia proceso January 12, 2021, 4:26 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana= AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+====================================Inicia proceso January 12, 2021, 4:27 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana= AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+====================================Inicia proceso January 12, 2021, 4:27 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana= AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+====================================Inicia proceso January 12, 2021, 4:28 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana= AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+====================================Inicia proceso January 12, 2021, 4:30 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana= AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+====================================Inicia proceso January 12, 2021, 4:31 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana= AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+====================================Inicia proceso January 12, 2021, 4:32 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana= AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+====================================Inicia proceso January 12, 2021, 4:32 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana= AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+====================================Inicia proceso January 12, 2021, 4:33 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana= AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+====================================Inicia proceso January 12, 2021, 4:38 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:969
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-01-15 14:00:00'  fe_clase_zoom:2021-01-15  hr_sesion:14:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T14:00:00
+pass_clase_zoom: 65172i656
+licenciaAZ: 1
+====================================Inicia proceso January 12, 2021, 4:39 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:969
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-01-15 14:00:00'  fe_clase_zoom:2021-01-15  hr_sesion:14:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T14:00:00
+pass_clase_zoom: 78267i656
+licenciaAZ: 1
+====================================Inicia proceso January 12, 2021, 4:41 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana= AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+====================================Inicia proceso January 12, 2021, 4:42 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:969
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-01-15 14:00:00'  fe_clase_zoom:2021-01-15  hr_sesion:14:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T14:00:00
+pass_clase_zoom: 67830i656
+licenciaAZ: 1
+====================================Inicia proceso January 12, 2021, 4:43 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:969
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-01-15 14:00:00'  fe_clase_zoom:2021-01-15  hr_sesion:14:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T14:00:00
+pass_clase_zoom: 83548i656
+licenciaAZ: 1
+====================================Inicia proceso January 12, 2021, 4:43 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:969
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-01-15 14:00:00'  fe_clase_zoom:2021-01-15  hr_sesion:14:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T14:00:00
+pass_clase_zoom: 96680i656
+licenciaAZ: 1
+====================================Inicia proceso January 12, 2021, 4:44 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:969
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-01-15 14:00:00'  fe_clase_zoom:2021-01-15  hr_sesion:14:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T14:00:00
+pass_clase_zoom: 63400i656
+licenciaAZ: 1
+====================================Inicia proceso January 12, 2021, 5:21 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:969
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-01-15 14:00:00'  fe_clase_zoom:2021-01-15  hr_sesion:14:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T14:00:00
+pass_clase_zoom: 8097i656
+licenciaAZ: 1
+====================================Inicia proceso March 25, 2021, 1:34 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-05 09:00:00'  fe_clase_zoom:2021-04-05  hr_sesion:09:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T09:00:00
+pass_clase_zoom: 13013i656
+licenciaAZ: 1
+====================================Inicia proceso March 25, 2021, 2:46 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:999
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-05 09:00:00'  fe_clase_zoom:2021-04-05  hr_sesion:09:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T09:00:00
+pass_clase_zoom: 77531i656
+licenciaAZ: 1
+====================================Inicia proceso March 25, 2021, 2:50 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:999
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-05 09:00:00'  fe_clase_zoom:2021-04-05  hr_sesion:09:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T09:00:00
+pass_clase_zoom: 58395i656
+licenciaAZ: 1
+====================================Inicia proceso March 25, 2021, 3:06 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:999
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-05 09:00:00'  fe_clase_zoom:2021-04-05  hr_sesion:09:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T09:00:00
+pass_clase_zoom: 93976i656
+licenciaAZ: 1
+====================================Inicia proceso March 26, 2021, 3:59 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-05 09:00:00'  fe_clase_zoom:2021-04-05  hr_sesion:09:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T09:00:00
+pass_clase_zoom: 35519i656
+licenciaAZ: 1
+====================================Inicia proceso March 29, 2021, 3:55 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:999
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-05 09:00:00'  fe_clase_zoom:2021-04-05  hr_sesion:09:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T09:00:00
+pass_clase_zoom: 97327i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-06 08:00:00'  fe_clase_zoom:2021-04-06  hr_sesion:08:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:00:00
+pass_clase_zoom: 31321i656
+licenciaAZ: 1
+====================================Inicia proceso March 29, 2021, 4:47 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:999
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-05 09:00:00'  fe_clase_zoom:2021-04-05  hr_sesion:09:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T09:00:00
+pass_clase_zoom: 99325i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-06 08:00:00'  fe_clase_zoom:2021-04-06  hr_sesion:08:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:00:00
+pass_clase_zoom: 66906i656
+licenciaAZ: 1
+====================================Inicia proceso March 29, 2021, 4:50 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:999
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-05 09:00:00'  fe_clase_zoom:2021-04-05  hr_sesion:09:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T09:00:00
+pass_clase_zoom: 38638i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-06 08:00:00'  fe_clase_zoom:2021-04-06  hr_sesion:08:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:00:00
+pass_clase_zoom: 46528i656
+licenciaAZ: 1
+====================================Inicia proceso March 29, 2021, 4:54 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:999
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-05 09:00:00'  fe_clase_zoom:2021-04-05  hr_sesion:09:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T09:00:00
+pass_clase_zoom: 69829i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-06 08:00:00'  fe_clase_zoom:2021-04-06  hr_sesion:08:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:00:00
+pass_clase_zoom: 12253i656
+licenciaAZ: 1
+====================================Inicia proceso March 29, 2021, 4:57 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:999
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-05 09:00:00'  fe_clase_zoom:2021-04-05  hr_sesion:09:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T09:00:00
+pass_clase_zoom: 95824i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-06 08:00:00'  fe_clase_zoom:2021-04-06  hr_sesion:08:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:00:00
+pass_clase_zoom: 30756i656
+licenciaAZ: 1
+====================================Inicia proceso March 29, 2021, 5:04 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:999
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-05 09:00:00'  fe_clase_zoom:2021-04-05  hr_sesion:09:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T09:00:00
+pass_clase_zoom: 94022i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-06 08:00:00'  fe_clase_zoom:2021-04-06  hr_sesion:08:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:00:00
+pass_clase_zoom: 5943i656
+licenciaAZ: 1
+====================================Inicia proceso March 29, 2021, 5:10 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:999
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-05 09:00:00'  fe_clase_zoom:2021-04-05  hr_sesion:09:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T09:00:00
+pass_clase_zoom: 38695i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-06 08:00:00'  fe_clase_zoom:2021-04-06  hr_sesion:08:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:00:00
+pass_clase_zoom: 62140i656
+licenciaAZ: 1
+====================================Inicia proceso March 29, 2021, 5:18 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:999
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-05 09:00:00'  fe_clase_zoom:2021-04-05  hr_sesion:09:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T09:00:00
+pass_clase_zoom: 10737i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-06 08:00:00'  fe_clase_zoom:2021-04-06  hr_sesion:08:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:00:00
+pass_clase_zoom: 14336i656
+licenciaAZ: 1
+====================================Inicia proceso March 29, 2021, 5:20 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:999
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-05 09:00:00'  fe_clase_zoom:2021-04-05  hr_sesion:09:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T09:00:00
+pass_clase_zoom: 32347i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-06 08:00:00'  fe_clase_zoom:2021-04-06  hr_sesion:08:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:00:00
+pass_clase_zoom: 84404i656
+licenciaAZ: 1
+====================================Inicia proceso March 29, 2021, 5:26 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:999
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-05 09:00:00'  fe_clase_zoom:2021-04-05  hr_sesion:09:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T09:00:00
+pass_clase_zoom: 8995i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-06 08:00:00'  fe_clase_zoom:2021-04-06  hr_sesion:08:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:00:00
+pass_clase_zoom: 10011i656
+licenciaAZ: 1
+====================================Inicia proceso March 29, 2021, 5:34 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:999
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-05 09:00:00'  fe_clase_zoom:2021-04-05  hr_sesion:09:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T09:00:00
+pass_clase_zoom: 68433i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-06 08:00:00'  fe_clase_zoom:2021-04-06  hr_sesion:08:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:00:00
+pass_clase_zoom: 48898i656
+licenciaAZ: 1
+====================================Inicia proceso March 29, 2021, 5:46 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:999
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-05 09:00:00'  fe_clase_zoom:2021-04-05  hr_sesion:09:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T09:00:00
+pass_clase_zoom: 97694i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-06 08:00:00'  fe_clase_zoom:2021-04-06  hr_sesion:08:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:00:00
+pass_clase_zoom: 63152i656
+licenciaAZ: 1
+====================================Inicia proceso March 29, 2021, 5:49 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:999
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-05 09:00:00'  fe_clase_zoom:2021-04-05  hr_sesion:09:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T09:00:00
+pass_clase_zoom: 85442i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-06 08:00:00'  fe_clase_zoom:2021-04-06  hr_sesion:08:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:00:00
+pass_clase_zoom: 86337i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=2 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-15 08:30:00'  fe_clase_zoom:2021-04-15  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 90471i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-13 08:00:00'  fe_clase_zoom:2021-04-13  hr_sesion:08:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:00:00
+pass_clase_zoom: 44856i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=3 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-22 08:30:00'  fe_clase_zoom:2021-04-22  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 2029i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-20 08:00:00'  fe_clase_zoom:2021-04-20  hr_sesion:08:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:00:00
+pass_clase_zoom: 71955i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=4 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-29 08:30:00'  fe_clase_zoom:2021-04-29  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 32185i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=5 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-05-06 08:30:00'  fe_clase_zoom:2021-05-06  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 58049i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=6 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-05-13 08:30:00'  fe_clase_zoom:2021-05-13  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 25462i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=7 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-05-20 08:30:00'  fe_clase_zoom:2021-05-20  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 15521i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=8 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-05-27 08:30:00'  fe_clase_zoom:2021-05-27  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 51841i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=9 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-06-03 08:30:00'  fe_clase_zoom:2021-06-03  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 3604i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=10 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-06-10 08:30:00'  fe_clase_zoom:2021-06-10  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 78156i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=11 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-06-17 08:30:00'  fe_clase_zoom:2021-06-17  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 30841i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=12 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-06-24 08:30:00'  fe_clase_zoom:2021-06-24  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 3567i656
+licenciaAZ: 1
+====================================Inicia proceso March 29, 2021, 5:55 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:999
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-05 09:00:00'  fe_clase_zoom:2021-04-05  hr_sesion:09:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T09:00:00
+pass_clase_zoom: 55438i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-06 08:00:00'  fe_clase_zoom:2021-04-06  hr_sesion:08:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:00:00
+pass_clase_zoom: 55007i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=2 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-15 08:30:00'  fe_clase_zoom:2021-04-15  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 82340i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-13 08:00:00'  fe_clase_zoom:2021-04-13  hr_sesion:08:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:00:00
+pass_clase_zoom: 56324i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=3 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-22 08:30:00'  fe_clase_zoom:2021-04-22  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 868i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-20 08:00:00'  fe_clase_zoom:2021-04-20  hr_sesion:08:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:00:00
+pass_clase_zoom: 75565i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=4 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-29 08:30:00'  fe_clase_zoom:2021-04-29  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 62897i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=5 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-05-06 08:30:00'  fe_clase_zoom:2021-05-06  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 68234i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=6 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-05-13 08:30:00'  fe_clase_zoom:2021-05-13  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 75962i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=7 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-05-20 08:30:00'  fe_clase_zoom:2021-05-20  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 37423i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=8 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-05-27 08:30:00'  fe_clase_zoom:2021-05-27  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 96323i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=9 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-06-03 08:30:00'  fe_clase_zoom:2021-06-03  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 31154i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=10 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-06-10 08:30:00'  fe_clase_zoom:2021-06-10  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 21067i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=11 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-06-17 08:30:00'  fe_clase_zoom:2021-06-17  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 76431i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=12 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-06-24 08:30:00'  fe_clase_zoom:2021-06-24  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 98192i656
+licenciaAZ: 1
+====================================Inicia proceso March 30, 2021, 1:17 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:999
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-05 09:00:00'  fe_clase_zoom:2021-04-05  hr_sesion:09:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T09:00:00
+pass_clase_zoom: 90102i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-06 08:00:00'  fe_clase_zoom:2021-04-06  hr_sesion:08:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:00:00
+pass_clase_zoom: 85755i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-08 02:00:00'  fe_clase_zoom:2021-04-08  hr_sesion:02:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T02:00:00
+pass_clase_zoom: 61428i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=2 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-15 08:30:00'  fe_clase_zoom:2021-04-15  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 48474i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-13 08:00:00'  fe_clase_zoom:2021-04-13  hr_sesion:08:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:00:00
+pass_clase_zoom: 30069i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-15 02:00:00'  fe_clase_zoom:2021-04-15  hr_sesion:02:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T02:00:00
+pass_clase_zoom: 79407i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=3 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-22 08:30:00'  fe_clase_zoom:2021-04-22  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 68670i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-20 08:00:00'  fe_clase_zoom:2021-04-20  hr_sesion:08:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:00:00
+pass_clase_zoom: 60590i656
+licenciaAZ: 1
+====================================Inicia proceso March 30, 2021, 3:24 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-05 03:30:00'  fe_clase_zoom:2021-04-05  hr_sesion:03:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T03:30:00
+pass_clase_zoom: 69648i656
+licenciaAZ: 1
+====================================Inicia proceso March 30, 2021, 6:12 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=2 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-15 08:30:00'  fe_clase_zoom:2021-04-15  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 20699i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=3 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:1002
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-22 08:30:00'  fe_clase_zoom:2021-04-22  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 197i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=4 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:1002
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-29 08:30:00'  fe_clase_zoom:2021-04-29  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 53268i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=5 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:1002
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-05-06 08:30:00'  fe_clase_zoom:2021-05-06  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 91058i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=6 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:1002
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-05-13 08:30:00'  fe_clase_zoom:2021-05-13  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 58448i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=7 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:1002
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-05-20 08:30:00'  fe_clase_zoom:2021-05-20  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 40573i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=8 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:1002
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-05-27 08:30:00'  fe_clase_zoom:2021-05-27  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 74638i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=9 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:1002
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-06-03 08:30:00'  fe_clase_zoom:2021-06-03  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 31153i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=10 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:1002
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-06-10 08:30:00'  fe_clase_zoom:2021-06-10  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 69397i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=11 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:1002
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-06-17 08:30:00'  fe_clase_zoom:2021-06-17  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 90190i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=12 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:1002
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-06-24 08:30:00'  fe_clase_zoom:2021-06-24  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 73119i656
+licenciaAZ: 1
+====================================Inicia proceso March 31, 2021, 10:22 am=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-05 04:00:00'  fe_clase_zoom:2021-04-05  hr_sesion:04:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T04:00:00
+pass_clase_zoom: 43885i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=2 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-15 08:30:00'  fe_clase_zoom:2021-04-15  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 22607i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-12 04:00:00'  fe_clase_zoom:2021-04-12  hr_sesion:04:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T04:00:00
+pass_clase_zoom: 80868i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=3 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-22 08:30:00'  fe_clase_zoom:2021-04-22  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 11775i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-19 04:00:00'  fe_clase_zoom:2021-04-19  hr_sesion:04:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T04:00:00
+pass_clase_zoom: 21400i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=4 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-29 08:30:00'  fe_clase_zoom:2021-04-29  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 41639i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-26 04:00:00'  fe_clase_zoom:2021-04-26  hr_sesion:04:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T04:00:00
+pass_clase_zoom: 80303i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=5 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-05-06 08:30:00'  fe_clase_zoom:2021-05-06  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 82997i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-05-03 04:00:00'  fe_clase_zoom:2021-05-03  hr_sesion:04:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T04:00:00
+pass_clase_zoom: 91988i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=6 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-05-13 08:30:00'  fe_clase_zoom:2021-05-13  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 17461i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-05-10 04:00:00'  fe_clase_zoom:2021-05-10  hr_sesion:04:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T04:00:00
+pass_clase_zoom: 42394i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=7 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-05-20 08:30:00'  fe_clase_zoom:2021-05-20  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 49104i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-05-17 04:00:00'  fe_clase_zoom:2021-05-17  hr_sesion:04:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T04:00:00
+pass_clase_zoom: 44869i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=8 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-05-27 08:30:00'  fe_clase_zoom:2021-05-27  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 72861i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-05-24 04:00:00'  fe_clase_zoom:2021-05-24  hr_sesion:04:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T04:00:00
+pass_clase_zoom: 59209i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=9 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-06-03 08:30:00'  fe_clase_zoom:2021-06-03  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 59042i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-05-31 04:00:00'  fe_clase_zoom:2021-05-31  hr_sesion:04:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T04:00:00
+pass_clase_zoom: 22468i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=10 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-06-10 08:30:00'  fe_clase_zoom:2021-06-10  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 45578i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-06-07 04:00:00'  fe_clase_zoom:2021-06-07  hr_sesion:04:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T04:00:00
+pass_clase_zoom: 77839i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=11 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-06-17 08:30:00'  fe_clase_zoom:2021-06-17  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 56051i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-06-14 04:00:00'  fe_clase_zoom:2021-06-14  hr_sesion:04:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T04:00:00
+pass_clase_zoom: 81491i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=12 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-06-24 08:30:00'  fe_clase_zoom:2021-06-24  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 3108i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-06-21 04:00:00'  fe_clase_zoom:2021-06-21  hr_sesion:04:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T04:00:00
+pass_clase_zoom: 55260i656
+licenciaAZ: 1
+====================================Inicia proceso March 31, 2021, 12:04 pm=================================================
+SELECT * FROM k_clase_calendar WHERE no_semana=1 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-06 08:00:00'  fe_clase_zoom:2021-04-06  hr_sesion:08:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:00:00
+pass_clase_zoom: 88392i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=2 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-15 08:30:00'  fe_clase_zoom:2021-04-15  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 61961i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-13 08:00:00'  fe_clase_zoom:2021-04-13  hr_sesion:08:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:00:00
+pass_clase_zoom: 45952i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=3 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-22 08:30:00'  fe_clase_zoom:2021-04-22  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 65684i656
+licenciaAZ: 1
+Tipo clase:3
+Fl grupo es:1000
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-20 08:00:00'  fe_clase_zoom:2021-04-20  hr_sesion:08:00:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:00:00
+pass_clase_zoom: 58139i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=4 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-04-29 08:30:00'  fe_clase_zoom:2021-04-29  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 19286i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=5 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-05-06 08:30:00'  fe_clase_zoom:2021-05-06  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 47588i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=6 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-05-13 08:30:00'  fe_clase_zoom:2021-05-13  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 51041i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=7 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-05-20 08:30:00'  fe_clase_zoom:2021-05-20  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 15682i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=8 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-05-27 08:30:00'  fe_clase_zoom:2021-05-27  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 49248i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=9 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-06-03 08:30:00'  fe_clase_zoom:2021-06-03  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 64890i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=10 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-06-10 08:30:00'  fe_clase_zoom:2021-06-10  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 14566i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=11 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-06-17 08:30:00'  fe_clase_zoom:2021-06-17  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 93999i656
+licenciaAZ: 1
+SELECT * FROM k_clase_calendar WHERE no_semana=12 AND (fg_estatus<>'C' AND fg_estatus<>'P' OR fg_estatus IS null ) 
+Tipo clase:3
+Fl grupo es:0
+Fl semana es:0
+Fl clase_grupo es:0
+Inicia metting zoom:
+fechaHora:'2021-06-24 08:30:00'  fe_clase_zoom:2021-06-24  hr_sesion:08:30:00
+Se crea la clase k_live_session_grupal fl_live_session_grupal:656
+Create meeting
+fl_live_session_grupal: 656
+nb_clase: 
+fe_clase_zoom: 1969-12-31T08:30:00
+pass_clase_zoom: 99046i656
+licenciaAZ: 1
