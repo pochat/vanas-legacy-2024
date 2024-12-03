@@ -1,0 +1,25 @@
+name: deploy-legacyPHP-to-ec2
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    name: Deploy Legacy Project PHP to EC2
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Upload modified files to EC2 with rsync
+        env:
+          REMOTE_USER: "vanas"
+          REMOTE_HOST: "15.223.141.201"
+          REMOTE_PORT: ${{ secrets.AWS_PORT }}
+          TARGET: "/var/www/html/vanas_"
+          SSH_PRIVATE_KEY: ${{ secrets.AWS_PEM_KEY }}
+        run: |
+          echo "$SSH_PRIVATE_KEY" | ssh-agent bash -c 'ssh-add - && rsync -avz --no-perms --exclude-from=".gitignore" -e "ssh -o StrictHostKeyChecking=no -p $REMOTE_PORT" ./ $REMOTE_USER@$REMOTE_HOST:$TARGET --rsync-path="sudo rsync"'
+          EOF'
