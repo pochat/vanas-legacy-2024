@@ -7,7 +7,7 @@ VANAS-LEGACY-2024
 - sudo apt install ffmpeg
 - verify the existence of the ffmpeg folder in the path /var/www/html/vanas/fame
 - https://johnvansickle.com/ffmpeg/ download the version for your current operating system ubuntu arm, amd etc. and replace the ffmpeg folder.
-
+- important path upload files /var/www/html/vanas/modules/common/tmp/  
 # NFS Storage link
 
 - run in terminal, create link
