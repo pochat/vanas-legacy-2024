@@ -23,4 +23,4 @@ jobs:
         run: |
           echo "$SSH_PRIVATE_KEY" | ssh-agent bash -c 'ssh-add - && rsync -avz --no-perms --exclude-from=".gitignore" -e "ssh -o StrictHostKeyChecking=no -p $REMOTE_PORT" ./ $REMOTE_USER@$REMOTE_HOST:$TARGET --rsync-path="sudo rsync"'
           #sudo chown -R $REMOTE_USER:$REMOTE_USER $TARGET
-          ssh -o StrictHostKeyChecking=no -p $REMOTE_PORT $REMOTE_USER@$REMOTE_HOST "sudo chown -R $REMOTE_USER:$REMOTE_USER $TARGET"
+          #ssh -o StrictHostKeyChecking=no -p $REMOTE_PORT $REMOTE_USER@$REMOTE_HOST "sudo chown -R $REMOTE_USER:$REMOTE_USER $TARGET"
