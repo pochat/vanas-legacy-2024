@@ -56,46 +56,6 @@
     $cadena = str_replace("#number_of_absences#", $variables["number_of_absences"], $cadena);             # varible for list missed class
     $cadena = str_replace("#missed_class_term_history#", $variables["missed_class_term_history"], $cadena);             # History missed class
     $cadena = str_replace("#sts_take_action#", $variables["sts_take_action"], $cadena);             # students take action
-    # Fechas en que se envia y expira
-    $roww = RecuperaValor("SELECT DATE_FORMAT(NOW(),'%M-%d-%Y'), DATE_FORMAT(DATE_ADD(NOW(), INTERVAL ".ObtenConfiguracion(89)." DAY),'%Y/%m/%d') fe_expiration");
-    $fe_envio_template = $roww[0];
-    $fe_expiration = $roww[1];
-    $cadena = str_replace("#sent_date#", $fe_envio_template, $cadena);               #Fecha de envio del template o correo
-    $cadena = str_replace("#fe_expiration#", $fe_expiration, $cadena);               #Days expiration of letter of acceptance
-    # En caso de que obtenga sesion
-    $fl_sesion = $variables["fl_sesion"];
-    if(!empty($fl_sesion)){
-      # Obtenemos la sesion del alumno
-      $row0 = RecuperaValor("SELECT cl_sesion FROM c_sesion where fl_sesion=".$fl_sesion);
-      $cl_sesion = $row0[0];
-      # Obtenemos al usuario mendiante la sesion
-      $row1 = RecuperaValor("SELECT *FROM c_usuario WHERE cl_sesion='".$cl_sesion."'");
-      $fl_alumno = $row1[0];
-      # Obtenemos el promedio general del curso
-      $QueryGPA  = "SELECT (SELECT cl_calificacion FROM c_calificacion WHERE no_min <= ROUND(no_promedio_t) AND no_max >= ROUND(no_promedio_t)), ";
-      $QueryGPA .= "no_promedio_t FROM c_alumno WHERE fl_alumno=$fl_alumno ";
-      $row2 = RecuperaValor($QueryGPA);
-      $gpa_grl = $row2[0]." ".round($row2[1])."%";
-      if(empty($gpa_grl))
-        $gpa_grl = "(No assigment)";
-      # Remplazamos el caracter del grado actual y el promedio general
-      $rowterm = RecuperaValor("SELECT MAX(fl_term) FROM k_alumno_term WHERE fl_alumno=$fl_alumno");
-      $fl_term_actual = $rowterm[0];      
-      $cadena = str_replace("#program_gpa#", $gpa_grl, $cadena);                       # Promedio general del alumno
-      
-      # Obtenemos la calificacion del term
-      $QueryTerm  = "SELECT (SELECT cl_calificacion FROM c_calificacion WHERE no_min <=ROUND(no_promedio) AND no_max >=ROUND(no_promedio)), ROUND(no_promedio) ";
-      $QueryTerm .= "FROM k_alumno_term WHERE fl_term=$fl_term_actual AND fl_alumno=$fl_alumno";
-      $rowc = RecuperaValor($QueryTerm);
-      $cl_cal_term = $rowc[0];
-      $current_term_promedio = $rowc[1];
-      if(empty($current_term_promedio))
-        $current_term_promedio = "0";
-      $current_term_gpa = $cl_cal_term." ".round($current_term_promedio)."%";
-      # Remplazamos el caracter de la calificacion del term actual
-      $cadena = str_replace("#current_term_gpa#", $current_term_gpa,$cadena );
-    }
-    
       
 	  return $cadena;
 	}
@@ -111,7 +71,7 @@
     
     # Sen envia la copia oculta a admin actualmente debe llegar de todos este correo
     if($bcc)
-			$BCcAddresses = array(ObtenConfiguracion(83));
+			$BCcAddresses = array(ObtenConfiguracion(20));
 
 		$result = $client->sendEmail(array(
 	    'Source' => $from,
@@ -139,6 +99,5 @@
 	    //'ReplyToAddresses' => array('string', ... ),
 	    //'ReturnPath' => 'string',
 		));
-    return $result['MessageId'];
 	}
 ?>
