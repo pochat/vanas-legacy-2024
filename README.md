@@ -21,6 +21,7 @@ VANAS-LEGACY-2024
 7. ln -s /efs/vanas_uploads/common/new_campus/upload /var/www/html/vanas/modules/common/new_campus/upload
 8. ln -s /efs/vanas_uploads/common/new_campus/images /var/www/html/vanas/modules/common/new_campus/images
 
+
 #Path Images
 
 - migrate the following directories. to the efs if necessary
@@ -31,3 +32,9 @@ VANAS-LEGACY-2024
 - /var/www/html/vanas/modules/students/images
 - /var/www/html/vanas/modules/common/new_campus/upload
 - /var/www/html/vanas/modules/students/videos
+
+#install Node.js
+- copy vanas_node directories
+- check correct ssl paths database connection username and password
+- Go inside the folder and execute:
+- sudo forever start server.js  
