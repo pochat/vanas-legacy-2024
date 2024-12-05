@@ -1,0 +1,2266 @@
+listening on *:3000
+Jos&eacute; Antonio L&oacute;pez Garc&iacute;a  has connected.
+connected: 
+{ user_4114: 
+   { socket: 'BrHcqCiiGGtylssfAAAO',
+     fl_user: '4114',
+     ds_name: 'Jos&eacute; Antonio L&oacute;pez Garc&iacute;a ' } }
+Mario Pochat has connected.
+connected: 
+{ user_4114: 
+   { socket: 'BrHcqCiiGGtylssfAAAO',
+     fl_user: '4114',
+     ds_name: 'Jos&eacute; Antonio L&oacute;pez Garc&iacute;a ' },
+  user_13: 
+   { socket: 'cuAURziLbhJ1eBxvAAAP',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' } }
+Martina K&ouml;berlein has connected.
+connected: 
+{ user_4114: 
+   { socket: 'BrHcqCiiGGtylssfAAAO',
+     fl_user: '4114',
+     ds_name: 'Jos&eacute; Antonio L&oacute;pez Garc&iacute;a ' },
+  user_13: 
+   { socket: 'cuAURziLbhJ1eBxvAAAP',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' } }
+Mario Pochat has connected.
+connected: 
+{ user_4114: 
+   { socket: 'BrHcqCiiGGtylssfAAAO',
+     fl_user: '4114',
+     ds_name: 'Jos&eacute; Antonio L&oacute;pez Garc&iacute;a ' },
+  user_13: 
+   { socket: 'cuAURziLbhJ1eBxvAAAP',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_642: 
+   { socket: 'JZHG_nE-KP17kLRQAAAR',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' } }
+Mario Pochat has disconnected.
+disconnect: 
+{ user_4114: 
+   { socket: 'BrHcqCiiGGtylssfAAAO',
+     fl_user: '4114',
+     ds_name: 'Jos&eacute; Antonio L&oacute;pez Garc&iacute;a ' },
+  user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_642: 
+   { socket: 'JZHG_nE-KP17kLRQAAAR',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' } }
+Mario Pochat has connected.
+connected: 
+{ user_4114: 
+   { socket: 'BrHcqCiiGGtylssfAAAO',
+     fl_user: '4114',
+     ds_name: 'Jos&eacute; Antonio L&oacute;pez Garc&iacute;a ' },
+  user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_642: 
+   { socket: 'JZHG_nE-KP17kLRQAAAR',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' } }
+DIEGO CRISTANCHO has connected.
+connected: 
+{ user_4114: 
+   { socket: 'BrHcqCiiGGtylssfAAAO',
+     fl_user: '4114',
+     ds_name: 'Jos&eacute; Antonio L&oacute;pez Garc&iacute;a ' },
+  user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_642: 
+   { socket: 'JZHG_nE-KP17kLRQAAAR',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_4331: 
+   { socket: 'sBL5WbEDwPn7nXloAAAU',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' } }
+disconnect: 
+{ user_4114: 
+   { socket: 'BrHcqCiiGGtylssfAAAO',
+     fl_user: '4114',
+     ds_name: 'Jos&eacute; Antonio L&oacute;pez Garc&iacute;a ' },
+  user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_642: 
+   { socket: 'JZHG_nE-KP17kLRQAAAR',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_4331: 
+   { socket: 'sBL5WbEDwPn7nXloAAAU',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' } }
+Kenton Moore has connected.
+connected: 
+{ user_4114: 
+   { socket: 'BrHcqCiiGGtylssfAAAO',
+     fl_user: '4114',
+     ds_name: 'Jos&eacute; Antonio L&oacute;pez Garc&iacute;a ' },
+  user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_642: 
+   { socket: 'JZHG_nE-KP17kLRQAAAR',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_4331: 
+   { socket: 'sBL5WbEDwPn7nXloAAAU',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_3554: 
+   { socket: '_lHQPgp1Uo3ANpTPAAAV',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+SEBASTIAN AGUIRRE has connected.
+connected: 
+{ user_4114: 
+   { socket: 'BrHcqCiiGGtylssfAAAO',
+     fl_user: '4114',
+     ds_name: 'Jos&eacute; Antonio L&oacute;pez Garc&iacute;a ' },
+  user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_642: 
+   { socket: 'JZHG_nE-KP17kLRQAAAR',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_4331: 
+   { socket: 'sBL5WbEDwPn7nXloAAAU',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_3554: 
+   { socket: '_lHQPgp1Uo3ANpTPAAAV',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4333: 
+   { socket: '8T6_Q3WeaBq_gEajAAAW',
+     fl_user: '4333',
+     ds_name: 'SEBASTIAN AGUIRRE' } }
+disconnect: 
+{ user_4114: 
+   { socket: 'BrHcqCiiGGtylssfAAAO',
+     fl_user: '4114',
+     ds_name: 'Jos&eacute; Antonio L&oacute;pez Garc&iacute;a ' },
+  user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_642: 
+   { socket: 'JZHG_nE-KP17kLRQAAAR',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_4331: 
+   { socket: 'sBL5WbEDwPn7nXloAAAU',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_3554: 
+   { socket: '_lHQPgp1Uo3ANpTPAAAV',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4333: 
+   { socket: '8T6_Q3WeaBq_gEajAAAW',
+     fl_user: '4333',
+     ds_name: 'SEBASTIAN AGUIRRE' } }
+CRISTIAN RENGIFO has connected.
+connected: 
+{ user_4114: 
+   { socket: 'BrHcqCiiGGtylssfAAAO',
+     fl_user: '4114',
+     ds_name: 'Jos&eacute; Antonio L&oacute;pez Garc&iacute;a ' },
+  user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_642: 
+   { socket: 'JZHG_nE-KP17kLRQAAAR',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_4331: 
+   { socket: 'sBL5WbEDwPn7nXloAAAU',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_3554: 
+   { socket: '_lHQPgp1Uo3ANpTPAAAV',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4333: 
+   { socket: '8T6_Q3WeaBq_gEajAAAW',
+     fl_user: '4333',
+     ds_name: 'SEBASTIAN AGUIRRE' },
+  user_4321: 
+   { socket: '2kK91kGoNz04Yq5iAAAY',
+     fl_user: '4321',
+     ds_name: 'CRISTIAN RENGIFO' } }
+Mandeep  Singh has connected.
+connected: 
+{ user_4114: 
+   { socket: 'BrHcqCiiGGtylssfAAAO',
+     fl_user: '4114',
+     ds_name: 'Jos&eacute; Antonio L&oacute;pez Garc&iacute;a ' },
+  user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_642: 
+   { socket: 'JZHG_nE-KP17kLRQAAAR',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_4331: 
+   { socket: 'sBL5WbEDwPn7nXloAAAU',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_3554: 
+   { socket: '_lHQPgp1Uo3ANpTPAAAV',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4333: 
+   { socket: '8T6_Q3WeaBq_gEajAAAW',
+     fl_user: '4333',
+     ds_name: 'SEBASTIAN AGUIRRE' },
+  user_4321: 
+   { socket: '2kK91kGoNz04Yq5iAAAY',
+     fl_user: '4321',
+     ds_name: 'CRISTIAN RENGIFO' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' } }
+Kenton Moore has disconnected.
+disconnect: 
+{ user_4114: 
+   { socket: 'BrHcqCiiGGtylssfAAAO',
+     fl_user: '4114',
+     ds_name: 'Jos&eacute; Antonio L&oacute;pez Garc&iacute;a ' },
+  user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_642: 
+   { socket: 'JZHG_nE-KP17kLRQAAAR',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_4331: 
+   { socket: 'sBL5WbEDwPn7nXloAAAU',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4333: 
+   { socket: '8T6_Q3WeaBq_gEajAAAW',
+     fl_user: '4333',
+     ds_name: 'SEBASTIAN AGUIRRE' },
+  user_4321: 
+   { socket: '2kK91kGoNz04Yq5iAAAY',
+     fl_user: '4321',
+     ds_name: 'CRISTIAN RENGIFO' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' } }
+Kenton Moore has connected.
+connected: 
+{ user_4114: 
+   { socket: 'BrHcqCiiGGtylssfAAAO',
+     fl_user: '4114',
+     ds_name: 'Jos&eacute; Antonio L&oacute;pez Garc&iacute;a ' },
+  user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_642: 
+   { socket: 'JZHG_nE-KP17kLRQAAAR',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_4331: 
+   { socket: 'sBL5WbEDwPn7nXloAAAU',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4333: 
+   { socket: '8T6_Q3WeaBq_gEajAAAW',
+     fl_user: '4333',
+     ds_name: 'SEBASTIAN AGUIRRE' },
+  user_4321: 
+   { socket: '2kK91kGoNz04Yq5iAAAY',
+     fl_user: '4321',
+     ds_name: 'CRISTIAN RENGIFO' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+disconnect: 
+{ user_4114: 
+   { socket: 'BrHcqCiiGGtylssfAAAO',
+     fl_user: '4114',
+     ds_name: 'Jos&eacute; Antonio L&oacute;pez Garc&iacute;a ' },
+  user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_642: 
+   { socket: 'JZHG_nE-KP17kLRQAAAR',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_4331: 
+   { socket: 'sBL5WbEDwPn7nXloAAAU',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4333: 
+   { socket: '8T6_Q3WeaBq_gEajAAAW',
+     fl_user: '4333',
+     ds_name: 'SEBASTIAN AGUIRRE' },
+  user_4321: 
+   { socket: '2kK91kGoNz04Yq5iAAAY',
+     fl_user: '4321',
+     ds_name: 'CRISTIAN RENGIFO' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+CRISTIAN RENGIFO has disconnected.
+disconnect: 
+{ user_4114: 
+   { socket: 'BrHcqCiiGGtylssfAAAO',
+     fl_user: '4114',
+     ds_name: 'Jos&eacute; Antonio L&oacute;pez Garc&iacute;a ' },
+  user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_642: 
+   { socket: 'JZHG_nE-KP17kLRQAAAR',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_4331: 
+   { socket: 'sBL5WbEDwPn7nXloAAAU',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4333: 
+   { socket: '8T6_Q3WeaBq_gEajAAAW',
+     fl_user: '4333',
+     ds_name: 'SEBASTIAN AGUIRRE' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+SEBASTIAN AGUIRRE has disconnected.
+disconnect: 
+{ user_4114: 
+   { socket: 'BrHcqCiiGGtylssfAAAO',
+     fl_user: '4114',
+     ds_name: 'Jos&eacute; Antonio L&oacute;pez Garc&iacute;a ' },
+  user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_642: 
+   { socket: 'JZHG_nE-KP17kLRQAAAR',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_4331: 
+   { socket: 'sBL5WbEDwPn7nXloAAAU',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+Jos&eacute; Antonio L&oacute;pez Garc&iacute;a  has disconnected.
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_642: 
+   { socket: 'JZHG_nE-KP17kLRQAAAR',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_4331: 
+   { socket: 'sBL5WbEDwPn7nXloAAAU',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+Mario Pochat has disconnected.
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_4331: 
+   { socket: 'sBL5WbEDwPn7nXloAAAU',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_4331: 
+   { socket: 'sBL5WbEDwPn7nXloAAAU',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_4331: 
+   { socket: 'sBL5WbEDwPn7nXloAAAU',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_4331: 
+   { socket: 'sBL5WbEDwPn7nXloAAAU',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_4331: 
+   { socket: 'sBL5WbEDwPn7nXloAAAU',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_4331: 
+   { socket: 'sBL5WbEDwPn7nXloAAAU',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_4331: 
+   { socket: 'sBL5WbEDwPn7nXloAAAU',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_4331: 
+   { socket: 'sBL5WbEDwPn7nXloAAAU',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+DIEGO CRISTANCHO has disconnected.
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+CRISTIAN RENGIFO has connected.
+connected: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4321: 
+   { socket: '7Vlrip3YIOv2As1QAAAp',
+     fl_user: '4321',
+     ds_name: 'CRISTIAN RENGIFO' } }
+CRISTIAN RENGIFO has disconnected.
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+Quetzalc&oacute;atl V&aacute;zquez has connected.
+connected: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4279: 
+   { socket: 'BdZ-5Iem14pA9JUwAAA2',
+     fl_user: '4279',
+     ds_name: 'Quetzalc&oacute;atl V&aacute;zquez' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4279: 
+   { socket: 'BdZ-5Iem14pA9JUwAAA2',
+     fl_user: '4279',
+     ds_name: 'Quetzalc&oacute;atl V&aacute;zquez' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4279: 
+   { socket: 'BdZ-5Iem14pA9JUwAAA2',
+     fl_user: '4279',
+     ds_name: 'Quetzalc&oacute;atl V&aacute;zquez' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4279: 
+   { socket: 'BdZ-5Iem14pA9JUwAAA2',
+     fl_user: '4279',
+     ds_name: 'Quetzalc&oacute;atl V&aacute;zquez' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4279: 
+   { socket: 'BdZ-5Iem14pA9JUwAAA2',
+     fl_user: '4279',
+     ds_name: 'Quetzalc&oacute;atl V&aacute;zquez' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4279: 
+   { socket: 'BdZ-5Iem14pA9JUwAAA2',
+     fl_user: '4279',
+     ds_name: 'Quetzalc&oacute;atl V&aacute;zquez' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4279: 
+   { socket: 'BdZ-5Iem14pA9JUwAAA2',
+     fl_user: '4279',
+     ds_name: 'Quetzalc&oacute;atl V&aacute;zquez' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4279: 
+   { socket: 'BdZ-5Iem14pA9JUwAAA2',
+     fl_user: '4279',
+     ds_name: 'Quetzalc&oacute;atl V&aacute;zquez' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4279: 
+   { socket: 'BdZ-5Iem14pA9JUwAAA2',
+     fl_user: '4279',
+     ds_name: 'Quetzalc&oacute;atl V&aacute;zquez' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4279: 
+   { socket: 'BdZ-5Iem14pA9JUwAAA2',
+     fl_user: '4279',
+     ds_name: 'Quetzalc&oacute;atl V&aacute;zquez' } }
+Quetzalc&oacute;atl V&aacute;zquez has disconnected.
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' } }
+DIEGO CRISTANCHO has connected.
+connected: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' } }
+JESUS SANCHEZ has connected.
+connected: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' } }
+Baqir Shah has connected.
+connected: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3834: 
+   { socket: 'zQ62WirhcyBuSAxAAAAZ',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' } }
+Mandeep  Singh has disconnected.
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' } }
+Mandeep  Singh has connected.
+connected: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_13: 
+   { socket: 'x0fvC3wDrAaos9MUAAAS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' },
+  user_3834: 
+   { socket: 'AOGAybhW8Q24EOwkAABM',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' } }
+Mario Pochat has disconnected.
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' },
+  user_3834: 
+   { socket: 'AOGAybhW8Q24EOwkAABM',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' } }
+Mario Pochat has connected.
+connected: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' },
+  user_3834: 
+   { socket: 'AOGAybhW8Q24EOwkAABM',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_13: 
+   { socket: 'k4LnWpkFpIWmfpr2AABN',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' },
+  user_3834: 
+   { socket: 'AOGAybhW8Q24EOwkAABM',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_13: 
+   { socket: 'k4LnWpkFpIWmfpr2AABN',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' } }
+Mario Pochat has connected.
+connected: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' },
+  user_3834: 
+   { socket: 'AOGAybhW8Q24EOwkAABM',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_13: 
+   { socket: 'k4LnWpkFpIWmfpr2AABN',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_642: 
+   { socket: 'BxvCcZqPia9XDGT3AABP',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' },
+  user_3834: 
+   { socket: 'AOGAybhW8Q24EOwkAABM',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_13: 
+   { socket: 'k4LnWpkFpIWmfpr2AABN',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_642: 
+   { socket: 'BxvCcZqPia9XDGT3AABP',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' },
+  user_3834: 
+   { socket: 'AOGAybhW8Q24EOwkAABM',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_13: 
+   { socket: 'k4LnWpkFpIWmfpr2AABN',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_642: 
+   { socket: 'BxvCcZqPia9XDGT3AABP',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' },
+  user_3834: 
+   { socket: 'AOGAybhW8Q24EOwkAABM',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_13: 
+   { socket: 'k4LnWpkFpIWmfpr2AABN',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_642: 
+   { socket: 'BxvCcZqPia9XDGT3AABP',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' } }
+Mario Pochat has disconnected.
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' },
+  user_3834: 
+   { socket: 'AOGAybhW8Q24EOwkAABM',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_13: 
+   { socket: 'k4LnWpkFpIWmfpr2AABN',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' } }
+Mario Pochat has disconnected.
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' },
+  user_3834: 
+   { socket: 'AOGAybhW8Q24EOwkAABM',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' } }
+Mario Pochat has connected.
+connected: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' },
+  user_3834: 
+   { socket: 'AOGAybhW8Q24EOwkAABM',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_13: 
+   { socket: 'ScIZXXTXGXkjsMzYAABS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' } }
+{ ResponseMetadata: { RequestId: '46f1a4be-d5ed-4ff8-a781-8dc005ee4be5' },
+  MessageId: '01010170f5a92b14-d77053e0-f428-436d-b609-d21e98733ce6-000000' }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' },
+  user_3834: 
+   { socket: 'AOGAybhW8Q24EOwkAABM',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_13: 
+   { socket: 'ScIZXXTXGXkjsMzYAABS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' } }
+Craig Williams has connected.
+connected: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' },
+  user_3834: 
+   { socket: 'AOGAybhW8Q24EOwkAABM',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_13: 
+   { socket: 'ScIZXXTXGXkjsMzYAABS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_807: 
+   { socket: 'Ek65fu5QLNOzL79ZAABT',
+     fl_user: '807',
+     ds_name: 'Craig Williams' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' },
+  user_3834: 
+   { socket: 'AOGAybhW8Q24EOwkAABM',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_13: 
+   { socket: 'ScIZXXTXGXkjsMzYAABS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_807: 
+   { socket: 'Ek65fu5QLNOzL79ZAABT',
+     fl_user: '807',
+     ds_name: 'Craig Williams' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' },
+  user_3834: 
+   { socket: 'AOGAybhW8Q24EOwkAABM',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_13: 
+   { socket: 'ScIZXXTXGXkjsMzYAABS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_807: 
+   { socket: 'Ek65fu5QLNOzL79ZAABT',
+     fl_user: '807',
+     ds_name: 'Craig Williams' } }
+Mario Pochat has connected.
+connected: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' },
+  user_3834: 
+   { socket: 'AOGAybhW8Q24EOwkAABM',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_13: 
+   { socket: 'ScIZXXTXGXkjsMzYAABS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_807: 
+   { socket: 'Ek65fu5QLNOzL79ZAABT',
+     fl_user: '807',
+     ds_name: 'Craig Williams' },
+  user_642: 
+   { socket: '2GR3ZYZj9KOsUG-sAABV',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' },
+  user_3834: 
+   { socket: 'AOGAybhW8Q24EOwkAABM',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_13: 
+   { socket: 'ScIZXXTXGXkjsMzYAABS',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' },
+  user_807: 
+   { socket: 'Ek65fu5QLNOzL79ZAABT',
+     fl_user: '807',
+     ds_name: 'Craig Williams' },
+  user_642: 
+   { socket: '2GR3ZYZj9KOsUG-sAABV',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' } }
+Mario Pochat has disconnected.
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' },
+  user_3834: 
+   { socket: 'AOGAybhW8Q24EOwkAABM',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_807: 
+   { socket: 'Ek65fu5QLNOzL79ZAABT',
+     fl_user: '807',
+     ds_name: 'Craig Williams' },
+  user_642: 
+   { socket: '2GR3ZYZj9KOsUG-sAABV',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' } }
+{ ResponseMetadata: { RequestId: 'a647b7b9-45bb-4657-842b-07c41c195d88' },
+  MessageId: '01010170f5aae6dd-1ea0073f-ffd4-4554-9543-26a6e7fe1e11-000000' }
+Mario Pochat has disconnected.
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' },
+  user_3834: 
+   { socket: 'AOGAybhW8Q24EOwkAABM',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_807: 
+   { socket: 'Ek65fu5QLNOzL79ZAABT',
+     fl_user: '807',
+     ds_name: 'Craig Williams' } }
+Mario Pochat has connected.
+connected: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' },
+  user_3834: 
+   { socket: 'AOGAybhW8Q24EOwkAABM',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_807: 
+   { socket: 'Ek65fu5QLNOzL79ZAABT',
+     fl_user: '807',
+     ds_name: 'Craig Williams' },
+  user_642: 
+   { socket: 'VhIjlmpOs8nyrnuRAABX',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' },
+  user_3834: 
+   { socket: 'AOGAybhW8Q24EOwkAABM',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_807: 
+   { socket: 'Ek65fu5QLNOzL79ZAABT',
+     fl_user: '807',
+     ds_name: 'Craig Williams' },
+  user_642: 
+   { socket: 'VhIjlmpOs8nyrnuRAABX',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' } }
+Mario Pochat has connected.
+connected: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' },
+  user_3834: 
+   { socket: 'AOGAybhW8Q24EOwkAABM',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_807: 
+   { socket: 'Ek65fu5QLNOzL79ZAABT',
+     fl_user: '807',
+     ds_name: 'Craig Williams' },
+  user_642: 
+   { socket: 'VhIjlmpOs8nyrnuRAABX',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' },
+  user_13: 
+   { socket: '0GIDnFYOG9OhywqKAABY',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' } }
+Mario Pochat has disconnected.
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' },
+  user_3834: 
+   { socket: 'AOGAybhW8Q24EOwkAABM',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_807: 
+   { socket: 'Ek65fu5QLNOzL79ZAABT',
+     fl_user: '807',
+     ds_name: 'Craig Williams' },
+  user_642: 
+   { socket: 'VhIjlmpOs8nyrnuRAABX',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' } }
+disconnect: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' },
+  user_3834: 
+   { socket: 'AOGAybhW8Q24EOwkAABM',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_807: 
+   { socket: 'Ek65fu5QLNOzL79ZAABT',
+     fl_user: '807',
+     ds_name: 'Craig Williams' },
+  user_642: 
+   { socket: 'VhIjlmpOs8nyrnuRAABX',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' } }
+Mario Pochat has connected.
+connected: 
+{ user_3832: 
+   { socket: 'noRr6iwpwNg-jT53AAAQ',
+     fl_user: '3832',
+     ds_name: 'Martina K&ouml;berlein' },
+  user_3554: 
+   { socket: 'dZDOZYEpDorqxxPxAAAa',
+     fl_user: '3554',
+     ds_name: 'Kenton Moore' },
+  user_4331: 
+   { socket: 'XVY9E-x57qWeYzVUAABE',
+     fl_user: '4331',
+     ds_name: 'DIEGO CRISTANCHO' },
+  user_4374: 
+   { socket: 'UwbuLQzMrpSH_K4bAABD',
+     fl_user: '4374',
+     ds_name: 'JESUS SANCHEZ' },
+  user_1297: 
+   { socket: 'b9PPN6z8_iy_LCRcAABF',
+     fl_user: '1297',
+     ds_name: 'Baqir Shah' },
+  user_3834: 
+   { socket: 'AOGAybhW8Q24EOwkAABM',
+     fl_user: '3834',
+     ds_name: 'Mandeep  Singh' },
+  user_807: 
+   { socket: 'Ek65fu5QLNOzL79ZAABT',
+     fl_user: '807',
+     ds_name: 'Craig Williams' },
+  user_642: 
+   { socket: 'VhIjlmpOs8nyrnuRAABX',
+     fl_user: '642',
+     ds_name: 'Mario Pochat' },
+  user_13: 
+   { socket: '_5hP51jeTqE23rx4AABa',
+     fl_user: '13',
+     ds_name: 'Mario Pochat' } }

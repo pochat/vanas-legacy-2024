@@ -1,0 +1,2417 @@
+listening on *:3000
+Mike Jimenez has connected.
+connected: 
+{
+  user_630: {
+    socket: 'xS31gU9YZn9uBMN2AAAA',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+Marcela Gomez has connected.
+connected: 
+{
+  user_630: {
+    socket: 'xS31gU9YZn9uBMN2AAAA',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  },
+  user_781: {
+    socket: 'GOHJ0ZhcBjlyIX_6AAAB',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  }
+}
+Mike Jimenez has disconnected.
+disconnect: 
+{
+  user_781: {
+    socket: 'GOHJ0ZhcBjlyIX_6AAAB',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  }
+}
+Marcela Gomez has disconnected.
+disconnect: 
+{}
+disconnect: 
+{}
+Marcela Gomez has connected.
+connected: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  }
+}
+Mike Jimenez has connected.
+connected: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_630: {
+    socket: 'xTpr2Fun7dHJYdRbAAAD',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+Mario Pochat has connected.
+connected: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_630: {
+    socket: 'xTpr2Fun7dHJYdRbAAAD',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  },
+  user_642: {
+    socket: 'wf5OOFK6S-jYnrjFAAAF',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mike Jimenez has disconnected.
+disconnect: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_642: {
+    socket: 'wf5OOFK6S-jYnrjFAAAF',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  }
+}
+disconnect: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_642: {
+    socket: 'wf5OOFK6S-jYnrjFAAAF',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mike Jimenez has connected.
+connected: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_642: {
+    socket: 'wf5OOFK6S-jYnrjFAAAF',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  },
+  user_630: {
+    socket: 'ZaGkOP1x1-q_3SmUAAAH',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+Mike Jimenez has disconnected.
+disconnect: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_642: {
+    socket: 'wf5OOFK6S-jYnrjFAAAF',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  }
+}
+Emily Nghiem has connected.
+connected: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_642: {
+    socket: 'wf5OOFK6S-jYnrjFAAAF',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  },
+  user_2817: {
+    socket: 'bP2iSbva7EUpUqpFAAAI',
+    fl_user: '2817',
+    ds_name: 'Emily Nghiem'
+  }
+}
+Emily Nghiem has disconnected.
+disconnect: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_642: {
+    socket: 'wf5OOFK6S-jYnrjFAAAF',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mike Jimenez has connected.
+connected: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_642: {
+    socket: 'wf5OOFK6S-jYnrjFAAAF',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  },
+  user_630: {
+    socket: 'P7x5Rgmn1zrsGEPBAAAJ',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+disconnect: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_642: {
+    socket: 'wf5OOFK6S-jYnrjFAAAF',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  },
+  user_630: {
+    socket: 'P7x5Rgmn1zrsGEPBAAAJ',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+disconnect: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_642: {
+    socket: 'wf5OOFK6S-jYnrjFAAAF',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  },
+  user_630: {
+    socket: 'P7x5Rgmn1zrsGEPBAAAJ',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+disconnect: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_642: {
+    socket: 'wf5OOFK6S-jYnrjFAAAF',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  },
+  user_630: {
+    socket: 'P7x5Rgmn1zrsGEPBAAAJ',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+disconnect: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_642: {
+    socket: 'wf5OOFK6S-jYnrjFAAAF',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  },
+  user_630: {
+    socket: 'P7x5Rgmn1zrsGEPBAAAJ',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_630: {
+    socket: 'P7x5Rgmn1zrsGEPBAAAJ',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+Valera Ainsworth has connected.
+connected: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_630: {
+    socket: 'P7x5Rgmn1zrsGEPBAAAJ',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  },
+  user_3087: {
+    socket: 'NYcg4aMUyG8Ssi9bAAAO',
+    fl_user: '3087',
+    ds_name: 'Valera Ainsworth'
+  }
+}
+Valera Ainsworth has disconnected.
+disconnect: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_630: {
+    socket: 'P7x5Rgmn1zrsGEPBAAAJ',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+disconnect: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_630: {
+    socket: 'P7x5Rgmn1zrsGEPBAAAJ',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+Valera Ainsworth has connected.
+connected: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_630: {
+    socket: 'P7x5Rgmn1zrsGEPBAAAJ',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  },
+  user_3087: {
+    socket: 'mv0YXAm2x0-jSIq-AAAQ',
+    fl_user: '3087',
+    ds_name: 'Valera Ainsworth'
+  }
+}
+Valera Ainsworth has disconnected.
+disconnect: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_630: {
+    socket: 'P7x5Rgmn1zrsGEPBAAAJ',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+Valera Ainsworth has connected.
+connected: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_630: {
+    socket: 'P7x5Rgmn1zrsGEPBAAAJ',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  },
+  user_3087: {
+    socket: '1TqhTT1Y1NYzRDiRAAAR',
+    fl_user: '3087',
+    ds_name: 'Valera Ainsworth'
+  }
+}
+Hiruni Dasanayake has connected.
+connected: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_630: {
+    socket: 'P7x5Rgmn1zrsGEPBAAAJ',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  },
+  user_3087: {
+    socket: '1TqhTT1Y1NYzRDiRAAAR',
+    fl_user: '3087',
+    ds_name: 'Valera Ainsworth'
+  },
+  user_3088: {
+    socket: 'fRH6cfBCpex24TbkAAAS',
+    fl_user: '3088',
+    ds_name: 'Hiruni Dasanayake'
+  }
+}
+Valera Ainsworth has disconnected.
+disconnect: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_630: {
+    socket: 'P7x5Rgmn1zrsGEPBAAAJ',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  },
+  user_3088: {
+    socket: 'fRH6cfBCpex24TbkAAAS',
+    fl_user: '3088',
+    ds_name: 'Hiruni Dasanayake'
+  }
+}
+Dylan Lawlor has connected.
+connected: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_630: {
+    socket: 'P7x5Rgmn1zrsGEPBAAAJ',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  },
+  user_3088: {
+    socket: 'fRH6cfBCpex24TbkAAAS',
+    fl_user: '3088',
+    ds_name: 'Hiruni Dasanayake'
+  },
+  user_3833: {
+    socket: 'qq1ZQxfMh_0vZj7tAAAT',
+    fl_user: '3833',
+    ds_name: 'Dylan Lawlor'
+  }
+}
+Dylan Lawlor has disconnected.
+disconnect: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_630: {
+    socket: 'P7x5Rgmn1zrsGEPBAAAJ',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  },
+  user_3088: {
+    socket: 'fRH6cfBCpex24TbkAAAS',
+    fl_user: '3088',
+    ds_name: 'Hiruni Dasanayake'
+  }
+}
+Adrian Enciso has connected.
+connected: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_630: {
+    socket: 'P7x5Rgmn1zrsGEPBAAAJ',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  },
+  user_3088: {
+    socket: 'fRH6cfBCpex24TbkAAAS',
+    fl_user: '3088',
+    ds_name: 'Hiruni Dasanayake'
+  },
+  user_11: {
+    socket: '3b9gqksLFNhK5vopAAAU',
+    fl_user: '11',
+    ds_name: 'Adrian Enciso'
+  }
+}
+Adrian Enciso has disconnected.
+disconnect: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_630: {
+    socket: 'P7x5Rgmn1zrsGEPBAAAJ',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  },
+  user_3088: {
+    socket: 'fRH6cfBCpex24TbkAAAS',
+    fl_user: '3088',
+    ds_name: 'Hiruni Dasanayake'
+  }
+}
+Adrian Enciso has connected.
+connected: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_630: {
+    socket: 'P7x5Rgmn1zrsGEPBAAAJ',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  },
+  user_3088: {
+    socket: 'fRH6cfBCpex24TbkAAAS',
+    fl_user: '3088',
+    ds_name: 'Hiruni Dasanayake'
+  },
+  user_11: {
+    socket: 'uIZA2LNHb2e5ycQmAAAV',
+    fl_user: '11',
+    ds_name: 'Adrian Enciso'
+  }
+}
+Adrian Enciso has disconnected.
+disconnect: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_630: {
+    socket: 'P7x5Rgmn1zrsGEPBAAAJ',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  },
+  user_3088: {
+    socket: 'fRH6cfBCpex24TbkAAAS',
+    fl_user: '3088',
+    ds_name: 'Hiruni Dasanayake'
+  }
+}
+disconnect: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_630: {
+    socket: 'P7x5Rgmn1zrsGEPBAAAJ',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  },
+  user_3088: {
+    socket: 'fRH6cfBCpex24TbkAAAS',
+    fl_user: '3088',
+    ds_name: 'Hiruni Dasanayake'
+  }
+}
+Mario Pochat has connected.
+connected: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_630: {
+    socket: 'P7x5Rgmn1zrsGEPBAAAJ',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  },
+  user_3088: {
+    socket: 'fRH6cfBCpex24TbkAAAS',
+    fl_user: '3088',
+    ds_name: 'Hiruni Dasanayake'
+  },
+  user_642: {
+    socket: 'eHSQwgbAetDca2U7AAAX',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_630: {
+    socket: 'P7x5Rgmn1zrsGEPBAAAJ',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  },
+  user_3088: {
+    socket: 'fRH6cfBCpex24TbkAAAS',
+    fl_user: '3088',
+    ds_name: 'Hiruni Dasanayake'
+  }
+}
+Hiruni Dasanayake has disconnected.
+disconnect: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_630: {
+    socket: 'P7x5Rgmn1zrsGEPBAAAJ',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+Mike Jimenez has disconnected.
+disconnect: 
+{
+  user_781: {
+    socket: 'On2_1YIM6JTLLV2gAAAE',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  }
+}
+Marcela Gomez has disconnected.
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+Mario Pochat has connected.
+connected: 
+{
+  user_642: {
+    socket: '2tTwP2OKufQ7jGi-AAAk',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{}
+disconnect: 
+{}
+Mike Jimenez has connected.
+connected: 
+{
+  user_630: {
+    socket: 'AHU74ujF-AUqVKtsAAAm',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+Mike Jimenez has disconnected.
+disconnect: 
+{}
+mik teacher jim has connected.
+connected: 
+{
+  user_782: {
+    socket: '47Zkjo5N0lQKY3X9AAAn',
+    fl_user: '782',
+    ds_name: 'mik teacher jim'
+  }
+}
+mik teacher jim has disconnected.
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+Mario Pochat has connected.
+connected: 
+{
+  user_642: {
+    socket: 'Ctb1rdGfQLkWv6ZxAAAr',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{}
+disconnect: 
+{}
+Mike Jimenez has connected.
+connected: 
+{
+  user_630: {
+    socket: 'pKyN0CU72-eoQDoJAAAt',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+Mario Pochat has connected.
+connected: 
+{
+  user_630: {
+    socket: 'pKyN0CU72-eoQDoJAAAt',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  },
+  user_591: {
+    socket: '5UBCUtuoyE18jezVAAAu',
+    fl_user: '591',
+    ds_name: 'Mario Pochat'
+  }
+}
+Marcela Gomez has connected.
+connected: 
+{
+  user_630: {
+    socket: 'pKyN0CU72-eoQDoJAAAt',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  },
+  user_591: {
+    socket: '5UBCUtuoyE18jezVAAAu',
+    fl_user: '591',
+    ds_name: 'Mario Pochat'
+  },
+  user_781: {
+    socket: 'TOzLm-hYZif3wZOGAAAv',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  }
+}
+Mike Jimenez has disconnected.
+disconnect: 
+{
+  user_591: {
+    socket: '5UBCUtuoyE18jezVAAAu',
+    fl_user: '591',
+    ds_name: 'Mario Pochat'
+  },
+  user_781: {
+    socket: 'TOzLm-hYZif3wZOGAAAv',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  }
+}
+Mike Jimenez has connected.
+connected: 
+{
+  user_591: {
+    socket: '5UBCUtuoyE18jezVAAAu',
+    fl_user: '591',
+    ds_name: 'Mario Pochat'
+  },
+  user_781: {
+    socket: 'TOzLm-hYZif3wZOGAAAv',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_630: {
+    socket: 'kHzD7VQVPZtH4MvJAAAw',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{
+  user_781: {
+    socket: 'TOzLm-hYZif3wZOGAAAv',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_630: {
+    socket: 'kHzD7VQVPZtH4MvJAAAw',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+Mike Jimenez has disconnected.
+disconnect: 
+{
+  user_781: {
+    socket: 'TOzLm-hYZif3wZOGAAAv',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  }
+}
+Mike Jimenez has connected.
+connected: 
+{
+  user_781: {
+    socket: 'TOzLm-hYZif3wZOGAAAv',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  },
+  user_630: {
+    socket: 'SykWlxHQ1deExzHNAAAx',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+listening on *:3000
+listening on *:3000
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+Mario Pochat has connected.
+connected: 
+{
+  user_642: {
+    socket: 'hkx9_fzVULGXH-JKAAAD',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{}
+Adrian Enciso has connected.
+connected: 
+{
+  user_11: {
+    socket: '1qya5iz28Ng_qiisAAAE',
+    fl_user: '11',
+    ds_name: 'Adrian Enciso'
+  }
+}
+disconnect: 
+{
+  user_11: {
+    socket: '1qya5iz28Ng_qiisAAAE',
+    fl_user: '11',
+    ds_name: 'Adrian Enciso'
+  }
+}
+Adrian Enciso has disconnected.
+disconnect: 
+{}
+Adrian Enciso has connected.
+connected: 
+{
+  user_11: {
+    socket: '1Ys7GoboctwGiMaQAAAH',
+    fl_user: '11',
+    ds_name: 'Adrian Enciso'
+  }
+}
+disconnect: 
+{
+  user_11: {
+    socket: '1Ys7GoboctwGiMaQAAAH',
+    fl_user: '11',
+    ds_name: 'Adrian Enciso'
+  }
+}
+Adrian Enciso has disconnected.
+disconnect: 
+{}
+Adrian Enciso has connected.
+connected: 
+{
+  user_11: {
+    socket: 'AdS_NFZP2eHKAsaPAAAJ',
+    fl_user: '11',
+    ds_name: 'Adrian Enciso'
+  }
+}
+disconnect: 
+{
+  user_11: {
+    socket: 'AdS_NFZP2eHKAsaPAAAJ',
+    fl_user: '11',
+    ds_name: 'Adrian Enciso'
+  }
+}
+Adrian Enciso has disconnected.
+disconnect: 
+{}
+Mike Jimenez has connected.
+connected: 
+{
+  user_630: {
+    socket: 'pQZedY0P1ZBNHQfQAAAK',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+Mike Jimenez has disconnected.
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+Mike Jimenez has connected.
+connected: 
+{
+  user_630: {
+    socket: 'w2JB2T9xZSGgCBSlAAAQ',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+Mike Jimenez has disconnected.
+disconnect: 
+{}
+Mario Pochat has connected.
+connected: 
+{
+  user_642: {
+    socket: '11cXKNqXFhvVijgzAAAR',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{}
+Emma Cruise has connected.
+connected: 
+{
+  user_631: {
+    socket: 'QhOb1Znqbghk3jYWAAAS',
+    fl_user: '631',
+    ds_name: 'Emma Cruise'
+  }
+}
+Emma Cruise has disconnected.
+disconnect: 
+{}
+Mario Pochat has connected.
+connected: 
+{
+  user_591: {
+    socket: 'qBC-DtHURtFTaiQvAAAT',
+    fl_user: '591',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{}
+Hailey Lewis has connected.
+connected: 
+{
+  user_1818: {
+    socket: 'YJ7gjL4y4Sd4VPlJAAAU',
+    fl_user: '1818',
+    ds_name: 'Hailey Lewis'
+  }
+}
+Hailey Lewis has disconnected.
+disconnect: 
+{}
+Rhyanon Logan Goyette has connected.
+connected: 
+{
+  user_1630: {
+    socket: '8LNYZFDzpLAYmdzVAAAV',
+    fl_user: '1630',
+    ds_name: 'Rhyanon Logan Goyette'
+  }
+}
+Rhyanon Logan Goyette has disconnected.
+disconnect: 
+{}
+Rhyanon Logan Goyette has connected.
+connected: 
+{
+  user_1630: {
+    socket: 'MGJn1J8J7wflpYQiAAAW',
+    fl_user: '1630',
+    ds_name: 'Rhyanon Logan Goyette'
+  }
+}
+Rhyanon Logan Goyette has disconnected.
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+Mario Pochat has connected.
+connected: 
+{
+  user_642: {
+    socket: '3NdsqWRemY9UR9egAAAZ',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{}
+Mario Pochat has connected.
+connected: 
+{
+  user_642: {
+    socket: '6-moHJWZNwx5NpwuAAAa',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  }
+}
+disconnect: 
+{
+  user_642: {
+    socket: '6-moHJWZNwx5NpwuAAAa',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{}
+disconnect: 
+{}
+Mario Pochat has connected.
+connected: 
+{
+  user_642: {
+    socket: 'TunBbVdal6q9PzO2AAAe',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{}
+disconnect: 
+{}
+Mario Pochat has connected.
+connected: 
+{
+  user_642: {
+    socket: 'EmATL9Jg0kKVy8uQAAAf',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  }
+}
+disconnect: 
+{
+  user_642: {
+    socket: 'EmATL9Jg0kKVy8uQAAAf',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  }
+}
+disconnect: 
+{
+  user_642: {
+    socket: 'EmATL9Jg0kKVy8uQAAAf',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{}
+Mario Pochat has connected.
+connected: 
+{
+  user_642: {
+    socket: 'UxdFT7lce7fo1jcoAAAj',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{}
+disconnect: 
+{}
+Mario Pochat has connected.
+connected: 
+{
+  user_642: {
+    socket: 'hBnL-me6ifZOhdlXAAAk',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  }
+}
+disconnect: 
+{
+  user_642: {
+    socket: 'hBnL-me6ifZOhdlXAAAk',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mike Jimenez has connected.
+connected: 
+{
+  user_642: {
+    socket: 'hBnL-me6ifZOhdlXAAAk',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  },
+  user_630: {
+    socket: 'opYUovHF2RIrroLbAAAn',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+disconnect: 
+{
+  user_642: {
+    socket: 'hBnL-me6ifZOhdlXAAAk',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  },
+  user_630: {
+    socket: 'opYUovHF2RIrroLbAAAn',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{
+  user_630: {
+    socket: 'opYUovHF2RIrroLbAAAn',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+Mario Pochat has connected.
+connected: 
+{
+  user_630: {
+    socket: 'opYUovHF2RIrroLbAAAn',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  },
+  user_13: {
+    socket: 'thG89okB0JzzhDUSAAAo',
+    fl_user: '13',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{
+  user_630: {
+    socket: 'opYUovHF2RIrroLbAAAn',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+Mario Pochat has connected.
+connected: 
+{
+  user_630: {
+    socket: 'opYUovHF2RIrroLbAAAn',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  },
+  user_13: {
+    socket: '4bRGf9Eua949T6cJAAAp',
+    fl_user: '13',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{
+  user_630: {
+    socket: 'opYUovHF2RIrroLbAAAn',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+Mario Pochat has connected.
+connected: 
+{
+  user_630: {
+    socket: 'opYUovHF2RIrroLbAAAn',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  },
+  user_13: {
+    socket: 'BLIez-lS2amveAJ3AAAq',
+    fl_user: '13',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{
+  user_630: {
+    socket: 'opYUovHF2RIrroLbAAAn',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+Mario Pochat has connected.
+connected: 
+{
+  user_630: {
+    socket: 'opYUovHF2RIrroLbAAAn',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  },
+  user_13: {
+    socket: 'cqE-xuYpQtdDBC6YAAAr',
+    fl_user: '13',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{
+  user_630: {
+    socket: 'opYUovHF2RIrroLbAAAn',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+Mike Jimenez has disconnected.
+disconnect: 
+{}
+Mario Pochat has connected.
+connected: 
+{
+  user_13: {
+    socket: 'bU2NmdidWeERSZhmAAAs',
+    fl_user: '13',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{}
+Mario Pochat has connected.
+connected: 
+{
+  user_13: {
+    socket: 'n3ICT1u0TCGORKOsAAAt',
+    fl_user: '13',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{}
+Mario Pochat has connected.
+connected: 
+{
+  user_13: {
+    socket: 'ndl-YZYjLU858uGhAAAu',
+    fl_user: '13',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{}
+Mario Pochat has connected.
+connected: 
+{
+  user_13: {
+    socket: 'ydfPZBiB_dagcsQyAAAv',
+    fl_user: '13',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{}
+Mario Pochat has connected.
+connected: 
+{
+  user_13: {
+    socket: 'ytnXe3-o3OrSIZtaAAAw',
+    fl_user: '13',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{}
+Mario Pochat has connected.
+connected: 
+{
+  user_13: {
+    socket: 'aRAPcxQswf-P0PgGAAAx',
+    fl_user: '13',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{}
+Mario Pochat has connected.
+connected: 
+{
+  user_13: {
+    socket: 'j8JpqwBXPqzjgRycAAAy',
+    fl_user: '13',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{}
+mik teacher jim has connected.
+connected: 
+{
+  user_782: {
+    socket: 'zP-jrHEmsEhXQDriAAAz',
+    fl_user: '782',
+    ds_name: 'mik teacher jim'
+  }
+}
+mik teacher jim has disconnected.
+disconnect: 
+{}
+Dylan Love has connected.
+connected: 
+{
+  user_3828: {
+    socket: 'WuixF7kN-ZxEHqWrAAA0',
+    fl_user: '3828',
+    ds_name: 'Dylan Love'
+  }
+}
+Dylan Love has disconnected.
+disconnect: 
+{}
+Dylan Lawlor has connected.
+connected: 
+{
+  user_3833: {
+    socket: '9XDFKLN30yln2ZnBAAA1',
+    fl_user: '3833',
+    ds_name: 'Dylan Lawlor'
+  }
+}
+Dylan Lawlor has disconnected.
+disconnect: 
+{}
+Dylan Lawlor has connected.
+connected: 
+{
+  user_3833: {
+    socket: 'zgDi8vyHRjgRgXkMAAA2',
+    fl_user: '3833',
+    ds_name: 'Dylan Lawlor'
+  }
+}
+Dylan Lawlor has disconnected.
+disconnect: 
+{}
+Dylan Lawlor has connected.
+connected: 
+{
+  user_3833: {
+    socket: 'k_b4fOvWwTujL_36AAA3',
+    fl_user: '3833',
+    ds_name: 'Dylan Lawlor'
+  }
+}
+Dylan Lawlor has disconnected.
+disconnect: 
+{}
+disconnect: 
+{}
+Mario Pochat has connected.
+connected: 
+{
+  user_13: {
+    socket: 'b1Cj41H21YTvO8o1AAA5',
+    fl_user: '13',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{}
+Mario Pochat has connected.
+connected: 
+{
+  user_642: {
+    socket: '3fg421vHq5x6VkSGAAA6',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{}
+Mario Pochat has connected.
+connected: 
+{
+  user_642: {
+    socket: 'C0giDoCWDwdjGPaXAAA7',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{}
+Mario Pochat has connected.
+connected: 
+{
+  user_642: {
+    socket: 'rp6gCwIXq9E13hSUAAA8',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{}
+Mario Pochat has connected.
+connected: 
+{
+  user_642: {
+    socket: 'SnkrVCwiQFBg2o_sAAA9',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{}
+Mario Pochat has connected.
+connected: 
+{
+  user_642: {
+    socket: '4lVaaXDBRs6w8bsXAAA-',
+    fl_user: '642',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+Mario Pochat has connected.
+connected: 
+{
+  user_13: {
+    socket: 'afhZdVqnzw_8zTh9AABB',
+    fl_user: '13',
+    ds_name: 'Mario Pochat'
+  }
+}
+Mario Pochat has disconnected.
+disconnect: 
+{}
+FAME Super Admin CSF has connected.
+connected: 
+{
+  user_3404: {
+    socket: '-wYLkiOPvBGgAxLhAABC',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+disconnect: 
+{
+  user_3404: {
+    socket: '-wYLkiOPvBGgAxLhAABC',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+disconnect: 
+{
+  user_3404: {
+    socket: '-wYLkiOPvBGgAxLhAABC',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+disconnect: 
+{
+  user_3404: {
+    socket: '-wYLkiOPvBGgAxLhAABC',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+disconnect: 
+{
+  user_3404: {
+    socket: '-wYLkiOPvBGgAxLhAABC',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+disconnect: 
+{
+  user_3404: {
+    socket: '-wYLkiOPvBGgAxLhAABC',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+disconnect: 
+{
+  user_3404: {
+    socket: '-wYLkiOPvBGgAxLhAABC',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+disconnect: 
+{
+  user_3404: {
+    socket: '-wYLkiOPvBGgAxLhAABC',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+disconnect: 
+{
+  user_3404: {
+    socket: '-wYLkiOPvBGgAxLhAABC',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+disconnect: 
+{
+  user_3404: {
+    socket: '-wYLkiOPvBGgAxLhAABC',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+FAME Super Admin CSF has disconnected.
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+FAME Super Admin CSF has connected.
+connected: 
+{
+  user_3404: {
+    socket: 'CZfFTTQOvD1JqXa-AABR',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+disconnect: 
+{
+  user_3404: {
+    socket: 'CZfFTTQOvD1JqXa-AABR',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+disconnect: 
+{
+  user_3404: {
+    socket: 'CZfFTTQOvD1JqXa-AABR',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+FAME Super Admin CSF has disconnected.
+disconnect: 
+{}
+FAME Super Admin CSF has connected.
+connected: 
+{
+  user_3404: {
+    socket: '0RzaC0bUQNsVPjSKAABS',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+FAME Super Admin CSF has disconnected.
+disconnect: 
+{}
+FAME Super Admin CSF has connected.
+connected: 
+{
+  user_3404: {
+    socket: 'op17vSoOTdbcocwtAABT',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+FAME Super Admin CSF has disconnected.
+disconnect: 
+{}
+FAME Super Admin CSF has connected.
+connected: 
+{
+  user_3404: {
+    socket: 'N6DFI2kacZHFwcLgAABU',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+FAME Super Admin CSF has disconnected.
+disconnect: 
+{}
+FAME Super Admin CSF has connected.
+connected: 
+{
+  user_3404: {
+    socket: 'DtoMzGuZJ7LQFw40AABV',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+disconnect: 
+{
+  user_3404: {
+    socket: 'DtoMzGuZJ7LQFw40AABV',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+disconnect: 
+{
+  user_3404: {
+    socket: 'DtoMzGuZJ7LQFw40AABV',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+disconnect: 
+{
+  user_3404: {
+    socket: 'DtoMzGuZJ7LQFw40AABV',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+FAME Super Admin CSF has disconnected.
+disconnect: 
+{}
+FAME Super Admin CSF has connected.
+connected: 
+{
+  user_3404: {
+    socket: '3GBU6fsnaYqN3q6CAABZ',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+FAME Super Admin CSF has disconnected.
+disconnect: 
+{}
+FAME Super Admin CSF has connected.
+connected: 
+{
+  user_3404: {
+    socket: 'q1aL8Sc5WIG18HRNAABa',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+FAME Super Admin CSF has disconnected.
+disconnect: 
+{}
+disconnect: 
+{}
+FAME Super Admin CSF has connected.
+connected: 
+{
+  user_3404: {
+    socket: 't0cHS3B7Xdd7gPBxAABf',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+disconnect: 
+{
+  user_3404: {
+    socket: 't0cHS3B7Xdd7gPBxAABf',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+disconnect: 
+{
+  user_3404: {
+    socket: 't0cHS3B7Xdd7gPBxAABf',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+disconnect: 
+{
+  user_3404: {
+    socket: 't0cHS3B7Xdd7gPBxAABf',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+disconnect: 
+{
+  user_3404: {
+    socket: 't0cHS3B7Xdd7gPBxAABf',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+disconnect: 
+{
+  user_3404: {
+    socket: 't0cHS3B7Xdd7gPBxAABf',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+disconnect: 
+{
+  user_3404: {
+    socket: 't0cHS3B7Xdd7gPBxAABf',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+disconnect: 
+{
+  user_3404: {
+    socket: 't0cHS3B7Xdd7gPBxAABf',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+Marcela Gomez has connected.
+connected: 
+{
+  user_3404: {
+    socket: 't0cHS3B7Xdd7gPBxAABf',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  },
+  user_781: {
+    socket: '8nqH_a7tVepRF1k8AABm',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  }
+}
+disconnect: 
+{
+  user_3404: {
+    socket: 't0cHS3B7Xdd7gPBxAABf',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  },
+  user_781: {
+    socket: '8nqH_a7tVepRF1k8AABm',
+    fl_user: '781',
+    ds_name: 'Marcela Gomez'
+  }
+}
+Marcela Gomez has disconnected.
+disconnect: 
+{
+  user_3404: {
+    socket: 't0cHS3B7Xdd7gPBxAABf',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+FAME Super Admin CSF has disconnected.
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+FAME Super Admin CSF has connected.
+connected: 
+{
+  user_3404: {
+    socket: 'g05Sfa23Gju-YAdvAABu',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+disconnect: 
+{
+  user_3404: {
+    socket: 'g05Sfa23Gju-YAdvAABu',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+FAME Super Admin CSF has disconnected.
+disconnect: 
+{}
+FAME Super Admin CSF has connected.
+connected: 
+{
+  user_3404: {
+    socket: 'tsZlNkfGqcEg-x1MAABy',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+disconnect: 
+{
+  user_3404: {
+    socket: 'tsZlNkfGqcEg-x1MAABy',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+disconnect: 
+{
+  user_3404: {
+    socket: 'tsZlNkfGqcEg-x1MAABy',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+disconnect: 
+{
+  user_3404: {
+    socket: 'tsZlNkfGqcEg-x1MAABy',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+disconnect: 
+{
+  user_3404: {
+    socket: 'tsZlNkfGqcEg-x1MAABy',
+    fl_user: '3404',
+    ds_name: 'FAME Super Admin CSF'
+  }
+}
+FAME Super Admin CSF has disconnected.
+disconnect: 
+{}
+disconnect: 
+{}
+Maria Quintanar has connected.
+connected: 
+{
+  user_3538: {
+    socket: '57vphjK6nJsofYMFAAB0',
+    fl_user: '3538',
+    ds_name: 'Maria Quintanar'
+  }
+}
+Maria Quintanar has disconnected.
+disconnect: 
+{}
+Taylor Lee has connected.
+connected: 
+{
+  user_3553: {
+    socket: 'OOmGhmSantKH5zBpAAB1',
+    fl_user: '3553',
+    ds_name: 'Taylor Lee'
+  }
+}
+Andrew Cook has connected.
+connected: 
+{
+  user_3553: {
+    socket: 'OOmGhmSantKH5zBpAAB1',
+    fl_user: '3553',
+    ds_name: 'Taylor Lee'
+  },
+  user_3558: {
+    socket: '1Z8vmXu8eRdYMhIRAAB2',
+    fl_user: '3558',
+    ds_name: 'Andrew Cook'
+  }
+}
+Andrew Cook has disconnected.
+disconnect: 
+{
+  user_3553: {
+    socket: 'OOmGhmSantKH5zBpAAB1',
+    fl_user: '3553',
+    ds_name: 'Taylor Lee'
+  }
+}
+disconnect: 
+{
+  user_3553: {
+    socket: 'OOmGhmSantKH5zBpAAB1',
+    fl_user: '3553',
+    ds_name: 'Taylor Lee'
+  }
+}
+disconnect: 
+{
+  user_3553: {
+    socket: 'OOmGhmSantKH5zBpAAB1',
+    fl_user: '3553',
+    ds_name: 'Taylor Lee'
+  }
+}
+disconnect: 
+{
+  user_3553: {
+    socket: 'OOmGhmSantKH5zBpAAB1',
+    fl_user: '3553',
+    ds_name: 'Taylor Lee'
+  }
+}
+disconnect: 
+{
+  user_3553: {
+    socket: 'OOmGhmSantKH5zBpAAB1',
+    fl_user: '3553',
+    ds_name: 'Taylor Lee'
+  }
+}
+disconnect: 
+{
+  user_3553: {
+    socket: 'OOmGhmSantKH5zBpAAB1',
+    fl_user: '3553',
+    ds_name: 'Taylor Lee'
+  }
+}
+disconnect: 
+{
+  user_3553: {
+    socket: 'OOmGhmSantKH5zBpAAB1',
+    fl_user: '3553',
+    ds_name: 'Taylor Lee'
+  }
+}
+disconnect: 
+{
+  user_3553: {
+    socket: 'OOmGhmSantKH5zBpAAB1',
+    fl_user: '3553',
+    ds_name: 'Taylor Lee'
+  }
+}
+disconnect: 
+{
+  user_3553: {
+    socket: 'OOmGhmSantKH5zBpAAB1',
+    fl_user: '3553',
+    ds_name: 'Taylor Lee'
+  }
+}
+disconnect: 
+{
+  user_3553: {
+    socket: 'OOmGhmSantKH5zBpAAB1',
+    fl_user: '3553',
+    ds_name: 'Taylor Lee'
+  }
+}
+disconnect: 
+{
+  user_3553: {
+    socket: 'OOmGhmSantKH5zBpAAB1',
+    fl_user: '3553',
+    ds_name: 'Taylor Lee'
+  }
+}
+disconnect: 
+{
+  user_3553: {
+    socket: 'OOmGhmSantKH5zBpAAB1',
+    fl_user: '3553',
+    ds_name: 'Taylor Lee'
+  }
+}
+disconnect: 
+{
+  user_3553: {
+    socket: 'OOmGhmSantKH5zBpAAB1',
+    fl_user: '3553',
+    ds_name: 'Taylor Lee'
+  }
+}
+Andrew Cook has connected.
+connected: 
+{
+  user_3553: {
+    socket: 'OOmGhmSantKH5zBpAAB1',
+    fl_user: '3553',
+    ds_name: 'Taylor Lee'
+  },
+  user_3558: {
+    socket: '53SvPbD1GWQok0sEAACD',
+    fl_user: '3558',
+    ds_name: 'Andrew Cook'
+  }
+}
+Andrew Cook has disconnected.
+disconnect: 
+{
+  user_3553: {
+    socket: 'OOmGhmSantKH5zBpAAB1',
+    fl_user: '3553',
+    ds_name: 'Taylor Lee'
+  }
+}
+Andrew Cook has connected.
+connected: 
+{
+  user_3553: {
+    socket: 'OOmGhmSantKH5zBpAAB1',
+    fl_user: '3553',
+    ds_name: 'Taylor Lee'
+  },
+  user_3558: {
+    socket: 'UveQigoK0dK-rtAlAACE',
+    fl_user: '3558',
+    ds_name: 'Andrew Cook'
+  }
+}
+Andrew Cook has disconnected.
+disconnect: 
+{
+  user_3553: {
+    socket: 'OOmGhmSantKH5zBpAAB1',
+    fl_user: '3553',
+    ds_name: 'Taylor Lee'
+  }
+}
+disconnect: 
+{
+  user_3553: {
+    socket: 'OOmGhmSantKH5zBpAAB1',
+    fl_user: '3553',
+    ds_name: 'Taylor Lee'
+  }
+}
+disconnect: 
+{
+  user_3553: {
+    socket: 'OOmGhmSantKH5zBpAAB1',
+    fl_user: '3553',
+    ds_name: 'Taylor Lee'
+  }
+}
+Taylor Lee has disconnected.
+disconnect: 
+{}
+Mike Jimenez has connected.
+connected: 
+{
+  user_630: {
+    socket: 'FShuVhIVyofbf5dQAACI',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+Mike Jimenez has disconnected.
+disconnect: 
+{}
+disconnect: 
+{}
+Hiruni Dasanayake has connected.
+connected: 
+{
+  user_3088: {
+    socket: 'nxSSww8nKpP37L08AACJ',
+    fl_user: '3088',
+    ds_name: 'Hiruni Dasanayake'
+  }
+}
+Hiruni Dasanayake has disconnected.
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+Mike Jimenez has connected.
+connected: 
+{
+  user_630: {
+    socket: '7XjiGZzeJ8oIcJdWAACM',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+Mike Jimenez has disconnected.
+disconnect: 
+{}
+Mike Jimenez has connected.
+connected: 
+{
+  user_630: {
+    socket: 'VU7S2ooz1RP6Avh0AACN',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+Mike Jimenez has disconnected.
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+Mike Jimenez has connected.
+connected: 
+{
+  user_630: {
+    socket: 'pf-5GxxQEjWUx6i8AACR',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+Mike Jimenez has disconnected.
+disconnect: 
+{}
+Mike Jimenez has connected.
+connected: 
+{
+  user_630: {
+    socket: 'dnbfF7FjTDpI41fBAACS',
+    fl_user: '630',
+    ds_name: 'Mike Jimenez'
+  }
+}
+Mike Jimenez has disconnected.
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+listening on *:3000
+listening on *:3000
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+disconnect: 
+{}
+listening on *:3000

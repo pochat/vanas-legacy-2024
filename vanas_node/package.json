@@ -1,0 +1,13 @@
+{
+  "name": "vanas-chat",
+  "version": "0.0.1",
+  "description": "vanas-chat-server",
+  "dependencies": {
+    "aws-sdk": "^2.672.0",
+    "cheerio": "^1.0.0-rc.3",
+    "cron": "^1.8.2",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "socket.io": "^1.7.4"
+  }
+}
