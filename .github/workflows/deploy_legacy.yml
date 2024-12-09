@@ -15,19 +15,20 @@ jobs:
 
       - name: Upload modified files to EC2 with rsync
         env:
-          REMOTE_USER: "vanas"
+          REMOTE_USER: ${{ secrets.AWS_USER }}
           REMOTE_HOST: "15.223.141.201"
           REMOTE_PORT: ${{ secrets.AWS_PORT }}
-          TARGET: "/var/www/html/vanas"
+          TARGET: ${{ secrets.AWS_TARGET_FOLDER }}
           SSH_PRIVATE_KEY: ${{ secrets.AWS_PEM_KEY }}
         run: |
           echo "$SSH_PRIVATE_KEY" | ssh-agent bash -c 'ssh-add - && rsync -avz --no-perms --exclude-from=".gitignore" -e "ssh -o StrictHostKeyChecking=no -p $REMOTE_PORT" ./ $REMOTE_USER@$REMOTE_HOST:$TARGET --rsync-path="sudo rsync"'
 
       - name: Change ownership of the folder to mikel
         env:
-          REMOTE_USER: "vanas"
+          REMOTE_USER: ${{ secrets.AWS_USER }}
           REMOTE_HOST: "15.223.141.201"
           REMOTE_PORT: ${{ secrets.AWS_PORT }}
+          TARGET: ${{ secrets.AWS_TARGET_FOLDER }}
           SSH_PRIVATE_KEY: ${{ secrets.AWS_PEM_KEY }}
         run: |
           echo "$SSH_PRIVATE_KEY" | ssh-agent bash -c 'ssh-add - && ssh -o StrictHostKeyChecking=no -p $REMOTE_PORT $REMOTE_USER@$REMOTE_HOST "sudo chown -R $REMOTE_USER:$REMOTE_USER $TARGET"'
