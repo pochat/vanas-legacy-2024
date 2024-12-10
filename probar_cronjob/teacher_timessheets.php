@@ -39,19 +39,20 @@
   $mes_anio_act = date("m-Y",strtotime($fecha_actual."- 1 month"));
   $current_month = date("M",strtotime($fecha_actual."- 1 month"));
 
-  $mes_anio_act="04-2024";
-  $mes_act="04";
+  $mes_anio_act="11-2024";
+  $mes_act="11";
   $anio_act="2024";
-  $current_month="April";
+  $current_month="November";
   $curdate="DATE_SUB(curdate(),INTERVAL 5 day)";
-  /*
+  
   # teacher que tiene grupo con alumnos activos en el mes actual
   $Query_1  = "SELECT fl_maestro FROM  k_clase a, c_grupo  b ";
   $Query_1 .= "WHERE a.fl_grupo=b.fl_grupo AND MONTH(fe_clase)='".$mes_act."' AND YEAR( a.fe_clase)='".$anio_act."' ";
   # Comentamos estas lineas porque la catidad de alumno se obtendra del hitorial
   // $Query_1 .= "AND (SELECT COUNT(*) FROM k_alumno_grupo f, c_usuario d ";
   // $Query_1 .= "WHERE f.fl_alumno=d.fl_usuario AND f.fl_grupo=b.fl_grupo AND f.fl_grupo=a.fl_grupo AND d.fg_activo='1')>=0 GROUP BY b.fl_maestro ";
-  $Query_1 .= " AND b.no_alumnos>0  GROUP BY b.fl_maestro ";
+  echo$Query_1 .= " AND b.no_alumnos>0  GROUP BY b.fl_maestro ";
+exit;
   $rs_1 = EjecutaQuery($Query_1);
   for($i=0;$row_1 = RecuperaRegistro($rs_1);$i++){
     $fl_maestro = $row_1[0];
@@ -319,7 +320,7 @@
   }
 
 
-*/
+
 
   ## Obtenemos lasclases globales GRUPALES en las que se le asigno una sesion
   $Querycg1  = "SELECT a.fl_maestro  ";
