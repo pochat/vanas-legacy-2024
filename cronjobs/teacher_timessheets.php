@@ -1,8 +1,8 @@
 <?php
 
   # Include campus libraries
-	require '../lib/com_func.inc.php';
-	require '../lib/sp_config.inc.php';
+	require '/var/www/html/vanas/lib/com_func.inc.php';
+	require '/var/www/html/vanas/lib/sp_config.inc.php';
   // require 'lib/com_func.inc.php';
 	// require 'lib/sp_config.inc.php';
 
@@ -44,7 +44,7 @@
   $anio_act="2024";
   $current_month="November";
   $curdate="DATE_SUB(curdate(),INTERVAL 5 day)";
-  
+
   # teacher que tiene grupo con alumnos activos en el mes actual
   $Query_1  = "SELECT fl_maestro FROM  k_clase a, c_grupo  b ";
   $Query_1 .= "WHERE a.fl_grupo=b.fl_grupo AND MONTH(fe_clase)='".$mes_act."' AND YEAR( a.fe_clase)='".$anio_act."' ";

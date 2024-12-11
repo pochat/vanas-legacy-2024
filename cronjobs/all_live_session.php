@@ -1,10 +1,10 @@
 <?php
 	# Include campus libraries
-	require '../lib/com_func.inc.php';
-	require '../lib/sp_config.inc.php';
+	require '/var/www/html/vanas/lib/com_func.inc.php';
+	require '/var/www/html/vanas/lib/sp_config.inc.php';
 
 	# Include AWS SES libraries
-	require '../AWS_SES/PHP/com_email_func.inc.php';
+	require '/var/www/html/vanas/AWS_SES/PHP/com_email_func.inc.php';
 
 	$from = 'noreply@vanas.ca';
 	$day_advance = 1;
@@ -124,7 +124,7 @@
 					$link->setAttribute('href', 'https://campus.vanas.ca/modules/students_new/index.php#ajax/home.php');
 				}
 				$ds_email_template = $dom->saveHTML();
-            
+
 					#Se envia copia de emmail si el studen asi lo elige.
             if ($fg_copy_email_alternativo) {
                 //SendNoticeMail($client, $from, $ds_email_alterative, "", "Upcoming Live Session", $ds_email_template);

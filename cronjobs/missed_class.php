@@ -6,11 +6,11 @@
   # Si el alumno acumulo igual o mayor a tres faltas pero menor a ocho se enviara email notification Unsatisfactory Attendance Warning
   # Si el alumno acumulo igual o mayor a ocho faltas se enviara email notification Attendance Probation
     # Include campus libraries
-    require '../lib/com_func.inc.php';
-    require '../lib/sp_config.inc.php';
+    require '/var/www/html/vanas/lib/com_func.inc.php';
+    require '/var/www/html/vanas/lib/sp_config.inc.php';
 
     # Include AWS SES libraries
-    require '../AWS_SES/PHP/com_email_func.inc.php';
+    require '/var/www/html/vanas/AWS_SES/PHP/com_email_func.inc.php';
 
 	$from = 'noreply@vanas.ca';
 	$yesterdar = 1;
