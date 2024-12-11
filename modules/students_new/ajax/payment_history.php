@@ -427,15 +427,18 @@
           $mn_due_pagar = Number_Format($mn_due + ObtenConfiguracion(66),2,'.',',');
           $mn_due_pay=$mn_due+ObtenConfiguracion(66);//MJD
           $fg_late_fee=1;
+          $mn_late_fee = "<br>Late Fee: ".ObtenConfiguracion(66);
       }else{
           if($no_dias<0 AND !ExisteEnTabla('k_alumno_pago', 'fl_term_pago', $fl_term_pago)){
               $mn_due_pagar = Number_Format($mn_due + ObtenConfiguracion(66),2,'.',',');
               $mn_due_pay=$mn_due+ObtenConfiguracion(66);//mjd
               $fg_late_fee=1;
+              $mn_late_fee = "<br>Late Fee: ".ObtenConfiguracion(66);
           }else{
               $mn_due_pagar = Number_Format($mn_due,2,'.',',');
               $mn_due_pay=$mn_due;//MJD
               $fg_late_fee=0;
+              $mn_late_fee = null;
           }
       }
     #  $fl_pais_campus=226;
@@ -557,7 +560,7 @@
                             data-name='VANAS'
                             data-html='True'
                             data-currency=$currency
-                            data-description='Convenience Fee ". $symbol."".$mn_convenie_fee." '
+                            data-description='Convenience Fee: ". $symbol."".$mn_convenie_fee." '
                             data-label='Pay Now ". $symbol." ".number_format($mn_due_pagar_total,2)." ".$currency." '
                             data-image='https://".ObtenConfiguracion(60)."/images/".ObtenNombreImagen(19)."'
                             data-locale='en'>
@@ -590,12 +593,13 @@
         $mn_due_pagar = $mn_due_pay + $tax_mn_cost;
 
 
+
         $result["fee_faltan".$i] = array(
         'td_0' => $pagos_realizados,
         'td_1' => $no_pago_lista,
         'td_2' => $ds_frecuencia,
         'td_3' => $fe_limite_pago,
-        'td_4' => $mn_due_pagar,
+        'td_4' => $mn_due_pagar." ".$mn_late_fee,
         //'td_4' => "$".$mn_due_pagar,
         'td_5' => $fe_pago,
         'td_6' => $mn_pagado,
