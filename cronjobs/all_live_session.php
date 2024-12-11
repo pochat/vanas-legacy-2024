@@ -8,6 +8,9 @@
 
 	$from = 'noreply@vanas.ca';
 	$day_advance = 1;
+	$dom = new DOMDocument();
+	libxml_use_internal_errors(true); // Para suprimir errores relacionados con HTML mal formado
+
 
 	# Prepare email templates for live session, note: (change nb_template='___' to fl_template=id once this is stable on production server)
 	# Student mandatory live session template
@@ -50,7 +53,7 @@
                 LEFT JOIN k_semana_grupo c ON a.fl_semana_grupo=c.fl_semana_grupo
                 WHERE DATE_ADD(CURDATE(), INTERVAL $day_advance DAY) = DATE_FORMAT(a.fe_clase, '%Y-%c-%d')
         ";
-    $Query .= ") ";
+    $Query .= ") LIMIT 1";
 
 	$rs = EjecutaQuery($Query);
 
@@ -114,9 +117,15 @@
 				# Generate the email template with the variables
 				$ds_email_template = GenerateTemplate($ds_st_live_template, $variables);
 
-				$ds_email_template = preg_replace('/(<a[^>]*id="login-redirect"[^>]*href=[\'"])[^\'"]*([\'"][^>]*>)/', '$1https://campus.vanas.ca/modules/students_new/index.php#ajax/home.php$2', $ds_email_template);
-
-            #Se envia copia de emmail si el studen asi lo elige.
+				$dom->loadHTML($ds_email_template);
+				$link = $dom->getElementById('login-redirect');
+				if ($link) {
+					// Cambiar el atributo href
+					$link->setAttribute('href', 'https://campus.vanas.ca/modules/students_new/index.php#ajax/home.php');
+				}
+				$ds_email_template = $dom->saveHTML();
+            
+					#Se envia copia de emmail si el studen asi lo elige.
             if ($fg_copy_email_alternativo) {
                 //SendNoticeMail($client, $from, $ds_email_alterative, "", "Upcoming Live Session", $ds_email_template);
 				EnviaMailHTML('', $from, $ds_email_alterative, "Upcoming Live Session", $ds_email_template);
@@ -154,7 +163,14 @@
 			);
 			# Generate the email template with the variables
 			$ds_email_template = GenerateTemplate($ds_te_live_template, $variables);
-			$ds_email_template = preg_replace('/(<a[^>]*id="login-redirect"[^>]*href=")[^"]*("[^>]*>)/', '$1https://campus.vanas.ca/modules/teachers_new/index.php#ajax/home.php$2', $ds_email_template);
+
+			$dom->loadHTML($ds_email_template);
+			$link = $dom->getElementById('login-redirect');
+			if ($link) {
+				// Cambiar el atributo href
+				$link->setAttribute('href', 'https://campus.vanas.ca/modules/teachers_new/index.php#ajax/home.php');
+			}
+			$ds_email_template = $dom->saveHTML();
 
 			//SendNoticeMail($client, $from, $ds_email, "", "Upcoming Live Session", $ds_email_template);
 			EnviaMailHTML('', $from, $ds_email, "Upcoming Live Session", $ds_email_template);
@@ -209,9 +225,15 @@
 				);
 				# Generate the email template with the variables
 				$ds_email_template = GenerateTemplate($ds_st_extra_template, $variables);
-				$ds_email_template = preg_replace('/(<a[^>]*id="login-redirect"[^>]*href=")[^"]*("[^>]*>)/', '$1https://campus.vanas.ca/modules/students_new/index.php#ajax/home.php$2', $ds_email_template);
 
-				//SendNoticeMail($client, $from, $ds_email, "", "Upcoming Extra Live Session", $ds_email_template);
+				$dom->loadHTML($ds_email_template);
+				$link = $dom->getElementById('login-redirect');
+				if ($link) {
+					// Cambiar el atributo href
+					$link->setAttribute('href', 'https://campus.vanas.ca/modules/students_new/index.php#ajax/home.php');
+				}
+				$ds_email_template = $dom->saveHTML();
+            //SendNoticeMail($client, $from, $ds_email, "", "Upcoming Extra Live Session", $ds_email_template);
 				EnviaMailHTML('', $from, $ds_email, "Upcoming Extra Live Session", $ds_email_template);
             }
 
@@ -239,9 +261,15 @@
 			);
 			# Generate the email template with the variables
 			$ds_email_template = GenerateTemplate($ds_te_extra_template, $variables);
-			$ds_email_template = preg_replace('/(<a[^>]*id="login-redirect"[^>]*href=")[^"]*("[^>]*>)/', '$1https://campus.vanas.ca/modules/teachers_new/index.php#ajax/home.php$2', $ds_email_template);
 
-			//SendNoticeMail($client, $from, $ds_email, "", "Upcoming Extra Live Session", $ds_email_template);
+			$dom->loadHTML($ds_email_template);
+			$link = $dom->getElementById('login-redirect');
+			if ($link) {
+				// Cambiar el atributo href
+				$link->setAttribute('href', 'https://campus.vanas.ca/modules/teachers_new/index.php#ajax/home.php');
+			}
+			$ds_email_template = $dom->saveHTML();
+        //SendNoticeMail($client, $from, $ds_email, "", "Upcoming Extra Live Session", $ds_email_template);
 			EnviaMailHTML('', $from, $ds_email, "Upcoming Extra Live Session", $ds_email_template);
     }
 	}
