@@ -106,6 +106,13 @@
       # Set url path and query string
  #     $ds_template_html->getElementById("login-redirect")->href = $base_url."/modules/teachers_new/index.php#ajax/home.php";
 
+        $dom->loadHTML($ds_email_template);
+        $link = $dom->getElementById('login-redirect');
+        if ($link) {
+            // Cambiar el atributo href
+            $link->setAttribute('href', 'https://campus.vanas.ca/modules/students_new/index.php#ajax/home.php');
+        }
+        $ds_email_template = $dom->saveHTML();
 
 
 	  #Se envia copia de emmail si el studen asi lo elige.
