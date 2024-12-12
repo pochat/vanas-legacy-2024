@@ -38,3 +38,7 @@ VANAS-LEGACY-2024
 - check correct ssl paths database connection username and password
 - Go inside the folder and execute:
 - sudo forever start server.js  
+
+# backups DB VANAS_PROD and vanas_plus
+
+- /efs/vanas_uploads/backup_db
