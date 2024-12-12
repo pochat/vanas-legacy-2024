@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Variables
-BACKUP_DIR="/var/www/html/vanas/backup"
+BACKUP_DIR="/var/www/html/vanas/backup_db"
 MYSQL_USER="vanas"
 MYSQL_PASSWORD="D#v3L0p3rr2025"
 DATABASE="vanas_prod"
