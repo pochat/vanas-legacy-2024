@@ -1,12 +1,12 @@
 <?php
-  
+
   # Libreria de funciones
   require '../../lib/general.inc.php';
 
-  
+
   # Verifica que exista una sesion valida en el cookie y la resetea
   ValidaSesion( );
-  
+
 # Recibe parametrosfg_study_permit
   $origen = RecibeParametroHTML('origen',False,True);
   if(!empty($origen)){
@@ -19,7 +19,7 @@
   $confirmacion = RecibeParametroNumerico('confirmacion');
   $fg_error = RecibeParametroNumerico('fg_error');
   $falta_break=RecibeParametroNumerico('break');
-  
+
   # anios que falta agreagar el break
   $tot_anios = RecibeParametroNumerico('tot_anios');
 
@@ -30,13 +30,13 @@
     MuestraPaginaError(ERR_SIN_PERMISO);
     exit;
   }
-  
+
   # Verifica que el usuario tenga permiso de usar esta funcion
   if(!ValidaPermiso(FUNC_APP_FRM, $permiso)) {
     MuestraPaginaError(ERR_SIN_PERMISO);
     exit;
   }
-  
+
   # Recupera datos de la sesion
   $concat = array(ConsultaFechaBD('fe_ultmod', FMT_FECHA), "' '", ConsultaFechaBD('fe_ultmod', FMT_HORA));
   $Query  = "SELECT cl_sesion, fg_paypal, fg_confirmado, fg_pago, fg_inscrito, (".ConcatenaBD($concat).") 'fe_ultmod',fl_pais_campus,fg_stripe,fg_scholarship ";
@@ -49,10 +49,10 @@
   $fg_pago = $row[3];
   $fg_inscrito = $row[4];
   $fe_ultmod = $row[5];
-  $fl_pais_selected=$row['fl_pais_campus'];
+  $fl_pais_selected=!empty($row['fl_pais_campus'])? $row['fl_pais_campus']:38;
   $fg_stripe=$row['fg_stripe'];
   $fg_scholarship=$row['fg_scholarship'];
-  
+
   # Recupera datos del aplicante: forma 1
   $Query  = "SELECT ds_fname, ds_mname, ds_lname, ds_number, ds_alt_number, ds_email, fg_gender, ";
   $Query .= ConsultaFechaBD('fe_birth', FMT_FECHA)." fe_birth, ";
@@ -61,7 +61,7 @@
   $Query .= "fg_ori_via, ds_ori_other, fg_ori_ref, ds_ori_ref_name, nb_programa, nb_periodo, fl_template, b.fl_programa, c.fe_inicio, a.fl_periodo ";
   $Query .=",a.fg_disability,a.ds_disability,a.ds_ruta_foto_permiso,".ConsultaFechaBD('a.fe_start_date',FMT_FECHA)." fe_start_date, ".ConsultaFechaBD('a.fe_expirity_date',FMT_FECHA)." fe_expirity_date ,nb_name_institutcion,a.ds_sin,a.fl_immigrations_status  ";
   $Query .=",race,grade,hispanic,military  ";
-  
+
   /*$Query .= "FROM k_ses_app_frm_1 a, c_programa b, c_periodo c, c_pais d, c_pais e ";
   $Query .= "WHERE a.fl_programa=b.fl_programa ";
   $Query .= "AND a.fl_periodo=c.fl_periodo ";
@@ -69,8 +69,8 @@
   $Query .= "AND a.ds_eme_country=e.fl_pais ";
   $Query .= "AND cl_sesion='$cl_sesion'";*/
   $Query .="FROM k_ses_app_frm_1 a
-  JOIN c_programa b ON  a.fl_programa=b.fl_programa 
-  join c_periodo c ON a.fl_periodo=c.fl_periodo  
+  JOIN c_programa b ON  a.fl_programa=b.fl_programa
+  join c_periodo c ON a.fl_periodo=c.fl_periodo
   left join c_pais d ON a.ds_add_country=d.fl_pais
   LEFT join c_pais e ON a.ds_eme_country=e.fl_pais
   WHERE cl_sesion='$cl_sesion' ";
@@ -85,7 +85,7 @@
   $fg_ori_via = str_texto($row[19]);
   $ds_ori_other = str_texto($row[20]);
   $fg_ori_ref = str_texto($row[21]);
-  $ds_ori_ref_name = str_texto($row[22]); 
+  $ds_ori_ref_name = str_texto($row[22]);
   $nb_programa = $row[23];
   $nb_periodo = $row[24];
   $fl_template = $row[25];
@@ -99,13 +99,13 @@
   $fe_expirity_date=$row['fe_expirity_date'];
   $nb_name_institutcion=str_texto($row['nb_name_institutcion']);
   $ds_sin=$row['ds_sin'];
-  $fl_immigrations_status=$row['fl_immigrations_status'];
+  $fl_immigrations_status=!empty($row['fl_immigrations_status'])?$row['fl_immigrations_status']:1;
   $race=$row['race'];
   $grade=$row['grade'];
   $hispanic=!empty($row['hispanic'])?"Yes":"No";
   $military=!empty($row['military'])?"Yes":"No";
   $fg_disability=!empty($row['fg_disability'])?"Yes":"No";
-  
+
   switch ($race) {
 
       case'W':
@@ -164,8 +164,8 @@
   $Query="SELECT fg_aplicar_international FROM k_app_contrato WHERE cl_sesion='$cl_sesion' ";
   $row=RecuperaValor($Query);
   $fg_aplicar_international=$row['fg_aplicar_international'];
-  
-  
+
+
   #Recupera datos adicionales a la forma 1 y del contrato del aplicante
   $Query  = "SELECT no_contrato, mn_app_fee, mn_tuition, mn_costs, ds_costs, mn_discount, ds_discount, mn_tot_tuition, mn_tot_program, ";
   $Query .= "mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid, ";
@@ -203,27 +203,27 @@
     //$cl_preference_2 = $row[25];
     //$cl_preference_3 = $row[33];
   }
-  
-   #Realizamos la consulta para mostrar los tiempos 
+
+   #Realizamos la consulta para mostrar los tiempos
 
   $Query_classtime="SELECT CONCAT( dia,'-',no_hora,' ',ds_tiempo)AS dia,fl_class_time FROM
             (
-            SELECT CASE WHEN cl_dia='1'THEN '".ObtenEtiqueta(2390)."' 
+            SELECT CASE WHEN cl_dia='1'THEN '".ObtenEtiqueta(2390)."'
                WHEN cl_dia='2'THEN '".ObtenEtiqueta(2391)."'
-               WHEN cl_dia='3'THEN '".ObtenEtiqueta(2392)."' 
-               WHEN cl_dia='4'THEN '".ObtenEtiqueta(2393)."' 
-               WHEN cl_dia='5'THEN '".ObtenEtiqueta(2394)."' 
-               WHEN cl_dia='6'THEN '".ObtenEtiqueta(2395)."' 
-               ELSE '".ObtenEtiqueta(2396)."' 
-               END dia , A.no_hora,ds_tiempo,A.fl_class_time_programa,B.fl_class_time 
+               WHEN cl_dia='3'THEN '".ObtenEtiqueta(2392)."'
+               WHEN cl_dia='4'THEN '".ObtenEtiqueta(2393)."'
+               WHEN cl_dia='5'THEN '".ObtenEtiqueta(2394)."'
+               WHEN cl_dia='6'THEN '".ObtenEtiqueta(2395)."'
+               ELSE '".ObtenEtiqueta(2396)."'
+               END dia , A.no_hora,ds_tiempo,A.fl_class_time_programa,B.fl_class_time
 		         FROM k_class_time_programa A
-               JOIN k_class_time B ON B.fl_class_time=A.fl_class_time 
+               JOIN k_class_time B ON B.fl_class_time=A.fl_class_time
 		         WHERE B.fl_programa=$fl_programa AND B.fl_periodo=$fl_periodo ) Z;
         ";
   $rs_class_time = EjecutaQuery($Query_classtime);
   $tot_reg_class_time = CuentaRegistros($rs_class_time);
   $nb_dia="";
-  
+
   for($ic=1;$rowc=RecuperaRegistro($rs_class_time);$ic++) {
  $fl_class=$rowc[1];
       $nb_dia_=str_texto($rowc[0]);
@@ -239,15 +239,15 @@
 
   }
   $nb_dias=$nb_dia;
-  
-  
+
+
   #error
   # Inicializa variables
   if(!$fg_error) { // Sin error, viene del listado
     if(!empty($cl_sesion)) { // Actualizacion, recupera de la base de datos
       $Query  = "SELECT ds_add_number, ds_add_street, ds_add_city, ds_add_state, ds_add_zip, ds_add_country, b.fg_pago,  c.ds_m_add_number, c.ds_m_add_street, ";
       $Query .= "ds_m_add_city, c.ds_m_add_state, c.ds_m_add_zip, c.ds_m_add_country, ds_fname, ds_mname, ds_lname, ds_number, ds_link_to_portfolio, fg_international, ".ConsultaFechaBD('fe_birth', FMT_FECHA).", ";
-      $Query .= "a.ds_email, c.ds_a_email, a.ds_ruta_foto, b.fg_archive, a.fg_responsable, c.cl_preference_1, c.cl_preference_2, c.cl_preference_3, a.cl_recruiter ";      
+      $Query .= "a.ds_email, c.ds_a_email, a.ds_ruta_foto, b.fg_archive, a.fg_responsable, c.cl_preference_1, c.cl_preference_2, c.cl_preference_3, a.cl_recruiter ";
       $Query .= ",a.ds_alt_number, c.ds_p_name, c.ds_education_number, c.ds_usual_name ";
       $Query .= ", c.ds_citizenship, c.fg_study_permit, c.fg_study_permit_other, c.fg_aboriginal, c.ds_aboriginal, c.fg_health_condition, c.ds_health_condition,b.fg_enrollment,a.comments ";
       $Query .= "FROM k_ses_app_frm_1 a, c_sesion b  LEFT JOIN k_app_contrato c ON(b.cl_sesion=c.cl_sesion AND c.no_contrato=1) ";
@@ -279,12 +279,12 @@
       $fg_responsable = $row[24];
       $fg_enrollment=$row['fg_enrollment'];
       $comments=$row['comments'];
-      
+
       //if($fg_responsable==1)
         //  $fg_responsable=0;
-      
-      
-      
+
+
+
       if(!empty($fg_responsable)){
         $Query_res  = "SELECT ds_fname_r, ds_lname_r, ds_email_r, ds_aemail_r, ds_pnumber_r, ds_relation_r, fg_email ";
         $Query_res .= "FROM k_presponsable WHERE cl_sesion='$cl_sesion'";
@@ -335,7 +335,7 @@
       $ds_email = "";
       $ds_a_email = "";
       $ds_ruta_foto = "";
-      $fg_archive = 0;      
+      $fg_archive = 0;
       $ds_alt_number = "";
       $ds_p_name = "";
       $ds_education_number = "";
@@ -365,7 +365,7 @@
     $ds_lname_err = "";
     $ds_email_err = "";
     $ds_a_email_err = "";
-    $fg_archive = 0;    
+    $fg_archive = 0;
     $ds_alt_number_err = "";
     $ds_p_name_err = "";
     $ds_education_number_err = "";
@@ -406,12 +406,12 @@
     $ds_email = RecibeParametroHTML('ds_email');
     $ds_email_err = RecibeParametroHTML('ds_email_err');
     $ds_ruta_foto = RecibeParametroHTML('ds_ruta_foto');
-    $ds_ruta_foto_err = RecibeParametroHTML('ds_ruta_foto_err');   
+    $ds_ruta_foto_err = RecibeParametroHTML('ds_ruta_foto_err');
     $fg_archive = RecibeParametroBinario('fg_archive');
     # Person Responsable
-    $fg_responsable = RecibeParametroBinario('fg_responsable');    
+    $fg_responsable = RecibeParametroBinario('fg_responsable');
     $ds_fname_r = RecibeParametroHTML('ds_fname_r');
-    $ds_fname_r_err = RecibeParametroHTML('ds_fname_r_err');    
+    $ds_fname_r_err = RecibeParametroHTML('ds_fname_r_err');
     $ds_lname_r = RecibeParametroHTML('ds_lname_r');
     $ds_lname_r_err = RecibeParametroHTML('ds_lname_r_err');
     $ds_email_r = RecibeParametroHTML('ds_email_r');
@@ -431,10 +431,10 @@
     $cl_preference_3_err = RecibeParametroNumerico('cl_preference_3_err');
     $cl_recruiter = RecibeParametroNumerico('cl_recruiter');
     $cl_recruiter_err = RecibeParametroNumerico('cl_recruiter_err');
-	
+
 	$fl_class_time=RecibeParametroNumerico('fl_class_time');
 	$fl_class_time_err=RecibeParametroNumerico('fl_class_time_err');
-    
+
     # Alter number Previous name Student personal education number
     $ds_alt_number = RecibeParametroHTML("ds_alt_number");
     $ds_alt_number_err = RecibeParametroHTML("ds_alt_number_err");
@@ -455,31 +455,31 @@
     $fg_disabilityie_err = RecibeParametroBinario('fg_disabilityie_err');
     $ds_disability = RecibeParametroHTML('ds_disability');
     $ds_disability_err = RecibeParametroHTML('ds_disability_err');
-    
-    
+
+
     $fe_start_date=RecibeParametroHoraMin('fe_start_date');
     $fe_expirity_date=RecibeParametroHoraMin('fe_expirity_date');
     $nb_name_institutcion=RecibeParametroHTML('nb_name_institutcion');
-    
+
     $fg_enrollment=RecibeParametroBinario('fg_enrollment');
     $comments=RecibeParametroHTML('comments');
 
 
   }
-  
+
   if($fg_international==1){
-      
+
 
   }else{
 
 
-      
-  
+
+
   }
-  
+
 
   if($fg_international==1){
-      
+
       if($fg_payment=='C'){
           # Recupera datos de pagos del curso.
           $Query  = "SELECT no_a_payments_internacional_combined, ds_a_freq_internacional_combined, no_b_payments_internacional_combined, ds_b_freq_internacional_combined, no_c_payments_internacional_combined, ds_c_freq_internacional_combined, no_d_payments_internacional_combined, ds_d_freq_internacional_combined, cl_type, ";
@@ -490,7 +490,7 @@
           $Query .= "no_a_interes_internacional, no_b_interes_internacional, no_c_interes_internacional, no_d_interes_internacional, no_semanas, mn_tuition_internacional ";
 
       }
-  }else{    
+  }else{
       if($fg_payment=='C'){
           # Recupera datos de pagos del curso.
           $Query  = "SELECT no_a_payments_combined, ds_a_freq_combined, no_b_payments_combined, ds_b_freq_combined, no_c_payments_combined, ds_c_freq_combined, no_d_payments_combined, ds_d_freq_combined, cl_type, ";
@@ -509,8 +509,8 @@
 
 
 
-  
-  
+
+
   $Query .= "FROM k_programa_costos ";
   $Query .= "WHERE fl_programa = $fl_programa";
   $row = RecuperaValor($Query);
@@ -529,11 +529,11 @@
   $no_d_interes = $row[12];
   $no_semanas = $row[13];
   $mn_tuition = $row[14];
-  
+
   # Calculos pagos
   $total_tuition = number_format($tuition + $no_costos_ad - $no_descuento, 2, '.', '');
   $total = number_format($app_fee + $total_tuition, 2, '.', '');
-  
+
   # Recupera datos del aplicante: forma 2
   $Query  = "SELECT ds_resp_1, ds_resp_2, ds_resp_3, ds_resp_4, ds_resp_5, ds_resp_6, ds_resp_7 ";
   $Query .= "FROM k_ses_app_frm_2 ";
@@ -546,7 +546,7 @@
   $ds_resp2_5 = str_texto($row[4]);
   $ds_resp2_6 = str_texto($row[5]);
   $ds_resp2_7 = str_texto($row[6]);
-  
+
   # Recupera datos del aplicante: forma 3
   $Query  = "SELECT fg_resp_1_1, fg_resp_1_2, fg_resp_1_3, fg_resp_1_4, fg_resp_1_5, fg_resp_1_6, ";
   $Query .= "fg_resp_2_1, fg_resp_2_2, fg_resp_2_3, fg_resp_2_4, fg_resp_2_5, fg_resp_2_6, fg_resp_2_7, ";
@@ -569,7 +569,7 @@
   $fg_resp4_2_7 = str_ascii($row[12]);
   $fg_resp4_3_1 = str_ascii($row[13]);
   $fg_resp4_3_2 = str_ascii($row[14]);
-  
+
   # Recupera datos del aplicante: forma 4
   $Query  = "SELECT ds_resp_1, ds_resp_2_1, ds_resp_2_2, ds_resp_2_3, ds_resp_3, ds_resp_4, ds_resp_5, ds_resp_6, ds_resp_7, ds_resp_8 ";
   $Query .= "FROM k_ses_app_frm_3 ";
@@ -585,8 +585,8 @@
   $ds_resp3_6 = str_texto($row[7]);
   $ds_resp3_7 = str_texto($row[8]);
   $ds_resp3_8 = str_texto($row[9]);
-  
-  
+
+
   # Presenta forma de captura
   PresentaHeader( );
   PresentaEncabezado(FUNC_APP_FRM);
