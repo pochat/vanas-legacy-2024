@@ -1,13 +1,18 @@
 <?php
 
   ### Created on 18-03-2020 by UMP, This cron is for execution each sharp hour
-  ### It reviews the teachers attendance status for the past hour 
+  ### It reviews the teachers attendance status for the past hour
   ### and sends an email in case the teahcer was late(late attendance class notification)
   ### or missed the class(missed class notification)
+if (PHP_OS == 'Linux') { # when is production
+    require '/var/www/html/vanas/lib/com_func.inc.php';
+    require '/var/www/html/vanas/lib/sp_config.inc.php';
+} else {
 
-  require '/var/www/html/vanas/lib/com_func.inc.php';
-  require '/var/www/html/vanas/lib/sp_config.inc.php';
+    require '../lib/com_func.inc.php';
+    require '../lib/sp_config.inc.php';
 
+}
   # Originate email address
   $from = 'noreply@vanas.ca';
   # Minus 1 hour to the actual DateTime
@@ -45,7 +50,7 @@
     $fe_time = $row[10];
     $fe_attendance = !empty($row[11])?$row[11]:'';
     $cl_status_attendance = $row[12];
-    $time_attendance = !empty($fe_attendance)?substr($fe_attendance, 10, 6).'hrs':''; 
+    $time_attendance = !empty($fe_attendance)?substr($fe_attendance, 10, 6).'hrs':'';
 
     # Fill the data on the substitution array
     $variables = array(
@@ -99,15 +104,15 @@
           # Save a log of the email sended
           $QueryMC  = "INSERT INTO k_maestro_template(fl_maestro,fl_template,fe_envio,ds_header,ds_body,ds_footer) ";
           $QueryMC .= "VALUES ($fl_usuario, 181, CURRENT_TIMESTAMP, '".$st_late_template."') ";
-          EjecutaQuery($QueryMC); 
+          EjecutaQuery($QueryMC);
         break;
-   
+
 	default: // case attendance is not "late" or "missed", must be ("present"), in that case does nothing
 	  # for now do nothing, this could have use in future implementations
 	break;
     }
 
-    # clear the variable to avoid duplicate data 
+    # clear the variable to avoid duplicate data
     unset($variables);
 
   }

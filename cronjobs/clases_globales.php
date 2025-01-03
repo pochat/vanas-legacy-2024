@@ -1,4 +1,5 @@
 <?php
+if (PHP_OS == 'Linux') { # when is production
     # Include campus libraries
     require '/var/www/html/vanas/lib/com_func.inc.php';
     require '/var/www/html/vanas/lib/sp_config.inc.php';
@@ -6,6 +7,12 @@
     # Include AWS SES libraries
     require '/var/www/html/vanas/AWS_SES/PHP/com_email_func.inc.php';
 
+} else {
+    require '../lib/com_func.inc.php';
+    require '../lib/sp_config.inc.php';
+    require '../AWS_SES/PHP/com_email_func.inc.php';
+
+}
     $from = 'noreply@vanas.ca';
     $day_advance = 1;
     $dom = new DOMDocument();
@@ -36,9 +43,9 @@
   $Query .= "LEFT JOIN k_alumno_cg kacg ON(kacg.fl_clase_global=cg.fl_clase_global) ";
   $Query .= "LEFT JOIN k_clase_cg kcg ON(kcg.fl_clase_global=cg.fl_clase_global) ";
   $Query .= "LEFT JOIN c_usuario us ON(us.fl_usuario=kacg.fl_usuario) ";
-  echo$Query .= "WHERE DATE_ADD('".$fecha_actual."', INTERVAL ".$dia." DAY) = DATE_FORMAT(kcg.fe_clase, '%Y-%m-%d') AND us.fg_activo='1' ";
-	$rs = EjecutaQuery($Query);
-exit;
+  $Query .= "WHERE DATE_ADD('".$fecha_actual."', INTERVAL ".$dia." DAY) = DATE_FORMAT(kcg.fe_clase, '%Y-%m-%d') AND us.fg_activo='1' ";
+  $rs = EjecutaQuery($Query);
+
   while($row=RecuperaRegistro($rs)){
 		$fl_clase_cg = $row[0];
 		$fl_clase_global = $row[1];

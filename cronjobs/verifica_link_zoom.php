@@ -1,17 +1,26 @@
-<?php 
+<?php
+if (PHP_OS == 'Linux') {
+    #Este cron verifica los links generados de zoom para acceder una clase, si no es valido regenera el link.
+    require '/var/www/html/vanas/lib/com_func.inc.php';
+    require '/var/www/html/vanas/lib/sp_config.inc.php';
 
-#Este cron verifica los links generados de zoom para acceder una clase, si no es valido regenera el link. 
-require '/var/www/html/vanas/lib/com_func.inc.php';
-require '/var/www/html/vanas/lib/sp_config.inc.php';
+    require '/var/www/html/vanas/AD3M2SRC4/lib/zoom_config.php';
+    $file_name_txt = "/var/www/html/vanas/cronjobs/log_verifica_zoom.txt";
 
-require '/var/www/html/vanas/AD3M2SRC4/lib/zoom_config.php';
+} else {
 
+    require '../lib/com_func.inc.php';
+    require '../lib/sp_config.inc.php';
 
-$file_name_txt="/var/www/html/vanas/cronjobs/log_verifica_zoom.txt";
+    require '../AD3M2SRC4/lib/zoom_config.php';
+    $file_name_txt = "log_verifica_zoom.txt";
+
+}
+
 
 
 #Obtenemos fecha mes anterior.
-$fe_mes_anterior=  date('Y-m-d',strtotime("-1 month"));
+$fe_mes_anterior=  date('Y-m-d',strtotime("-0 month"));
 $result["event"] = array();
 
 $fe_actual=date('Y-m-d',strtotime("-0 days"));
@@ -23,18 +32,19 @@ GeneraLog($file_name_txt,"====================================Inicia proceso ".d
 $Query ="( ";
 $Query .="SELECT fl_grupo,fl_term,fl_programa,fl_clase,fl_semana,fname_teacher,lname_teacher,nb_programa,no_semana,ds_titulo,fe_clase,hr_clase,fg_adicional,no_grado,time_format(ADDTIME  (hr_clase ,'01:00:00'), '%H:%i') AS hr_final,fl_maestro   ";
 $Query.="FROM groups_schedules ";
-$Query.="WHERE fe_clase > '$fe_mes_anterior' ";
+$Query.="WHERE fe_clase >= '$fe_mes_anterior' ";
 $Query.=") UNION( ";
 $Query.="
         SELECT DISTINCT a.fl_grupo,a.fl_term,''fl_programa,c.fl_clase_grupo AS fl_clase,''fl_semana,i.ds_nombres fname_teacher,i.ds_apaterno lname_teacher,  c.nb_clase nb_programa ,h.no_semana,a.nb_grupo ds_titulo, DATE_FORMAT(c.fe_clase,'%Y-%m-%d') as fe_clase,DATE_FORMAT(c.fe_clase,'%H:%i') as hr_clase, ''fg_adicional,''no_grado,''hr_final,i.fl_usuario fl_maestro
          FROM c_grupo a
-         JOIN k_clase_grupo c ON c.fl_grupo=a.fl_grupo 
+         JOIN k_clase_grupo c ON c.fl_grupo=a.fl_grupo
          JOIN k_alumno_grupo g ON g.fl_grupo=a.fl_grupo
          JOIN k_semana_grupo h ON c.fl_semana_grupo=h.fl_semana_grupo
-	     join c_usuario i ON i.fl_usuario=c.fl_maestro 
-	     WHERE fe_clase > '$fe_mes_anterior' 
+	     join c_usuario i ON i.fl_usuario=c.fl_maestro
+	     WHERE fe_clase >= '$fe_mes_anterior'
 ";
 $Query.=") ";
+
 $rs = EjecutaQuery($Query);
 $regenerate_link=0;
 $regenerate_list="";
@@ -57,14 +67,14 @@ for($a=0; $row=RecuperaRegistro($rs); $a++){
     $no_term=$row['no_grado'];
     $hr_final_clase=$row['hr_final'];
     $fl_maestro=$row['fl_maestro'];
-    #Recupermos el grupo 
+    #Recupermos el grupo
     $Query="SELECT nb_grupo,fg_zoom FROM c_grupo WHERE fl_grupo=$fl_grupo ";
     $row=RecuperaValor($Query);
     $nb_grupo=str_texto($row['nb_grupo']);
     $fg_zoom=$row['fg_zoom'];
 
 	if(!empty($fl_programa)){
-		
+
 		#Recuperamos link y liecneic de zoom con eso verificamos el color.
 		#Revisa si hay una clase activa en este momento, real
 		$Queryl  = "SELECT fl_live_session, zoom_id,zoom_meeting_id ";
@@ -74,7 +84,7 @@ for($a=0; $row=RecuperaRegistro($rs); $a++){
 		$fl_live_session=$rowl['fl_live_session'];
 		$cl_licenica=$rowl['zoom_id'];
 		$zoom_meeting_id=$rowl['zoom_meeting_id'];
-	
+
 	}else{
 
         #clase grupo global
@@ -88,7 +98,7 @@ for($a=0; $row=RecuperaRegistro($rs); $a++){
         $zoom_meeting_id=$rowl['zoom_meeting_id'];
 
 
-        
+
     }
 
     #Generamos el log.
@@ -99,12 +109,12 @@ for($a=0; $row=RecuperaRegistro($rs); $a++){
     if($fe_clase>=$fe_actual){
         if((!empty($cl_licenica))&&(!empty($zoom_meeting_id))){
             $verifica_metting=VerifyMeetingZoom($cl_licenica,$zoom_meeting_id);
-        
+
             #si es link invalido la regenera y actualiza la BD
             if(empty($verifica_metting)){
-        
-        
-                
+
+
+
                 #Damos formato a la clase para isertarla en zoom
                 $fe_clase_zoom=strtotime('+0 day',strtotime($fe_clase));
                 $fe_clase_zoom= date('Y-m-d',$fe_clase_zoom);
@@ -117,9 +127,9 @@ for($a=0; $row=RecuperaRegistro($rs); $a++){
                 if(!empty($fl_programa)){
                     create_meetingZoom($fl_live_session,'60',$ds_titulo,$fe_clase_zoom,$pass_clase_zoom,'k_live_session',$cl_licenica);
                 }else{
-                    
+
                     create_meetingZoom($fl_live_session,'60',$ds_titulo,$fe_clase_zoom,$pass_clase_zoom,'k_live_session_grupal',$cl_licenica);
-                    
+
                 }
 
 				$regenerate_link ++;
@@ -129,7 +139,7 @@ for($a=0; $row=RecuperaRegistro($rs); $a++){
 
 
             }
-        
+
         }
     }
 
@@ -144,7 +154,7 @@ for($a=0; $row=RecuperaRegistro($rs); $a++){
 GeneraLog($file_name_txt,"====================================Finaliza proceso ".date("F j, Y, g:i a")."=================================================");
 
 
-#Enviamos emial con la informacion 
+#Enviamos emial con la informacion
 
 $from_add = ObtenConfiguracion(4);
 $email = ObtenConfiguracion(83);
@@ -161,10 +171,10 @@ $message=$ds_encabezado.$ds_cuerpo.$ds_pie."<br><br><br>";
 $no_regenerate=$total_links-$regenerate_link;
 
 #Realizamos el reemplazo.
-$message=str_replace("#total#", $total_links, $message);   
-$message=str_replace("#regenerate#", $regenerate_link, $message);   
-$message=str_replace("#not_regenerate#", $no_regenerate, $message); 
-$message=str_replace("#regenerate_list#", $regenerate_list, $message); 
+$message=str_replace("#total#", $total_links, $message);
+$message=str_replace("#regenerate#", $regenerate_link, $message);
+$message=str_replace("#not_regenerate#", $no_regenerate, $message);
+$message=str_replace("#regenerate_list#", $regenerate_list, $message);
 
 $mail = EnviaMailHTML('', $from_add, $email, $subject, $message);
 
@@ -175,7 +185,7 @@ $mail = EnviaMailHTML('', $from_add, $email, $subject, $message);
 
 
 function GeneraLog($file_name_txt,$contenido_log=''){
-    
+
     $fch= fopen($file_name_txt, "a+"); // Abres el archivo para escribir en él
     fwrite($fch, "\n".$contenido_log); // Grabas
     fclose($fch); // Cierras el archivo.

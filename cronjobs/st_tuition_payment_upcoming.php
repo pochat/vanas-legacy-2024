@@ -1,11 +1,18 @@
 <?php
-	# Include campus libraries
-	require '/var/www/html/vanas/lib/com_func.inc.php';
-	require '/var/www/html/vanas/lib/sp_config.inc.php';
+if (PHP_OS == 'Linux') {
+    # Include campus libraries
+    require '/var/www/html/vanas/lib/com_func.inc.php';
+    require '/var/www/html/vanas/lib/sp_config.inc.php';
 
-	# Include AWS SES libraries
+    # Include AWS SES libraries
     require '/var/www/html/vanas/AWS_SES/PHP/com_email_func.inc.php';
+} else {
 
+    require '../lib/com_func.inc.php';
+    require '../lib/sp_config.inc.php';
+    require '../AWS_SES/PHP/com_email_func.inc.php';
+
+}
 	$from = 'noreply@vanas.ca';
 	$day_advance = 7;//7 siempre debe ser 7 dias.
 
