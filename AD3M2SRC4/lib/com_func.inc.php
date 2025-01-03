@@ -2075,7 +2075,7 @@ function EnviaMailHTML($p_from_name, $p_from_mail, $p_to, $p_subject, $p_message
     try{
 
         //Server settings
-        $mail->SMTPDebug = 1;//SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+        $mail->SMTPDebug = 2;//SMTP::DEBUG_SERVER;                      //Enable verbose debug output
         $mail->isSMTP();                                            //Send using SMTP
         $mail->Host       = $smtphost;                     //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
