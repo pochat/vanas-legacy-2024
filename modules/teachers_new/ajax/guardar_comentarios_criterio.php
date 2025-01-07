@@ -19,13 +19,13 @@
 
 
 
-  # Load AWS class
-if (PHP_OS == 'Linux') { # when is production
-    require('/var/www/html/AWS_SES/aws/aws-autoloader.php');
-} else {
-    require($_SERVER['DOCUMENT_ROOT'] . '/AWS_SES/aws/aws-autoloader.php');
-}
-  use Aws\Common\Aws;
+  # Load AWS class deprecate 2025
+#if (PHP_OS == 'Linux') { # when is production
+#    require('/var/www/html/AWS_SES/aws/aws-autoloader.php');
+#} else {
+#    require($_SERVER['DOCUMENT_ROOT'] . '/AWS_SES/aws/aws-autoloader.php');
+#}
+#  use Aws\Common\Aws;
 
   # Include html parser
 if (PHP_OS == 'Linux') { # when is production
@@ -38,14 +38,14 @@ if (PHP_OS == 'Linux') { # when is production
 
 # Initialize Amazon Web
 if (PHP_OS == 'Linux') { # when is production
-    $aws = Aws::factory('/var/www/html/AWS_SES/PHP/config.inc.php');
+#    $aws = Aws::factory('/var/www/html/AWS_SES/PHP/config.inc.php');
 } else {
 
    // $aws = Aws::factory($_SERVER['DOCUMENT_ROOT'] . '/AWS_SES/PHP/config.inc.php');
 }
   # Get the client
 #  $client = $aws->get('Ses');
-  $client = "ses";
+#  $client = "ses";
   # Initialize the sender address
   $from = 'noreply@vanas.ca';
 
