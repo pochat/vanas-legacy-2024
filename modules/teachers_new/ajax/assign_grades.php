@@ -57,18 +57,18 @@
   require('/var/www/html/AWS_SES/PHP/com_email_func.inc.php');
 
   # Load AWS class
-  require('/var/www/html/AWS_SES/aws/aws-autoloader.php');
-  use Aws\Common\Aws;
+  #require('/var/www/html/AWS_SES/aws/aws-autoloader.php');
+  #use Aws\Common\Aws;
 
   # Include html parser
   require('/var/www/html/vanas/modules/common/new_campus/lib/simple_html_dom.php');// produccion
 
   # Initialize Amazon Web Service
-  $aws = Aws::factory('/var/www/html/AWS_SES/PHP/config.inc.php');
+  #$aws = Aws::factory('/var/www/html/AWS_SES/PHP/config.inc.php');
 
   # Get the client
   #$client = $aws->get('Ses');
-  $client = 'ses';
+  #$client = 'ses';
   # Initialize the sender address
   $from = 'noreply@vanas.ca';
 
@@ -78,8 +78,8 @@
   $ds_template = str_uso_normal($grade_template[0].$grade_template[1].$grade_template[2]);
 
   # Create a DOM object
-  $ds_template_html = new simple_html_dom();
-
+  #$ds_template_html = new simple_html_dom();
+  $ds_template_html = new DOMDocument();
   # Teacher's info
   $Query = "SELECT ds_nombres, ds_apaterno FROM c_usuario WHERE fl_usuario=$fl_maestro";
   $row = RecuperaValor($Query);
@@ -201,7 +201,7 @@ exit;
   $ds_email_template = GenerateTemplate($ds_template, $variables1);
 
   # Load the template into html
-  $ds_template_html->load($ds_email_template);
+  $ds_template_html->loadHTML($ds_email_template);
   # Get base url (domain)
   $base_url = $ds_template_html->getElementById("login-redirect")->href;
   # Set url path and query string
