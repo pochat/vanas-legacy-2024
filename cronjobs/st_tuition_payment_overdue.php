@@ -50,13 +50,13 @@ if (PHP_OS == 'Linux') {
 
 	# For each term, find all the active students, match student's chosen payment option with the payment option from k_term_pago
     $Query  = "SELECT DISTINCT(a.fl_alumno), d.ds_nombres, CASE e.fg_opcion_pago WHEN 1 THEN e.mn_a_due WHEN 2 THEN e.mn_b_due ";
-    $Query .= "WHEN 3 THEN e.mn_c_due WHEN 4 THEN e.mn_d_due END py_amount,d.ds_email, d.ds_apaterno FROM (k_alumno_grupo a, c_grupo b, k_term c) ";
+    $Query .= "WHEN 3 THEN e.mn_c_due WHEN 4 THEN e.mn_d_due END py_amount,d.ds_email, d.ds_apaterno,d.cl_sesion FROM (k_alumno_grupo a, c_grupo b, k_term c) ";
     $Query .= "LEFT JOIN c_usuario d ON d.fl_usuario=a.fl_alumno LEFT JOIN k_app_contrato e ON e.cl_sesion = d.cl_sesion ";
     $Query .= "WHERE a.fl_grupo = b.fl_grupo AND b.fl_term = c.fl_term AND ";
     $Query .= "((c.no_grado='1' AND c.fl_term=$fl_term) OR (c.no_grado<>'1' AND fl_term_ini=$fl_term)) AND e.fg_opcion_pago=$no_opcion  ";
 	$Query .= " AND d.fg_activo='1' ";
-	#$Query .= "AND d.fl_usuario<>11516 "; #Leean Brisby Rose se deshablita nuevamnete 28-06-2023 ";  //USUARUOOS QUE RECIBEN PRESTAMO ESTUDIANTIL NO SE MANDAN EMAILS.
-    #$Query .= "AND d.fl_usuario=11529 "; ## danik Dussault se extiende  18-dic-2023
+	#$Query .= "AND d.fl_usuario<>11657 AND d.fl_usuario<>11660 AND d.fl_usuario<>11649 AND d.fl_usuario<>11652 "; #Leean Brisby Rose se deshablita nuevamnete 28-06-2023 ";  //USUARUOOS QUE RECIBEN PRESTAMO ESTUDIANTIL NO SE MANDAN EMAILS.
+    #$Query .= "AND d.fl_usuario=11660 "; ## danik Dussault se extiende  18-dic-2023
     	$rs2 = EjecutaQuery($Query);
 
 		while($row2=RecuperaRegistro($rs2)){
@@ -65,6 +65,7 @@ if (PHP_OS == 'Linux') {
 			$py_amount = $row2[2];
 			$ds_email = $row2[3];
 			$st_lname = $row2[4];
+			$cl_sesion = $row2['cl_sesion'];
 
 
         if ($fl_alumno == 11529) {
@@ -73,10 +74,10 @@ if (PHP_OS == 'Linux') {
             exit;
         }
 
-
+        
             #verifica si repite term.
             # Verificamos si repitio el grado
-            $Queryr = "SELECT no_grado FROM k_alumno_term a, k_term b WHERE a.fl_term=b.fl_term and fl_alumno=$fl_alumno  ";
+			$Queryr = "SELECT no_grado FROM k_alumno_term a, k_term b WHERE a.fl_term=b.fl_term and fl_alumno=$fl_alumno  ";
             $rsr = EjecutaQuery($Queryr);
             $no_grado_re = '';
             $repetido = 0 ;
@@ -98,21 +99,35 @@ if (PHP_OS == 'Linux') {
 			#verifica nuevamente para terms repetidos.
 			if(empty($row3[0])){
 
-                if(!empty($repetido)){
+				if (!empty($repetido)) {
 
-                    $Query  = "SELECT COUNT(*) FROM k_alumno_pago a
-                        JOIN k_term_pago b ON b.fl_term_pago= a.fl_term_pago
-                        WHERE a.fl_alumno=$fl_alumno AND b.no_opcion=$no_opcion AND no_pago=$no_pago ";
-                    $row3 = RecuperaValor($Query);
-                }
+					$Query = "SELECT COUNT(*) FROM k_alumno_pago a
+							JOIN k_term_pago b ON b.fl_term_pago= a.fl_term_pago
+							WHERE a.fl_alumno=$fl_alumno AND b.no_opcion=$no_opcion AND no_pago=$no_pago ";
+					$row3 = RecuperaValor($Query);
+					
+				} else {
+
+					#2025 verifica pagos dese el term inicial.
+					$Query_pagado = "SELECT  a.fl_term_pago, b.no_opcion, b.no_pago, DATE_FORMAT(b.fe_pago,'" . FORMAT_DATE . "') ";
+					$Query_pagado .= "FROM k_alumno_pago a, k_term_pago b ";
+					$Query_pagado .= "WHERE a.fl_term_pago = b.fl_term_pago AND a.fl_alumno=$fl_alumno AND b.no_pago=$no_pago  ORDER BY b.fe_pago ";
+					$row3 = RecuperaValor($Query_pagado);
+					$fl_term_pago_pagado = $row3['fl_term_pago'];
+
+             
 
 
             }
 
 
+        }
+
+
 
 			# If have not paid, send out reminder
 			if(empty($row3[0])){
+            
 				$variables = array(
 					"st_fname" => $st_fname,
 					"st_lname" => $st_lname,
