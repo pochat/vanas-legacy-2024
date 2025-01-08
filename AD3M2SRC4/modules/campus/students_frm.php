@@ -1268,6 +1268,8 @@ Forma_Inicia($clave, True);
                                 $('#sin_ppt').attr('style', 'display:none;');
                                 $('#passport').attr('style', 'display:inline;');
 							    $('#passport_date').attr('style', 'display:inline;');
+							    $('#passport_ppt').attr('style', 'display:inline;');
+							    $('#passport_date_ppt').attr('style', 'display:inline;');
                               }
                               else{
                                 $('#international').attr('style', 'display:none;');
@@ -1276,6 +1278,8 @@ Forma_Inicia($clave, True);
                                 $('#sin_ppt').attr('style', 'display:inline;');
                                 $('#passport').attr('style', 'display:none;');
                                 $('#passport_date').attr('style', 'display:none;');
+                                $('#passport_ppt').attr('style', 'display:none;');
+                                $('#passport_date_ppt').attr('style', 'display:none;');
 
                               }
                             }
