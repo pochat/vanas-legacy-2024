@@ -65,6 +65,9 @@
   $fl_immigrations_status=RecibeParametroNumerico('fl_immigrations_status');
   $fg_scholarship=RecibeParametroBinario('fg_scholarship');
   $comments=RecibeParametroHTML('comments');
+  $passport_number = RecibeParametroHTML('passport_number');
+  $passport_exp_date = RecibeParametroFecha('passport_exp_date');
+
 
   //update contract
   $ds_header = RecibeParametroHTML('ds_header');
@@ -392,6 +395,8 @@ $notation_transcript = RecibeParametroHTML('notation_transcript');
     Forma_CampoOculto('mn_discount', $mn_discount);
 
     Forma_CampoOculto('notation_transcript',$notation_transcript);
+    Forma_CampoOculto('passport_number', $passport_number);
+    Forma_CampoOculto('passport_exp_date', $passport_exp_date);
 
     echo "\n</form>
 <script>
@@ -430,7 +435,13 @@ $notation_transcript = RecibeParametroHTML('notation_transcript');
   else
     $fe_graduacion = "NULL";
 
-  $row1 = RecuperaValor("SELECT fl_sesion FROM c_sesion WHERE cl_sesion='$cl_sesion'");
+if (!empty($passport_exp_date))
+    $passport_exp_date = "'" . ValidaFecha($passport_exp_date) . "'";
+else
+    $passport_exp_date = "NULL";
+
+
+$row1 = RecuperaValor("SELECT fl_sesion FROM c_sesion WHERE cl_sesion='$cl_sesion'");
   $fl_sesion = $row1[0];
   $foto_size = ObtenConfiguracion(80);
   if(!empty($_FILES['ds_foto_oficial']['tmp_name'][0])) {
@@ -460,7 +471,7 @@ $notation_transcript = RecibeParametroHTML('notation_transcript');
       CreaThumb($ruta."/".$ds_foto_oficial, $ruta."/".$ds_foto_oficial, 0, 0, $foto_size);
     chmod ($ruta."/".$ds_foto_oficial, 0755);
 
-   
+
 
 
 }
@@ -477,6 +488,10 @@ $notation_transcript = RecibeParametroHTML('notation_transcript');
     EjecutaQuery($Query);
 
     EjecutaQuery("UPDATE k_ses_app_frm_1 SET fe_birth=$fe_nacimiento WHERE cl_sesion=(SELECT cl_sesion FROM c_usuario WHERE fl_usuario=$clave) ");
+
+    EjecutaQuery("UPDATE k_ses_app_frm_1 SET passport_number='$passport_number' WHERE cl_sesion=(SELECT cl_sesion FROM c_usuario WHERE fl_usuario=$clave) ");
+    EjecutaQuery("UPDATE k_ses_app_frm_1 SET passport_exp_date=$passport_exp_date WHERE cl_sesion=(SELECT cl_sesion FROM c_usuario WHERE fl_usuario=$clave) ");
+
 
     $Query="UPDATE k_ses_app_frm_1 SET job_title='$job_title' WHERE cl_sesion=(SELECT cl_sesion FROM c_usuario WHERE fl_usuario=$clave) ";
     EjecutaQuery($Query);

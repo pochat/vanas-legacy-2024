@@ -777,6 +777,8 @@ function genera_documento($clave, $opc, $correo=False, $firma=False, $no_contrat
   $Query .= ConsultaFechaBD('fe_birth', FMT_FECHA)." fe_birth, ";
   $Query .= "ds_add_number, ds_add_street, ds_add_city, ds_add_state, ds_add_zip, d.ds_pais, ";
   $Query .= "nb_programa, fl_template, ds_duracion, nb_periodo, a.fl_programa, b.fg_tax_rate, a.ds_add_country, b.fg_fulltime,c.fl_periodo,b.ptib_approval ";
+  $Query .= ",passport_number, ";
+  $Query .= ConsultaFechaBD('passport_exp_date', FMT_FECHA) . " passport_exp_date ";
   $Query .= "FROM k_ses_app_frm_1 a, c_programa b, c_periodo c, c_pais d, c_pais e ";
   $Query .= "WHERE a.fl_programa=b.fl_programa ";
   $Query .= "AND a.fl_periodo=c.fl_periodo ";
@@ -802,6 +804,8 @@ function genera_documento($clave, $opc, $correo=False, $firma=False, $no_contrat
   $fl_programa_search=$row['fl_programa'];
   $fl_periodo=$row['fl_periodo'];
   $ptib_approval = $row['ptib_approval'];
+  $passport_number = $row['passport_number'];
+  $passport_exp_date = $row['passport_exp_date'];
 
   $label_ptib_approval = ($row['ptib_approval']) ? ObtenEtiqueta(2687) : ObtenEtiqueta(2688);
   $yes_no_approval = ($row['ptib_approval']) ? 'Yes' : 'No';
@@ -1150,6 +1154,8 @@ function genera_documento($clave, $opc, $correo=False, $firma=False, $no_contrat
   $cadena = str_replace("#ds_combined#", $ds_combinend, $cadena);
   $cadena = str_replace("#grading_scale#", $grading_scale, $cadena);
 
+  $cadena = str_replace("#passport_number#", $passport_number, $cadena);
+  $cadena = str_replace("#passport_exp_date#", $passport_exp_date, $cadena);
 
 
 

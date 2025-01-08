@@ -52,6 +52,8 @@ if (!$fg_error) { // Sin error, viene del listado
     $Query .= "e.cl_preference_1, e.cl_preference_2, e.cl_preference_3, ds_p_name, ds_education_number, ds_usual_name ";
     $Query .= ", e.ds_citizenship, e.fg_study_permit, e.fg_study_permit_other, e.fg_aboriginal, e.ds_aboriginal, e.fg_health_condition, e.ds_health_condition,d.fl_immigrations_status ";
 	$Query .= ",c.fg_absence,c.fg_change_status,a.ds_alias,a.ds_graduate_status,c.notation_transcript  ";
+    $Query .= ",d.passport_number, ";
+    $Query .= ConsultaFechaBD('d.passport_exp_date', FMT_FECHA) . " passport_exp_date ";
     $Query .= "FROM c_usuario a, c_perfil b, c_alumno c, k_ses_app_frm_1 d, k_app_contrato e ";
     $Query .= "WHERE a.fl_perfil=b.fl_perfil AND a.cl_sesion=d.cl_sesion ";
     $Query .= "AND a.fl_usuario=c.fl_alumno AND a.cl_sesion=e.cl_sesion ";
@@ -67,6 +69,8 @@ if (!$fg_error) { // Sin error, viene del listado
         $Query .= ConsultaFechaBD('fe_nacimiento', FMT_CAPTURA) . " fe_nacimiento, a.cl_sesion, ds_notas, d.ds_number, d.ds_alt_number, ";
         $Query .= "d.ds_add_number, d.ds_add_street, d.ds_add_city, d.ds_add_state, d.ds_add_zip, d.ds_add_country,d.fl_immigrations_status ";
 		$Query .=",c.fg_absence,c.fg_change_status,a.ds_alias,c.notation_transcript ";
+        $Query .= ",d.passport_number, ";
+        $Query .= ConsultaFechaBD('d.passport_exp_date', FMT_FECHA) . " passport_exp_date ";
         $Query .= "FROM c_usuario a, c_perfil b, c_alumno c, k_ses_app_frm_1 d ";
         $Query .= "WHERE a.fl_perfil=b.fl_perfil AND a.cl_sesion=d.cl_sesion ";
         $Query .= "AND a.fl_usuario=c.fl_alumno ";
@@ -114,6 +118,8 @@ if (!$fg_error) { // Sin error, viene del listado
     $ds_graduate_status=$row['ds_graduate_status'];
     $fl_immigrations_status=$row['fl_immigrations_status'];
     $notation_transcript = $row['notation_transcript'];
+    $passport_number = $row['passport_number'];
+    $passport_exp_date = $row['passport_exp_date'];
 
     if(!empty($fg_responsable)){
       $Query_res  = "SELECT ds_fname_r, ds_lname_r, ds_email_r, ds_aemail_r, ds_pnumber_r, ds_relation_r, fg_email ";
@@ -177,6 +183,7 @@ if (!$fg_error) { // Sin error, viene del listado
     $fe_emision_err = "";
     $fe_graduacion_err = "";
     $notation_transcript_err = "";
+    $passport_exp_date_err = "";
 } else { // Con error, recibe parametros (viene de la pagina de actualizacion)
     $ds_login = RecibeParametroHTML('ds_login');
     $ds_login_err = RecibeParametroNumerico('ds_login_err');
@@ -301,7 +308,11 @@ if (!$fg_error) { // Sin error, viene del listado
     $mn_discount = RecibeParametroNumerico('mn_discount');
 
     $notation_transcript = RecibeParametroHTML('notation_transcript');
-   
+
+    $passport_number = RecibeParametroHTML('passport_number');
+    $passport_number_err = RecibeParametroHTML('passport_number_err');
+    $passport_exp_date = RecibeParametroHTML('passport_exp_date');
+    $passport_exp_date_err = RecibeParametroHTML('passport_exp_date_err');
 
 
 
@@ -1255,12 +1266,17 @@ Forma_Inicia($clave, True);
                                 $('#international_ppt').attr('style', 'display:inline;');
                                 $('#sin').attr('style', 'display:none;');
                                 $('#sin_ppt').attr('style', 'display:none;');
+                                $('#passport').attr('style', 'display:inline;');
+							    $('#passport_date').attr('style', 'display:inline;');
                               }
                               else{
                                 $('#international').attr('style', 'display:none;');
                                 $('#international_ppt').attr('style', 'display:none;');
                                 $('#sin').attr('style', 'display:inline;');
-                                $('#sin_ppt').attr('style', 'display:inline;');     
+                                $('#sin_ppt').attr('style', 'display:inline;');
+                                $('#passport').attr('style', 'display:none;');
+                                $('#passport_date').attr('style', 'display:none;');
+
                               }
                             }
                             if(tipo==2){
@@ -1333,6 +1349,24 @@ Forma_Inicia($clave, True);
                               ?>
                             </div>
                           </div>
+
+                          <div class="row no-margin" >
+                              <div class="col-xs-12 col-sm-4 no-padding">
+                                  <?php
+                                 
+                                 echo Forma_CampoTexto('Passport Number', False, 'passport_number', $passport_number, 50, 0, $passport_number_err, False,'passport', $international, '' ,  '', "form-group", 'left', 'col col-sm-12', 'col col-sm-12');
+                                  ?>
+                              </div>
+                              <div class="col-xs-12 col-sm-4">
+                                  <?php
+                                  echo Forma_CampoTexto('Passport Expiration Date ' . ETQ_FMT_FECHA, False, 'passport_exp_date', $passport_exp_date, 10, 0, $passport_exp_date_err, False, 'passport_date', $international, '', '', 'smart-form form-group', 'left', 'col col-sm-12', 'col col-sm-12');
+                                  Forma_Calendario('passport_exp_date');
+                                
+                                  ?>
+                              </div>
+
+                          </div>
+
                           <div class="row no-margin">
                             <div class="col-xs-12 col-sm-5 no-padding">
                               <?php

@@ -1820,7 +1820,7 @@ $Queryr  = "SELECT ds_fname_r, ds_lname_r, ds_email_r, ds_aemail_r, ds_pnumber_r
 
                   $paso .= Forma_CampoTextoBootstrap('Passport Number', 'passport_number', $passport_number, "20", "text", "fa-list", "", true);
                   //$paso .= Forma_CampoTextoBootstrap('Passport Expiation Date', 'passport_exp_date', $passport_exp_date, "20", "text", "fa-list", "", true);
-                  $paso .= "<div id='div_passport_exp_date'>" . Forma_CampoCalendario('Passport Expiation Date ' . ETQ_FMT_FECHA, 'passport_exp_date', $passport_exp_date, "dd-mm-yy", "12 padding-10", "fa-calendar", "", true) . "</div>";
+                  $paso .= "<div id='div_passport_exp_date'>" . Forma_CampoCalendario('Passport Expiration Date ' . ETQ_FMT_FECHA, 'passport_exp_date', $passport_exp_date, "dd-mm-yy", "12 padding-10", "fa-calendar", "", true) . "</div>";
 
     # Student permit input (non Canadian students)
                   $names1 = array("fg_study_permit", "fg_study_permit");

@@ -1089,8 +1089,10 @@
                           if(international == 'on'){
                             $('#international').attr('style', 'display:inline;');
                             $('#international_ppt').attr('style', 'display:inline;');						
-							$('#div_passport_number').attr('style', 'display:inline;');
-							$('#div_passport_exp_date').attr('style', 'display:inline;');
+                              $('#div_passport_number').attr('style', 'display:inline;');
+                              $('#div_passport_number_ppt').attr('style', 'display:inline;');
+                              $('#div_passport_exp_date').attr('style', 'display:inline;');
+                              $('#div_passport_exp_date_ppt').attr('style', 'display:inline;');
 							
 							
                           }
@@ -1099,6 +1101,8 @@
                             $('#international_ppt').attr('style', 'display:none;');
 							$('#div_passport_number').attr('style', 'display:none;');
                             $('#div_passport_exp_date').attr('style', 'display:none;');
+                             $('#div_passport_number_ppt').attr('style', 'display:none;');
+                            $('#div_passport_exp_date_ppt').attr('style', 'display:none;');
 							
                           }
                         }
