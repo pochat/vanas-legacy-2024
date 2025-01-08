@@ -203,11 +203,19 @@ exit;
   # Load the template into html
   $ds_template_html->loadHTML($ds_email_template);
   # Get base url (domain)
-  $base_url = $ds_template_html->getElementById("login-redirect")->href;
+  $base_url = $ds_template_html->getElementById('login-redirect');
   # Set url path and query string
   $component_week = "week=".$no_week;
   $component_tab = "&tab=critique";
-  $ds_template_html->getElementById("login-redirect")->href = $base_url."/modules/students_new/index.php#ajax/desktop.php?".$component_week.$component_tab;
+
+$ds_template_html->getElementById("login-redirect")->href = $base_url."/modules/students_new/index.php#ajax/desktop.php?".$component_week.$component_tab;
+
+if ($base_url) {
+    // Cambiar el atributo href
+    $ds_template_html->setAttribute('href', 'https://campus.vanas.ca/modules/students_new/index.php#ajax/desktop.php'.".$component_week.$component_tab.");
+}
+$ds_email_template = $ds_template_html->saveHTML();
+
 
 
 	#Se envia copia si estan marcados.
