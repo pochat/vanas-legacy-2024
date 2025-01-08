@@ -60,7 +60,8 @@
   $Query .= "ds_eme_fname, ds_eme_lname, ds_eme_number, ds_eme_relation, e.ds_pais, ";
   $Query .= "fg_ori_via, ds_ori_other, fg_ori_ref, ds_ori_ref_name, nb_programa, nb_periodo, fl_template, b.fl_programa, c.fe_inicio, a.fl_periodo ";
   $Query .=",a.fg_disability,a.ds_disability,a.ds_ruta_foto_permiso,".ConsultaFechaBD('a.fe_start_date',FMT_FECHA)." fe_start_date, ".ConsultaFechaBD('a.fe_expirity_date',FMT_FECHA)." fe_expirity_date ,nb_name_institutcion,a.ds_sin,a.fl_immigrations_status  ";
-  $Query .=",race,grade,hispanic,military  ";
+  $Query .=",race,grade,hispanic,military,passport_number, ";
+  $Query .= ConsultaFechaBD('passport_exp_date', FMT_FECHA)." passport_exp_date ";
 
   /*$Query .= "FROM k_ses_app_frm_1 a, c_programa b, c_periodo c, c_pais d, c_pais e ";
   $Query .= "WHERE a.fl_programa=b.fl_programa ";
@@ -105,6 +106,9 @@
   $hispanic=!empty($row['hispanic'])?"Yes":"No";
   $military=!empty($row['military'])?"Yes":"No";
   $fg_disability=!empty($row['fg_disability'])?"Yes":"No";
+  $passport_number= $row['passport_number'];
+  $passport_exp_date = $row['passport_exp_date'];
+
 
   switch ($race) {
 
@@ -463,6 +467,12 @@
 
     $fg_enrollment=RecibeParametroBinario('fg_enrollment');
     $comments=RecibeParametroHTML('comments');
+
+    $passport_number_err= RecibeParametroHTML('passport_number_err');
+    $passport_number = RecibeParametroHTML('passport_number');
+
+    $passport_exp_date_err= RecibeParametroHTML('passport_exp_date_err');
+    $passport_exp_date= RecibeParametroHTML('passport_exp_date');
 
 
   }
@@ -1078,12 +1088,18 @@
                           var international = $("input[name='fg_international']:checked").val();
                           if(international == 'on'){
                             $('#international').attr('style', 'display:inline;');
-                            $('#international_ppt').attr('style', 'display:inline;');
+                            $('#international_ppt').attr('style', 'display:inline;');						
+							$('#div_passport_number').attr('style', 'display:inline;');
+							$('#div_passport_exp_date').attr('style', 'display:inline;');
+							
+							
                           }
                           else{
                             $('#international').attr('style', 'display:none;');
                             $('#international_ppt').attr('style', 'display:none;');
-                              
+							$('#div_passport_number').attr('style', 'display:none;');
+                            $('#div_passport_exp_date').attr('style', 'display:none;');
+							
                           }
                         }
                         if(tipo==2){
@@ -1193,18 +1209,34 @@
                       </div>
                       </div>
                       <div class="row">
-					  
+                          <div class="col-xs-12 col-sm-4">
+                              <?php
+                                Forma_CampoTexto('Passport Number', True, 'passport_number', $passport_number, 50, 0, !empty($passport_number_err) ? $passport_number_err : NULL, False, '','', '', '', "form-group", 'left', 'col col-sm-12', 'col col-sm-12');
+                              ?>
+                          </div>
+                          <div class="col-xs-12 col-sm-4">
+                              <?php
+                              Forma_CampoTexto('Passport Expiration Date', True, 'passport_exp_date', $passport_exp_date, 10, 10, !empty($passport_exp_date_err) ? $passport_exp_date_err : NULL, False, '', True, '', '', "form-group", 'left', 'col col-sm-12', 'col col-sm-12');
+                              Forma_Calendario('passport_exp_date');
+                              ?>
+                          </div>
+
+                      </div>
+
+
+                      <div class="row">
+
                       <div class="col-xs-12 col-sm-5 no-padding">
                         <?php
-                        Forma_CampoCheckbox('','fg_study_permit',$fg_study_permit, ObtenEtiqueta(1025), '', True, " onClick='javascript:mostrar_ocultar(2);'", 'left', 'col-sm-12 no-padding', 'col-sm-12 no-padding');                         
+                        Forma_CampoCheckbox('','fg_study_permit',$fg_study_permit, ObtenEtiqueta(1025), '', True, " onClick='javascript:mostrar_ocultar(2);'", 'left', 'col-sm-12 no-padding', 'col-sm-12 no-padding');
                         if($fg_study_permit=='0'){
-						
+
                            $permit = 'inline';
                         }else{
-						
+
                            $permit = 'none';
 						}
-                        ?>
+                              ?>
                       </div>  
 
 					   

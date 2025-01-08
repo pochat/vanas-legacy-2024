@@ -1,16 +1,16 @@
 <?php
-  
+
   # Libreria de funciones
 	require '../../lib/general.inc.php';
-  
+
 	# Verifica que exista una sesion valida en el cookie y la resetea
 	ValidaSesion( );
   # Error de las preferencias
   define('ERR_PREFERENCEDIF',21);
-  
+
 	# Recibe la clave
   $clave = RecibeParametroNumerico('clave');
-  
+
   # Determina si es alta o modificacion
   if(!empty($clave))
     $permiso = PERMISO_MODIFICACION;
@@ -18,13 +18,13 @@
     MuestraPaginaError(ERR_SIN_PERMISO);
     exit;
   }
-  
+
   # Verifica que el usuario tenga permiso de usar esta funcion
   if(!ValidaPermiso(FUNC_APP_FRM, $permiso)) {
     MuestraPaginaError(ERR_SIN_PERMISO);
     exit;
   }
-  
+
   # Recibe parametros
   $fg_aplicar_international=RecibeParametroNumerico('fg_aplicar_international');
   $fg_enrollment=RecibeParametroBinario('fg_enrollment');
@@ -51,18 +51,29 @@
   $ds_sin=RecibeParametroHTML('ds_sin');
   $fl_immigrations_status=RecibeParametroNumerico('fl_immigrations_status');
   $ds_graduate_status=RecibeParametroNumerico('ds_graduate_status');
-  $Query='SELECT cl_sesion FROM c_sesion WHERE fl_sesion='.$clave.'';
+
+  $passport_number = RecibeParametroHTML('passport_number');
+  $passport_exp_date = RecibeParametroFecha('passport_exp_date');
+  $passport_exp_date = ValidaFecha($passport_exp_date);
+
+
+$Query='SELECT cl_sesion FROM c_sesion WHERE fl_sesion='.$clave.'';
   $row=RecuperaValor($Query);
   $cl_sesion = $row[0];
- 
+
   EjecutaQuery("UPDATE k_ses_app_frm_1 SET fl_immigrations_status=$fl_immigrations_status WHERE cl_sesion='$cl_sesion' ");
-  
+
   $Query  = "UPDATE k_ses_app_frm_1 ";
   $Query .= "SET comments='$comments' ";
   $Query .= "WHERE cl_sesion='$cl_sesion' ";
   EjecutaQuery($Query);
-  
-  #address
+
+EjecutaQuery("UPDATE k_ses_app_frm_1 SET passport_number='$passport_number' WHERE cl_sesion='$cl_sesion' ");
+EjecutaQuery('UPDATE k_ses_app_frm_1 SET passport_exp_date="' . $passport_exp_date . '" WHERE cl_sesion="' . $cl_sesion . '" ');
+
+
+
+#address
   $fg_gender=RecibeParametroHTML('fg_gender');
   $ds_add_number = RecibeParametroHTML('ds_add_number', True);
   $ds_add_street = RecibeParametroHTML('ds_add_street', True);
@@ -89,23 +100,23 @@
   $fg_archive = RecibeParametroBinario('fg_archive');
   #person Responsable
   $fg_responsable = RecibeParametroBinario('fg_responsable');
-  $ds_fname_r = RecibeParametroHTML('ds_fname_r', True);   
+  $ds_fname_r = RecibeParametroHTML('ds_fname_r', True);
   $ds_lname_r = RecibeParametroHTML('ds_lname_r', True);
   $ds_email_r = RecibeParametroHTML('ds_email_r', True);
   $ds_aemail_r = RecibeParametroHTML('ds_aemail_r', True);
   $ds_pnumber_r= RecibeParametroHTML('ds_pnumber_r', True);
   $ds_relation_r = RecibeParametroHTML('ds_relation_r', True);
   $fg_email = RecibeParametroNumerico('fg_email');
-  
+
   $cl_preference_1 = RecibeParametroNumerico('cl_preference_1');
   $cl_preference_2 = RecibeParametroNumerico('cl_preference_2');
   $cl_preference_3 = RecibeParametroNumerico('cl_preference_3');
   $fl_class_time= RecibeParametroNumerico('fl_class_time');
-  
+
   $cl_recruiter = RecibeParametroNumerico('cl_recruiter');
-  
+
   $ds_alt_number = RecibeParametroHTML("ds_alt_number");
-  $ds_p_name = RecibeParametroHTML('ds_p_name'); 
+  $ds_p_name = RecibeParametroHTML('ds_p_name');
   $ds_education_number = RecibeParametroHTML('ds_education_number');
   $ds_usual_name = RecibeParametroHTML('ds_usual_name');
   # new contratps
@@ -115,12 +126,12 @@
   }
   $fg_study_permit = RecibeParametroBinario('fg_study_permit');
   $fg_study_permit_other = RecibeParametroBinario('fg_study_permit_other');
-  
+
   $fe_start_date=RecibeParametroFecha('fe_start_date');
   $fe_expirity_date=RecibeParametroFecha('fe_expirity_date');
   $nb_name_institutcion=RecibeParametroHTML('nb_name_institutcion');
-  
-  
+
+
   $fg_aboriginal = RecibeParametroBinario('fg_aboriginal');
   $ds_aboriginal = RecibeParametroHTML('ds_aboriginal');
   if($fg_aboriginal==0){
@@ -135,11 +146,11 @@
   $ds_disability = RecibeParametroHTML('ds_disability');
   $fg_scholarship=RecibeParametroBinario('fg_scholarship');
 
-  
+
   // echo "ds_citizenship:".$ds_citizenship."<br>fg_study_permit:".$fg_study_permit."<br>fg_study_permit_other:".$fg_study_permit_other.
         // "<br>fg_aboriginal:".$fg_aboriginal."<br>ds_aboriginal:".$ds_aboriginal."<br>fg_health_condition:".$fg_health_condition."<br>ds_health_condition:".$ds_health_condition;
   // exit;
-  
+
   #Validaciones  de address
   if(empty($ds_add_number))
     $ds_add_number_err = ERR_REQUERIDO;
@@ -165,7 +176,7 @@
     $fe_birth_err = ERR_REQUERIDO;
   if(!empty($fe_birth) AND !ValidaFecha($fe_birth))
     $fe_birth_err = ERR_FORMATO_FECHA;
-    
+
   # Verifica que el tipo de archivo para avatar sea JPG
   $ext = strtolower(ObtenExtensionArchivo($_FILES['ds_ruta_foto']['name'][0]));
   if(!empty($ext) AND $ext!='jpg' AND $ext!='jpeg'){
@@ -174,15 +185,15 @@
   # Validamos person responsible
   if(!empty($fg_responsable)){
     if(empty($ds_fname_r))
-      $ds_fname_r_err = ERR_REQUERIDO;    
+      $ds_fname_r_err = ERR_REQUERIDO;
     if(empty($ds_lname_r))
-      $ds_lname_r_err = ERR_REQUERIDO;    
+      $ds_lname_r_err = ERR_REQUERIDO;
     if(empty($ds_email_r))
-      $ds_email_r_err = ERR_REQUERIDO;    
+      $ds_email_r_err = ERR_REQUERIDO;
     if(empty($ds_pnumber_r))
       $ds_pnumber_r_err = ERR_REQUERIDO;
     if(empty($ds_relation_r))
-      $ds_relation_r_err = ERR_REQUERIDO;    
+      $ds_relation_r_err = ERR_REQUERIDO;
     # Verifica que el formato del email sea valido
     if(empty($ds_email_r_err) AND !ValidaEmail($ds_email_r))
       $ds_email_r_err = ERR_FORMATO_EMAIL;
@@ -192,10 +203,10 @@
   }
   # Valida las prefencias
   if($fl_class_time){
-	  
+
 		if(empty($fl_class_time))
         $fl_class_time_err = ERR_REQUERIDO;
-	
+
   }else{
   /*if(empty($cl_preference_1))
     $cl_preference_1_err = ERR_REQUERIDO;
@@ -205,13 +216,13 @@
     $cl_preference_2_err = ERR_REQUERIDO;
   */
   }
-  
-  
-  
+
+
+
   if($fl_class_time){
-	  
+
   }else{
-  
+
   # Si se repiten las preferencias
   if(!empty($cl_preference_1) AND ($cl_preference_1==$cl_preference_2 OR $cl_preference_1==$cl_preference_3))
     $cl_preference_1_err = ERR_PREFERENCEDIF;
@@ -223,16 +234,16 @@
   }
 
 
-  $fg_error = $ds_add_number_err || $ds_add_street_err || $ds_add_city_err || $ds_add_state_err || $ds_add_zip_err || $ds_add_country_err 
+  $fg_error = $ds_add_number_err || $ds_add_street_err || $ds_add_city_err || $ds_add_state_err || $ds_add_zip_err || $ds_add_country_err
               || $ds_fname_err || $ds_lname_err || $ds_number_err || $ds_email_err || $fe_birth_err || $ds_ruta_foto_err;
   $fg_error = $fg_error || $ds_fname_r_err || $ds_lname_r_err || $ds_email_r_err || $ds_aemail_r_err || $ds_pnumber_r_err || $ds_relation_r_err;
- 
+
   if($fl_class_time)
   $fg_error= $fg_error || $fl_class_time_err;
-  else	  
+  else
   $fg_error = $fg_error || $cl_preference_1_err || $cl_preference_2_err || $cl_preference_3_err;
-  
-  
+
+
   if($fg_error) {
     echo "<html><body><form name='datos' method='post' action='".ObtenProgramaNombre(PGM_FORM)."'>\n";
     Forma_CampoOculto('clave' , $clave);
@@ -269,7 +280,7 @@
     Forma_CampoOculto('ds_lname_err', $ds_lname_err);
     Forma_CampoOculto('ds_number', $ds_number);
     Forma_CampoOculto('ds_number_err', $ds_number_err);
-    
+
     Forma_CampoOculto('ds_link_to_portfolio', $ds_link_to_portfolio);
     Forma_CampoOculto('fg_international', $fg_international);
     Forma_CampoOculto('fe_birth', $fe_birth);
@@ -277,7 +288,7 @@
     Forma_CampoOculto('ds_ruta_foto',$ds_ruta_foto);
     Forma_CampoOculto('ds_ruta_foto_err',$ds_ruta_foto_err);
     Forma_CampoOculto('fg_archive', $fg_archive);
-    
+
     # Person Resposible
     Forma_CampoOculto('fg_responsable', $fg_responsable);
     Forma_CampoOculto('ds_fname_r', $ds_fname_r);
@@ -302,8 +313,8 @@
 	Forma_CampoOculto('fl_class_time', $fl_class_time);
     Forma_CampoOculto('fl_class_time_err', $fl_class_time_err);
     Forma_CampoOculto('cl_recruiter', $cl_recruiter);
-    Forma_CampoOculto('cl_recruiter_err', $cl_recruiter_err);    
-    
+    Forma_CampoOculto('cl_recruiter_err', $cl_recruiter_err);
+
     Forma_CampoOculto('ds_alt_number', $ds_alt_number);
     Forma_CampoOculto('ds_alt_number_err', $ds_alt_number_err);
     Forma_CampoOculto('ds_p_name', $ds_p_name);
@@ -312,7 +323,7 @@
     Forma_CampoOculto('ds_education_number_err', $ds_education_number_err);
     Forma_CampoOculto('ds_usual_name', $ds_usual_name);
     Forma_CampoOculto('ds_usual_name_err', $ds_usual_name_err);
-    
+
     Forma_CampoOculto('ds_citizenship', $ds_citizenship);
     Forma_CampoOculto('fg_study_permit', $fg_study_permit);
     Forma_CampoOculto('fg_study_permit_other', $fg_study_permit_other);
@@ -320,24 +331,24 @@
     Forma_CampoOculto('ds_aboriginal', $ds_aboriginal);
     Forma_CampoOculto('fg_health_condition', $fg_health_condition);
     Forma_CampoOculto('ds_health_condition', $ds_health_condition);
-    
+
     Forma_CampoOculto('fe_start_date',$fe_start_date);
     Forma_CampoOculto('fe_expirity_date',$fe_expirity_date);
     Forma_CampoOculto('nb_name_institutcion',$nb_name_institutcion);
     Forma_CampoOculto('ds_aemail_r_err',$ds_aemail_r_err);
-    
+
     Forma_CampoOculto('fg_disabilityie',$fg_disabilityie);
     Forma_CampoOculto('ds_disability',$ds_disability);
-    
+
     echo "\n</form>
     <script>
       document.datos.submit();
     </script></body></html>";
     exit;
   }
-  
+
   $foto_size = ObtenConfiguracion(80);
-  if(!empty($_FILES['ds_ruta_foto']['tmp_name'][0])) {    
+  if(!empty($_FILES['ds_ruta_foto']['tmp_name'][0])) {
     $ruta = SP_HOME."/modules/students/images/id";
     $Query  = "SELECT ds_ruta_foto ";
     $Query .= "FROM k_ses_app_frm_1 ";
@@ -350,7 +361,7 @@
       }
     }
     $ext = strtolower(ObtenExtensionArchivo($_FILES['ds_ruta_foto']['name'][0]));
-    
+
     $ds_ruta_foto = $ds_fname."_";
     if(!empty($ds_mname))
       $ds_ruta_foto .= $ds_mname."_";
@@ -358,13 +369,13 @@
     //echo "ds_fname es $ds_fname ds_mname es $ds_mname ds_lname es $ds_lname fl_sesion es $fl_sesion ext es $ext ds_ruta_foto es $ds_ruta_foto";
     $ds_ruta_foto = NombreArchivoDecente($ds_ruta_foto);
     //echo "<br> ds_ruta_foto es $ds_ruta_foto"; exit;
-    move_uploaded_file($_FILES['ds_ruta_foto']['tmp_name'][0], $ruta."/".$ds_ruta_foto);    
+    move_uploaded_file($_FILES['ds_ruta_foto']['tmp_name'][0], $ruta."/".$ds_ruta_foto);
     if($ext == "jpg" OR $ext == "jpeg")
       CreaThumb($ruta."/".$ds_ruta_foto, $ruta."/".$ds_ruta_foto, 0, 0, $foto_size);
     chmod ($ruta."/".$ds_ruta_foto, 0755);
-  }  
- 
-  if(!empty($_FILES['ds_ruta_foto_permiso']['tmp_name'][0])) {    
+  }
+
+  if(!empty($_FILES['ds_ruta_foto_permiso']['tmp_name'][0])) {
       $ruta = SP_HOME."/modules/students/images/id";
       $Query  = "SELECT ds_ruta_foto_permiso ";
       $Query .= "FROM k_ses_app_frm_1 ";
@@ -377,7 +388,7 @@
           }
       }
       $ext = strtolower(ObtenExtensionArchivo($_FILES['ds_ruta_foto_permiso']['name'][0]));
-      
+
       $ds_ruta_foto_permiso = $ds_fname."_";
       if(!empty($ds_mname))
           $ds_ruta_foto_permiso .= $ds_mname."_";
@@ -385,38 +396,38 @@
       //echo "ds_fname es $ds_fname ds_mname es $ds_mname ds_lname es $ds_lname fl_sesion es $fl_sesion ext es $ext ds_ruta_foto es $ds_ruta_foto";
       $ds_ruta_foto_permiso = NombreArchivoDecente($ds_ruta_foto_permiso);
       //echo "<br> ds_ruta_foto es $ds_ruta_foto"; exit;
-      move_uploaded_file($_FILES['ds_ruta_foto_permiso']['tmp_name'][0], $ruta."/".$ds_ruta_foto_permiso);    
+      move_uploaded_file($_FILES['ds_ruta_foto_permiso']['tmp_name'][0], $ruta."/".$ds_ruta_foto_permiso);
       if($ext == "jpg" OR $ext == "jpeg")
           CreaThumb($ruta."/".$ds_ruta_foto_permiso, $ruta."/".$ds_ruta_foto_permiso, 0, 0, $foto_size);
       chmod ($ruta."/".$ds_ruta_foto_permiso, 0755);
   }
-  
-  
-  
-  
+
+
+
+
   # Prepara fechas en formato para insertar
   if(!empty($fe_birth))
     $fe_birth = '"'.ValidaFecha($fe_birth).'"';
   else
     $fe_birth = 'NULL';
-  
-  
+
+
   if($fe_start_date<>'00-00-0000')
       $fe_start_date = '"'.ValidaFecha($fe_start_date).'"';
   else
       $fe_start_date = 'NULL';
-  
+
   if($fe_expirity_date<>'00-00-0000')
       $fe_expirity_date = '"'.ValidaFecha($fe_expirity_date).'"';
   else
       $fe_expirity_date = 'NULL';
-  
+
   $Query  = "UPDATE c_sesion ";
   $Query .= "SET fg_enrollment='$fg_enrollment' ";
   $Query .= "WHERE fl_sesion=$clave";
   EjecutaQuery($Query);
 
-  
+
 
 
   # Actualiza o inserta el registro
@@ -424,21 +435,21 @@
   $Query .= "SET fg_inscrito='$fg_inscrito', fg_archive='$fg_archive',fg_scholarship='$fg_scholarship' ";
   $Query .= "WHERE fl_sesion=$clave";
   EjecutaQuery($Query);
-  
+
   $Query="UPDATE k_ses_app_frm_1 SET job_title='$job_title' WHERE cl_sesion=(SELECT cl_sesion FROM c_sesion WHERE fl_sesion=$clave) ";
   EjecutaQuery($Query);
 
-  
+
 
   if(!empty($ds_graduate_status)){
-      
+
 
       $Query="UPDATE k_ses_app_frm_1 SET ds_graduate_status=$ds_graduate_status WHERE cl_sesion=(SELECT cl_sesion FROM c_sesion WHERE fl_sesion=$clave) ";
       EjecutaQuery($Query);
 
-      
+
   }else{
-     
+
 
       $Query="UPDATE k_ses_app_frm_1 SET ds_graduate_status=null WHERE cl_sesion=(SELECT cl_sesion FROM c_sesion WHERE fl_sesion=$clave) ";
       EjecutaQuery($Query);
@@ -460,17 +471,17 @@
   $Query .= ',fg_disability="'.$fg_disabilityie.'",ds_disability="'.$ds_disability.'" ';
   $Query .= 'WHERE cl_sesion=(SELECT cl_sesion FROM c_sesion WHERE fl_sesion="'.$clave.'") ';
   EjecutaQuery($Query);
-  
+
    if(!empty($ds_ruta_foto_permiso)){
       $Query = "UPDATE k_ses_app_frm_1 SET ds_ruta_foto_permiso='$ds_ruta_foto_permiso' WHERE cl_sesion=(SELECT cl_sesion FROM c_sesion WHERE fl_sesion=$clave) ";
-      EjecutaQuery($Query); 
+      EjecutaQuery($Query);
   }
-  
+
   if(!empty($ds_ruta_foto)) {
     $Query = "UPDATE k_ses_app_frm_1 SET ds_ruta_foto='$ds_ruta_foto' WHERE cl_sesion=(SELECT cl_sesion FROM c_sesion WHERE fl_sesion=$clave) ";
-    EjecutaQuery($Query);    
-  }  
-  
+    EjecutaQuery($Query);
+  }
+
   # Inserta el registro del estudiante
   $Query  = "SELECT a.cl_sesion, ds_fname, ds_mname, ds_lname, ds_email, fe_birth ";
   $Query .= "FROM c_sesion a, k_ses_app_frm_1 b ";
@@ -480,14 +491,14 @@
   $cl_sesion = $row[0];
   $ds_email = str_texto($row[4]);
   $fe_birth = $row[5];
-  
+
   $Query='SELECT cl_sesion FROM c_sesion WHERE fl_sesion='.$clave.'';
   $row=RecuperaValor($Query);
   $cl_sesion = $row[0];
- 
+
   EjecutaQuery("UPDATE k_ses_app_frm_1 SET ds_sin=$ds_sin,fg_gender='$fg_gender' WHERE cl_sesion='$cl_sesion' ");
   EjecutaQuery("UPDATE K_ses_app_frm_1 SET fl_immigrations_status=$fl_immigrations_status WHERE cl_sesion='$cl_sesion' ");
-  
+
   $Query="SELECT fg_payment FROM k_app_contrato WHERE cl_sesion='$cl_sesion' ";
   $rop=RecuperaValor($Query);
   $fg_payment=$rop['fg_payment'];
@@ -498,7 +509,7 @@
   $responsable = ExisteEnTabla('k_presponsable', 'cl_sesion', $cl_sesion);
   if(empty($responsable)){
     $Query_respon  = "INSERT INTO k_presponsable (cl_sesion,ds_fname_r,ds_lname_r,ds_email_r,ds_aemail_r,ds_pnumber_r, ds_relation_r, fg_email) ";
-    $Query_respon .= "VALUES ('$cl_sesion', '$ds_fname_r', '$ds_lname_r', '$ds_email_r', '$ds_aemail_r', '$ds_pnumber_r', '$ds_relation_r', '0') ";     
+    $Query_respon .= "VALUES ('$cl_sesion', '$ds_fname_r', '$ds_lname_r', '$ds_email_r', '$ds_aemail_r', '$ds_pnumber_r', '$ds_relation_r', '0') ";
   }
   else{
     $Query_respon  = "UPDATE k_presponsable SET ds_fname_r = '$ds_fname_r' , ds_lname_r = '$ds_lname_r', ds_email_r = '$ds_email_r', ";
@@ -509,36 +520,36 @@
   $rowr = RecuperaValor("SELECT fg_email, ds_email_r = '$ds_email_r' FROM k_presponsable WHERE cl_sesion='$cl_sesion'");
   $fg_email = $rowr[0];
   $com_emails = $rowr[1]; //se comparan los emails
-  
+
   # Condiciones para enviar email
   # Si ya envio el correo no lo envia pero si camabia el correo lo envia
   # Si no lo ha enviado lo enviara
   #variables email
   $email_noreply = ObtenConfiguracion(4);
-  $app_frm_email = ObtenConfiguracion(83);      
-  # Obtenemos el template que se le enviara a la person responsible      
+  $app_frm_email = ObtenConfiguracion(83);
+  # Obtenemos el template que se le enviara a la person responsible
   $message_resp = genera_documento($clave, 2, 38);
   if(!empty($fg_responsable)){
-    if($fg_email==1){      
+    if($fg_email==1){
       $snd_email = 0;
       if($com_emails==0)
         $snd_email = 1;
       else
         $snd_email = 0;
     }
-    else{      
-      $snd_email = 1;      
-    } 
+    else{
+      $snd_email = 1;
+    }
     EjecutaQuery($Query_respon);
-    if($snd_email==1){      
+    if($snd_email==1){
       # Send email
-      $email_resp = EnviaMailHTML($email_noreply, $email_noreply, $ds_email_r, ObtenEtiqueta(865), $message_resp, $app_frm_email); 
-    }        
+      $email_resp = EnviaMailHTML($email_noreply, $email_noreply, $ds_email_r, ObtenEtiqueta(865), $message_resp, $app_frm_email);
+    }
     # Si se envio el email que actualice su registro
     if($email_resp)
       EjecutaQuery("UPDATE k_presponsable SET fg_email='1' WHERE cl_sesion='$cl_sesion'");
   }
-  
+
   # Esta inscrito
   if($fg_inscrito == '1') {
     $Query  = "INSERT INTO c_usuario(ds_login, ds_password, cl_sesion, fg_activo, fe_alta, no_accesos, ";
@@ -566,25 +577,25 @@
     $Query  = "INSERT INTO c_alumno(fl_alumno, fl_zona_horaria) ";
     $Query .= "VALUES($fl_usuario, $fl_zona_horaria) ";
     EjecutaQuery($Query);
-    
+
     # Recupera el numero de semanas
     $Query  = "SELECT no_semanas ";
     $Query .= "FROM k_programa_costos a ";
     $Query .= "WHERE a.fl_programa = $fl_programa";
     $row = RecuperaValor($Query);
     $no_semanas = $row[0];
-    
+
     # Calculamos lo meses que dura el programa
     $meses = $no_semanas/4;
 
     # Calcula el end date de acuerdo a las semanas de curso y las coloca por default en el campo
     $fe_fin = date('d-m-Y', strtotime("$fe_inicio + $meses months"));
     $fe_fin = "'".ValidaFecha($fe_fin)."'";
-    
+
     $Query  = "INSERT INTO k_pctia (fl_alumno, fl_programa, fe_fin, fe_completado) ";
-    $Query .= "VALUES ($fl_usuario, $fl_programa, $fe_fin, $fe_fin)"; 
+    $Query .= "VALUES ($fl_usuario, $fl_programa, $fe_fin, $fe_fin)";
     EjecutaQuery($Query);
-   
+
     # Inserta los datos del k_ses_pago a k_alumno_pago
     $Query  = "INSERT INTO k_alumno_pago(fl_alumno, fl_term_pago, cl_metodo_pago, fe_pago, mn_pagado, ds_comentario, ds_cheque, mn_late_fee, ds_transaccion, mn_tax_paypal, ds_tax_provincia)  ";
     $Query .= "SELECT $fl_usuario,fl_term_pago, cl_metodo_pago, fe_pago, mn_pagado, ds_comentario, ds_cheque, mn_late_fee, ds_transaccion, mn_tax_paypal, ds_tax_provincia FROM k_ses_pago ";
@@ -592,16 +603,16 @@
     EjecutaQuery($Query);
     $Query = "DELETE FROM k_ses_pago WHERE cl_sesion = '$cl_sesion'";
     EjecutaQuery($Query);
-    
+
     # Cuando se convierte a estudiante se le recuerda a la persona responsable de los pagos
     # Pero si se le envio el correo antes ya no se le manda nada
     if(!$email_resp){
       # Send email
-      $email_resp = EnviaMailHTML($email_noreply, $email_noreply, $ds_email_r, ObtenEtiqueta(865), $message_resp, $app_frm_email);        
+      $email_resp = EnviaMailHTML($email_noreply, $email_noreply, $ds_email_r, ObtenEtiqueta(865), $message_resp, $app_frm_email);
       EjecutaQuery("UPDATE k_presponsable SET fg_email='1' WHERE cl_sesion='$cl_sesion'");
     }
   }
-  
+
   # Actualiza datos de costos para el contrato
   $Query  = 'UPDATE k_app_contrato ';
   $Query .= 'SET ds_costs="'.$ds_costos_ad.'", mn_costs='.$no_costos_ad.', ds_discount="'.$ds_descuento.'", mn_discount='.$no_descuento.', ';
@@ -617,17 +628,17 @@
       $Query .=',fl_class_time='.$fl_class_time.'  ';
   $Query .='WHERE cl_sesion="'.$cl_sesion.'" ';
   EjecutaQuery($Query);
-  
+
   $Query='UPDATE k_app_contrato SET ds_discount="'.$ds_descuento.'", mn_discount='.$no_descuento.' WHERE cl_sesion="'.$cl_sesion.'" ';
   EjecutaQuery($Query);
-  
+
   #Actaulizamos costos segun sea canada/Extranjero
   if($fg_international==1){
-      
+
       if( (empty($no_descuento)) || ($no_descuento<=0) )
           $no_descuento=0;
-      
-      
+
+
       #Recuperamos costos internacionales.
       if($fg_aplicar_international==1){
 
@@ -635,7 +646,7 @@
 
               $Qeu="SELECT mn_app_fee_internacional_combined,mn_tuition_internacional_combined,mn_costs_internacional_combined,ds_costs_internacional_combined ";
               $Qeu.=",mn_a_due_internacional_combined, mn_a_paid_internacional_combined, mn_b_due_internacional_combined, mn_b_paid_internacional_combined, mn_c_due_internacional_combined, mn_c_paid_internacional_combined, mn_d_due_internacional_combined, mn_d_paid_internacional_combined ";
-              
+
 
           }else{
 
@@ -646,19 +657,19 @@
       }else{
 
           if($fg_payment=='C'){
-              
-              
-              $Qeu.="SELECT mn_app_fee_combined,mn_tuition_combined,mn_costs_combined,ds_costs_combined ";      
+
+
+              $Qeu.="SELECT mn_app_fee_combined,mn_tuition_combined,mn_costs_combined,ds_costs_combined ";
               $Qeu.=",mn_a_due_combined, mn_a_paid_combined, mn_b_due_combined, mn_b_paid_combined, mn_c_due_combined, mn_c_paid_combined, mn_d_due_combined, mn_d_paid_combined  ";
 
           }else{
 
 
-              $Qeu.="SELECT mn_app_fee,mn_tuition,mn_costs,ds_costs ";      
+              $Qeu.="SELECT mn_app_fee,mn_tuition,mn_costs,ds_costs ";
               $Qeu.=",mn_a_due, mn_a_paid, mn_b_due, mn_b_paid, mn_c_due, mn_c_paid, mn_d_due, mn_d_paid  ";
           }
       }
-      
+
       $Qeu.="
              FROM k_programa_costos
              WHERE fl_programa=$fl_programa ";
@@ -667,15 +678,15 @@
       $mn_tuition=$row[1];
       $mn_costs=$row[2];
       $ds_costs=$row[3];
-    
+
       if(empty($mn_app_fee))
           $mn_app_fee=0.0;
       if(empty($mn_tuition))
           $mn_tuition=0.0;
       if(empty($mn_costs))
           $mn_costs=0.0;
-      
-      
+
+
       $mn_a_due = $row[4];
       if(empty($mn_a_due))
           $mn_a_due = 0.0;
@@ -700,23 +711,23 @@
       $mn_d_paid = $row[11];
       if(empty($mn_d_paid))
           $mn_d_paid = 0.0;
-      
+
       if($mn_costs<=0)
         $mn_costs=$no_costos_ad;
       if(empty($ds_costs))
           $ds_costs=$ds_costos_ad;
-      
-      
+
+
       $mn_tot_tuition = $mn_tuition + $mn_costs - $no_descuento;
-      
-      
-      
+
+
+
       $mn_tot_program = $mn_tot_tuition + $mn_app_fee;
-      
-       
-      
-      
-      
+
+
+
+
+
       $Query ="UPDATE k_app_contrato SET ";
       $Query.="fg_aplicar_international='$fg_aplicar_international' , ";
       $Query.="mn_app_fee=$mn_app_fee  ,";
@@ -727,21 +738,21 @@
                    //$Query.="ds_costs='$ds_costs', ";
                   //$Query.="mn_tot_tuition=$mn_tot_tuition, ";
                   //$Query.="mn_tot_program=$mn_tot_program ";
-                  //$Query.=",mn_a_due=$mn_a_due , mn_a_paid=$mn_a_paid, mn_b_due=$mn_b_due, mn_b_paid=$mn_b_paid, mn_c_due=$mn_c_due, mn_c_paid=$mn_c_paid, 
+                  //$Query.=",mn_a_due=$mn_a_due , mn_a_paid=$mn_a_paid, mn_b_due=$mn_b_due, mn_b_paid=$mn_b_paid, mn_c_due=$mn_c_due, mn_c_paid=$mn_c_paid,
                  //mn_d_due=$mn_d_due, mn_d_paid=$mn_d_paid ";
       $Query.="WHERE cl_sesion='$cl_sesion' ";
       EjecutaQuery($Query);
-      
-      
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
   }
-  
-  
+
+
 	# Redirige al listado
   header("Location: ".ObtenProgramaBase( ));
-  
+
 ?>
