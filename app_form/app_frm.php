@@ -352,7 +352,7 @@ error_reporting(0);
   $Query .= "ds_eme_fname, ds_eme_lname, ds_eme_number, ds_eme_relation, ds_eme_country, ";
   $Query .= "fg_ori_via, ds_ori_other, fg_ori_ref, ds_ori_ref_name, fl_programa, fl_periodo, ds_link_to_portfolio, ds_ruta_foto, ";
   $Query .= "fg_responsable, cl_recruiter,fg_disability,ds_disability, ds_eme_relation_other,ds_ruta_foto_permiso,".ConsultaFechaBD('fe_start_date',FMT_CAPTURA)." fe_start_date,".ConsultaFechaBD('fe_expirity_date',FMT_CAPTURA)."fe_expirity_date,nb_name_institutcion, ds_sin,fl_immigrations_status ";
-  $Query .= ",race, hispanic,military,grade ";
+  $Query .= ",race, hispanic,military,grade,passport_number,passport_exp_date ";
   $Query .= "FROM k_ses_app_frm_1 ";
   $Query .= "WHERE cl_sesion='$clave'";
 
@@ -404,6 +404,9 @@ error_reporting(0);
   $nb_name_institutcion=str_texto(!empty($row['nb_name_institutcion'])?$row['nb_name_institutcion']:NULL);
   $ds_sin = !empty($row['ds_sin'])?$row['ds_sin']:NULL;
   $fl_immigrations_status=!empty($row['fl_immigrations_status'])?$row['fl_immigrations_status']:NULL;
+  $passport_number = !empty($row['passport_number']) ? $row['passport_number'] : null;
+  $passport_exp_date = !empty($row['passport_exp_date']) ? $row['passport_exp_date'] : null;
+
 
   $race = $row['race'];
   $hispanic = $row['hispanic'];
@@ -1815,7 +1818,11 @@ $Queryr  = "SELECT ds_fname_r, ds_lname_r, ds_email_r, ds_aemail_r, ds_pnumber_r
                   <div class='row padding-10 ".$citi_hid."' id='international'>";
                   $paso .= Forma_CampoTextoBootstrap(ObtenEtiqueta(1024), 'ds_citizenship', $ds_citizenship, "12", "text", "fa-globe", "onkeyup='javascript:show_hidden(1);'", true);
 
-                  # Student permit input (non Canadian students)
+                  $paso .= Forma_CampoTextoBootstrap('Passport Number', 'passport_number', $passport_number, "20", "text", "fa-list", "", true);
+                  //$paso .= Forma_CampoTextoBootstrap('Passport Expiation Date', 'passport_exp_date', $passport_exp_date, "20", "text", "fa-list", "", true);
+                  $paso .= "<div id='div_passport_exp_date'>" . Forma_CampoCalendario('Passport Expiation Date ' . ETQ_FMT_FECHA, 'passport_exp_date', $passport_exp_date, "dd-mm-yy", "12 padding-10", "fa-calendar", "", true) . "</div>";
+
+    # Student permit input (non Canadian students)
                   $names1 = array("fg_study_permit", "fg_study_permit");
                   $labels1 = array(ObtenEtiqueta(16), ObtenEtiqueta(17));
                   $vals1 = array("1", "0");

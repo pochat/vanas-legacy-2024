@@ -41,6 +41,10 @@
   $fg_study_permit = RecibeParametroBinario('fg_study_permit');
   $fg_study_permit_other = RecibeParametroBinario('fg_study_permit_other');
   $fl_immigrations_status=RecibeParametroNumerico('fl_immigrations_status');
+  $passport_number = RecibeParametroHTML('passport_number');
+  $passport_exp_date = RecibeParametroFecha('passport_exp_date');
+  $passport_exp_date = ValidaFecha($passport_exp_date);
+
   //if($fg_study_permit_other=='true')
     //  $fg_study_permit_other=1;
   //else
@@ -540,9 +544,14 @@
   if($fg_paso==3){
 
 
+    $Query = 'UPDATE k_ses_app_frm_1 SET passport_number="' . $passport_number . '" WHERE cl_sesion="' . $clave . '" ';
+    EjecutaQuery($Query);
+
+    $Query = 'UPDATE k_ses_app_frm_1 SET passport_exp_date="' . $passport_exp_date . '" WHERE cl_sesion="' . $clave . '" ';
+    EjecutaQuery($Query);
 
 
-      if($fg_international!=0){
+    if($fg_international!=0){
 
           #Actaulizamos los montos del las tarifas del aplicante, ci elifi¿gio internacional
           if(!empty($mn_app_intenra)){
