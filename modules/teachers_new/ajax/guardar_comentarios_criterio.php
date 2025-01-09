@@ -11,7 +11,7 @@
   # Email Library
   #MJD PHP MAILER 6.5
   if (PHP_OS=='Linux') { # when is production
-      require('/var/www/html/AWS_SES/PHP/com_email_func.inc.php');
+      require('../../../AWS_SES/PHP/com_email_func.inc.php');
   }else{
       require($_SERVER['DOCUMENT_ROOT'].'/AWS_SES/PHP/com_email_func.inc.php');
 
