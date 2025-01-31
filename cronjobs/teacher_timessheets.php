@@ -26,15 +26,15 @@ if (PHP_OS == 'Linux') {
   # Variables  //el proceso debe ejecutarse al final de cada mes, por ende calcula los del mes actual, pero tiene que adelantarse 1mes para que asi hagan macht con el mes actual.
   $fecha_actual = date("d-m-Y");
 
-  $mes_act = date("m",strtotime($fecha_actual."- 1 month"));
-  $anio_act = date('Y',strtotime($fecha_actual."- 1 year"));
-  $mes_anio_act = date("m-Y",strtotime($fecha_actual."- 1 month"));
-  $current_month = date("M",strtotime($fecha_actual."- 1 month"));
+  $mes_act = date("m",strtotime($fecha_actual."- 0 month"));
+  $anio_act = date('Y',strtotime($fecha_actual."- 0 year"));
+  $mes_anio_act = date("m-Y",strtotime($fecha_actual."- 0 month"));
+  $current_month = date("M",strtotime($fecha_actual."- 0 month"));
 
-  $mes_anio_act="11-2024";
-  $mes_act="11";
-  $anio_act="2024";
-  $current_month="November";
+  #$mes_anio_act="11-2024";
+  #$mes_act="11";
+  #$anio_act="2024";
+  #$current_month="November";
   $curdate="DATE_SUB(curdate(),INTERVAL 5 day)";
 
   # teacher que tiene grupo con alumnos activos en el mes actual
