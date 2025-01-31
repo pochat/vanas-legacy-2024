@@ -319,7 +319,7 @@ if (PHP_OS == 'Linux') {
   $Querycg1 .= "JOIN k_semana_grupo b ON b.fl_semana_grupo=a.fl_semana_grupo ";
   $Querycg1 .= "JOIN c_grupo c ON c.fl_grupo=a.fl_grupo ";
   $Querycg1 .= "WHERE ";
-  $Querycg1 .= " DATE_FORMAT(a.fe_clase,'%m-%Y')='$mes_anio_act' AND a.fl_maestro=392  GROUP BY fl_maestro  ";
+  $Querycg1 .= " DATE_FORMAT(a.fe_clase,'%m-%Y')='$mes_anio_act'  GROUP BY fl_maestro  ";
   $rg1 = EjecutaQuery($Querycg1);
   for($j1=0;$rog1 = RecuperaRegistro($rg1);$j1++){
 
@@ -331,8 +331,8 @@ if (PHP_OS == 'Linux') {
     if (empty($fl_maestro_pago)) {
 
         $Querymp = "INSERT INTO k_maestro_pago (fl_maestro,fe_periodo, mn_total, fg_publicar, fg_pagado, fe_pagado) ";
-        echo$Querymp .= "VALUES ($fl_maestro, $curdate, 0.0,'1', '0', Null)";
-        exit;$fl_maestro_pago = EjecutaInsert($Querymp);
+        $Querymp .= "VALUES ($fl_maestro, $curdate, 0.0,'1', '0', Null)";
+        $fl_maestro_pago = EjecutaInsert($Querymp);
 
 
     }
