@@ -2629,7 +2629,7 @@ $Queryr  = "SELECT ds_fname_r, ds_lname_r, ds_email_r, ds_aemail_r, ds_pnumber_r
                     break;
                 case '226':
                     $currency_code = "USD";
-                    $symbol = "<img src='".SP_IMAGES."/euro_symbol.png'>";
+                    $symbol = "$";
                     $symbol_button_stripe = "$";
                     break;
                 case '199':
