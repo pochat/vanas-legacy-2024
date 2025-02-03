@@ -2045,8 +2045,9 @@ function genera_documento($clave, $opc, $correo = False, $firma = False, $no_con
   $fl_alumno = $rowst[0];
 
   $rowsa = RecuperaValor("SELECT notation_transcript FROM c_alumno WHERE fl_alumno=$fl_alumno ");
-  $ds_notation = $rowsa['notation_transcript'];
+  $ds_notation = ($fl_template == 194)?null:$rowsa['notation_transcript'];
 
+   
   $cadena = str_replace("#ds_notation#", $ds_notation, $cadena);                ##notation diplomas and transcripts
 
     if ((empty($ds_notation)) && $fl_template == 194) { //diploma

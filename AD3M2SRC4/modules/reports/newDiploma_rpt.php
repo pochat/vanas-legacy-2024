@@ -115,8 +115,7 @@
   $ds_cuerpo = str_replace("#fe_diploma#", $fe_fin, $ds_cuerpo);
 
   if (empty($ds_notation)) {
-        $ds_cuerpo = str_replace("Notation:", " ", $ds_cuerpo);
-        $ds_cuerpo = str_replace("notation", " ", $ds_cuerpo);
+    $ds_cuerpo = str_replace("Notation:", " ", $ds_cuerpo);
   }
 
 

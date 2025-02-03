@@ -117,7 +117,6 @@ include('../../../lib/tcpdf/tcpdf.php');
 
   if (empty($ds_notation)) {
     $ds_cuerpo = str_replace("Notation:", " ", $ds_cuerpo);
-    $ds_cuerpo = str_replace("notation", " ", $ds_cuerpo);
   }
 
   // resize for a large full name
