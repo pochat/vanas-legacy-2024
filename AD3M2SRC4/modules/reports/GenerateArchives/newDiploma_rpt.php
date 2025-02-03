@@ -103,7 +103,7 @@ include('../../../lib/tcpdf/tcpdf.php');
   $ds_credential=$row['ds_credential'];
 
   $rowsa = RecuperaValor("SELECT notation_transcript FROM c_alumno WHERE fl_alumno=$clave ");
-  $ds_notation = $rowsa['notation_transcript'];
+  $ds_notation = Null; //$rowsa['notation_transcript'];
 
 
 // count the strings
@@ -116,7 +116,8 @@ include('../../../lib/tcpdf/tcpdf.php');
   $ds_cuerpo = str_replace("#fe_diploma#", $fe_fin, $ds_cuerpo);
 
   if (empty($ds_notation)) {
-    $ds_cuerpo = str_replace("Notation:", "", $ds_cuerpo);
+    $ds_cuerpo = str_replace("Notation:", " ", $ds_cuerpo);
+    $ds_cuerpo = str_replace("notation", " ", $ds_cuerpo);
   }
 
   // resize for a large full name
