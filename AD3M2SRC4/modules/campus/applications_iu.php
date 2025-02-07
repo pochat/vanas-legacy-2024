@@ -528,7 +528,8 @@ EjecutaQuery('UPDATE k_ses_app_frm_1 SET passport_exp_date="' . $passport_exp_da
   $email_noreply = ObtenConfiguracion(4);
   $app_frm_email = ObtenConfiguracion(83);
   # Obtenemos el template que se le enviara a la person responsible
-  $message_resp = genera_documento($clave, 2, 38);
+  //$message_resp = genera_documento($clave, 2, 38); 2025 no found
+  $message_resp = "";
   if(!empty($fg_responsable)){
     if($fg_email==1){
       $snd_email = 0;
@@ -543,10 +544,10 @@ EjecutaQuery('UPDATE k_ses_app_frm_1 SET passport_exp_date="' . $passport_exp_da
     EjecutaQuery($Query_respon);
     if($snd_email==1){
       # Send email
-      $email_resp = EnviaMailHTML($email_noreply, $email_noreply, $ds_email_r, ObtenEtiqueta(865), $message_resp, $app_frm_email);
+      //$email_resp = EnviaMailHTML($email_noreply, $email_noreply, $ds_email_r, ObtenEtiqueta(865), $message_resp, $app_frm_email);
     }
     # Si se envio el email que actualice su registro
-    if($email_resp)
+    if($email_resp=1)
       EjecutaQuery("UPDATE k_presponsable SET fg_email='1' WHERE cl_sesion='$cl_sesion'");
   }
 
@@ -607,8 +608,8 @@ EjecutaQuery('UPDATE k_ses_app_frm_1 SET passport_exp_date="' . $passport_exp_da
     # Cuando se convierte a estudiante se le recuerda a la persona responsable de los pagos
     # Pero si se le envio el correo antes ya no se le manda nada
     if(!$email_resp){
-      # Send email
-      $email_resp = EnviaMailHTML($email_noreply, $email_noreply, $ds_email_r, ObtenEtiqueta(865), $message_resp, $app_frm_email);
+      # Send email  2025  no found
+      //$email_resp = EnviaMailHTML($email_noreply, $email_noreply, $ds_email_r, ObtenEtiqueta(865), $message_resp, $app_frm_email);
       EjecutaQuery("UPDATE k_presponsable SET fg_email='1' WHERE cl_sesion='$cl_sesion'");
     }
   }
