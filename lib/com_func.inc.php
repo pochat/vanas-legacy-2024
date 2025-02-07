@@ -1846,12 +1846,6 @@ function genera_documento($clave, $opc, $correo = False, $firma = False, $no_con
     $tut_paid_contract = ObtenEtiqueta(905);
     $tot_balance_contract = ObtenEtiqueta(905);
   }
-  # fechas inicial y final de cada contrato
-  $cadena = str_replace("#start_date_contract#", $fe_start_contrato, $cadena);                               # Fecha Inicial del contrato
-  $cadena = str_replace("#end_date_contract#", $fe_end_contrato, $cadena);                                   # Fecha Final del contrato
-  $cadena = str_replace("#payment_due_contract#", $mn_payment_due, $cadena);                                 # Payment Due del contrato
-  $cadena = str_replace("#tut_paid_contract#", $tut_paid_contract, $cadena);                                 # Tuition paid to date del contrato
-  $cadena = str_replace("#tot_balance_contract#", $tot_balance_contract, $cadena);                           # Total balance to date del contrato
 
   switch ($cl_delivery)
   {
@@ -1914,9 +1908,19 @@ function genera_documento($clave, $opc, $correo = False, $firma = False, $no_con
   }
   #verifica si tiene tax la BD
 
+# fechas inicial y final de cada contrato
+$cadena = str_replace("#start_date_contract#", $fe_start_contrato, $cadena); # Fecha Inicial del contrato
+$cadena = str_replace("#end_date_contract#", $fe_end_contrato, $cadena); # Fecha Final del contrato
+$cadena = str_replace("#payment_due_contract#", $mn_payment_due + $tax_mn_cost, $cadena); # Payment Due del contrato
+$cadena = str_replace("#tut_paid_contract#", $tut_paid_contract, $cadena); # Tuition paid to date del contrato
+$cadena = str_replace("#tot_balance_contract#", $tot_balance_contract + $tax_mn_cost, $cadena); # Total balance to date del contrato
 
 
-  # Realizamos la suma total que pagara app fee tax mas tuition fee tax y el costo del programa
+
+
+
+
+    # Realizamos la suma total que pagara app fee tax mas tuition fee tax y el costo del programa
   $total_costs = $mn_tot_program + $app_fee_tax + $tuition_fee_tax + $tax_mn_cost;
   # Remplazamos los valores del app fee tax y el tuition fee tax
   $cadena = str_replace("#app_fee_tax#", $symbol."".number_format($app_fee_tax,2), $cadena);    #App fee tax
@@ -2047,7 +2051,7 @@ function genera_documento($clave, $opc, $correo = False, $firma = False, $no_con
   $rowsa = RecuperaValor("SELECT notation_transcript FROM c_alumno WHERE fl_alumno=$fl_alumno ");
   $ds_notation = ($fl_template == 194)?null:$rowsa['notation_transcript'];
 
-   
+
   $cadena = str_replace("#ds_notation#", $ds_notation, $cadena);                ##notation diplomas and transcripts
 
     if ((empty($ds_notation)) && $fl_template == 194) { //diploma
