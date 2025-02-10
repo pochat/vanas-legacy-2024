@@ -1073,7 +1073,7 @@ function genera_documento($clave, $opc, $correo = False, $firma = False, $no_con
         }
     }
     #verifica si tiene tax la BD
-    if (empty($tax_mn_cost>=0)) {
+    if ($tax_mn_cost>=0) {
 
         if ($mn_payment_due >= 0) {
             $mn_payment_due = $mn_payment_due + $tax_mn_cost;
