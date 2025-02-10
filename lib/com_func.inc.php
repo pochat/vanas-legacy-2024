@@ -1073,7 +1073,12 @@ function genera_documento($clave, $opc, $correo = False, $firma = False, $no_con
         }
     }
     #verifica si tiene tax la BD
-
+    if (empty($tax_mn_cost)) {
+        $tax_mn_cost = 0;
+    }
+    if (empty($tot_balance_contract) || ($tot_balance_contract < 0)) {
+        $tot_balance_contract = 0;
+    }
     # fechas inicial y final de cada contrato
     $cadena = str_replace("#start_date_contract#", $fe_start_contrato, $cadena); # Fecha Inicial del contrato
     $cadena = str_replace("#end_date_contract#", $fe_end_contrato, $cadena); # Fecha Final del contrato
