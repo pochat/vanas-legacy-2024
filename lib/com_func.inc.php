@@ -1074,17 +1074,15 @@ function genera_documento($clave, $opc, $correo = False, $firma = False, $no_con
     }
     #verifica si tiene tax la BD
     if (empty($tax_mn_cost)) {
-        $tax_mn_cost = 0;
-    }
-    if (empty($tot_balance_contract) || ($tot_balance_contract < 0)) {
-        $tot_balance_contract = 0;
+        $mn_payment_due= (($mn_payment_due)?$mn_payment_due:0) + $tax_mn_cost ;
+        $tot_balance_contract = (($tot_balance_contract)?$tot_balance_contract:0) + $tax_mn_cost;
     }
     # fechas inicial y final de cada contrato
     $cadena = str_replace("#start_date_contract#", $fe_start_contrato, $cadena); # Fecha Inicial del contrato
     $cadena = str_replace("#end_date_contract#", $fe_end_contrato, $cadena); # Fecha Final del contrato
-    $cadena = str_replace("#payment_due_contract#", $mn_payment_due + $tax_mn_cost, $cadena); # Payment Due del contrato
+    $cadena = str_replace("#payment_due_contract#", $mn_payment_due, $cadena); # Payment Due del contrato
     $cadena = str_replace("#tut_paid_contract#", $tut_paid_contract, $cadena); # Tuition paid to date del contrato
-    $cadena = str_replace("#tot_balance_contract#", $tot_balance_contract + $tax_mn_cost, $cadena); # Total balance to date del contrato
+    $cadena = str_replace("#tot_balance_contract#", $tot_balance_contract, $cadena); # Total balance to date del contrato
 
 
 
