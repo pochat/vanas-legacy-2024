@@ -1180,7 +1180,7 @@ function genera_documento($clave, $opc, $correo = False, $firma = False, $no_con
 
       }
 
-
+      error_log("Este es un mensaje de prueba", 3, "/testlog.txt");
       switch ($race) {
 
           case'W':
