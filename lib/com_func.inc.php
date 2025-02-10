@@ -1173,6 +1173,7 @@ function genera_documento($clave, $opc, $correo = False, $firma = False, $no_con
               break;
           case 'M':
               $opt_male=" X ";
+              break;
           case 'N':
               $opt_nobinary=" X ";
               break;
