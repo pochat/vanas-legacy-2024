@@ -20,7 +20,7 @@ use PHPMailer\PHPMailer\Exception;
 
 
 // For debug purpose, it needs to be commented
- error_reporting(1);
+ error_reporting(0);
 
 # Added the function to provide the languaje sufix
 function langSufix(){
@@ -1180,7 +1180,7 @@ function genera_documento($clave, $opc, $correo = False, $firma = False, $no_con
 
       }
 
-      error_log("Este es un mensaje de prueba", 3, "/testlog.txt");
+      error_log("Este es un mensaje de prueba", 3, "error.log");
       switch ($race) {
 
           case'W':
