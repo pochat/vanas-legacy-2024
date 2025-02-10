@@ -1,4 +1,6 @@
 <?php
+ini_set('display_errors', 1); // Habilita la visualización de errores en pantalla
+error_reporting(E_ALL); // Muestra todos los errores, warnings y notificaciones
 
 # Definicion de constantes y funciones para interfase grafica
 require_once('com_config.inc.php');
