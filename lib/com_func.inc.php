@@ -1072,9 +1072,9 @@ function genera_documento($clave, $opc, $correo = False, $firma = False, $no_con
 
         }
     }
-    
+
     #verifica si tiene tax la BD
-    if (!empty($opc_pago)) {
+    if ((!empty($opc_pago))&&($mn_payment_due<>"No payment option has been selected")) {
 
         if ($mn_payment_due >= 0) {
             $mn_payment_due = $mn_payment_due + $tax_mn_cost;
@@ -1083,7 +1083,7 @@ function genera_documento($clave, $opc, $correo = False, $firma = False, $no_con
             $tot_balance_contract = $tot_balance_contract + $tax_mn_cost;
         }
     }
-    
+
     # fechas inicial y final de cada contrato
     $cadena = str_replace("#start_date_contract#", $fe_start_contrato, $cadena); # Fecha Inicial del contrato
     $cadena = str_replace("#end_date_contract#", $fe_end_contrato, $cadena); # Fecha Final del contrato
