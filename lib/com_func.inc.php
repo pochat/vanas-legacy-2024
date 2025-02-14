@@ -1076,8 +1076,12 @@ function genera_documento($clave, $opc, $correo = False, $firma = False, $no_con
     #verifica si tiene tax la BD
     if ((!empty($opc_pago))&&($mn_payment_due<>"No payment option has been selected")) {
 
+        $mn_payment_due = str_replace(",", "", $mn_payment_due);
+        $tot_balance_contract = str_replace(",", "", $tot_balance_contract);
+
         if ($mn_payment_due >= 0) {
             $mn_payment_due = $mn_payment_due + $tax_mn_cost;
+            $tut_paid_contract = $mn_payment_due ;
         }
         if ($tot_balance_contract >= 0) {
             $tot_balance_contract = $tot_balance_contract + $tax_mn_cost;
