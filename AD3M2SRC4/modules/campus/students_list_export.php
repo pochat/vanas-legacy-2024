@@ -279,9 +279,10 @@ if (!empty($fe_dos)) {
       $rop=RecuperaValor($Queryo);
       $cl_sesion=$rop['cl_sesion'];
 
-      $Query="SELECT fg_aboriginal FROM k_app_contrato WHERE cl_sesion='$cl_sesion' ";
+      $Query="SELECT fg_aboriginal,DATE_FORMAT(fe_firma, '%Y-%m-%d') AS fe_firma FROM k_app_contrato WHERE cl_sesion='$cl_sesion' ";
       $rok=RecuperaValor($Query);
       $fg_aboriginal=!empty($rok['fg_aboriginal'])?"Y":"N";
+      $fe_firma = $rok['fe_firma'];
 
       #Recupermaos el pais .
       $QueryP="SELECT cl_iso2 FROM c_pais WHERE fl_pais=$ds_add_country ";
@@ -355,14 +356,16 @@ if (!empty($fe_dos)) {
       ->setCellValue('B1', 'Student ID Number') //Student id
       ->setCellValue('C1','Student Name') //name complete
       ->setCellValue('D1','Full Time Flag (Y/N)') //Full time
-      ->setCellValue('E1','Student Start Date (YYYY-MM-DD)') //start date
-      ->setCellValue('F1','Student End Date (YYYY-MM-DD)') //end date
-      ->setCellValue('G1','Program Achievement Status') //program archivenment status
-      ->setCellValue('H1','Graduate Follow Up Date (YYYY-MM-DD)') //graduated follow date
-      ->setCellValue('I1','Follow Up Type') //follow_type
-      ->setCellValue('J1','Job Title')
-      ->setCellValue('K1','Registered,Licensed,certified')
-      ->setCellValue('L1','Delete Flag');
+      ->setCellValue('E1', 'Method Of Delivery') //start date
+      ->setCellValue('F1', 'Date Student Erolled') //end date
+      ->setCellValue('G1','Student Start Date (YYYY-MM-DD)') //start date
+      ->setCellValue('H1','Student End Date (YYYY-MM-DD)') //end date
+      ->setCellValue('I1','Program Achievement Status') //program archivenment status
+      ->setCellValue('J1','Graduate Follow Up Date (YYYY-MM-DD)') //graduated follow date
+      ->setCellValue('K1','Follow Up Type') //follow_type
+      ->setCellValue('L1','Job Title')
+      ->setCellValue('M1','Registered,Licensed,certified')
+      ->setCellValue('N1','Delete Flag');
 
 
   //generamos la segunda hoja.
@@ -400,6 +403,10 @@ if (!empty($fe_dos)) {
       $rowe=RecuperaValor($QueryP);
       $citizen_code=$rowe['cl_iso2'];
 
+      $Querypr = "SELECT ds_tipo FROM c_programa WHERE fl_programa=$fl_programa ";
+      $rowpr = RecuperaValor($Querypr);
+      $ds_tipo = ($rowpr['ds_tipo']=='Combined')?'Combined':'Distance';
+
       #Verifica y obtiene el code del estado.(canada)
       $Qury="SELECT ds_abreviada FROM k_provincias WHERE fl_provincia=$ds_add_state ";
       $rol=RecuperaValor($Qury);
@@ -408,6 +415,11 @@ if (!empty($fe_dos)) {
       $Queryo="SELECT cl_sesion FROM c_usuario WHERE fl_usuario=$fl_usuario ";
       $rop=RecuperaValor($Queryo);
       $cl_sesion=$rop['cl_sesion'];
+
+      $Query = "SELECT fg_aboriginal,DATE_FORMAT(fe_firma, '%Y-%m-%d') AS fe_firma FROM k_app_contrato WHERE cl_sesion='$cl_sesion' ";
+      $rok = RecuperaValor($Query);
+      $fg_aboriginal = !empty($rok['fg_aboriginal']) ? "Y" : "N";
+      $fe_firma = $rok['fe_firma'];
 
       #
       $Querygra="SELECT fe_graduacion FROM k_pctia WHERE fl_alumno=$fl_usuario ";
@@ -491,14 +503,16 @@ if (!empty($fe_dos)) {
        ->setCellValue('B'.$m.'', ''.$ds_login.'') //Student id
        ->setCellValue('C'.$m.'',''.$ds_apellidos.', '.$ds_nombre.'') //name complete
        ->setCellValue('D'.$m.'','Y') //Full time
-       ->setCellValue('E'.$m.'',''.$fe_start_date.'') //start date
-       ->setCellValue('F'.$m.'',''.$fe_completado.'') //end date
-       ->setCellValue('G'.$m.'',''.$status.'') //program archivenment status
-       ->setCellValue('H'.$m.'',''.$fe_graduacion.'') //graduated follow date
-       ->setCellValue('I'.$m.'',''.$ds_follow_type.'') //follow_type
-       ->setCellValue('J'.$m.'',''.$job_title.'')
-       ->setCellValue('K'.$m.'',''.$registered_Licensed_certified.'')
-       ->setCellValue('L'.$m.'',''.$delete_Flag.'');
+       ->setCellValue('E' . $m . '', $ds_tipo) //Method Of Delivery
+       ->setCellValue('F' . $m . '', $fe_firma) //Date Student Enrolled
+       ->setCellValue('G'.$m.'',''.$fe_start_date.'') //start date
+       ->setCellValue('H'.$m.'',''.$fe_completado.'') //end date
+       ->setCellValue('I'.$m.'',''.$status.'') //program archivenment status
+       ->setCellValue('J'.$m.'',''.$fe_graduacion.'') //graduated follow date
+       ->setCellValue('K'.$m.'',''.$ds_follow_type.'') //follow_type
+       ->setCellValue('L'.$m.'',''.$job_title.'')
+       ->setCellValue('M'.$m.'',''.$registered_Licensed_certified.'')
+       ->setCellValue('N'.$m.'',''.$delete_Flag.'');
 
 
   }
