@@ -403,9 +403,7 @@ if (!empty($fe_dos)) {
       $rowe=RecuperaValor($QueryP);
       $citizen_code=$rowe['cl_iso2'];
 
-      $Querypr = "SELECT fg_payment FROM k_app_contrato WHERE cl_sesion='$cl_sesion' ";
-      $rowpr = RecuperaValor($Querypr);
-      $ds_tipo = ($rowpr['fg_payment']=='C')?'Combined':'Distance';
+
 
       #Verifica y obtiene el code del estado.(canada)
       $Qury="SELECT ds_abreviada FROM k_provincias WHERE fl_provincia=$ds_add_state ";
@@ -416,7 +414,11 @@ if (!empty($fe_dos)) {
       $rop=RecuperaValor($Queryo);
       $cl_sesion=$rop['cl_sesion'];
 
-      $Query = "SELECT fg_aboriginal,DATE_FORMAT(fe_firma, '%Y-%m-%d') AS fe_firma FROM k_app_contrato WHERE cl_sesion='$cl_sesion' ";
+        $Querypr = "SELECT fg_payment FROM k_app_contrato WHERE cl_sesion='$cl_sesion' ";
+        $rowpr = RecuperaValor($Querypr);
+        $ds_tipo = ($rowpr['fg_payment'] == 'C') ? 'Combined' : 'Distance';
+
+    $Query = "SELECT fg_aboriginal,DATE_FORMAT(fe_firma, '%Y-%m-%d') AS fe_firma FROM k_app_contrato WHERE cl_sesion='$cl_sesion' ";
       $rok = RecuperaValor($Query);
       $fg_aboriginal = !empty($rok['fg_aboriginal']) ? "Y" : "N";
       $fe_firma = $rok['fe_firma'];
