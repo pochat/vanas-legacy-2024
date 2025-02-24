@@ -403,9 +403,9 @@ if (!empty($fe_dos)) {
       $rowe=RecuperaValor($QueryP);
       $citizen_code=$rowe['cl_iso2'];
 
-      $Querypr = "SELECT ds_tipo FROM c_programa WHERE fl_programa=$fl_programa ";
+      $Querypr = "SELECT fg_payment FROM k_app_contrato WHERE cl_sesion='$cl_sesion' ";
       $rowpr = RecuperaValor($Querypr);
-      $ds_tipo = ($rowpr['ds_tipo']=='Combined')?'Combined':'Distance';
+      $ds_tipo = ($rowpr['fg_payment']=='C')?'Combined':'Distance';
 
       #Verifica y obtiene el code del estado.(canada)
       $Qury="SELECT ds_abreviada FROM k_provincias WHERE fl_provincia=$ds_add_state ";
