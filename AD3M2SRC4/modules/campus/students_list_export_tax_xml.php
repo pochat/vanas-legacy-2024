@@ -64,12 +64,15 @@
       $StartYearMonth=date('y-m',$fe_ini);
 
       $TaxionYear=date('Y',$fe_ini);
+      $year1 = date('Y', $fe_ini);
   }
   if($fe_dos){
       $fe_dos=strtotime('0 days',strtotime($fe_dos));
       $fecha2= date('Y-m-d',$fe_dos);
 
       $EndYearMonth=date('y-m',$fe_dos);
+
+      $year2= date('Y', $fe_dos);
   }
 
   $TaxionYear=ObtenConfiguracion(156);
@@ -205,7 +208,11 @@
           */
           JOIN c_pais Pais ON(Pais.fl_pais = Form1.ds_add_country)
           LEFT JOIN k_pctia PCTIA ON (PCTIA.fl_alumno = Usuario.fl_usuario)
+          left join k_alumno_pago alupago ON alupago.fl_alumno=Usuario.fl_usuario
+          left JOIN k_term_pago termpago ON  termpago.fl_term_pago =alupago.fl_term_pago
+
           WHERE Usuario.fl_perfil = 3
+          AND DATE_FORMAT(alupago.fe_pago,"%Y")<= "'. $year2.'" 
           GROUP BY Usuario.fl_usuario) AS Main
     WHERE true = true ';
   if($fl_param=='Active'){
@@ -245,12 +252,13 @@
   }
 
 
-  $Query.='
+  $Query.=' 
     ORDER BY Main.fe_alta DESC
 ';
 
   #Recuperamos la data
-  $rs = EjecutaQuery($Query);$mn_total_total=0;
+  $rs = EjecutaQuery($Query);
+  $mn_total_total=0;
   $no_alumnos_procesados=CuentaRegistros($rs);
   $monto_total=0;
 
@@ -265,6 +273,7 @@ $xml->setIndentString('');
 $xml->startDocument('1.0', 'ISO-8859-1');
 $xml->startElement("Submission");
 
+/*
 $xml->startAttribute('xmlns:ccms');
 $xml->text('http://www.cra-arc.gc.ca/xmlns/ccms/1-0-0');
 $xml->endAttribute();
@@ -350,23 +359,24 @@ $xml->endAttribute();
 $xml->startAttribute('xsi:noNamespaceSchemaLocation');
 $xml->text('layout-topologie.xsd');
 $xml->endAttribute();
-
+*/
     $xml->startElement("T619");
         $xml->startElement("sbmt_ref_id");
         $xml->text(''.$sbmt_ref_id.'');//Required 8 alphanumeric
         $xml->endElement();
 
-        $xml->startElement("rpt_tcd");
-        $xml->text(''.$fg_report_type_code.'');//Required O original  A=Amended
-        $xml->endElement();
+       # removed 2025 update
+       # $xml->startElement("rpt_tcd");
+       # $xml->text(''.$fg_report_type_code.'');//Required O original  A=Amended
+       # $xml->endElement();
 
-        $xml->startElement("trnmtr_nbr");
-        $xml->text(''.$trnmtr_nbr.'');//Transmitter NUMBER example: MM555555
-        $xml->endElement();
+       # $xml->startElement("trnmtr_nbr");
+       # $xml->text(''.$trnmtr_nbr.'');//Transmitter NUMBER example: MM555555
+       # $xml->endElement();
 
-		$xml->startElement("trnmtr_tcd");
-        $xml->text('1');//Transmitter type indicator - 1 if you are submitting your returns | - 2 if you are submitting returns for others (service providers) | - 3 if you are submitting your returns using a purchased software package  |- 4 if you are a software vendor
-        $xml->endElement();
+	   #  $xml->startElement("trnmtr_tcd");
+       #  $xml->text('1');//Transmitter type indicator - 1 if you are submitting your returns | - 2 if you are submitting returns for others (service providers) | - 3 if you are submitting your returns using a purchased software package  |- 4 if you are a software vendor
+       #  $xml->endElement();
 
         $xml->startElement("summ_cnt");
         $xml->text(''.$no_alumnos_procesados.'');//Total number of summary records
@@ -379,7 +389,7 @@ $xml->endAttribute();
         $l1_nm_1=substr($l1_nm,0,30);
         $l1_nm_2=substr($l1_nm,30,60);
 
-        $xml->startElement("TRNMTR_NM");
+        $xml->startElement("TransmitterName");  #reeplace 2025  before TRNMTR_NM (2024)
             $xml->startElement("l1_nm");
             $xml->text(''.$l1_nm_1.'');//Required 30 alphanumeric
             $xml->endElement();
@@ -394,28 +404,35 @@ $xml->endAttribute();
         $post_secondary_educational_institution_mailing_address_1=substr($post_secondary_educational_institution_mailing_address,0,30);
 
         $xml->startElement("TRNMTR_ADDR");
-            $xml->startElement("addr_l1_txt");
-            $xml->text(''.$post_secondary_educational_institution_mailing_address_1.'');//Transmitter city Required 28 alphanumeric
-            $xml->endElement();
+            #$xml->startElement("addr_l1_txt");
+            #$xml->text(''.$post_secondary_educational_institution_mailing_address_1.'');//Transmitter city Required 28 alphanumeric
+            #$xml->endElement();
 
-            $xml->startElement("cty_nm");
-            $xml->text(''.$city_name.'');//Transmitter city Required 28 alphanumeric
-            $xml->endElement();
+            #$xml->startElement("cty_nm");
+            #$xml->text(''.$city_name.'');//Transmitter city Required 28 alphanumeric
+            #$xml->endElement();
 
-            $xml->startElement("prov_cd");
-            $xml->text(''.$province_state_code.'');//Transmitter province or territory code
-            $xml->endElement();
+            #$xml->startElement("prov_cd");
+            #$xml->text(''.$province_state_code.'');//Transmitter province or territory code
+            #$xml->endElement();
 
-            $xml->startElement("cntry_cd");
+            $xml->startElement("TransmitterCountryCode"); #replace 2025  cntry_cd by TransmitterCountryCode
             $xml->text(''.$country_code.'');// CAN code
+            $xml->endElement();
+
+            #ADD new data 2025
+            $xml->startElement("TransmitterAccountNumber");
+                $xml->startElement("bn15");
+                $xml->text(''. $file_account_number.'');//File account number
+                $xml->endElement();
             $xml->endElement();
 
 
             //QUITAMOS ESPACIOS EN BLANCO
             $postal_zip_code=str_replace(" ","",$postal_zip_code);
-            $xml->startElement("pstl_cd");
-            $xml->text(''.$postal_zip_code.'');//Postal code
-            $xml->endElement();
+            #$xml->startElement("pstl_cd");
+            #$xml->text(''.$postal_zip_code.'');//Postal code
+            #$xml->endElement();
         $xml->endElement();
 
         $xml->startElement("CNTC");
@@ -520,7 +537,7 @@ $xml->startElement("T2202"); //elemento T2202
             $fg_aboriginal=!empty($rok['fg_aboriginal'])?"Y":"N";
             $fg_opcion_pago=$rok['fg_opcion_pago'];
 
-            # Recupera informacion de los pagos
+    # Recupera informacion de los pagos
             switch($fg_opcion_pago) {
                 case 1: $mn_due='mn_a_due'; $no_x_payments = 'no_a_payments'; $ds_pagos = 'no_a_payments'; break;
                 case 2: $mn_due='mn_b_due'; $no_x_payments = 'no_b_payments'; $ds_pagos = 'no_b_payments'; break;
@@ -588,7 +605,7 @@ $xml->startElement("T2202"); //elemento T2202
             $end_month=substr($end_year,2,2)."".$end_month;
 
 
-            for ($j = 0; $j <= $anios1; $j++) {
+    for ($j = 0; $j <= $anios1; $j++) {
                 $anios2 = $anio_inicio1 + $j;
                 if ($anios2 < date('Y')) {
                     # Obtiene los meses que conforman el anio para el que se pago
@@ -667,7 +684,7 @@ $xml->startElement("T2202"); //elemento T2202
             }
 
 
-            #En total son 3 pagos verificamos que existan y que pertenescan en el anio fiscal.
+    #En total son 3 pagos verificamos que existan y que pertenescan en el anio fiscal.
             switch($ds_duracion){
 
                 case "1":
@@ -703,7 +720,8 @@ $xml->startElement("T2202"); //elemento T2202
                             FROM k_alumno_pago a
                             JOIN k_term_pago b
                             ON a.fl_term_pago=b.fl_term_pago
-                            WHERE a.fl_alumno=$fl_usuario AND DATE_FORMAT(a.fe_pago,'%Y')<=$start_year ";
+                            WHERE a.fl_alumno=$fl_usuario ";
+                    $Queryp.=" AND DATE_FORMAT(a.fe_pago,'%Y')<=$start_year ";
                     $Queryp.="   AND DATE_FORMAT(b.fe_ini_pago,'%m')<12 ";//tiene ser menores de Diciembre
                     $rspay=EjecutaQuery($Queryp);$no_pagos=CuentaRegistros($rspay);
                     for($jp=1;$rowpay=RecuperaRegistro($rspay);$jp++) {
