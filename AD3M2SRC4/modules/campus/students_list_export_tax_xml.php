@@ -403,7 +403,7 @@ $xml->endAttribute();
 
         $post_secondary_educational_institution_mailing_address_1=substr($post_secondary_educational_institution_mailing_address,0,30);
 
-        $xml->startElement("TRNMTR_ADDR");
+       # $xml->startElement("TRNMTR_ADDR");
             #$xml->startElement("addr_l1_txt");
             #$xml->text(''.$post_secondary_educational_institution_mailing_address_1.'');//Transmitter city Required 28 alphanumeric
             #$xml->endElement();
@@ -416,16 +416,16 @@ $xml->endAttribute();
             #$xml->text(''.$province_state_code.'');//Transmitter province or territory code
             #$xml->endElement();
 
-            $xml->startElement("TransmitterCountryCode"); #replace 2025  cntry_cd by TransmitterCountryCode
-            $xml->text(''.$country_code.'');// CAN code
-            $xml->endElement();
+        $xml->startElement("TransmitterCountryCode"); #replace 2025  cntry_cd by TransmitterCountryCode
+        $xml->text(''.$country_code.'');// CAN code
+        $xml->endElement();
 
-            #ADD new data 2025
-            $xml->startElement("TransmitterAccountNumber");
-                $xml->startElement("bn15");
-                $xml->text(''. $file_account_number.'');//File account number
-                $xml->endElement();
+        #ADD new data 2025
+        $xml->startElement("TransmitterAccountNumber");
+            $xml->startElement("bn15");
+            $xml->text(''. $file_account_number.'');//File account number
             $xml->endElement();
+        $xml->endElement();
 
 
             //QUITAMOS ESPACIOS EN BLANCO
@@ -433,7 +433,7 @@ $xml->endAttribute();
             #$xml->startElement("pstl_cd");
             #$xml->text(''.$postal_zip_code.'');//Postal code
             #$xml->endElement();
-        $xml->endElement();
+       # $xml->endElement();
 
         $xml->startElement("CNTC");
             $xml->startElement("cntc_nm");
@@ -468,10 +468,6 @@ $xml->startElement("T2202"); //elemento T2202
 
 
         for($a=0;$row1=RecuperaRegistro($rs);$a++) {
-
-
-
-
 
 
             $fl_usuario=$row1['fl_usuario'];
@@ -723,6 +719,7 @@ $xml->startElement("T2202"); //elemento T2202
                             WHERE a.fl_alumno=$fl_usuario ";
                     $Queryp.=" AND DATE_FORMAT(a.fe_pago,'%Y')<=$start_year ";
                     $Queryp.="   AND DATE_FORMAT(b.fe_ini_pago,'%m')<12 ";//tiene ser menores de Diciembre
+
                     $rspay=EjecutaQuery($Queryp);$no_pagos=CuentaRegistros($rspay);
                     for($jp=1;$rowpay=RecuperaRegistro($rspay);$jp++) {
                         $mn_late_fee=!empty($rowpay['mn_late_fee'])?$rowpay['mn_late_fee']:0;
