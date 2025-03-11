@@ -1,19 +1,20 @@
 <?php
 if (PHP_OS == 'Linux') {
     # Include campus libraries
-    require '/var/www/html/vanas/lib/com_func.inc.php';
+    require '/var/www/html/vanas/lib/com_func_cronjobs.inc.php';
     require '/var/www/html/vanas/lib/sp_config.inc.php';
 
     # Include AWS SES libraries
     require '/var/www/html/vanas/AWS_SES/PHP/com_email_func.inc.php';
 } else {
 
-    require '../vanas/lib/com_func.inc.php';
-    require '../lib/sp_config.inc.php';
+    require '../vanas/lib/com_func_cronjobs.inc.php';
+	require '../lib/sp_config.inc.php';
     require '../AWS_SES/PHP/com_email_func.inc.php';
 
 }
 	$from = 'noreply@vanas.ca';
+
 
 	# Prepare email templates for assignment reminders, note: (change nb_template='___' to fl_template=id once this is stable on production server)
 	$Query = "SELECT ds_encabezado, ds_cuerpo, ds_pie FROM k_template_doc WHERE fl_template=18 AND fg_activo='1'";
@@ -28,7 +29,8 @@ if (PHP_OS == 'Linux') {
 	$Query .= "FROM k_term_pago a ";
 	$Query .= "LEFT JOIN k_term b ON b.fl_term=a.fl_term ";
 	$Query .= "LEFT JOIN c_programa c ON c.fl_programa=b.fl_programa ";
-	$Query .= "WHERE CURDATE() = DATE(a.fe_pago ) ";
+	echo$Query .= "WHERE CURDATE() = DATE(a.fe_pago ) ";
+exit;
 	$rs = EjecutaQuery($Query);
 
 	while($row=RecuperaRegistro($rs)){

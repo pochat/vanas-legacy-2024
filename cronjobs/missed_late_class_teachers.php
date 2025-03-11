@@ -5,11 +5,11 @@
   ### and sends an email in case the teahcer was late(late attendance class notification)
   ### or missed the class(missed class notification)
 if (PHP_OS == 'Linux') { # when is production
-    require '/var/www/html/vanas/lib/com_func.inc.php';
+    require '/var/www/html/vanas/lib/com_func_cronjobs.inc.php';
     require '/var/www/html/vanas/lib/sp_config.inc.php';
 } else {
 
-    require '../lib/com_func.inc.php';
+    require '../lib/com_func_cronjobs.inc.php';
     require '../lib/sp_config.inc.php';
 
 }

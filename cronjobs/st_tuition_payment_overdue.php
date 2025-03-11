@@ -1,14 +1,14 @@
 <?php
 if (PHP_OS == 'Linux') {
     # Include campus libraries
-    require '/var/www/html/vanas/lib/com_func.inc.php';
+    require '/var/www/html/vanas/lib/com_func_cronjobs.inc.php';
     require '/var/www/html/vanas/lib/sp_config.inc.php';
 
     # Include AWS SES libraries
     require '/var/www/html/vanas/AWS_SES/PHP/com_email_func.inc.php';
 } else {
 
-    require '../lib/com_func.inc.php';
+    require '../lib/com_func_cronjobs.inc.php';
     require '../lib/sp_config.inc.php';
     require '../AWS_SES/PHP/com_email_func.inc.php';
 
@@ -74,7 +74,7 @@ if (PHP_OS == 'Linux') {
             //exit;
         }
 
-        
+
             #verifica si repite term.
             # Verificamos si repitio el grado
 			$Queryr = "SELECT no_grado FROM k_alumno_term a, k_term b WHERE a.fl_term=b.fl_term and fl_alumno=$fl_alumno  ";
@@ -105,7 +105,7 @@ if (PHP_OS == 'Linux') {
 							JOIN k_term_pago b ON b.fl_term_pago= a.fl_term_pago
 							WHERE a.fl_alumno=$fl_alumno AND b.no_opcion=$no_opcion AND no_pago=$no_pago ";
 					$row3 = RecuperaValor($Query);
-					
+
 				} else {
 
 					#2025 verifica pagos dese el term inicial.
@@ -115,7 +115,7 @@ if (PHP_OS == 'Linux') {
 					$row3 = RecuperaValor($Query_pagado);
 					$fl_term_pago_pagado = $row3['fl_term_pago'];
 
-             
+
 
 
             }
@@ -127,7 +127,7 @@ if (PHP_OS == 'Linux') {
 
 			# If have not paid, send out reminder
 			if(empty($row3[0])){
-            
+
 				$variables = array(
 					"st_fname" => $st_fname,
 					"st_lname" => $st_lname,

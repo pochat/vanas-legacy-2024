@@ -1,11 +1,11 @@
 <?php
 if (PHP_OS == 'Linux') { # when is production
     # Include campus libraries
-    require '/var/www/html/vanas/lib/com_func.inc.php';
+    require '/var/www/html/vanas/lib/com_func_cronjobs.inc.php';
     require '/var/www/html/vanas/lib/sp_config.inc.php';
 } else {
 
-     require '../lib/com_func.inc.php';
+     require '../lib/com_func_cronjobs.inc.php';
      require '../lib/sp_config.inc.php';
 }
 
