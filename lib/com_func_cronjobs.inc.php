@@ -4225,7 +4225,7 @@ function genera_ContratoFame($p_instituto, $opc,$fl_template,$p_usuario,$ds_fnam
  *
  */
 
-function genera_TranscripQuiz($clave, $opc, $correo=False, $firma=False, $no_contrato=1,$fl_template,$ds_cve) {
+function genera_TranscripQuiz($clave='', $opc='', $correo=False, $firma=False, $no_contrato=1,$fl_template='',$ds_cve='') {
 
 
     # Recupera datos del template del documento
