@@ -71,7 +71,7 @@ if (PHP_OS == 'Linux') {
         if ($fl_alumno == 11529) {
             echo "llego";
 
-            exit;
+            //exit;
         }
 
         
@@ -133,13 +133,11 @@ if (PHP_OS == 'Linux') {
 					"st_lname" => $st_lname,
 					"pg_name" => $pg_name,
 					"py_date" => $py_date,
-					"py_amount" => $py_amount
+				 	"py_amount" => $py_amount
 				);
 				# Generate the email template with the variables
 				$ds_email_template = GenerateTemplate($ds_template, $variables);
 				$ds_email_template = str_replace("#link_payment#", "https://campus.vanas.ca/modules/students_new/index.php#ajax/payment_history.php", $ds_email_template);
-
-
 
             # Obtenemos la informacion del students
 				$row5 = RecuperaValor("SELECT m.cl_sesion, (SELECT fl_sesion FROM c_sesion r WHERE r.cl_sesion=m.cl_sesion) FROM c_usuario m WHERE m.fl_usuario=$fl_alumno ");
