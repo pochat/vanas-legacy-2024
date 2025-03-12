@@ -29,8 +29,8 @@ if (PHP_OS == 'Linux') {
 	$Query .= "FROM k_term_pago a ";
 	$Query .= "LEFT JOIN k_term b ON b.fl_term=a.fl_term ";
 	$Query .= "LEFT JOIN c_programa c ON c.fl_programa=b.fl_programa ";
-	echo$Query .= "WHERE CURDATE() = DATE(a.fe_pago ) ";
-exit;
+	$Query .= "WHERE CURDATE() = DATE(a.fe_pago ) ";
+
 	$rs = EjecutaQuery($Query);
 
 	while($row=RecuperaRegistro($rs)){
