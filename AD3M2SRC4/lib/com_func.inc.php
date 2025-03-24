@@ -1319,7 +1319,18 @@ $cadena = str_replace("#hr_class_time#", "" . $horarios, $cadena); #Horarios cla
       $ds_abreviada = $row_tax[0];
       $mn_tax_rate = $row_tax[1];
       $app_fee_tax = $app_fee*($mn_tax_rate/100);
-      $tuition_fee_tax = $tuition*($mn_tax_rate/100);
+	  
+	  #validate learners obligatorios con descuento fl_sesion
+	  if($clave==3331000)
+	  {
+		  $tuition_fee_tax = 0;
+		  $app_fee_tax=0;
+	  }else{
+		  $tuition_fee_tax = $tuition*($mn_tax_rate/100);
+	  }
+	  
+	  
+      
 
     if ((empty($tax_mn_cost)) || ($tax_mn_cost == 0)) {
                 #tax FAME.
