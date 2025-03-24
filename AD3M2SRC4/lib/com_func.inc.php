@@ -1338,6 +1338,13 @@ $cadena = str_replace("#hr_class_time#", "" . $horarios, $cadena); #Horarios cla
 
                     $tax_mn_cost = $no_costos_ad * ($mn_tax_rate / 100);
                 }
+				
+				#validate learners obligatorios con descuento fl_sesion
+				if($clave==3331000)
+				{
+					  $tax_mn_cost = 0;
+				
+				}
 
     }
 

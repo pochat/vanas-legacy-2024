@@ -1076,6 +1076,13 @@ function genera_documento($clave, $opc, $correo = False, $firma = False, $no_con
                 if (($ds_costos_ad == "VANAS+ Learning Resources") || ($ds_costos_ad == "VANAS Plus Learning Resources") || ($ds_costos_ad == "VANAS+ Learning Resources")) {
                     $tax_mn_cost = $no_costos_ad * ($mn_tax_rate / 100);
                 }
+				
+				#validate learners obligatorios con descuento fl_sesion
+				if($clave==3331000)
+				{
+					  $tax_mn_cost = 0;
+				
+				}
 
             }
 
