@@ -15,7 +15,7 @@ jobs:
 
       - name: Upload modified files to EC2 with rsync
         env:
-          REMOTE_USER: ${{ secrets.AWS_USER }}
+          REMOTE_USER: "ubuntu"
           REMOTE_HOST: "15.223.141.201"
           REMOTE_PORT: ${{ secrets.AWS_PORT }}
           TARGET: ${{ secrets.AWS_TARGET_FOLDER }}
