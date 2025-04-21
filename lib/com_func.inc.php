@@ -4266,7 +4266,7 @@ function genera_ContratoFame($p_instituto, $opc,$fl_template,$p_usuario,$ds_fnam
  *
  */
 
-function genera_TranscripQuiz($clave, $opc, $correo=False, $firma=False, $no_contrato=1,$fl_template,$ds_cve) {
+function genera_TranscripQuiz($clave, $opc, $correo=False, $firma=False, $no_contrato=1,$fl_template='',$ds_cve='') {
 
 
     # Recupera datos del template del documento
@@ -5368,7 +5368,7 @@ function TieneRubricLeccionCampus($fl_leccion,$no_semana){
 
 # Funcion con parametro para obtener el tiempo
 # De duracion de los videos
-function VideoDuration($ffmpeg, $file, $segundos=false, $tipo_v, $fl_video){
+function VideoDuration($ffmpeg, $file, $segundos=false, $tipo_v='', $fl_video=''){
 
   //$time = 00:00:00.000 format
   $time =  exec($ffmpeg." -i ".$file." 2>&1 | grep 'Duration' | cut -d ' ' -f 4 | sed s/,//");

@@ -110,6 +110,7 @@ error_reporting(0);
   $padre5 = NULL;
   $editars = NULL;
 
+
   if(empty($clave)) {
     $clave = SP_GeneraSesion();
     $fg_nueva = True;
@@ -3222,6 +3223,7 @@ $Queryr  = "SELECT ds_fname_r, ds_lname_r, ds_email_r, ds_aemail_r, ds_pnumber_r
              }
              if($fl_pais_selected==226){
              */
+
                  $paso.="
 
                   <div class='col-xs-12 col-sm-12 col-md-12 padding-top-10' id='div_btn_paypal'>
@@ -3230,6 +3232,7 @@ $Queryr  = "SELECT ds_fname_r, ds_lname_r, ds_email_r, ds_aemail_r, ds_pnumber_r
                           <h4 class='panel-title text-left' style='color:#337ab7;font-weight: 100;'>Pay Online</h3>
 
                        </div>
+                       
                         <div class='panel-body no-padding text-align-center' style='height:50px;'>
                           <div class='price-features' style='min-height:0px; font-size:12px;background:#fff;'>
                                     Pay your application fee via Stripe, Visa, Mastercard, American Express.
@@ -3237,7 +3240,7 @@ $Queryr  = "SELECT ds_fname_r, ds_lname_r, ds_email_r, ds_aemail_r, ds_pnumber_r
                         </div>";
 
 
-                 $paso.="<div class='row'><div class='col-md-2'></div><div class='col-md-8 text-center'>";
+                 $paso.="<div class='row'><div class='col-md-2'></div><div class='col-md-8 text-center' style='display:none;' id='showStripe'>";
                  $paso.="<form action='pago' method='POST' name='frm_stripe' id='frm_stripe'>";
                  $paso.="<input type='hidden' name='mn_amount' id='mn_amount' value='$mn_due_pagar' >
                          <input type='hidden' name='name' id='name' value='$ds_fname $ds_lname' >
@@ -3291,19 +3294,34 @@ $Queryr  = "SELECT ds_fname_r, ds_lname_r, ds_email_r, ds_aemail_r, ds_pnumber_r
 
                 }
 
-    $paso .="<br><div id='payment_process' class='dot-elastic hidden text-center' style='margin: auto;padding-top: 10px;margin-top: 15px;'></div><br><div id='msg_succes' class='alert alert-success text-center hidden' role='alert'>
+                            $paso .="<br><div id='payment_process' class='dot-elastic hidden text-center' style='margin: auto;padding-top: 10px;margin-top: 15px;'></div><br><div id='msg_succes' class='alert alert-success text-center hidden' role='alert'>
                                   Successful payment...! You will be redirected in 5 seconds...
                         </div>";
                  $paso .="<br><div id='msg_process' class='alert alert-info text-center hidden' role='alert'>
                                   Processing  payment...!
                         </div>";
+
+
+
+
+
+
                  $paso.="</form>";
 
-
-
+                
 
                  $paso.="
-
+                            <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+                            <script>
+                                function captchaCompletado() {
+                                   
+                                    document.getElementById('showStripe').style.display = 'block';
+                                }
+                                function captchaExpirado() {
+                                   
+                                    document.getElementById('showStripe').style.display = 'none';
+                                }
+                            </script>
                             <script>
 
                             var stripe= Stripe('$public_key');
@@ -3498,6 +3516,17 @@ $Queryr  = "SELECT ds_fname_r, ds_lname_r, ds_email_r, ds_aemail_r, ds_pnumber_r
                  $paso.="</div><div class='col-md-2'></div></div>";
 
 
+    $paso .= "
+                        <!-- reCAPTCHA -->
+                        <div class='row'>
+                          <div class='col-md-12 text-center' style='display: flex; justify-content: center;'>
+                            <div  class='g-recaptcha' data-sitekey='6Le85h8rAAAAAItVA_lwqTEbhnAqvIc4kgG6lYxx'
+                                data-callback='captchaCompletado'
+                                data-expired-callback='captchaExpirado'
+                            ></div>
+                          </div>
+                        </div>
+                        ";
 
                  $paso.="<div class=' text-align-center' id='inf_stripe' >
 							<div id='btn_stripe_default' class='no-padding'>";
