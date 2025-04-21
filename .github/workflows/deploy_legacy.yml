@@ -25,7 +25,7 @@ jobs:
 
       - name: Change ownership of the folder to user
         env:
-          REMOTE_USER: "ubuntu"
+          REMOTE_USER: ${{ secrets.AWS_USER }}
           REMOTE_HOST: "15.223.141.201"
           REMOTE_PORT: ${{ secrets.AWS_PORT }}
           TARGET: ${{ secrets.AWS_TARGET_FOLDER }}
