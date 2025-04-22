@@ -4265,7 +4265,6 @@ function genera_ContratoFame($p_instituto, $opc,$fl_template,$p_usuario,$ds_fnam
  * # Funcion para generar contarto Quiz por certificado
  *
  */
-
 function genera_TranscripQuiz($clave, $opc, $correo=False, $firma=False, $no_contrato=1,$fl_template='',$ds_cve='') {
 
 
