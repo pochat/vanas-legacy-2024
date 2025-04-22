@@ -21,10 +21,12 @@ jobs:
           TARGET: ${{ secrets.AWS_TARGET_FOLDER }}
           SSH_PRIVATE_KEY: ${{ secrets.AWS_PEM_KEY }}
         run: |
-          echo "$SSH_PRIVATE_KEY" | ssh-agent bash -c \
-            'ssh-add - && rsync -avz --no-perms --exclude-from=".gitignore" \
+          echo "$SSH_PRIVATE_KEY" | ssh-agent bash -c '
+            ssh-add - &&
+            rsync -avz --no-perms --exclude-from=".gitignore" \
             -e "ssh -o StrictHostKeyChecking=no -p $REMOTE_PORT" ./ \
-            $REMOTE_USER@$REMOTE_HOST:$TARGET'
+            $REMOTE_USER@$REMOTE_HOST:$TARGET
+          '
 
       - name: Change ownership of the folder to user (requires sudo)
         env:
@@ -34,6 +36,11 @@ jobs:
           TARGET: ${{ secrets.AWS_TARGET_FOLDER }}
           SSH_PRIVATE_KEY: ${{ secrets.AWS_PEM_KEY }}
         run: |
-          echo "$SSH_PRIVATE_KEY" | ssh-agent bash -c \
-            'ssh-add - && ssh -o StrictHostKeyChecking=no -p $REMOTE_PORT \
-            $REMOTE_USER@$REMOTE_HOST "echo '$REMOTE_USER ALL=(ALL) NOPASSWD: /bin/chown' | sudo tee /etc/sudoers.d/github-temp && sudo chown -R $REMOTE_USER:$REMOTE_USER $TARGET && sudo rm /etc/sudoers.d/github-temp"'
+          echo "$SSH_PRIVATE_KEY" | ssh-agent bash -c '
+            ssh-add - &&
+            ssh -o StrictHostKeyChecking=no -p $REMOTE_PORT $REMOTE_USER@$REMOTE_HOST "
+              echo \"$REMOTE_USER ALL=(ALL) NOPASSWD: /bin/chown\" | sudo tee /etc/sudoers.d/github-temp &&
+              sudo chown -R $REMOTE_USER:$REMOTE_USER $TARGET &&
+              sudo rm /etc/sudoers.d/github-temp
+            "
+          '
