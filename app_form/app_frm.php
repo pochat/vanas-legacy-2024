@@ -7,7 +7,6 @@
   require("app_form.inc.php");
 
 
-
 error_reporting(0);
 
   $fg_paso = RecibeParametroNumerico('fg_paso');
