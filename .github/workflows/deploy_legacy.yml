@@ -21,7 +21,7 @@ jobs:
           TARGET: ${{ secrets.AWS_TARGET_FOLDER }}
           SSH_PRIVATE_KEY: ${{ secrets.AWS_PEM_KEY }}
         run: |
-          echo "$SSH_PRIVATE_KEY" | ssh-agent bash -c 'ssh-add - && rsync -avz --no-perms --exclude-from=".gitignore" -e "ssh -o StrictHostKeyChecking=no -p $REMOTE_PORT" ./ $REMOTE_USER@$REMOTE_HOST:$TARGET --rsync-path="sudo -n rsync"'
+          echo "$SSH_PRIVATE_KEY" | ssh-agent bash -c 'ssh-add - && rsync -avz --no-perms --exclude-from=".gitignore" -e "ssh -o StrictHostKeyChecking=no -p $REMOTE_PORT" ./ $REMOTE_USER@$REMOTE_HOST:$TARGET --rsync-path="-n rsync"'
       - name: Change ownership of the folder to user
         env:
           REMOTE_USER: ${{ secrets.AWS_USER }}
