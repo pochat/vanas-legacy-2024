@@ -13,7 +13,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Upload modified files to EC2 with rsync (no sudo)
+      - name: Upload modified files to EC2 with rsync
         env:
           REMOTE_USER: ${{ secrets.AWS_USER }}
           REMOTE_HOST: "15.223.141.201"
@@ -21,14 +21,8 @@ jobs:
           TARGET: ${{ secrets.AWS_TARGET_FOLDER }}
           SSH_PRIVATE_KEY: ${{ secrets.AWS_PEM_KEY }}
         run: |
-          echo "$SSH_PRIVATE_KEY" | ssh-agent bash -c '
-            ssh-add - &&
-            rsync -avz --no-perms --exclude-from=".gitignore" \
-            -e "ssh -o StrictHostKeyChecking=no -p $REMOTE_PORT" ./ \
-            $REMOTE_USER@$REMOTE_HOST:$TARGET
-          '
-
-      - name: Change ownership of the folder to user (requires sudo)
+          echo "$SSH_PRIVATE_KEY" | ssh-agent bash -c 'ssh-add - && rsync -avz --no-perms --exclude-from=".gitignore" -e "ssh -o StrictHostKeyChecking=no -p $REMOTE_PORT" ./ $REMOTE_USER@$REMOTE_HOST:$TARGET --rsync-path="sudo -n rsync"'
+      - name: Change ownership of the folder to user
         env:
           REMOTE_USER: ${{ secrets.AWS_USER }}
           REMOTE_HOST: "15.223.141.201"
@@ -36,11 +30,4 @@ jobs:
           TARGET: ${{ secrets.AWS_TARGET_FOLDER }}
           SSH_PRIVATE_KEY: ${{ secrets.AWS_PEM_KEY }}
         run: |
-          echo "$SSH_PRIVATE_KEY" | ssh-agent bash -c '
-            ssh-add - &&
-            ssh -o StrictHostKeyChecking=no -p $REMOTE_PORT $REMOTE_USER@$REMOTE_HOST "
-              echo \"$REMOTE_USER ALL=(ALL) NOPASSWD: /bin/chown\" | sudo tee /etc/sudoers.d/github-temp &&
-              sudo chown -R $REMOTE_USER:$REMOTE_USER $TARGET &&
-              sudo rm /etc/sudoers.d/github-temp
-            "
-          '
+          echo "$SSH_PRIVATE_KEY" | ssh-agent bash -c 'ssh-add - && ssh -o StrictHostKeyChecking=no -p $REMOTE_PORT $REMOTE_USER@$REMOTE_HOST "sudo chown -R $REMOTE_USER:$REMOTE_USER $TARGET"'
