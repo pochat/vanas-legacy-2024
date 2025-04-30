@@ -3239,7 +3239,7 @@ $Queryr  = "SELECT ds_fname_r, ds_lname_r, ds_email_r, ds_aemail_r, ds_pnumber_r
                         </div>";
 
 
-                 $paso.="<div class='row'><div class='col-md-2'></div><div class='col-md-8 text-center' style='display:none;' id='showStripe'>";
+                 $paso.="<div class='row'><div class='col-md-2'></div><div class='col-md-8 text-center'  >";
                  $paso.="<form action='pago' method='POST' name='frm_stripe' id='frm_stripe'>";
                  $paso.="<input type='hidden' name='mn_amount' id='mn_amount' value='$mn_due_pagar' >
                          <input type='hidden' name='name' id='name' value='$ds_fname $ds_lname' >
@@ -3309,7 +3309,7 @@ $Queryr  = "SELECT ds_fname_r, ds_lname_r, ds_email_r, ds_aemail_r, ds_pnumber_r
                 
 
                  $paso.="
-                            <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+                            <!--<script src='https://www.google.com/recaptcha/api.js' async defer></script>
                             <script>
                                 function captchaCompletado() {
                                    
@@ -3319,7 +3319,7 @@ $Queryr  = "SELECT ds_fname_r, ds_lname_r, ds_email_r, ds_aemail_r, ds_pnumber_r
                                    
                                     document.getElementById('showStripe').style.display = 'none';
                                 }
-                            </script>
+                            </script>-->
                             <script>
 
                             var stripe= Stripe('$public_key');
@@ -3516,14 +3516,14 @@ $Queryr  = "SELECT ds_fname_r, ds_lname_r, ds_email_r, ds_aemail_r, ds_pnumber_r
 
     $paso .= "
                         <!-- reCAPTCHA -->
-                        <div class='row'>
+                        <!--<div class='row'>
                           <div class='col-md-12 text-center' style='display: flex; justify-content: center;'>
                             <div  class='g-recaptcha' data-sitekey='6Le85h8rAAAAAItVA_lwqTEbhnAqvIc4kgG6lYxx'
                                 data-callback='captchaCompletado'
                                 data-expired-callback='captchaExpirado'
                             ></div>
                           </div>
-                        </div>
+                        </div>-->
                         ";
 
                  $paso.="<div class=' text-align-center' id='inf_stripe' >

@@ -920,9 +920,6 @@ if($fa==1){
 }
 
 
-
-
-
   //include footer
   include("AD3M2SRC4/bootstrap/inc/footer.php"); 
 ?>
