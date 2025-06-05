@@ -56,7 +56,11 @@
   $passport_exp_date = RecibeParametroFecha('passport_exp_date');
   $passport_exp_date = ValidaFecha($passport_exp_date);
 
-
+  $fg_provider = RecibeParametroBinario('fg_provider');
+  $provider = RecibeParametroHTML('provider'); 
+  
+  
+  
 $Query='SELECT cl_sesion FROM c_sesion WHERE fl_sesion='.$clave.'';
   $row=RecuperaValor($Query);
   $cl_sesion = $row[0];
@@ -71,7 +75,7 @@ $Query='SELECT cl_sesion FROM c_sesion WHERE fl_sesion='.$clave.'';
 EjecutaQuery("UPDATE k_ses_app_frm_1 SET passport_number='$passport_number' WHERE cl_sesion='$cl_sesion' ");
 EjecutaQuery('UPDATE k_ses_app_frm_1 SET passport_exp_date="' . $passport_exp_date . '" WHERE cl_sesion="' . $cl_sesion . '" ');
 
-
+EjecutaQuery('UPDATE k_ses_app_frm_1 SET fg_provider="' . $fg_provider . '",provider="' . $provider . '"  WHERE cl_sesion="' . $cl_sesion . '" ');
 
 #address
   $fg_gender=RecibeParametroHTML('fg_gender');
@@ -339,6 +343,9 @@ EjecutaQuery('UPDATE k_ses_app_frm_1 SET passport_exp_date="' . $passport_exp_da
 
     Forma_CampoOculto('fg_disabilityie',$fg_disabilityie);
     Forma_CampoOculto('ds_disability',$ds_disability);
+	
+	Forma_CampoOculto('fg_provider',$fg_provider);
+    Forma_CampoOculto('provider',$provider);
 
     echo "\n</form>
     <script>

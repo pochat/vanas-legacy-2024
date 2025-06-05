@@ -778,7 +778,7 @@ function genera_documento($clave, $opc, $correo=False, $firma=False, $no_contrat
   $Query .= "ds_add_number, ds_add_street, ds_add_city, ds_add_state, ds_add_zip, d.ds_pais, ";
   $Query .= "nb_programa, fl_template, ds_duracion, nb_periodo, a.fl_programa, b.fg_tax_rate, a.ds_add_country, b.fg_fulltime,c.fl_periodo,b.ptib_approval ";
   $Query .= ",passport_number, ";
-  $Query .= ConsultaFechaBD('passport_exp_date', FMT_FECHA) . " passport_exp_date ";
+  $Query .= ConsultaFechaBD('passport_exp_date', FMT_FECHA) . " passport_exp_date, a.fg_provider,a.provider  ";
   $Query .= "FROM k_ses_app_frm_1 a, c_programa b, c_periodo c, c_pais d, c_pais e ";
   $Query .= "WHERE a.fl_programa=b.fl_programa ";
   $Query .= "AND a.fl_periodo=c.fl_periodo ";
@@ -1145,6 +1145,12 @@ function genera_documento($clave, $opc, $correo=False, $firma=False, $no_contrat
 
 
   #replace
+  if($fg_provider=='1'){		
+	$cadena = str_replace("#provider#", $provider, $cadena);
+  }else{		
+	$cadena = str_replace("#provider#", " ", $cadena);
+  }
+  
   $cadena = str_replace("#ds_careers#", $ds_career, $cadena);
   $cadena = str_replace("#ds_objectives#", $ds_objetives, $cadena);
   $cadena = str_replace("#ds_teaching#", $ds_teaching, $cadena);
@@ -1348,15 +1354,9 @@ $cadena = str_replace("#hr_class_time#", "" . $horarios, $cadena); #Horarios cla
 
     }
 
-
-
-
-
-
-
-
     }
   }
+
   # Realizamos la suma total que pagara app fee tax mas tuition fee tax y el costo del programa
   $total_costs = $mn_tot_program + $app_fee_tax + $tuition_fee_tax + $tax_mn_cost;
   # Remplazamos los valores del app fee tax y el tuition fee tax
@@ -1371,7 +1371,6 @@ $cadena = str_replace("#hr_class_time#", "" . $horarios, $cadena); #Horarios cla
 
   $tax_mn_cost_x_invoice_b_paid = 0;
   $tax_mn_cost_x_invoice_c_paid = 0;
-
 
   if (($ds_costos_ad == "VANAS+ Learning Resources") || ($ds_costos_ad == "VANAS Plus Learning Resources") || ($ds_costos_ad == "VANAS+ Learning Resources")) {
     $tax_mn_cost_x_invoice_a = $tax_mn_cost;

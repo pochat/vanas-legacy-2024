@@ -61,7 +61,7 @@
   $Query .= "fg_ori_via, ds_ori_other, fg_ori_ref, ds_ori_ref_name, nb_programa, nb_periodo, fl_template, b.fl_programa, c.fe_inicio, a.fl_periodo ";
   $Query .=",a.fg_disability,a.ds_disability,a.ds_ruta_foto_permiso,".ConsultaFechaBD('a.fe_start_date',FMT_FECHA)." fe_start_date, ".ConsultaFechaBD('a.fe_expirity_date',FMT_FECHA)." fe_expirity_date ,nb_name_institutcion,a.ds_sin,a.fl_immigrations_status  ";
   $Query .=",race,grade,hispanic,military,passport_number, ";
-  $Query .= ConsultaFechaBD('passport_exp_date', FMT_FECHA)." passport_exp_date ";
+  $Query .= ConsultaFechaBD('passport_exp_date', FMT_FECHA)." passport_exp_date,fg_provider,provider ";
 
   /*$Query .= "FROM k_ses_app_frm_1 a, c_programa b, c_periodo c, c_pais d, c_pais e ";
   $Query .= "WHERE a.fl_programa=b.fl_programa ";
@@ -108,6 +108,9 @@
   $fg_disability=!empty($row['fg_disability'])?"Yes":"No";
   $passport_number= $row['passport_number'];
   $passport_exp_date = $row['passport_exp_date'];
+  $fg_provider= $row['fg_provider'];
+  $provider = $row['provider'];
+  
 
 
   switch ($race) {
@@ -253,7 +256,7 @@
       $Query .= "ds_m_add_city, c.ds_m_add_state, c.ds_m_add_zip, c.ds_m_add_country, ds_fname, ds_mname, ds_lname, ds_number, ds_link_to_portfolio, fg_international, ".ConsultaFechaBD('fe_birth', FMT_FECHA).", ";
       $Query .= "a.ds_email, c.ds_a_email, a.ds_ruta_foto, b.fg_archive, a.fg_responsable, c.cl_preference_1, c.cl_preference_2, c.cl_preference_3, a.cl_recruiter ";
       $Query .= ",a.ds_alt_number, c.ds_p_name, c.ds_education_number, c.ds_usual_name ";
-      $Query .= ", c.ds_citizenship, c.fg_study_permit, c.fg_study_permit_other, c.fg_aboriginal, c.ds_aboriginal, c.fg_health_condition, c.ds_health_condition,b.fg_enrollment,a.comments ";
+      $Query .= ", c.ds_citizenship, c.fg_study_permit, c.fg_study_permit_other, c.fg_aboriginal, c.ds_aboriginal, c.fg_health_condition, c.ds_health_condition,b.fg_enrollment,a.comments, a.fg_provider,a.provider ";
       $Query .= "FROM k_ses_app_frm_1 a, c_sesion b  LEFT JOIN k_app_contrato c ON(b.cl_sesion=c.cl_sesion AND c.no_contrato=1) ";
       $Query .= "WHERE a.cl_sesion ='$cl_sesion' AND b.cl_sesion='$cl_sesion' ";
       $row = RecuperaValor($Query);
@@ -283,7 +286,8 @@
       $fg_responsable = $row[24];
       $fg_enrollment=$row['fg_enrollment'];
       $comments=$row['comments'];
-
+	  $fg_provider= $row['fg_provider'];
+      $provider = $row['provider'];
       //if($fg_responsable==1)
         //  $fg_responsable=0;
 
@@ -351,6 +355,8 @@
       $ds_aboriginal = "";
       $fg_health_condition = "";
       $ds_health_condition = "";
+	  $fg_provider = "";
+	  $provider = "";
     }
     $ds_add_number_err = "";
     $ds_add_street_err = "";
@@ -374,6 +380,9 @@
     $ds_p_name_err = "";
     $ds_education_number_err = "";
     $ds_usual_name_err = "";
+	 
+	$provider_err = ""; 
+
   }
   else { // Con error, recibe parametros (viene de la pagina de actualizacion)
     $ds_add_number = RecibeParametroHTML('ds_add_number');
@@ -473,21 +482,15 @@
 
     $passport_exp_date_err= RecibeParametroHTML('passport_exp_date_err');
     $passport_exp_date= RecibeParametroHTML('passport_exp_date');
+	
+	$fg_provider = RecibeParametroBinario('fg_provider');
+	$provider = RecibeParametroHTML('provider'); 
+	$provider_err = RecibeParametroHTML('provider_err'); 
 
 
   }
 
-  if($fg_international==1){
-
-
-  }else{
-
-
-
-
-  }
-
-
+  
   if($fg_international==1){
 
       if($fg_payment=='C'){
@@ -1212,6 +1215,7 @@
                         ?>
                       </div>
                       </div>
+
                       <div class="row">
                           <div class="col-xs-12 col-sm-4">
                               <?php
@@ -1434,10 +1438,24 @@
                           ?>
                           </div>
                           <div class="col col-xs-12 col-sm-4">
-                        <?php
-                        Forma_CampoTexto(ObtenEtiqueta(873), True, 'ds_relation_r', $ds_relation_r, 50, 32, $ds_relation_r_err, False, '', True, '', '', "smart-form form-group", 'left', 'col col-sm-12', 'col col-sm-12');
-                        ?>
-                        </div>
+							<?php
+							Forma_CampoTexto(ObtenEtiqueta(873), True, 'ds_relation_r', $ds_relation_r, 50, 32, $ds_relation_r_err, False, '', True, '', '', "smart-form form-group", 'left', 'col col-sm-12', 'col col-sm-12');
+							?>
+						  </div>
+						  
+						  <div class="col col-xs-12 col-sm-4">
+							<div class="row">
+							  
+							  <?php 
+								Forma_CampoCheckbox('', 'fg_provider', $fg_provider, "Provider", '', True, '', 'left', 'col-sm-12', 'col-sm-12');                        
+								
+							  
+								Forma_CampoTexto('Provider Name', False, 'provider', $provider, 250, 32, $provider_err, False, '', True, '', '', "smart-form form-group", 'left', 'col col-sm-12', 'col col-sm-12');
+							
+								?>
+							  
+							</div>
+						  </div>
                         </div>
                       </div>
                     </div>

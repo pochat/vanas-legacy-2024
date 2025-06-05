@@ -109,7 +109,7 @@ if (PHP_OS == 'Linux') {
 				} else {
 
 					#2025 verifica pagos dese el term inicial.
-					$Query_pagado = "SELECT  a.fl_term_pago, b.no_opcion, b.no_pago, DATE_FORMAT(b.fe_pago,'" . FORMAT_DATE . "') ";
+					$Query_pagado = "SELECT  a.fl_term_pago, b.no_opcion, b.no_pago ";
 					$Query_pagado .= "FROM k_alumno_pago a, k_term_pago b ";
 					$Query_pagado .= "WHERE a.fl_term_pago = b.fl_term_pago AND a.fl_alumno=$fl_alumno AND b.no_pago=$no_pago  ORDER BY b.fe_pago ";
 					$row3 = RecuperaValor($Query_pagado);
