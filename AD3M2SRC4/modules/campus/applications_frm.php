@@ -1447,10 +1447,10 @@
 							<div class="row">
 							  
 							  <?php 
-								Forma_CampoCheckbox('', 'fg_provider', $fg_provider, "Provider", '', True, '', 'left', 'col-sm-12', 'col-sm-12');                        
+								Forma_CampoCheckbox('', 'fg_provider', $fg_provider, "Third-Party Payer", '', True, '', 'left', 'col-sm-12', 'col-sm-12');                        
 								
 							  
-								Forma_CampoTexto('Provider Name', False, 'provider', $provider, 250, 32, $provider_err, False, '', True, '', '', "smart-form form-group", 'left', 'col col-sm-12', 'col col-sm-12');
+								Forma_CampoTexto('Third-Party Payer Name', False, 'provider', $provider, 250, 32, $provider_err, False, '', True, '', '', "smart-form form-group", 'left', 'col col-sm-12', 'col col-sm-12');
 							
 								?>
 							  
