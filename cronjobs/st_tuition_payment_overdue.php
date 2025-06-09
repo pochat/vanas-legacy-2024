@@ -6,11 +6,13 @@ if (PHP_OS == 'Linux') {
 
     # Include AWS SES libraries
     require '/var/www/html/vanas/AWS_SES/PHP/com_email_func.inc.php';
+	$file_name_txt = "/var/www/html/vanas/cronjobs/st_tuition_overdue.txt";
 } else {
 
     require '../lib/com_func_cronjobs.inc.php';
     require '../lib/sp_config.inc.php';
     require '../AWS_SES/PHP/com_email_func.inc.php';
+	 $file_name_txt = "st_tuition_overdue.txt";
 
 }
 	$from = 'noreply@vanas.ca';
@@ -18,6 +20,10 @@ if (PHP_OS == 'Linux') {
 	$day_late = 1;
 	//$day_late_app = 3;
 	$day_late_period = 300;
+
+	#Generamos el log.
+	GeneraLog($file_name_txt,"====================================Inicia proceso ".date("F j, Y, g:i a")."=================================================");
+
 
 	# Prepare email templates for assignment reminders, note: (change nb_template='___' to fl_template=id once this is stable on production server)
 	$Query = "SELECT ds_encabezado, ds_cuerpo, ds_pie FROM k_template_doc WHERE fl_template='19' AND fg_activo='1'";
@@ -35,6 +41,9 @@ if (PHP_OS == 'Linux') {
 	$Query .= "WHERE DATE_SUB(CURDATE(), INTERVAL $day_late DAY) >= DATE(a.fe_pago) ";
 	$Query .= "AND DATE_SUB(CURDATE(), INTERVAL $day_late_period DAY) <= DATE(a.fe_pago) ";
 	$Query;
+
+	#Generamos el log.
+	GeneraLog($file_name_txt,"====================================Inicia proceso ".$Query."=================================================");
 
 //caso especial Feiza.
 	//$Query .= "WHERE DATE_SUB(CURDATE(), INTERVAL $day_late DAY) >= DATE(a.fe_pago) ";
@@ -127,6 +136,7 @@ if (PHP_OS == 'Linux') {
 
 			# If have not paid, send out reminder
 			if(empty($row3[0])){
+				GeneraLog($file_name_txt,"====================================Inicia proceso ".$st_fname." ".$st_lname."=================================================");
 
 				$variables = array(
 					"st_fname" => $st_fname,
@@ -171,4 +181,13 @@ if (PHP_OS == 'Linux') {
 			}
 		}
 	}
+
+
+	
+function GeneraLog($file_name_txt,$contenido_log=''){
+
+    $fch= fopen($file_name_txt, "a+"); // Abres el archivo para escribir en �l
+    fwrite($fch, "\n".$contenido_log); // Grabas
+    fclose($fch); // Cierras el archivo.
+}
 ?>

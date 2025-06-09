@@ -1,0 +1,21 @@
+
+====================================Inicia proceso June 9, 2025, 5:51 pm=================================================
+====================================Inicia proceso SELECT a.fl_term_pago, a.fl_term, a.no_opcion, a.no_pago, DATE_FORMAT(a.fe_pago, '%M %e, %Y'), c.nb_programa FROM k_term_pago a LEFT JOIN k_term b ON b.fl_term=a.fl_term LEFT JOIN c_programa c ON c.fl_programa=b.fl_programa WHERE DATE_SUB(CURDATE(), INTERVAL 1 DAY) >= DATE(a.fe_pago) AND DATE_SUB(CURDATE(), INTERVAL 300 DAY) <= DATE(a.fe_pago) =================================================
+====================================Inicia proceso Keegan Havelock-Rice=================================================
+====================================Inicia proceso Danick Dussault=================================================
+====================================Inicia proceso June 9, 2025, 6:51 pm=================================================
+====================================Inicia proceso SELECT a.fl_term_pago, a.fl_term, a.no_opcion, a.no_pago, DATE_FORMAT(a.fe_pago, '%M %e, %Y'), c.nb_programa FROM k_term_pago a LEFT JOIN k_term b ON b.fl_term=a.fl_term LEFT JOIN c_programa c ON c.fl_programa=b.fl_programa WHERE DATE_SUB(CURDATE(), INTERVAL 0 DAY) >= DATE(a.fe_pago) AND DATE_SUB(CURDATE(), INTERVAL 300 DAY) <= DATE(a.fe_pago) =================================================
+====================================Inicia proceso Peace Phanouvong=================================================
+====================================Inicia proceso Leeann  Brisby=================================================
+====================================Inicia proceso Keegan Havelock-Rice=================================================
+====================================Inicia proceso Danick Dussault=================================================
+====================================Inicia proceso Hermann Tr&ouml;ger=================================================
+====================================Inicia proceso Gloria Nguyen=================================================
+====================================Inicia proceso June 9, 2025, 7:04 pm=================================================
+====================================Inicia proceso SELECT a.fl_term_pago, a.fl_term, a.no_opcion, a.no_pago, DATE_FORMAT(a.fe_pago, '%M %e, %Y'), c.nb_programa FROM k_term_pago a LEFT JOIN k_term b ON b.fl_term=a.fl_term LEFT JOIN c_programa c ON c.fl_programa=b.fl_programa WHERE DATE_SUB(CURDATE(), INTERVAL 0 DAY) >= DATE(a.fe_pago) AND DATE_SUB(CURDATE(), INTERVAL 300 DAY) <= DATE(a.fe_pago) =================================================
+====================================Inicia proceso Peace Phanouvong=================================================
+====================================Inicia proceso Leeann  Brisby=================================================
+====================================Inicia proceso Keegan Havelock-Rice=================================================
+====================================Inicia proceso Danick Dussault=================================================
+====================================Inicia proceso Hermann Tr&ouml;ger=================================================
+====================================Inicia proceso Gloria Nguyen=================================================
