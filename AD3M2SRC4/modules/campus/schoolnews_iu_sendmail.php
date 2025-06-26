@@ -1,16 +1,16 @@
 <?php
 	# Email Library
-  require('/var/www/html/AWS_SES/PHP/com_email_func.inc.php');
+  require('/var/www/html/vanas/AWS_SES/PHP/com_email_func.inc.php');
 
   # Load AWS class
-  require('/var/www/html/AWS_SES/aws/aws-autoloader.php');
+  require('/var/www/html/vanas/AWS_SES/aws/aws-autoloader.php');
   use Aws\Common\Aws;
 
   # Html parser
   require('/var/www/html/vanas/modules/common/new_campus/lib/simple_html_dom.php');
 
   # Initialize Amazon Web Service
-  $aws = Aws::factory('/var/www/html/AWS_SES/PHP/config.inc.php');
+  $aws = Aws::factory('/var/www/html/vanas/AWS_SES/PHP/config.inc.php');
 
   # Get the client
   #$client = $aws->get('Ses');
