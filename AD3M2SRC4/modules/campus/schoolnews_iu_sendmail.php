@@ -10,7 +10,7 @@
   require('/var/www/html/vanas/modules/common/new_campus/lib/simple_html_dom.php');
 
   # Initialize Amazon Web Service
-  $aws = Aws::factory('/var/www/html/vanas/AWS_SES/PHP/config.inc.php');
+  //$aws = Aws::factory('/var/www/html/vanas/AWS_SES/PHP/config.inc.php');
 
   # Get the client
   #$client = $aws->get('Ses');
