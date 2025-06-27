@@ -65,7 +65,7 @@ if (PHP_OS == 'Linux') {
     $Query .= "((c.no_grado='1' AND c.fl_term=$fl_term) OR (c.no_grado<>'1' AND fl_term_ini=$fl_term)) AND e.fg_opcion_pago=$no_opcion  ";
 	$Query .= " AND d.fg_activo='1' ";
 	#$Query .= "AND d.fl_usuario<>11657 AND d.fl_usuario<>11660 AND d.fl_usuario<>11649 AND d.fl_usuario<>11652 "; #Leean Brisby Rose se deshablita nuevamnete 28-06-2023 ";  //USUARUOOS QUE RECIBEN PRESTAMO ESTUDIANTIL NO SE MANDAN EMAILS.
-    $Query .= "AND d.fl_usuario=11693 "; ## Tia Sampson 
+    $Query .= "AND d.fl_usuario <> 11693 "; ## Tia Sampson 
     	$rs2 = EjecutaQuery($Query);
 
 		while($row2=RecuperaRegistro($rs2)){
