@@ -76,7 +76,7 @@
                     $Query .= "WHERE a.fl_grupo = b.fl_grupo AND b.fl_term = c.fl_term AND 
                     ((c.no_grado='1' AND c.fl_term=$fl_term) OR (c.no_grado<>'1' AND fl_term_ini=$fl_term))
                     AND e.fg_opcion_pago=$no_opcion AND d.fg_activo='1' ";
-
+                    
 		             $rs4 = EjecutaQuery($Query);
 
 		                while($row4=RecuperaRegistro($rs4)){
@@ -94,8 +94,22 @@
                                 $Query  = "SELECT COUNT(1) FROM k_alumno_pago WHERE fl_alumno=$fl_alumno AND fl_term_pago=$fl_term_pago ";
                                 $row3 = RecuperaValor($Query);
                                 
+
                                 if(empty($row3[0])){
+
+                                    $Query = "SELECT COUNT(*) FROM k_alumno_pago a
+                                        JOIN k_term_pago b ON b.fl_term_pago= a.fl_term_pago
+                                        WHERE a.fl_alumno=$fl_alumno AND b.no_opcion=$no_opcion AND no_pago=$no_pago ";
+                                    $row3 = RecuperaValor($Query);
+
+                                }
+
+
+
+                                if(empty($row3[0]))
+                                {
                         ?>        
+
                                 <tr>
                                     <td><b><?php echo $st_fname." ".$st_lname; ?></b><br /><small class="text-muted"><i>Overdue</i></small></td>
                                     <td><?php echo $pg_name;?></td>
@@ -104,6 +118,7 @@
                                     <td><?php echo $py_date;?></td>
                                     <td><?php echo $fe_envio_email;?></td>
                                 </tr>
+
                         <?php
                                 }
 			                }                     
