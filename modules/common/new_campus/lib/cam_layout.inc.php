@@ -35,7 +35,7 @@
             }
             else{
               $fl_moduloo = "AND fl_modulo IN(27,15,16) ";
-              $fl_funcionn = "AND fl_funcion IN(98, 102,104, 42) ";
+              $fl_funcionn = "AND fl_funcion IN(98, 102,104) ";//42->grade hidden 04-07-2025 by Erika
             }
 		}
 
