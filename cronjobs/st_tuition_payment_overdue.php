@@ -19,7 +19,7 @@ if (PHP_OS == 'Linux') {
 	# Define the interval of time where overdue payments should be sent (daily)
 	$day_late = 1;
 	//$day_late_app = 3;
-	$day_late_period = 300;
+	$day_late_period = 350;
 
 	#Generamos el log.
 	GeneraLog($file_name_txt,"====================================Inicia proceso ".date("F j, Y, g:i a")."=================================================");
@@ -65,7 +65,7 @@ if (PHP_OS == 'Linux') {
     $Query .= "((c.no_grado='1' AND c.fl_term=$fl_term) OR (c.no_grado<>'1' AND fl_term_ini=$fl_term)) AND e.fg_opcion_pago=$no_opcion  ";
 	$Query .= " AND d.fg_activo='1' ";
 	#$Query .= "AND d.fl_usuario<>11657 AND d.fl_usuario<>11660 AND d.fl_usuario<>11649 AND d.fl_usuario<>11652 "; #Leean Brisby Rose se deshablita nuevamnete 28-06-2023 ";  //USUARUOOS QUE RECIBEN PRESTAMO ESTUDIANTIL NO SE MANDAN EMAILS.
-    $Query .= "AND d.fl_usuario <> 11651 "; ## Keegan Rice 
+    $Query .= "AND d.fl_usuario <> 11651 AND d.fl_usuario <> 11691 "; ## Keegan Rice 
     $rs2 = EjecutaQuery($Query);
 
 		while($row2=RecuperaRegistro($rs2)){

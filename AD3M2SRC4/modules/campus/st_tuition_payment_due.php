@@ -41,7 +41,7 @@
             # Define the interval of time where overdue payments should be sent (daily)
             $day_late = 1;
             //$day_late_app = 3;
-            $day_late_period = 300;
+            $day_late_period = 350;
 
             $fl_term_pago = null;
             $fl_term = null;
