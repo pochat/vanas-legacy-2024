@@ -1,8 +1,0 @@
-#!/bin/bash
-
-timestamp() {
-    date +"%Y-%m-%d"
-}
-
-cp /efs/prod_mysql_backup/vanas.sql /efs/prod_mysql_backup/vanas_$(timestamp).sql
-
