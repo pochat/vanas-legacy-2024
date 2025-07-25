@@ -1,6 +1,0 @@
-{
-  "name": "correos",
-  "require":{
-    "phpmailer/phpmailer": "5.*"
-  }
-} 
